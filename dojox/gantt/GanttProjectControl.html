@@ -1,1 +1,629 @@
-<div class="jsdoc-permalink" style="display:none;">/api/1.7/dojox/gantt/GanttProjectControl</div><h1 class="jsdoc-title constructorIcon36">dojox.gantt.GanttProjectControl <span style="font-size:11px;color:#999;">(version 1.7)</span></h1><div class="jsdoc-prototype">Object &raquo; dojox.gantt.GanttProjectControl</div><div class="jsdoc-require">dojo.require("dojox.gantt.GanttProjectItem");</div><div class="jsdoc-prototype">Defined in dojox/gantt/GanttProjectItem.js</div><div class="jsdoc-function-information"><h3>Usage:</h3><div class="function-signature"><span class="keyword">var</span> foo = new dojox.gantt.GanttProjectControl(<span class="jsdoc-comment-type">/*  */</span> ganttChart, <span class="jsdoc-comment-type">/*  */</span> projectItem);</div></div><div class="jsdoc-children"><div class="jsdoc-field-list"><h2 class="jsdoc-summary-heading">Property Summary <span class="jsdoc-summary-toggle"></span></h2><div class="jsdoc-summary-list"><ul><li class="arrayIcon public inherited even"><a class="inline-link" href="#arrTasks">arrTasks</a></li><li class="numberIcon public inherited odd"><a class="inline-link" href="#duration">duration</a></li><li class="objectIcon public inherited even"><a class="inline-link" href="#nextProject">nextProject</a></li><li class="numberIcon public inherited odd"><a class="inline-link" href="#percentage">percentage</a></li><li class="numberIcon public inherited even"><a class="inline-link" href="#posX">posX</a></li><li class="numberIcon public inherited odd"><a class="inline-link" href="#posY">posY</a></li><li class="objectIcon public inherited even"><a class="inline-link" href="#previousProject">previousProject</a></li></ul></div><h2 class="jsdoc-summary-heading">Method Summary <span class="jsdoc-summary-toggle"></span></h2><div class="jsdoc-summary-list"><ul><li class="functionIcon public inherited odd"><a class="inline-link" href="#adjustPanelTime">adjustPanelTime</a><span class="parameters">()</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#checkWidthProjectNameItem">checkWidthProjectNameItem</a><span class="parameters">()</span></li><li class="functionIcon public  odd"><a class="inline-link" href="#constructor">constructor</a><span class="parameters">(ganttChart, projectItem)</span><span class="jsdoc-returns"> returns dojox.gantt.GanttProjectControl</span> <span>A reference to the constructor function for this object.</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#create">create</a><span class="parameters">()</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#createDescrProject">createDescrProject</a><span class="parameters">()</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#createProjectItem">createProjectItem</a><span class="parameters">()</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#createProjectNameItem">createProjectNameItem</a><span class="parameters">()</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#deleteChildTask">deleteChildTask</a><span class="parameters">(task)</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#deleteTask">deleteTask</a><span class="parameters">(id)</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#getDescStr">getDescStr</a><span class="parameters">()</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#getDuration">getDuration</a><span class="parameters">()</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#getPercentCompleted">getPercentCompleted</a><span class="parameters">()</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#getTaskById">getTaskById</a><span class="parameters">(id)</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#hideDescrProject">hideDescrProject</a><span class="parameters">()</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#insertTask">insertTask</a><span class="parameters">(id, name, startTime, duration, percentage, previousTaskId, taskOwner, parentTaskId)</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#postLoadData">postLoadData</a><span class="parameters">()</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#refresh">refresh</a><span class="parameters">()</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#refreshDescrProject">refreshDescrProject</a><span class="parameters">(divDesc)</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#refreshProjectItem">refreshProjectItem</a><span class="parameters">(projectItem)</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#resizeProjectItem">resizeProjectItem</a><span class="parameters">(width)</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#searchTaskInTree">searchTaskInTree</a><span class="parameters">(task, id)</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#setName">setName</a><span class="parameters">(name)</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#setPercentCompleted">setPercentCompleted</a><span class="parameters">(percentage)</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#shiftChildTasks">shiftChildTasks</a><span class="parameters">(task, height)</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#shiftDescrProject">shiftDescrProject</a><span class="parameters">()</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#shiftNextParentTask">shiftNextParentTask</a><span class="parameters">(task, height)</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#shiftNextProject">shiftNextProject</a><span class="parameters">(project, height)</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#shiftProject">shiftProject</a><span class="parameters">(height)</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#shiftProjectItem">shiftProjectItem</a><span class="parameters">()</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#shiftTask">shiftTask</a><span class="parameters">(task, height)</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#showDescrProject">showDescrProject</a><span class="parameters">()</span></li></ul></div><h2 class="jsdoc-summary-heading">Attached Objects <span class="jsdoc-summary-toggle"></span></h2><div class="jsdoc-summary-list"><div class="jsdoc-field"><div class="jsdoc-title"><span class="object"><a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl/projectNameItem">dojox.gantt.GanttProjectControl.projectNameItem</a></span></div></div><div class="jsdoc-field"><div class="jsdoc-title"><span class="object"><a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl/ganttChart/contentData">dojox.gantt.GanttProjectControl.ganttChart.contentData</a></span></div></div><div class="jsdoc-field"><div class="jsdoc-title"><span class="object"><a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl/ganttChart/panelNames">dojox.gantt.GanttProjectControl.ganttChart.panelNames</a></span></div></div><div class="jsdoc-field"><div class="jsdoc-title"><span class="object"><a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl/project">dojox.gantt.GanttProjectControl.project</a></span></div></div><div class="jsdoc-field"><div class="jsdoc-title"><span class="object"><a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl/projectItem">dojox.gantt.GanttProjectControl.projectItem</a></span></div></div><div class="jsdoc-field"><div class="jsdoc-title"><span class="object"><a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl/projectItem/0/firstChild">dojox.gantt.GanttProjectControl.projectItem.0.firstChild</a></span></div></div><div class="jsdoc-field"><div class="jsdoc-title"><span class="object"><a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl/projectItem/0/firstChild/rows">dojox.gantt.GanttProjectControl.projectItem.0.firstChild.rows</a></span></div></div><div class="jsdoc-field"><div class="jsdoc-title"><span class="object"><a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl/projectItem/0/lastChild/firstChild">dojox.gantt.GanttProjectControl.projectItem.0.lastChild.firstChild</a></span></div></div><div class="jsdoc-field"><div class="jsdoc-title"><span class="object"><a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl/descrProject">dojox.gantt.GanttProjectControl.descrProject</a></span></div></div><div class="jsdoc-field"><div class="jsdoc-title"><span class="object"><a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl/projectItem/0/firstChild/rows/0/cells">dojox.gantt.GanttProjectControl.projectItem.0.firstChild.rows.0.cells</a></span></div></div><div class="jsdoc-field"><div class="jsdoc-title"><span class="object"><a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl/projectItem/0/firstChild/rows/0/cells/0">dojox.gantt.GanttProjectControl.projectItem.0.firstChild.rows.0.cells.0</a></span></div></div><div class="jsdoc-field"><div class="jsdoc-title"><span class="object"><a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl/projectItem/0/firstChild/rows/0/cells/1">dojox.gantt.GanttProjectControl.projectItem.0.firstChild.rows.0.cells.1</a></span></div></div><div class="jsdoc-field"><div class="jsdoc-title"><span class="object"><a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl/ganttChart">dojox.gantt.GanttProjectControl.ganttChart</a></span></div></div></div></div></div><div class="jsdoc-children"><div class="jsdoc-fields"><h2>Properties</h2><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="arrTasks"></a><span class="arrayIcon">arrTasks</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl">dojox.gantt.GanttProjectControl</a></div></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="duration"></a><span class="numberIcon">duration</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl">dojox.gantt.GanttProjectControl</a></div></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="nextProject"></a><span class="objectIcon">nextProject</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl">dojox.gantt.GanttProjectControl</a></div></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="percentage"></a><span class="numberIcon">percentage</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl">dojox.gantt.GanttProjectControl</a></div></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="posX"></a><span class="numberIcon">posX</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl">dojox.gantt.GanttProjectControl</a></div></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="posY"></a><span class="numberIcon">posY</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl">dojox.gantt.GanttProjectControl</a></div></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="previousProject"></a><span class="objectIcon">previousProject</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl">dojox.gantt.GanttProjectControl</a></div></div><h2>Methods</h2><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="adjustPanelTime"></a><span class="functionIcon">adjustPanelTime</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl">dojox.gantt.GanttProjectControl</a></div></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="checkWidthProjectNameItem"></a><span class="functionIcon">checkWidthProjectNameItem</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl">dojox.gantt.GanttProjectControl</a></div></div><div class="jsdoc-field public  odd"><div class="jsdoc-title"><a name="constructor"></a><span class="functionIcon">constructor</span></div><div class="jsdoc-inheritance">Overrides <a class="jsdoc-link" href="/api/1.7/Object">Object</a></div><div class="jsdoc-return-type">Returns <strong>dojox.gantt.GanttProjectControl</strong></div><div class="jsdoc-summary">A reference to the constructor function for this object.</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">ganttChart</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">projectItem</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="create"></a><span class="functionIcon">create</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl">dojox.gantt.GanttProjectControl</a></div></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="createDescrProject"></a><span class="functionIcon">createDescrProject</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl">dojox.gantt.GanttProjectControl</a></div></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="createProjectItem"></a><span class="functionIcon">createProjectItem</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl">dojox.gantt.GanttProjectControl</a></div></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="createProjectNameItem"></a><span class="functionIcon">createProjectNameItem</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl">dojox.gantt.GanttProjectControl</a></div></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="deleteChildTask"></a><span class="functionIcon">deleteChildTask</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl">dojox.gantt.GanttProjectControl</a></div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">task</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="deleteTask"></a><span class="functionIcon">deleteTask</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl">dojox.gantt.GanttProjectControl</a></div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">id</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="getDescStr"></a><span class="functionIcon">getDescStr</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl">dojox.gantt.GanttProjectControl</a></div></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="getDuration"></a><span class="functionIcon">getDuration</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl">dojox.gantt.GanttProjectControl</a></div></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="getPercentCompleted"></a><span class="functionIcon">getPercentCompleted</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl">dojox.gantt.GanttProjectControl</a></div></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="getTaskById"></a><span class="functionIcon">getTaskById</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl">dojox.gantt.GanttProjectControl</a></div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">id</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="hideDescrProject"></a><span class="functionIcon">hideDescrProject</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl">dojox.gantt.GanttProjectControl</a></div></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="insertTask"></a><span class="functionIcon">insertTask</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl">dojox.gantt.GanttProjectControl</a></div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">id</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">name</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">startTime</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">duration</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">percentage</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">previousTaskId</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">taskOwner</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">parentTaskId</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="postLoadData"></a><span class="functionIcon">postLoadData</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl">dojox.gantt.GanttProjectControl</a></div></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="refresh"></a><span class="functionIcon">refresh</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl">dojox.gantt.GanttProjectControl</a></div></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="refreshDescrProject"></a><span class="functionIcon">refreshDescrProject</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl">dojox.gantt.GanttProjectControl</a></div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">divDesc</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="refreshProjectItem"></a><span class="functionIcon">refreshProjectItem</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl">dojox.gantt.GanttProjectControl</a></div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">projectItem</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="resizeProjectItem"></a><span class="functionIcon">resizeProjectItem</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl">dojox.gantt.GanttProjectControl</a></div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">width</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="searchTaskInTree"></a><span class="functionIcon">searchTaskInTree</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl">dojox.gantt.GanttProjectControl</a></div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">task</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">id</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="setName"></a><span class="functionIcon">setName</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl">dojox.gantt.GanttProjectControl</a></div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">name</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="setPercentCompleted"></a><span class="functionIcon">setPercentCompleted</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl">dojox.gantt.GanttProjectControl</a></div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">percentage</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="shiftChildTasks"></a><span class="functionIcon">shiftChildTasks</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl">dojox.gantt.GanttProjectControl</a></div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">task</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">height</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="shiftDescrProject"></a><span class="functionIcon">shiftDescrProject</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl">dojox.gantt.GanttProjectControl</a></div></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="shiftNextParentTask"></a><span class="functionIcon">shiftNextParentTask</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl">dojox.gantt.GanttProjectControl</a></div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">task</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">height</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="shiftNextProject"></a><span class="functionIcon">shiftNextProject</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl">dojox.gantt.GanttProjectControl</a></div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">project</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">height</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="shiftProject"></a><span class="functionIcon">shiftProject</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl">dojox.gantt.GanttProjectControl</a></div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">height</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="shiftProjectItem"></a><span class="functionIcon">shiftProjectItem</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl">dojox.gantt.GanttProjectControl</a></div></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="shiftTask"></a><span class="functionIcon">shiftTask</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl">dojox.gantt.GanttProjectControl</a></div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">task</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">height</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="showDescrProject"></a><span class="functionIcon">showDescrProject</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/gantt/GanttProjectControl">dojox.gantt.GanttProjectControl</a></div></div></div></div>
+
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/gantt/GanttProjectControl" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/gantt/GanttProjectControl.html</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/gantt/GanttProjectControl<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-function-information">
+  <h3>Usage:</h3>
+  <div class="function-signature"><span class="keyword">var</span> foo = new GanttProjectControl<span class="parameters">(ganttChart,projectItem);</span></div>
+</div>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/gantt/GanttProjectControl">dojox/gantt/GanttProjectControl</a></div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">ganttChart</td>
+    <td class="jsdoc-param-type">undefined</td>
+    <td class="jsdoc-param-description">
+    </td>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">projectItem</td>
+    <td class="jsdoc-param-type">undefined</td>
+    <td class="jsdoc-param-description">
+    </td>
+  </tr>
+</table>
+<p>See the <a href="/reference-guide/1.8/dojox/gantt.html" target="_blank">dojox/gantt/GanttProjectControl reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojox_gantt_GanttProjectControl_adjustPanelTime" class="inline-link"> adjustPanelTime</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gantt_GanttProjectControl_checkWidthProjectNameItem" class="inline-link"> checkWidthProjectNameItem</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gantt_GanttProjectControl_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>ganttChart, projectItem) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gantt_GanttProjectControl_create" class="inline-link"> create</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gantt_GanttProjectControl_createDescrProject" class="inline-link"> createDescrProject</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gantt_GanttProjectControl_createProjectItem" class="inline-link"> createProjectItem</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gantt_GanttProjectControl_createProjectNameItem" class="inline-link"> createProjectNameItem</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gantt_GanttProjectControl_deleteChildTask" class="inline-link"> deleteChildTask</a><span class="parameters">(</span>task) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gantt_GanttProjectControl_deleteTask" class="inline-link"> deleteTask</a><span class="parameters">(</span>id) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gantt_GanttProjectControl_getDescStr" class="inline-link"> getDescStr</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gantt_GanttProjectControl_getDuration" class="inline-link"> getDuration</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gantt_GanttProjectControl_getPercentCompleted" class="inline-link"> getPercentCompleted</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gantt_GanttProjectControl_getTaskById" class="inline-link"> getTaskById</a><span class="parameters">(</span>id) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gantt_GanttProjectControl_hideDescrProject" class="inline-link"> hideDescrProject</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gantt_GanttProjectControl_insertTask" class="inline-link"> insertTask</a><span class="parameters">(</span>id, name, startTime, duration, percentage, previousTaskId, taskOwner, parentTaskId) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gantt_GanttProjectControl_postLoadData" class="inline-link"> postLoadData</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gantt_GanttProjectControl_refresh" class="inline-link"> refresh</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gantt_GanttProjectControl_refreshDescrProject" class="inline-link"> refreshDescrProject</a><span class="parameters">(</span>divDesc) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gantt_GanttProjectControl_refreshProjectItem" class="inline-link"> refreshProjectItem</a><span class="parameters">(</span>projectItem) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gantt_GanttProjectControl_resizeProjectItem" class="inline-link"> resizeProjectItem</a><span class="parameters">(</span>width) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gantt_GanttProjectControl_searchTaskInTree" class="inline-link"> searchTaskInTree</a><span class="parameters">(</span>task, id) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gantt_GanttProjectControl_setName" class="inline-link"> setName</a><span class="parameters">(</span>name) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gantt_GanttProjectControl_setPercentCompleted" class="inline-link"> setPercentCompleted</a><span class="parameters">(</span>percentage) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gantt_GanttProjectControl_shiftChildTasks" class="inline-link"> shiftChildTasks</a><span class="parameters">(</span>task, height) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gantt_GanttProjectControl_shiftDescrProject" class="inline-link"> shiftDescrProject</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gantt_GanttProjectControl_shiftNextParentTask" class="inline-link"> shiftNextParentTask</a><span class="parameters">(</span>task, height) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gantt_GanttProjectControl_shiftNextProject" class="inline-link"> shiftNextProject</a><span class="parameters">(</span>project, height) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gantt_GanttProjectControl_shiftProject" class="inline-link"> shiftProject</a><span class="parameters">(</span>height) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gantt_GanttProjectControl_shiftProjectItem" class="inline-link"> shiftProjectItem</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gantt_GanttProjectControl_shiftTask" class="inline-link"> shiftTask</a><span class="parameters">(</span>task, height) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_gantt_GanttProjectControl_showDescrProject" class="inline-link"> showDescrProject</a><span class="parameters">(</span>) <span></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttProjectControl_adjustPanelTime"></a><span class="functionIcon">adjustPanelTime</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttProjectControl" class="jsdoc-link">dojox/gantt/GanttProjectControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttProjectControl_checkWidthProjectNameItem"></a><span class="functionIcon">checkWidthProjectNameItem</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttProjectControl" class="jsdoc-link">dojox/gantt/GanttProjectControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttProjectControl_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(ganttChart, projectItem)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttProjectControl" class="jsdoc-link">dojox/gantt/GanttProjectControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">ganttChart</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">projectItem</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttProjectControl_create"></a><span class="functionIcon">create</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttProjectControl" class="jsdoc-link">dojox/gantt/GanttProjectControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttProjectControl_createDescrProject"></a><span class="functionIcon">createDescrProject</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttProjectControl" class="jsdoc-link">dojox/gantt/GanttProjectControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttProjectControl_createProjectItem"></a><span class="functionIcon">createProjectItem</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttProjectControl" class="jsdoc-link">dojox/gantt/GanttProjectControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttProjectControl_createProjectNameItem"></a><span class="functionIcon">createProjectNameItem</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttProjectControl" class="jsdoc-link">dojox/gantt/GanttProjectControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttProjectControl_deleteChildTask"></a><span class="functionIcon">deleteChildTask</span><span class="parameters">(task)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttProjectControl" class="jsdoc-link">dojox/gantt/GanttProjectControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">task</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttProjectControl_deleteTask"></a><span class="functionIcon">deleteTask</span><span class="parameters">(id)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttProjectControl" class="jsdoc-link">dojox/gantt/GanttProjectControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">id</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttProjectControl_getDescStr"></a><span class="functionIcon">getDescStr</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttProjectControl" class="jsdoc-link">dojox/gantt/GanttProjectControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">string</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttProjectControl_getDuration"></a><span class="functionIcon">getDuration</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttProjectControl" class="jsdoc-link">dojox/gantt/GanttProjectControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">number</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttProjectControl_getPercentCompleted"></a><span class="functionIcon">getPercentCompleted</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttProjectControl" class="jsdoc-link">dojox/gantt/GanttProjectControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined | number</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttProjectControl_getTaskById"></a><span class="functionIcon">getTaskById</span><span class="parameters">(id)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttProjectControl" class="jsdoc-link">dojox/gantt/GanttProjectControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">id</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined | null</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttProjectControl_hideDescrProject"></a><span class="functionIcon">hideDescrProject</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttProjectControl" class="jsdoc-link">dojox/gantt/GanttProjectControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttProjectControl_insertTask"></a><span class="functionIcon">insertTask</span><span class="parameters">(id, name, startTime, duration, percentage, previousTaskId, taskOwner, parentTaskId)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttProjectControl" class="jsdoc-link">dojox/gantt/GanttProjectControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">id</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">name</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">startTime</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">duration</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">percentage</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">previousTaskId</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">taskOwner</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">parentTaskId</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean | instance</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttProjectControl_postLoadData"></a><span class="functionIcon">postLoadData</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttProjectControl" class="jsdoc-link">dojox/gantt/GanttProjectControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttProjectControl_refresh"></a><span class="functionIcon">refresh</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttProjectControl" class="jsdoc-link">dojox/gantt/GanttProjectControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">function</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttProjectControl_refreshDescrProject"></a><span class="functionIcon">refreshDescrProject</span><span class="parameters">(divDesc)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttProjectControl" class="jsdoc-link">dojox/gantt/GanttProjectControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">divDesc</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttProjectControl_refreshProjectItem"></a><span class="functionIcon">refreshProjectItem</span><span class="parameters">(projectItem)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttProjectControl" class="jsdoc-link">dojox/gantt/GanttProjectControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">projectItem</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttProjectControl_resizeProjectItem"></a><span class="functionIcon">resizeProjectItem</span><span class="parameters">(width)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttProjectControl" class="jsdoc-link">dojox/gantt/GanttProjectControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">width</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttProjectControl_searchTaskInTree"></a><span class="functionIcon">searchTaskInTree</span><span class="parameters">(task, id)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttProjectControl" class="jsdoc-link">dojox/gantt/GanttProjectControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">task</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">id</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined | null</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttProjectControl_setName"></a><span class="functionIcon">setName</span><span class="parameters">(name)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttProjectControl" class="jsdoc-link">dojox/gantt/GanttProjectControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">name</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttProjectControl_setPercentCompleted"></a><span class="functionIcon">setPercentCompleted</span><span class="parameters">(percentage)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttProjectControl" class="jsdoc-link">dojox/gantt/GanttProjectControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">percentage</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttProjectControl_shiftChildTasks"></a><span class="functionIcon">shiftChildTasks</span><span class="parameters">(task, height)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttProjectControl" class="jsdoc-link">dojox/gantt/GanttProjectControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">task</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">height</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttProjectControl_shiftDescrProject"></a><span class="functionIcon">shiftDescrProject</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttProjectControl" class="jsdoc-link">dojox/gantt/GanttProjectControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttProjectControl_shiftNextParentTask"></a><span class="functionIcon">shiftNextParentTask</span><span class="parameters">(task, height)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttProjectControl" class="jsdoc-link">dojox/gantt/GanttProjectControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">task</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">height</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttProjectControl_shiftNextProject"></a><span class="functionIcon">shiftNextProject</span><span class="parameters">(project, height)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttProjectControl" class="jsdoc-link">dojox/gantt/GanttProjectControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">project</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">height</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttProjectControl_shiftProject"></a><span class="functionIcon">shiftProject</span><span class="parameters">(height)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttProjectControl" class="jsdoc-link">dojox/gantt/GanttProjectControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">height</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttProjectControl_shiftProjectItem"></a><span class="functionIcon">shiftProjectItem</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttProjectControl" class="jsdoc-link">dojox/gantt/GanttProjectControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttProjectControl_shiftTask"></a><span class="functionIcon">shiftTask</span><span class="parameters">(task, height)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttProjectControl" class="jsdoc-link">dojox/gantt/GanttProjectControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">task</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">height</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttProjectControl_showDescrProject"></a><span class="functionIcon">showDescrProject</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttProjectControl" class="jsdoc-link">dojox/gantt/GanttProjectControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+    </div>
+  </div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/gantt/GanttProjectControl" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

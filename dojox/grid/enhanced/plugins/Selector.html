@@ -1,125 +1,1661 @@
-<div class="jsdoc-permalink" style="display:none;">/api/1.7/dojox/grid/enhanced/plugins/Selector</div><h1 class="jsdoc-title constructorIcon36">dojox.grid.enhanced.plugins.Selector <span style="font-size:11px;color:#999;">(version 1.7)</span></h1><div class="jsdoc-prototype">Object &raquo; <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/_Plugin">dojox.grid.enhanced._Plugin</a> &raquo; dojox.grid.enhanced.plugins.Selector</div><div class="jsdoc-require">dojo.require("dojox.grid.enhanced.plugins.Selector");</div><div class="jsdoc-prototype">Defined in dojox/grid/enhanced/plugins/Selector.js</div><div class="jsdoc-function-information"><h3>Usage:</h3><div class="function-signature"><span class="keyword">var</span> foo = new dojox.grid.enhanced.plugins.Selector(<span class="jsdoc-comment-type">/*  */</span> grid, <span class="jsdoc-comment-type">/*  */</span> args);</div></div><div class="jsdoc-full-summary"><p>Provides standard extended selection for grid.
+
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/grid/enhanced/plugins/Selector" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/grid/enhanced/plugins/Selector.html</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/grid/enhanced/plugins/Selector<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-mixins">
+  <label>Extends </label><a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a>
+</div>
+<div class="jsdoc-full-summary"><p>Provides standard extended selection for grid.
 Supports mouse/keyboard selection, multi-selection, and de-selection.
-Acceptable plugin parameters:
+
+</p>
+<p>Acceptable plugin parameters:
 The whole plugin parameter object is a config object passed to the setupConfig function.
-Acceptable cell parameters defined in layout:
-1. notselectable: boolean
-Whether this column is (and all the cells in it are) selectable.</p>
-</div><div class="jsdoc-children"><div class="jsdoc-field-list"><h2 class="jsdoc-summary-heading">Property Summary <span class="jsdoc-summary-toggle"></span></h2><div class="jsdoc-summary-list"><ul><li class="arrayIcon private inherited even"><a class="inline-link" href="#_connects">_connects</a> <span>List of all connections.</span></li><li class="objectIcon private inherited odd"><a class="inline-link" href="#_curType">_curType</a></li><li class="objectIcon private inherited even"><a class="inline-link" href="#_currentPoint">_currentPoint</a></li><li class="objectIcon private inherited odd"><a class="inline-link" href="#_enabled">_enabled</a></li><li class="objectIcon private inherited even"><a class="inline-link" href="#_isStartFocus">_isStartFocus</a></li><li class="objectIcon private inherited odd"><a class="inline-link" href="#_isUsingRowSelector">_isUsingRowSelector</a></li><li class="objectIcon private inherited even"><a class="inline-link" href="#_keyboardSelect">_keyboardSelect</a></li><li class="objectIcon private inherited odd"><a class="inline-link" href="#_lastAnchorPoint">_lastAnchorPoint</a></li><li class="objectIcon private inherited even"><a class="inline-link" href="#_lastEndPoint">_lastEndPoint</a></li><li class="numberIcon private inherited odd"><a class="inline-link" href="#_lastFocusedRowBarIdx">_lastFocusedRowBarIdx</a></li><li class="objectIcon private inherited even"><a class="inline-link" href="#_lastSelectedAnchorPoint">_lastSelectedAnchorPoint</a></li><li class="objectIcon private inherited odd"><a class="inline-link" href="#_lastSelectedEndPoint">_lastSelectedEndPoint</a></li><li class="objectIcon private inherited even"><a class="inline-link" href="#_lastType">_lastType</a></li><li class="objectIcon private inherited odd"><a class="inline-link" href="#_oldDeselectAll">_oldDeselectAll</a></li><li class="objectIcon private inherited even"><a class="inline-link" href="#_selected">_selected</a></li><li class="objectIcon private inherited odd"><a class="inline-link" href="#_selectedRowModified">_selectedRowModified</a></li><li class="objectIcon private inherited even"><a class="inline-link" href="#_selecting">_selecting</a></li><li class="objectIcon private inherited odd"><a class="inline-link" href="#_startPoint">_startPoint</a></li><li class="arrayIcon private inherited even"><a class="inline-link" href="#_subscribes">_subscribes</a> <span>List of all subscribes.</span></li><li class="objectIcon private inherited odd"><a class="inline-link" href="#_toSelect">_toSelect</a></li><li class="objectIcon public inherited even"><a class="inline-link" href="#grid">grid</a> <span>Grid that the plugin belongs to</span></li><li class="stringIcon public  odd"><a class="inline-link" href="#name">name</a> <span>Plugin name, e.g. 'nestedSorting', 'dnd'...</span></li><li class="objectIcon public inherited even"><a class="inline-link" href="#option">option</a> <span>Plugin properties - leveraged with default and user specified properties.
-	e.g. for dnd plugin, it may look like {&quot;class&quot;: dojox.grid.enhanced.plugins.DnD, &quot;dependency&quot;: [&quot;nestedSorting&quot;], ...}</span></li><li class="objectIcon public inherited odd"><a class="inline-link" href="#privates">privates</a> <span>Private properties/methods shouldn't be mixin-ed anytime.</span></li></ul></div><h2 class="jsdoc-summary-heading">Method Summary <span class="jsdoc-summary-toggle"></span></h2><div class="jsdoc-summary-list"><ul><li class="functionIcon private inherited even"><a class="inline-link" href="#_add">_add</a><span class="parameters">(type, items)</span> <span>Add to the selection record.</span></li><li class="functionIcon private inherited odd"><a class="inline-link" href="#_addCellException">_addCellException</a><span class="parameters">(type, items)</span> <span>If some cells are deselected, maybe they have created &quot;holes&quot; in selected rows/cols.</span></li><li class="functionIcon private inherited even"><a class="inline-link" href="#_addException">_addException</a><span class="parameters">(type, items)</span> <span>If some rows/cols are deselected, maybe they have created &quot;holes&quot; in selected cols/rows.</span></li><li class="functionIcon private inherited odd"><a class="inline-link" href="#_addToSelected">_addToSelected</a><span class="parameters">(type)</span> <span>Record the selected items.</span></li><li class="functionIcon private inherited even"><a class="inline-link" href="#_blurPoint">_blurPoint</a><span class="parameters">(type, point)</span> <span>Blur the current point.</span></li><li class="functionIcon private inherited odd"><a class="inline-link" href="#_calcToHighlight">_calcToHighlight</a><span class="parameters">(type, target, toHighlight, toSelect)</span> <span>Calculate what status should *target* have.
-	If *toSelect* is not provided, this is a no op.
-	This function is time-critical!!</span></li><li class="functionIcon private inherited even"><a class="inline-link" href="#_clearSelection">_clearSelection</a><span class="parameters">(type, reservedItem)</span> <span>Clear selection for given type and fire events, but retain the highlight for *reservedItem*,
-	thus avoid &quot;flashing&quot;.
-	tag:
-	private</span></li><li class="functionIcon private inherited odd"><a class="inline-link" href="#_endSelect">_endSelect</a><span class="parameters">(type)</span> <span>End selection. Keep records, fire events and cleanup status.
-	tag:
-	private</span></li><li class="functionIcon private inherited even"><a class="inline-link" href="#_fireEvent">_fireEvent</a><span class="parameters">(evtName, type)</span></li><li class="functionIcon private inherited odd"><a class="inline-link" href="#_focusPoint">_focusPoint</a><span class="parameters">(type, point)</span> <span>Focus the current point, so when you move mouse, the focus indicator follows you.</span></li><li class="functionIcon private inherited even"><a class="inline-link" href="#_forEach">_forEach</a><span class="parameters">(type, start, end, func, halfClose)</span> <span>Go through items from *start* point to *end* point.
-	This function is time critical!!</span></li><li class="functionIcon private inherited odd"><a class="inline-link" href="#_hacks">_hacks</a><span class="parameters">()</span> <span>Complete the event system of grid, hack some grid functions to prevent default behavior.</span></li><li class="functionIcon private inherited even"><a class="inline-link" href="#_highlight">_highlight</a><span class="parameters">(type, target, toSelect)</span> <span>Highlight from start point to target.</span></li><li class="functionIcon private inherited odd"><a class="inline-link" href="#_highlightHeader">_highlightHeader</a><span class="parameters">(colIdx, toHighlight)</span></li><li class="functionIcon private inherited even"><a class="inline-link" href="#_highlightNode">_highlightNode</a><span class="parameters">(node, toHighlight)</span> <span>Do the actual highlight work.</span></li><li class="functionIcon private inherited odd"><a class="inline-link" href="#_highlightRowSelector">_highlightRowSelector</a><span class="parameters">(rowIdx, toHighlight)</span></li><li class="functionIcon private inherited even"><a class="inline-link" href="#_highlightSingle">_highlightSingle</a><span class="parameters">(type, toHighlight, target, toSelect, isRefresh)</span> <span>Highlight a single item.
-	This function is time critical!!</span></li><li class="functionIcon private inherited odd"><a class="inline-link" href="#_initAreas">_initAreas</a><span class="parameters">()</span></li><li class="functionIcon private inherited even"><a class="inline-link" href="#_initEvents">_initEvents</a><span class="parameters">()</span> <span>Connect events, create event handlers.</span></li><li class="functionIcon private inherited odd"><a class="inline-link" href="#_isCellNotInExcept">_isCellNotInExcept</a><span class="parameters">(type, item)</span> <span>Return true only when a cell is covered by selected row/col, and its not a &quot;hole&quot;.</span></li><li class="functionIcon private inherited even"><a class="inline-link" href="#_isInLastRange">_isInLastRange</a><span class="parameters">(type, item, isSelected)</span> <span>Return true only when the item is in the last seletion/deseletion range.</span></li><li class="functionIcon private inherited odd"><a class="inline-link" href="#_isSelected">_isSelected</a><span class="parameters">(type, item)</span> <span>Return true when the item is selected. (or logically selected, i.e, covered by a row/col).</span></li><li class="functionIcon private inherited even"><a class="inline-link" href="#_isValid">_isValid</a><span class="parameters">(type, item, allowNotSelectable)</span> <span>Check whether the item is a valid __SelectItem for the given type.</span></li><li class="functionIcon private inherited odd"><a class="inline-link" href="#_makeupForCells">_makeupForCells</a><span class="parameters">(type, newItems)</span> <span>When some rows/cols are selected, maybe they can cover some of the selected cells,
-	and fill some of the &quot;holes&quot; in the selected cols/rows.</span></li><li class="functionIcon private inherited even"><a class="inline-link" href="#_makeupForExceptions">_makeupForExceptions</a><span class="parameters">(type, newCellItems)</span> <span>When new cells is selected, maybe they will fill in the &quot;holes&quot; in selected rows and columns.</span></li><li class="functionIcon private inherited odd"><a class="inline-link" href="#_mixinGrid">_mixinGrid</a><span class="parameters">()</span> <span>Expose events to grid.</span></li><li class="functionIcon private inherited even"><a class="inline-link" href="#_refresh">_refresh</a><span class="parameters">(type, toHighlight)</span></li><li class="functionIcon private inherited odd"><a class="inline-link" href="#_refreshSelected">_refreshSelected</a><span class="parameters">()</span></li><li class="functionIcon private inherited even"><a class="inline-link" href="#_remove">_remove</a><span class="parameters">(type, items)</span> <span>Remove from the selection record.</span></li><li class="functionIcon private inherited odd"><a class="inline-link" href="#_startSelect">_startSelect</a><span class="parameters">(type, start, extending, isRange, mandatarySelect, toSelect)</span> <span>Start selection, setup start point and current point, fire events.
-	tag:
-	private</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#clear">clear</a><span class="parameters">(type)</span> <span>Clear all selections.
-	tag:
-	public</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#connect">connect</a><span class="parameters">(obj, event, method)</span> <span>Connects specified obj/event to specified method of this object.</span></li><li class="functionIcon public  even"><a class="inline-link" href="#constructor">constructor</a><span class="parameters">(grid, args)</span><span class="jsdoc-returns"> returns dojox.grid.enhanced.plugins.Selector</span> <span>A reference to the constructor function for this object.</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#deselect">deselect</a><span class="parameters">(type, rowIndex, colIndex)</span></li><li class="functionIcon public  even"><a class="inline-link" href="#destroy">destroy</a><span class="parameters">()</span> <span>Destroy all resources.</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#disconnect">disconnect</a><span class="parameters">(handle)</span> <span>Disconnects handle and removes it from connection list.</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#getLastSelectedRange">getLastSelectedRange</a><span class="parameters">(type)</span> <span>Get last selected range of the given type.
-	tag:
-	public
-	return: Object
-	{start: __SelectItem, end: __SelectItem}
-	return null if nothing is selected.</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#getSelected">getSelected</a><span class="parameters">(type, includeExceptions)</span> <span>Get an array of selected locations.
-	tag:
-	public</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#getSelectedCount">getSelectedCount</a><span class="parameters">(type, includeExceptions)</span> <span>Get the number of selected items.
-	tag:
-	public</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#getSelectedType">getSelectedType</a><span class="parameters">()</span> <span>Get the type of selected items.
-	tag:
-	public
-	return: String
-	&quot;row&quot; or &quot;col&quot; or &quot;cell&quot;, or any mix of these (separator is | ).</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#init">init</a><span class="parameters">()</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#isSelected">isSelected</a><span class="parameters">(type, rowIndex, colIndex)</span> <span>Check whether a location (a cell, a column or a row) is selected.
-	tag:
-	public</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#isSelecting">isSelecting</a><span class="parameters">(type)</span> <span>Check whether the user is currently selecting something.
-	tag:
-	public</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#select">select</a><span class="parameters">(type, rowIndex, colIndex)</span> <span>Select a location (a cell, a column or a row).
-	tag:
-	public</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#selectEnabled">selectEnabled</a><span class="parameters">(toEnable)</span> <span>Turn on/off this selection functionality if *toEnable* is provided.
-	Check whether this selection functionality is enabled if nothing is passed in.
-	tag:
-	public</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#selectRange">selectRange</a><span class="parameters">(type, start, end, toSelect)</span> <span>Select a continuous range (a block of cells, a set of continuous columns or rows)
-	tag:
-	public</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#setupConfig">setupConfig</a><span class="parameters">(config)</span> <span>Set selection mode for row/col/cell.</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#subscribe">subscribe</a><span class="parameters">(topic, method)</span> <span>Subscribes to the specified topic and calls the specified method
-	of this object.</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#toggleSelect">toggleSelect</a><span class="parameters">(type, rowIndex, colIndex)</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#unsubscribe">unsubscribe</a><span class="parameters">(handle)</span> <span>Un-subscribes handle and removes it from subscriptions list.</span></li></ul></div><h2 class="jsdoc-summary-heading">Event Summary <span class="jsdoc-summary-toggle"></span></h2><div class="jsdoc-summary-list"><ul><li class="functionIcon private inherited even"><a class="inline-link" href="#_onExternalChange">_onExternalChange</a><span class="parameters">(type, target)</span></li><li class="functionIcon private inherited odd"><a class="inline-link" href="#_onInternalRearrange">_onInternalRearrange</a><span class="parameters">(type, mapping)</span></li><li class="functionIcon private inherited even"><a class="inline-link" href="#_onSelectedById">_onSelectedById</a><span class="parameters">(id, newIndex, isSelected)</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#onPostInit">onPostInit</a><span class="parameters">()</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#onPreInit">onPreInit</a><span class="parameters">()</span></li><li class="functionIcon public  odd"><a class="inline-link" href="#onSetStore">onSetStore</a><span class="parameters">(store)</span> <span>Called when store is changed.</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#onStartUp">onStartUp</a><span class="parameters">()</span></li></ul></div><h2 class="jsdoc-summary-heading">Attached Objects <span class="jsdoc-summary-toggle"></span></h2><div class="jsdoc-summary-list"><div class="jsdoc-field"><div class="jsdoc-title"><span class="object"><a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector/grid">dojox.grid.enhanced.plugins.Selector.grid</a></span></div></div><div class="jsdoc-field"><div class="jsdoc-title"><span class="object"><a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector/grid/selection">dojox.grid.enhanced.plugins.Selector.grid.selection</a></span></div></div><div class="jsdoc-field"><div class="jsdoc-title"><span class="object"><a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector/grid/views/views">dojox.grid.enhanced.plugins.Selector.grid.views.views</a></span></div></div><div class="jsdoc-field"><div class="jsdoc-title"><span class="object"><a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector/grid/views/views/0">dojox.grid.enhanced.plugins.Selector.grid.views.views.0</a></span></div></div><div class="jsdoc-field"><div class="jsdoc-title"><span class="object"><a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector/grid/layout">dojox.grid.enhanced.plugins.Selector.grid.layout</a></span></div></div><div class="jsdoc-field"><div class="jsdoc-title"><span class="object"><a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector/grid/focus">dojox.grid.enhanced.plugins.Selector.grid.focus</a></span></div></div><div class="jsdoc-field"><div class="jsdoc-title"><span class="object"><a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector/_config">dojox.grid.enhanced.plugins.Selector._config</a></span></div></div></div></div></div><div class="jsdoc-children"><div class="jsdoc-fields"><h2>Properties</h2><div class="jsdoc-field private inherited even"><div class="jsdoc-title"><a name="_connects"></a><span class="arrayIcon">_connects</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/_Plugin">dojox.grid.enhanced._Plugin</a></div><div class="jsdoc-summary">List of all connections.</div></div><div class="jsdoc-field private inherited odd"><div class="jsdoc-title"><a name="_curType"></a><span class="objectIcon">_curType</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div></div><div class="jsdoc-field private inherited even"><div class="jsdoc-title"><a name="_currentPoint"></a><span class="objectIcon">_currentPoint</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div></div><div class="jsdoc-field private inherited odd"><div class="jsdoc-title"><a name="_enabled"></a><span class="objectIcon">_enabled</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div></div><div class="jsdoc-field private inherited even"><div class="jsdoc-title"><a name="_isStartFocus"></a><span class="objectIcon">_isStartFocus</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div></div><div class="jsdoc-field private inherited odd"><div class="jsdoc-title"><a name="_isUsingRowSelector"></a><span class="objectIcon">_isUsingRowSelector</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div></div><div class="jsdoc-field private inherited even"><div class="jsdoc-title"><a name="_keyboardSelect"></a><span class="objectIcon">_keyboardSelect</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div></div><div class="jsdoc-field private inherited odd"><div class="jsdoc-title"><a name="_lastAnchorPoint"></a><span class="objectIcon">_lastAnchorPoint</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div></div><div class="jsdoc-field private inherited even"><div class="jsdoc-title"><a name="_lastEndPoint"></a><span class="objectIcon">_lastEndPoint</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div></div><div class="jsdoc-field private inherited odd"><div class="jsdoc-title"><a name="_lastFocusedRowBarIdx"></a><span class="numberIcon">_lastFocusedRowBarIdx</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div></div><div class="jsdoc-field private inherited even"><div class="jsdoc-title"><a name="_lastSelectedAnchorPoint"></a><span class="objectIcon">_lastSelectedAnchorPoint</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div></div><div class="jsdoc-field private inherited odd"><div class="jsdoc-title"><a name="_lastSelectedEndPoint"></a><span class="objectIcon">_lastSelectedEndPoint</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div></div><div class="jsdoc-field private inherited even"><div class="jsdoc-title"><a name="_lastType"></a><span class="objectIcon">_lastType</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div></div><div class="jsdoc-field private inherited odd"><div class="jsdoc-title"><a name="_oldDeselectAll"></a><span class="objectIcon">_oldDeselectAll</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div></div><div class="jsdoc-field private inherited even"><div class="jsdoc-title"><a name="_selected"></a><span class="objectIcon">_selected</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div></div><div class="jsdoc-field private inherited odd"><div class="jsdoc-title"><a name="_selectedRowModified"></a><span class="objectIcon">_selectedRowModified</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div></div><div class="jsdoc-field private inherited even"><div class="jsdoc-title"><a name="_selecting"></a><span class="objectIcon">_selecting</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div></div><div class="jsdoc-field private inherited odd"><div class="jsdoc-title"><a name="_startPoint"></a><span class="objectIcon">_startPoint</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div></div><div class="jsdoc-field private inherited even"><div class="jsdoc-title"><a name="_subscribes"></a><span class="arrayIcon">_subscribes</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/_Plugin">dojox.grid.enhanced._Plugin</a></div><div class="jsdoc-summary">List of all subscribes.</div></div><div class="jsdoc-field private inherited odd"><div class="jsdoc-title"><a name="_toSelect"></a><span class="objectIcon">_toSelect</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="grid"></a><span class="objectIcon">grid</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/_Plugin">dojox.grid.enhanced._Plugin</a></div><div class="jsdoc-summary">Grid that the plugin belongs to</div></div><div class="jsdoc-field public  odd"><div class="jsdoc-title"><a name="name"></a><span class="stringIcon">name</span></div><div class="jsdoc-inheritance">Overrides <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/_Plugin">dojox.grid.enhanced._Plugin</a></div><div class="jsdoc-summary">Plugin name, e.g. 'nestedSorting', 'dnd'...</div></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="option"></a><span class="objectIcon">option</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/_Plugin">dojox.grid.enhanced._Plugin</a></div><div class="jsdoc-summary">Plugin properties - leveraged with default and user specified properties.
-	e.g. for dnd plugin, it may look like {&quot;class&quot;: dojox.grid.enhanced.plugins.DnD, &quot;dependency&quot;: [&quot;nestedSorting&quot;], ...}</div></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="privates"></a><span class="objectIcon">privates</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/_Plugin">dojox.grid.enhanced._Plugin</a></div><div class="jsdoc-summary">Private properties/methods shouldn't be mixin-ed anytime.</div></div><h2>Methods</h2><div class="jsdoc-field private inherited even"><div class="jsdoc-title"><a name="_add"></a><span class="functionIcon">_add</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><div class="jsdoc-summary">Add to the selection record.</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">type</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">items</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field private inherited odd"><div class="jsdoc-title"><a name="_addCellException"></a><span class="functionIcon">_addCellException</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><div class="jsdoc-summary">If some cells are deselected, maybe they have created &quot;holes&quot; in selected rows/cols.</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">type</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">items</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field private inherited even"><div class="jsdoc-title"><a name="_addException"></a><span class="functionIcon">_addException</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><div class="jsdoc-summary">If some rows/cols are deselected, maybe they have created &quot;holes&quot; in selected cols/rows.</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">type</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">items</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field private inherited odd"><div class="jsdoc-title"><a name="_addToSelected"></a><span class="functionIcon">_addToSelected</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><div class="jsdoc-summary">Record the selected items.</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">type</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field private inherited even"><div class="jsdoc-title"><a name="_blurPoint"></a><span class="functionIcon">_blurPoint</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><div class="jsdoc-summary">Blur the current point.</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">type</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">point</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field private inherited odd"><div class="jsdoc-title"><a name="_calcToHighlight"></a><span class="functionIcon">_calcToHighlight</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><div class="jsdoc-summary">Calculate what status should *target* have.
-	If *toSelect* is not provided, this is a no op.
-	This function is time-critical!!</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">type</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">target</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">toHighlight</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">toSelect</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field private inherited even"><div class="jsdoc-title"><a name="_clearSelection"></a><span class="functionIcon">_clearSelection</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><div class="jsdoc-summary">Clear selection for given type and fire events, but retain the highlight for *reservedItem*,
-	thus avoid &quot;flashing&quot;.
-	tag:
-	private</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">type</td><td class="jsdoc-param-type">String</td><td class="jsdoc-param-description">&quot;row&quot;, &quot;col&quot;, or &quot;cell</td></tr><tr><td class="jsdoc-param-name">reservedItem</td><td class="jsdoc-param-type">Object</td><td class="jsdoc-param-description">The item to retain highlight.</td></tr></table></div><div class="jsdoc-field private inherited odd"><div class="jsdoc-title"><a name="_endSelect"></a><span class="functionIcon">_endSelect</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><div class="jsdoc-summary">End selection. Keep records, fire events and cleanup status.
-	tag:
-	private</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">type</td><td class="jsdoc-param-type">String</td><td class="jsdoc-param-description">&quot;row&quot;, &quot;col&quot;, or &quot;cell&quot;</td></tr></table></div><div class="jsdoc-field private inherited even"><div class="jsdoc-title"><a name="_fireEvent"></a><span class="functionIcon">_fireEvent</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">evtName</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">type</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field private inherited odd"><div class="jsdoc-title"><a name="_focusPoint"></a><span class="functionIcon">_focusPoint</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><div class="jsdoc-summary">Focus the current point, so when you move mouse, the focus indicator follows you.</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">type</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">point</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field private inherited even"><div class="jsdoc-title"><a name="_forEach"></a><span class="functionIcon">_forEach</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><div class="jsdoc-summary">Go through items from *start* point to *end* point.
-	This function is time critical!!</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">type</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">start</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">end</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">func</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">halfClose</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field private inherited odd"><div class="jsdoc-title"><a name="_hacks"></a><span class="functionIcon">_hacks</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><div class="jsdoc-summary">Complete the event system of grid, hack some grid functions to prevent default behavior.</div></div><div class="jsdoc-field private inherited even"><div class="jsdoc-title"><a name="_highlight"></a><span class="functionIcon">_highlight</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><div class="jsdoc-summary">Highlight from start point to target.</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">type</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">target</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">toSelect</td><td class="jsdoc-param-type">Boolean</td><td class="jsdoc-param-description">Whether we are selecting or deselecting.
-	This function is time critical!!</td></tr></table></div><div class="jsdoc-field private inherited odd"><div class="jsdoc-title"><a name="_highlightHeader"></a><span class="functionIcon">_highlightHeader</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">colIdx</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">toHighlight</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field private inherited even"><div class="jsdoc-title"><a name="_highlightNode"></a><span class="functionIcon">_highlightNode</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><div class="jsdoc-summary">Do the actual highlight work.</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">node</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">toHighlight</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field private inherited odd"><div class="jsdoc-title"><a name="_highlightRowSelector"></a><span class="functionIcon">_highlightRowSelector</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">rowIdx</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">toHighlight</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field private inherited even"><div class="jsdoc-title"><a name="_highlightSingle"></a><span class="functionIcon">_highlightSingle</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><div class="jsdoc-summary">Highlight a single item.
-	This function is time critical!!</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">type</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">toHighlight</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">target</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">toSelect</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">isRefresh</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field private inherited odd"><div class="jsdoc-title"><a name="_initAreas"></a><span class="functionIcon">_initAreas</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div></div><div class="jsdoc-field private inherited even"><div class="jsdoc-title"><a name="_initEvents"></a><span class="functionIcon">_initEvents</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><div class="jsdoc-summary">Connect events, create event handlers.</div></div><div class="jsdoc-field private inherited odd"><div class="jsdoc-title"><a name="_isCellNotInExcept"></a><span class="functionIcon">_isCellNotInExcept</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><div class="jsdoc-summary">Return true only when a cell is covered by selected row/col, and its not a &quot;hole&quot;.</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">type</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">item</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field private inherited even"><div class="jsdoc-title"><a name="_isInLastRange"></a><span class="functionIcon">_isInLastRange</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><div class="jsdoc-summary">Return true only when the item is in the last seletion/deseletion range.</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">type</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">item</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">isSelected</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field private inherited odd"><div class="jsdoc-title"><a name="_isSelected"></a><span class="functionIcon">_isSelected</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><div class="jsdoc-summary">Return true when the item is selected. (or logically selected, i.e, covered by a row/col).</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">type</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">item</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field private inherited even"><div class="jsdoc-title"><a name="_isValid"></a><span class="functionIcon">_isValid</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><div class="jsdoc-summary">Check whether the item is a valid __SelectItem for the given type.</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">type</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">item</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">allowNotSelectable</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field private inherited odd"><div class="jsdoc-title"><a name="_makeupForCells"></a><span class="functionIcon">_makeupForCells</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><div class="jsdoc-summary">When some rows/cols are selected, maybe they can cover some of the selected cells,
-	and fill some of the &quot;holes&quot; in the selected cols/rows.</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">type</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">newItems</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field private inherited even"><div class="jsdoc-title"><a name="_makeupForExceptions"></a><span class="functionIcon">_makeupForExceptions</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><div class="jsdoc-summary">When new cells is selected, maybe they will fill in the &quot;holes&quot; in selected rows and columns.</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">type</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">newCellItems</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field private inherited odd"><div class="jsdoc-title"><a name="_mixinGrid"></a><span class="functionIcon">_mixinGrid</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><div class="jsdoc-summary">Expose events to grid.</div></div><div class="jsdoc-field private inherited even"><div class="jsdoc-title"><a name="_refresh"></a><span class="functionIcon">_refresh</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">type</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">toHighlight</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field private inherited odd"><div class="jsdoc-title"><a name="_refreshSelected"></a><span class="functionIcon">_refreshSelected</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div></div><div class="jsdoc-field private inherited even"><div class="jsdoc-title"><a name="_remove"></a><span class="functionIcon">_remove</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><div class="jsdoc-summary">Remove from the selection record.</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">type</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">items</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field private inherited odd"><div class="jsdoc-title"><a name="_startSelect"></a><span class="functionIcon">_startSelect</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><div class="jsdoc-summary">Start selection, setup start point and current point, fire events.
-	tag:
-	private</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">type</td><td class="jsdoc-param-type">String</td><td class="jsdoc-param-description">&quot;row&quot;, &quot;col&quot;, or &quot;cell&quot;</td></tr><tr><td class="jsdoc-param-name">start</td><td class="jsdoc-param-type">Object</td><td class="jsdoc-param-description">The start point</td></tr><tr><td class="jsdoc-param-name">extending</td><td class="jsdoc-param-type">Boolean</td><td class="jsdoc-param-description">Whether this is a multi selection</td></tr><tr><td class="jsdoc-param-name">isRange</td><td class="jsdoc-param-type">Boolean</td><td class="jsdoc-param-description">Whether this is a range selection (i.e. select from the last end point to this point)</td></tr><tr><td class="jsdoc-param-name">mandatarySelect</td><td class="jsdoc-param-type">Boolean</td><td class="jsdoc-param-description">If true, toSelect will be same as the original selection status.</td></tr><tr><td class="jsdoc-param-name">toSelect</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="clear"></a><span class="functionIcon">clear</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><div class="jsdoc-summary">Clear all selections.
-	tag:
-	public</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">type</td><td class="jsdoc-param-type">String</td><td class="jsdoc-param-description"><div><em>Optional.</em></div>&quot;row&quot; or &quot;col&quot; or &quot;cell&quot;. If omitted, clear all.</td></tr></table></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="connect"></a><span class="functionIcon">connect</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/_Plugin">dojox.grid.enhanced._Plugin</a></div><div class="jsdoc-summary">Connects specified obj/event to specified method of this object.</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">obj</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">event</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">method</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table><div class="jsdoc-examples"><div class="jsdoc-example"><div><strong>Example 1</strong></div>
-<pre class="brush: js;" lang="javascript">
-	var plugin = new dojox.grid.enhanced._Plugin(grid,&quot;myPlugin&quot;,{...});
-	// when foo.bar() is called, call the listener in the scope of plugin
-	plugin.connect(foo, &quot;bar&quot;, function(){
-		console.debug(this.xxx());//&quot;this&quot; - plugin scope
-	});
-</pre></div></div></div><div class="jsdoc-field public  even"><div class="jsdoc-title"><a name="constructor"></a><span class="functionIcon">constructor</span></div><div class="jsdoc-inheritance">Overrides <a class="jsdoc-link" href="/api/1.7/Object">Object</a>, <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/_Plugin">dojox.grid.enhanced._Plugin</a></div><div class="jsdoc-return-type">Returns <strong>dojox.grid.enhanced.plugins.Selector</strong></div><div class="jsdoc-summary">A reference to the constructor function for this object.</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">grid</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">args</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="deselect"></a><span class="functionIcon">deselect</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">type</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">rowIndex</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">colIndex</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field public  even"><div class="jsdoc-title"><a name="destroy"></a><span class="functionIcon">destroy</span></div><div class="jsdoc-inheritance">Overrides <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/_Plugin">dojox.grid.enhanced._Plugin</a></div><div class="jsdoc-summary">Destroy all resources.</div></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="disconnect"></a><span class="functionIcon">disconnect</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/_Plugin">dojox.grid.enhanced._Plugin</a></div><div class="jsdoc-summary">Disconnects handle and removes it from connection list.</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">handle</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="getLastSelectedRange"></a><span class="functionIcon">getLastSelectedRange</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><div class="jsdoc-summary">Get last selected range of the given type.
-	tag:
-	public
-	return: Object
-	{start: __SelectItem, end: __SelectItem}
-	return null if nothing is selected.</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">type</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="getSelected"></a><span class="functionIcon">getSelected</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><div class="jsdoc-summary">Get an array of selected locations.
-	tag:
-	public</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">type</td><td class="jsdoc-param-type">String</td><td class="jsdoc-param-description">&quot;row&quot; or &quot;col&quot; or &quot;cell&quot;</td></tr><tr><td class="jsdoc-param-name">includeExceptions</td><td class="jsdoc-param-type">Boolean</td><td class="jsdoc-param-description">Only meaningful for rows/columns. If true, all selected rows/cols, even they are partly selected, are all returned.
-	return: __SelectItem[]</td></tr></table></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="getSelectedCount"></a><span class="functionIcon">getSelectedCount</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><div class="jsdoc-summary">Get the number of selected items.
-	tag:
-	public</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">type</td><td class="jsdoc-param-type">String</td><td class="jsdoc-param-description">&quot;row&quot; or &quot;col&quot; or &quot;cell&quot;</td></tr><tr><td class="jsdoc-param-name">includeExceptions</td><td class="jsdoc-param-type">Boolean</td><td class="jsdoc-param-description">Only meaningful for rows/columns. If true, all selected rows/cols, even they are partly selected, are all returned.
-	return: Integer
-	The number of selected items.</td></tr></table></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="getSelectedType"></a><span class="functionIcon">getSelectedType</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><div class="jsdoc-summary">Get the type of selected items.
-	tag:
-	public
-	return: String
-	&quot;row&quot; or &quot;col&quot; or &quot;cell&quot;, or any mix of these (separator is | ).</div></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="init"></a><span class="functionIcon">init</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/_Plugin">dojox.grid.enhanced._Plugin</a></div></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="isSelected"></a><span class="functionIcon">isSelected</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><div class="jsdoc-summary">Check whether a location (a cell, a column or a row) is selected.
-	tag:
-	public</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">type</td><td class="jsdoc-param-type">String</td><td class="jsdoc-param-description">&quot;row&quot; or &quot;col&quot; or &quot;cell&quot;</td></tr><tr><td class="jsdoc-param-name">rowIndex</td><td class="jsdoc-param-type">Integer</td><td class="jsdoc-param-description">If type is &quot;row&quot; or &quot;cell&quot;, this is the row index.
-	If type if &quot;col&quot;, this is the column index.</td></tr><tr><td class="jsdoc-param-name">colIndex</td><td class="jsdoc-param-type">Integer</td><td class="jsdoc-param-description"><div><em>Optional.</em></div>Only valid when type is &quot;cell&quot;
-	return: Boolean
-	true if selected, false if not. If cell is covered by a selected column, it's selected.</td></tr></table></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="isSelecting"></a><span class="functionIcon">isSelecting</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><div class="jsdoc-summary">Check whether the user is currently selecting something.
-	tag:
-	public</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">type</td><td class="jsdoc-param-type">String</td><td class="jsdoc-param-description">&quot;row&quot; or &quot;col&quot; or &quot;cell&quot;
-	return: Boolean
-	true if is selection, false otherwise.</td></tr></table></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="select"></a><span class="functionIcon">select</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><div class="jsdoc-summary">Select a location (a cell, a column or a row).
-	tag:
-	public</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">type</td><td class="jsdoc-param-type">String</td><td class="jsdoc-param-description">&quot;row&quot; or &quot;col&quot; or &quot;cell&quot;</td></tr><tr><td class="jsdoc-param-name">rowIndex</td><td class="jsdoc-param-type">Integer</td><td class="jsdoc-param-description">If type is &quot;row&quot; or &quot;cell&quot;, this is the row index.
-	If type if &quot;col&quot;, this is the column index.</td></tr><tr><td class="jsdoc-param-name">colIndex</td><td class="jsdoc-param-type">Integer</td><td class="jsdoc-param-description"><div><em>Optional.</em></div>Only valid when type is &quot;cell&quot;</td></tr></table></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="selectEnabled"></a><span class="functionIcon">selectEnabled</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><div class="jsdoc-summary">Turn on/off this selection functionality if *toEnable* is provided.
-	Check whether this selection functionality is enabled if nothing is passed in.
-	tag:
-	public</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">toEnable</td><td class="jsdoc-param-type">Boolean</td><td class="jsdoc-param-description"><div><em>Optional.</em></div>To enable or not. Optional.
-	return: Boolean | undefined
-	Enabled or not.</td></tr></table></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="selectRange"></a><span class="functionIcon">selectRange</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><div class="jsdoc-summary">Select a continuous range (a block of cells, a set of continuous columns or rows)
-	tag:
-	public</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">type</td><td class="jsdoc-param-type">String</td><td class="jsdoc-param-description">&quot;row&quot; or &quot;col&quot; or &quot;cell&quot;</td></tr><tr><td class="jsdoc-param-name">start</td><td class="jsdoc-param-type">Integer</td><td class="jsdoc-param-description">| Object
-	If type is &quot;row&quot; or &quot;col&quot;, this is the index of the starting row or column.
-	If type if &quot;cell&quot;, this is the left-top cell of the range.</td></tr><tr><td class="jsdoc-param-name">end</td><td class="jsdoc-param-type">Integer</td><td class="jsdoc-param-description">| Object
-	If type is &quot;row&quot; or &quot;col&quot;, this is the index of the ending row or column.
-	If type if &quot;cell&quot;, this is the right-bottom cell of the range.</td></tr><tr><td class="jsdoc-param-name">toSelect</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="setupConfig"></a><span class="functionIcon">setupConfig</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><div class="jsdoc-summary">Set selection mode for row/col/cell.</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">config</td><td class="jsdoc-param-type">Object</td><td class="jsdoc-param-description">An object with the following structure (all properties are optional):
-	{
-	//Default is &quot;multi&quot;, all other values are same as &quot;multi&quot;.
-	row: false|&quot;disabled&quot;|&quot;single&quot;,
-	col: false|&quot;disabled&quot;|&quot;single&quot;,
-	cell: false|&quot;disabled&quot;|&quot;single&quot;
-	}</td></tr></table></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="subscribe"></a><span class="functionIcon">subscribe</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/_Plugin">dojox.grid.enhanced._Plugin</a></div><div class="jsdoc-summary">Subscribes to the specified topic and calls the specified method
-	of this object.</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">topic</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">method</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table><div class="jsdoc-examples"><div class="jsdoc-example"><div><strong>Example 1</strong></div>
-<pre class="brush: js;" lang="javascript">
-	var plugin = new dojox.grid.enhanced._Plugin(grid,&quot;myPlugin&quot;,{...});
-	// when /my/topic is published, call the subscriber in the scope of plugin
-	// with passed parameter - &quot;v&quot;
-	plugin.subscribe(&quot;/my/topic&quot;, function(v){
-		console.debug(this.xxx(v));//&quot;this&quot; - plugin scope
-	});
-</pre></div></div></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="toggleSelect"></a><span class="functionIcon">toggleSelect</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">type</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">rowIndex</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">colIndex</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="unsubscribe"></a><span class="functionIcon">unsubscribe</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/_Plugin">dojox.grid.enhanced._Plugin</a></div><div class="jsdoc-summary">Un-subscribes handle and removes it from subscriptions list.</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">handle</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><h2>Events</h2><div class="jsdoc-field private inherited even"><div class="jsdoc-title"><a name="_onExternalChange"></a><span class="functionIcon">_onExternalChange</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">type</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">target</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field private inherited odd"><div class="jsdoc-title"><a name="_onInternalRearrange"></a><span class="functionIcon">_onInternalRearrange</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">type</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">mapping</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field private inherited even"><div class="jsdoc-title"><a name="_onSelectedById"></a><span class="functionIcon">_onSelectedById</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/plugins/Selector">dojox.grid.enhanced.plugins.Selector</a></div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">id</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">newIndex</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">isSelected</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="onPostInit"></a><span class="functionIcon">onPostInit</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/_Plugin">dojox.grid.enhanced._Plugin</a></div></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="onPreInit"></a><span class="functionIcon">onPreInit</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/_Plugin">dojox.grid.enhanced._Plugin</a></div></div><div class="jsdoc-field public  odd"><div class="jsdoc-title"><a name="onSetStore"></a><span class="functionIcon">onSetStore</span></div><div class="jsdoc-inheritance">Overrides <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/_Plugin">dojox.grid.enhanced._Plugin</a></div><div class="jsdoc-summary">Called when store is changed.</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">store</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="onStartUp"></a><span class="functionIcon">onStartUp</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/enhanced/_Plugin">dojox.grid.enhanced._Plugin</a></div></div></div></div>
+
+</p>
+<p>Acceptable cell parameters defined in layout:
+
+</p>
+<ol>
+<li>notselectable: Boolean: Whether this column is (and all the cells in it are) selectable.</li>
+</ol>
+</div>
+<div class="jsdoc-function-information">
+  <h3>Usage:</h3>
+  <div class="function-signature"><span class="keyword">var</span> foo = new Selector<span class="parameters">(grid,args);</span></div>
+</div>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/grid/enhanced/plugins/Selector">dojox/grid/enhanced/plugins/Selector</a></div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">grid</td>
+    <td class="jsdoc-param-type">undefined</td>
+    <td class="jsdoc-param-description">
+    </td>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">args</td>
+    <td class="jsdoc-param-type">undefined</td>
+    <td class="jsdoc-param-description">
+    </td>
+  </tr>
+</table>
+<div class="jsdoc-children">
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="arrayIcon private inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector__connects" class="inline-link"> _connects </a><span>List of all connections.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="arrayIcon private inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector__subscribes" class="inline-link"> _subscribes </a><span>List of all subscribes.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector_grid" class="inline-link"> grid </a><span>Grid that the plugin belongs to</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector_name" class="inline-link"> name </a><span>plugin name</span><span title="inherited from dojox/grid/enhanced/plugins/Selector" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector_option" class="inline-link"> option </a><span>Plugin properties - leveraged with default and user specified properties.
+e.g. for dnd plugin, it may look like {&quot;class&quot;: dojox.grid.enhanced.plugins.DnD, &quot;dependency&quot;: [&quot;nestedSorting&quot;], ...}</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector_privates" class="inline-link"> privates </a><span>Private properties/methods shouldn&#39;t be mixin-ed anytime.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__add" class="inline-link"> _add</a><span class="parameters">(</span>type, items) <span>Add to the selection record.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__addCellException" class="inline-link"> _addCellException</a><span class="parameters">(</span>type, items) <span>If some cells are deselected, maybe they have created &quot;holes&quot; in selected rows/cols.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__addException" class="inline-link"> _addException</a><span class="parameters">(</span>type, items) <span>If some rows/cols are deselected, maybe they have created &quot;holes&quot; in selected cols/rows.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__addToSelected" class="inline-link"> _addToSelected</a><span class="parameters">(</span>type) <span>Record the selected items.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__blurPoint" class="inline-link"> _blurPoint</a><span class="parameters">(</span>type, point) <span>Blur the current point.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__calcToHighlight" class="inline-link"> _calcToHighlight</a><span class="parameters">(</span>type, target, toHighlight, toSelect) <span>Calculate what status should target have.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__clearSelection" class="inline-link"> _clearSelection</a><span class="parameters">(</span>type, reservedItem) <span>Clear selection for given type and fire events, but retain the highlight for reservedItem,
+thus avoid &quot;flashing&quot;.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__endSelect" class="inline-link"> _endSelect</a><span class="parameters">(</span>type) <span>End selection.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__fireEvent" class="inline-link"> _fireEvent</a><span class="parameters">(</span>evtName, type) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__focusPoint" class="inline-link"> _focusPoint</a><span class="parameters">(</span>type, point) <span>Focus the current point, so when you move mouse, the focus indicator follows you.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__forEach" class="inline-link"> _forEach</a><span class="parameters">(</span>type, start, end, func, halfClose) <span>Go through items from start point to end point.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__hacks" class="inline-link"> _hacks</a><span class="parameters">(</span>) <span>Complete the event system of grid, hack some grid functions to prevent default behavior.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__highlight" class="inline-link"> _highlight</a><span class="parameters">(</span>type, target, toSelect) <span>Highlight from start point to target.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__highlightHeader" class="inline-link"> _highlightHeader</a><span class="parameters">(</span>colIdx, toHighlight) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__highlightNode" class="inline-link"> _highlightNode</a><span class="parameters">(</span>node, toHighlight) <span>Do the actual highlight work.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__highlightRowSelector" class="inline-link"> _highlightRowSelector</a><span class="parameters">(</span>rowIdx, toHighlight) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__highlightSingle" class="inline-link"> _highlightSingle</a><span class="parameters">(</span>type, toHighlight, target, toSelect, isRefresh) <span>Highlight a single item.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__initAreas" class="inline-link"> _initAreas</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__initEvents" class="inline-link"> _initEvents</a><span class="parameters">(</span>) <span>Connect events, create event handlers.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__isCellNotInExcept" class="inline-link"> _isCellNotInExcept</a><span class="parameters">(</span>type, item) <span>Return true only when a cell is covered by selected row/col, and its not a &quot;hole&quot;.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__isInLastRange" class="inline-link"> _isInLastRange</a><span class="parameters">(</span>type, item, isSelected) <span>Return true only when the item is in the last seletion/deseletion range.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__isSelected" class="inline-link"> _isSelected</a><span class="parameters">(</span>type, item) <span>Return true when the item is selected. (or logically selected, i.e, covered by a row/col).</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__isValid" class="inline-link"> _isValid</a><span class="parameters">(</span>type, item, allowNotSelectable) <span>Check whether the item is a valid __SelectItem for the given type.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__makeupForCells" class="inline-link"> _makeupForCells</a><span class="parameters">(</span>type, newItems) <span>When some rows/cols are selected, maybe they can cover some of the selected cells,
+and fill some of the &quot;holes&quot; in the selected cols/rows.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__makeupForExceptions" class="inline-link"> _makeupForExceptions</a><span class="parameters">(</span>type, newCellItems) <span>When new cells is selected, maybe they will fill in the &quot;holes&quot; in selected rows and columns.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__mixinGrid" class="inline-link"> _mixinGrid</a><span class="parameters">(</span>) <span>Expose events to grid.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__refresh" class="inline-link"> _refresh</a><span class="parameters">(</span>type, toHighlight) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__refreshSelected" class="inline-link"> _refreshSelected</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__remove" class="inline-link"> _remove</a><span class="parameters">(</span>type, items) <span>Remove from the selection record.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__startSelect" class="inline-link"> _startSelect</a><span class="parameters">(</span>type, start, extending, isRange, mandatarySelect, toSelect) <span>Start selection, setup start point and current point, fire events.</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_clear" class="inline-link"> clear</a><span class="parameters">(</span>type) <span>Clear all selections.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector_connect" class="inline-link"> connect</a><span class="parameters">(</span>obj, event, method) <span>Connects specified obj/event to specified method of this object.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>grid, args) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_deselect" class="inline-link"> deselect</a><span class="parameters">(</span>type, rowIndex, colIndex) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>handle) <span>Disconnects handle and removes it from connection list.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_getLastSelectedRange" class="inline-link"> getLastSelectedRange</a><span class="parameters">(</span>type) <span>Get last selected range of the given type.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_getSelected" class="inline-link"> getSelected</a><span class="parameters">(</span>type, includeExceptions) <span>Get an array of selected locations.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_getSelectedCount" class="inline-link"> getSelectedCount</a><span class="parameters">(</span>type, includeExceptions) <span>Get the number of selected items.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_getSelectedType" class="inline-link"> getSelectedType</a><span class="parameters">(</span>) <span>Get the type of selected items.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector_init" class="inline-link"> init</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_isSelected" class="inline-link"> isSelected</a><span class="parameters">(</span>type, rowIndex, colIndex) <span>Check whether a location (a cell, a column or a row) is selected.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_isSelecting" class="inline-link"> isSelecting</a><span class="parameters">(</span>type) <span>Check whether the user is currently selecting something.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_select" class="inline-link"> select</a><span class="parameters">(</span>type, rowIndex, colIndex) <span>Select a location (a cell, a column or a row).</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_selectEnabled" class="inline-link"> selectEnabled</a><span class="parameters">(</span>toEnable) <span>Turn on/off this selection functionality if toEnable is provided.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_selectRange" class="inline-link"> selectRange</a><span class="parameters">(</span>type, start, end, toSelect) <span>Select a continuous range (a block of cells, a set of continuous columns or rows)</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_setupConfig" class="inline-link"> setupConfig</a><span class="parameters">(</span>config) <span>Set selection mode for row/col/cell.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector_subscribe" class="inline-link"> subscribe</a><span class="parameters">(</span>topic, method) <span>Subscribes to the specified topic and calls the specified method
+of this object.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_toggleSelect" class="inline-link"> toggleSelect</a><span class="parameters">(</span>type, rowIndex, colIndex) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector_unsubscribe" class="inline-link"> unsubscribe</a><span class="parameters">(</span>handle) <span>Un-subscribes handle and removes it from subscriptions list.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__onExternalChange" class="inline-link"> _onExternalChange</a><span class="parameters">(</span>type, target) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__onInternalRearrange" class="inline-link"> _onInternalRearrange</a><span class="parameters">(</span>type, mapping) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Selector__onSelectedById" class="inline-link"> _onSelectedById</a><span class="parameters">(</span>id, newIndex, isSelected) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector_onPostInit" class="inline-link"> onPostInit</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector_onPreInit" class="inline-link"> onPreInit</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Selector_onSetStore" class="inline-link"> onSetStore</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_Selector_onStartUp" class="inline-link"> onStartUp</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector__connects"></a><span class="arrayIcon">_connects</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>List of all connections.</p>
+</div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector__subscribes"></a><span class="arrayIcon">_subscribes</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>List of all subscribes.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector_grid"></a><span class="objectIcon">grid</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Grid that the plugin belongs to</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector_name"></a><span class="stringIcon">name</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>plugin name</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector_option"></a><span class="objectIcon">option</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Plugin properties - leveraged with default and user specified properties.
+e.g. for dnd plugin, it may look like {&quot;class&quot;: dojox.grid.enhanced.plugins.DnD, &quot;dependency&quot;: [&quot;nestedSorting&quot;], ...}</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector_privates"></a><span class="objectIcon">privates</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Private properties/methods shouldn&#39;t be mixin-ed anytime.</p>
+</div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector__add"></a><span class="functionIcon">_add</span><span class="parameters">(type, items)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Add to the selection record.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">items</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector__addCellException"></a><span class="functionIcon">_addCellException</span><span class="parameters">(type, items)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>If some cells are deselected, maybe they have created &quot;holes&quot; in selected rows/cols.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">items</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector__addException"></a><span class="functionIcon">_addException</span><span class="parameters">(type, items)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>If some rows/cols are deselected, maybe they have created &quot;holes&quot; in selected cols/rows.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">items</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector__addToSelected"></a><span class="functionIcon">_addToSelected</span><span class="parameters">(type)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Record the selected items.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector__blurPoint"></a><span class="functionIcon">_blurPoint</span><span class="parameters">(type, point)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Blur the current point.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">point</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector__calcToHighlight"></a><span class="functionIcon">_calcToHighlight</span><span class="parameters">(type, target, toHighlight, toSelect)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Calculate what status should <em>target</em> have.
+If <em>toSelect</em> is not provided, this is a no op.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">target</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">toHighlight</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">toSelect</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean | undefined</span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector__clearSelection"></a><span class="functionIcon">_clearSelection</span><span class="parameters">(type, reservedItem)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Clear selection for given type and fire events, but retain the highlight for <em>reservedItem</em>,
+thus avoid &quot;flashing&quot;.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>&quot;row&quot;, &quot;col&quot;, or &quot;cell</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">reservedItem</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description"><p>The item to retain highlight.</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector__endSelect"></a><span class="functionIcon">_endSelect</span><span class="parameters">(type)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>End selection. Keep records, fire events and cleanup status.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>&quot;row&quot;, &quot;col&quot;, or &quot;cell&quot;</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector__fireEvent"></a><span class="functionIcon">_fireEvent</span><span class="parameters">(evtName, type)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">evtName</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector__focusPoint"></a><span class="functionIcon">_focusPoint</span><span class="parameters">(type, point)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Focus the current point, so when you move mouse, the focus indicator follows you.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">point</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector__forEach"></a><span class="functionIcon">_forEach</span><span class="parameters">(type, start, end, func, halfClose)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Go through items from <em>start</em> point to <em>end</em> point.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">start</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">end</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">func</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">halfClose</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector__hacks"></a><span class="functionIcon">_hacks</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Complete the event system of grid, hack some grid functions to prevent default behavior.</p>
+</div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector__highlight"></a><span class="functionIcon">_highlight</span><span class="parameters">(type, target, toSelect)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Highlight from start point to target.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">target</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">toSelect</td>
+            <td class="jsdoc-param-type">Boolean</td>
+            <td class="jsdoc-param-description"><p>Whether we are selecting or deselecting.</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector__highlightHeader"></a><span class="functionIcon">_highlightHeader</span><span class="parameters">(colIdx, toHighlight)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">colIdx</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">toHighlight</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector__highlightNode"></a><span class="functionIcon">_highlightNode</span><span class="parameters">(node, toHighlight)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Do the actual highlight work.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">node</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">toHighlight</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector__highlightRowSelector"></a><span class="functionIcon">_highlightRowSelector</span><span class="parameters">(rowIdx, toHighlight)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">rowIdx</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">toHighlight</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector__highlightSingle"></a><span class="functionIcon">_highlightSingle</span><span class="parameters">(type, toHighlight, target, toSelect, isRefresh)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Highlight a single item.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">toHighlight</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">target</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">toSelect</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">isRefresh</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector__initAreas"></a><span class="functionIcon">_initAreas</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector__initEvents"></a><span class="functionIcon">_initEvents</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Connect events, create event handlers.</p>
+</div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector__isCellNotInExcept"></a><span class="functionIcon">_isCellNotInExcept</span><span class="parameters">(type, item)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Return true only when a cell is covered by selected row/col, and its not a &quot;hole&quot;.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">item</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector__isInLastRange"></a><span class="functionIcon">_isInLastRange</span><span class="parameters">(type, item, isSelected)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Return true only when the item is in the last seletion/deseletion range.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">item</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">isSelected</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean | undefined</span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector__isSelected"></a><span class="functionIcon">_isSelected</span><span class="parameters">(type, item)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Return true when the item is selected. (or logically selected, i.e, covered by a row/col).</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">item</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean | undefined</span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector__isValid"></a><span class="functionIcon">_isValid</span><span class="parameters">(type, item, allowNotSelectable)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Check whether the item is a valid __SelectItem for the given type.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">item</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">allowNotSelectable</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector__makeupForCells"></a><span class="functionIcon">_makeupForCells</span><span class="parameters">(type, newItems)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>When some rows/cols are selected, maybe they can cover some of the selected cells,
+and fill some of the &quot;holes&quot; in the selected cols/rows.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">newItems</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector__makeupForExceptions"></a><span class="functionIcon">_makeupForExceptions</span><span class="parameters">(type, newCellItems)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>When new cells is selected, maybe they will fill in the &quot;holes&quot; in selected rows and columns.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">newCellItems</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Array</span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector__mixinGrid"></a><span class="functionIcon">_mixinGrid</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Expose events to grid.</p>
+</div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector__refresh"></a><span class="functionIcon">_refresh</span><span class="parameters">(type, toHighlight)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">toHighlight</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector__refreshSelected"></a><span class="functionIcon">_refreshSelected</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector__remove"></a><span class="functionIcon">_remove</span><span class="parameters">(type, items)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Remove from the selection record.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">items</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector__startSelect"></a><span class="functionIcon">_startSelect</span><span class="parameters">(type, start, extending, isRange, mandatarySelect, toSelect)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Start selection, setup start point and current point, fire events.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>&quot;row&quot;, &quot;col&quot;, or &quot;cell&quot;</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">start</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description"><p>The start point</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">extending</td>
+            <td class="jsdoc-param-type">Boolean</td>
+            <td class="jsdoc-param-description"><p>Whether this is a multi selection</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">isRange</td>
+            <td class="jsdoc-param-type">Boolean</td>
+            <td class="jsdoc-param-description"><p>Whether this is a range selection (i.e. select from the last end point to this point)</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">mandatarySelect</td>
+            <td class="jsdoc-param-type">Boolean</td>
+            <td class="jsdoc-param-description"><p>If true, toSelect will be same as the original selection status.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">toSelect</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector_clear"></a><span class="functionIcon">clear</span><span class="parameters">(type)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Clear all selections.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>&quot;row&quot; or &quot;col&quot; or &quot;cell&quot;. If omitted, clear all.</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector_connect"></a><span class="functionIcon">connect</span><span class="parameters">(obj, event, method)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Connects specified obj/event to specified method of this object.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">obj</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">event</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">method</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+        <div class="jsdoc-examples">
+          <h2>Examples</h2>
+          <div class="jsdoc-example">
+            <h3>Example 1</h3><pre><code>var plugin = new dojox.grid.enhanced._Plugin(grid,&quot;myPlugin&quot;,{...});
+// when foo.bar() is called, call the listener in the scope of plugin
+plugin.connect(foo, &quot;bar&quot;, function(){
+    console.debug(this.xxx());//&quot;this&quot; - plugin scope
+});</code></pre>
+
+          </div>
+        </div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(grid, args)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">grid</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">args</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector_deselect"></a><span class="functionIcon">deselect</span><span class="parameters">(type, rowIndex, colIndex)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">rowIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">colIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector_destroy"></a><span class="functionIcon">destroy</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector_disconnect"></a><span class="functionIcon">disconnect</span><span class="parameters">(handle)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Disconnects handle and removes it from connection list.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">handle</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector_getLastSelectedRange"></a><span class="functionIcon">getLastSelectedRange</span><span class="parameters">(type)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Get last selected range of the given type.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Object | null</span></div>
+        <div class="jsdoc-return-description"><p>{start: <strong>SelectItem, end: </strong>SelectItem}
+return null if nothing is selected.</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector_getSelected"></a><span class="functionIcon">getSelected</span><span class="parameters">(type, includeExceptions)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Get an array of selected locations.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>&quot;row&quot; or &quot;col&quot; or &quot;cell&quot;</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">includeExceptions</td>
+            <td class="jsdoc-param-type">Boolean</td>
+            <td class="jsdoc-param-description"><p>Only meaningful for rows/columns. If true, all selected rows/cols, even they are partly selected, are all returned.</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">__SelectItem[] | undefined | Array</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector_getSelectedCount"></a><span class="functionIcon">getSelectedCount</span><span class="parameters">(type, includeExceptions)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Get the number of selected items.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>&quot;row&quot; or &quot;col&quot; or &quot;cell&quot;</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">includeExceptions</td>
+            <td class="jsdoc-param-type">Boolean</td>
+            <td class="jsdoc-param-description"><p>Only meaningful for rows/columns. If true, all selected rows/cols, even they are partly selected, are all returned.</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Integer | undefined | number</span></div>
+        <div class="jsdoc-return-description"><p>The number of selected items.</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector_getSelectedType"></a><span class="functionIcon">getSelectedType</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Get the type of selected items.</p>
+</div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">String | undefined</span></div>
+        <div class="jsdoc-return-description"><p>&quot;row&quot; or &quot;col&quot; or &quot;cell&quot;, or any mix of these (separator is | ).</p>
+</div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector_init"></a><span class="functionIcon">init</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector_isSelected"></a><span class="functionIcon">isSelected</span><span class="parameters">(type, rowIndex, colIndex)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Check whether a location (a cell, a column or a row) is selected.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>&quot;row&quot; or &quot;col&quot; or &quot;cell&quot;</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">rowIndex</td>
+            <td class="jsdoc-param-type">Integer</td>
+            <td class="jsdoc-param-description"><p>If type is &quot;row&quot; or &quot;cell&quot;, this is the row index.
+If type if &quot;col&quot;, this is the column index.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">colIndex</td>
+            <td class="jsdoc-param-type">Integer</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>Only valid when type is &quot;cell&quot;</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Boolean | undefined</span></div>
+        <div class="jsdoc-return-description"><p>true if selected, false if not. If cell is covered by a selected column, it&#39;s selected.</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector_isSelecting"></a><span class="functionIcon">isSelecting</span><span class="parameters">(type)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Check whether the user is currently selecting something.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>&quot;row&quot; or &quot;col&quot; or &quot;cell&quot;</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Boolean | undefined</span></div>
+        <div class="jsdoc-return-description"><p>true if is selection, false otherwise.</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector_select"></a><span class="functionIcon">select</span><span class="parameters">(type, rowIndex, colIndex)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Select a location (a cell, a column or a row).</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>&quot;row&quot; or &quot;col&quot; or &quot;cell&quot;</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">rowIndex</td>
+            <td class="jsdoc-param-type">Integer</td>
+            <td class="jsdoc-param-description"><p>If type is &quot;row&quot; or &quot;cell&quot;, this is the row index.
+If type if &quot;col&quot;, this is the column index.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">colIndex</td>
+            <td class="jsdoc-param-type">Integer</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>Only valid when type is &quot;cell&quot;</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector_selectEnabled"></a><span class="functionIcon">selectEnabled</span><span class="parameters">(toEnable)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Turn on/off this selection functionality if <em>toEnable</em> is provided.
+Check whether this selection functionality is enabled if nothing is passed in.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">toEnable</td>
+            <td class="jsdoc-param-type">Boolean</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>To enable or not.</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Boolean|undefined | boolean</span></div>
+        <div class="jsdoc-return-description"><p>Enabled or not.</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector_selectRange"></a><span class="functionIcon">selectRange</span><span class="parameters">(type, start, end, toSelect)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Select a continuous range (a block of cells, a set of continuous columns or rows)</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>&quot;row&quot; or &quot;col&quot; or &quot;cell&quot;</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">start</td>
+            <td class="jsdoc-param-type">Integer | Object</td>
+            <td class="jsdoc-param-description"><p>If type is &quot;row&quot; or &quot;col&quot;, this is the index of the starting row or column.
+If type if &quot;cell&quot;, this is the left-top cell of the range.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">end</td>
+            <td class="jsdoc-param-type">Integer | Object</td>
+            <td class="jsdoc-param-description"><p>If type is &quot;row&quot; or &quot;col&quot;, this is the index of the ending row or column.
+If type if &quot;cell&quot;, this is the right-bottom cell of the range.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">toSelect</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector_setupConfig"></a><span class="functionIcon">setupConfig</span><span class="parameters">(config)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Set selection mode for row/col/cell.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">config</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description"><p>An object with the following structure (all properties are optional):
+
+</p>
+<pre><code>{
+    //Default is &quot;multi&quot;, all other values are same as &quot;multi&quot;.
+    row: false|&quot;disabled&quot;|&quot;single&quot;,
+    col: false|&quot;disabled&quot;|&quot;single&quot;,
+    cell: false|&quot;disabled&quot;|&quot;single&quot;
+}</code></pre>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector_subscribe"></a><span class="functionIcon">subscribe</span><span class="parameters">(topic, method)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Subscribes to the specified topic and calls the specified method
+of this object.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">topic</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">method</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+        <div class="jsdoc-examples">
+          <h2>Examples</h2>
+          <div class="jsdoc-example">
+            <h3>Example 1</h3><pre><code>var plugin = new dojox.grid.enhanced._Plugin(grid,&quot;myPlugin&quot;,{...});
+// when /my/topic is published, call the subscriber in the scope of plugin
+// with passed parameter - &quot;v&quot;
+plugin.subscribe(&quot;/my/topic&quot;, function(v){
+    console.debug(this.xxx(v));//&quot;this&quot; - plugin scope
+});</code></pre>
+
+          </div>
+        </div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector_toggleSelect"></a><span class="functionIcon">toggleSelect</span><span class="parameters">(type, rowIndex, colIndex)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">rowIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">colIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector_unsubscribe"></a><span class="functionIcon">unsubscribe</span><span class="parameters">(handle)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Un-subscribes handle and removes it from subscriptions list.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">handle</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <h2>Events</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector__onExternalChange"></a><span class="functionIcon">_onExternalChange</span><span class="parameters">(type, target)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector__onInternalRearrange"></a><span class="functionIcon">_onInternalRearrange</span><span class="parameters">(type, mapping)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector__onSelectedById"></a><span class="functionIcon">_onSelectedById</span><span class="parameters">(id, newIndex, isSelected)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector_onPostInit"></a><span class="functionIcon">onPostInit</span><span class="parameters">()</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector_onPreInit"></a><span class="functionIcon">onPreInit</span><span class="parameters">()</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector_onSetStore"></a><span class="functionIcon">onSetStore</span><span class="parameters">()</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/grid/enhanced/plugins/Selector" class="jsdoc-link">dojox/grid/enhanced/plugins/Selector</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Selector_onStartUp"></a><span class="functionIcon">onStartUp</span><span class="parameters">()</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+    </div>
+  </div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/grid/enhanced/plugins/Selector" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

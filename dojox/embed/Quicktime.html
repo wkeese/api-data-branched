@@ -1,38 +1,162 @@
-<div class="jsdoc-permalink" style="display:none;">/api/1.7/dojox/embed/Quicktime</div><h1 class="jsdoc-title functionIcon36">dojox.embed.Quicktime <span style="font-size:11px;color:#999;">(version 1.7)</span></h1><div class="jsdoc-prototype">Object &raquo; dojox.embed.Quicktime</div><div class="jsdoc-full-summary"><p>Returns a reference to the HTMLObject/HTMLEmbed that is created to
+
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/embed/Quicktime" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/embed/Quicktime.html</div>
+<h1 class="functionIcon36 jsdoc-title">dojox/embed/Quicktime<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>Returns a reference to the HTMLObject/HTMLEmbed that is created to
 place the movie in the document.  You can use this either with or
 without the new operator.  Note that with any other DOM manipulation,
 you must wait until the document is finished loading before trying
-to use this.</p>
-</div><div class="jsdoc-examples"><h2>Examples:</h2><div class="jsdoc-example"><h3>Example 1</h3>
-Embed a QuickTime movie in a document using the new operator, and get a reference to it.
-<pre class="brush: js;" lang="javascript">
-	var movie = new dojox.embed.Quicktime({
-		path: &quot;path/to/my/movie.mov&quot;,
-		width: 400,
-		height: 300
-	}, myWrapperNode);
-</pre></div><div class="jsdoc-example"><h3>Example 2</h3>
-Embed a movie in a document without using the new operator.
-<pre class="brush: js;" lang="javascript">
-	var movie = dojox.embed.Quicktime({
-		path: &quot;path/to/my/movie.mov&quot;,
-		width: 400,
-		height: 300
-	}, myWrapperNode);
-</pre></div></div><div class="jsdoc-children"><div class="jsdoc-field-list"><h2 class="jsdoc-summary-heading">Property Summary <span class="jsdoc-summary-toggle"></span></h2><div class="jsdoc-summary-list"><ul><li class="booleanIcon public inherited even"><a class="inline-link" href="#dojox.embed.Quicktime.available">dojox.embed.Quicktime.available</a> <span>Whether or not QuickTime is available.</span></li><li class="booleanIcon public inherited odd"><a class="inline-link" href="#dojox.embed.Quicktime.initialized">dojox.embed.Quicktime.initialized</a> <span>Whether or not the QuickTime engine is available for use.</span></li><li class="numberIcon public inherited even"><a class="inline-link" href="#dojox.embed.Quicktime.minSupported">dojox.embed.Quicktime.minSupported</a> <span>The minimum supported version of the QuickTime Player, defaults to
-	6.</span></li><li class="booleanIcon public inherited odd"><a class="inline-link" href="#dojox.embed.Quicktime.supported">dojox.embed.Quicktime.supported</a> <span>Whether or not the QuickTime Player installed is supported by
-	dojox.embed.</span></li><li class="objectIcon public inherited even"><a class="inline-link" href="#dojox.embed.Quicktime.version">dojox.embed.Quicktime.version</a> <span>The version of the installed QuickTime Player; takes the form of
-	{ major, minor, rev }.  To get the major version, you'd do this:
-	var v=dojox.embed.Quicktime.version.major;</span></li></ul></div><h2 class="jsdoc-summary-heading">Method Summary <span class="jsdoc-summary-toggle"></span></h2><div class="jsdoc-summary-list"><ul><li class="functionIcon public inherited odd"><a class="inline-link" href="#dojox.embed.Quicktime.place">dojox.embed.Quicktime.place</a><span class="parameters">(kwArgs, node)</span><span class="jsdoc-returns"> returns QuickTimeObject</span></li></ul></div><h2 class="jsdoc-summary-heading">Event Summary <span class="jsdoc-summary-toggle"></span></h2><div class="jsdoc-summary-list"><ul><li class="functionIcon public inherited even"><a class="inline-link" href="#dojox.embed.Quicktime.onInitialize">dojox.embed.Quicktime.onInitialize</a><span class="parameters">()</span> <span>A stub you can connect to if you are looking to fire code when the
-	engine becomes available.  A note: do NOT use this stub to embed
-	a movie in your document; this WILL be fired before DOMContentLoaded
-	is fired, and you will get an error.  You should use dojo.addOnLoad
-	to place your movie instead.</span></li></ul></div></div></div><div class="jsdoc-children"><div class="jsdoc-fields"><h2>Properties</h2><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="dojox.embed.Quicktime.available"></a><span class="booleanIcon">dojox.embed.Quicktime.available</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/embed/Quicktime">dojox.embed.Quicktime</a></div><div class="jsdoc-summary">Whether or not QuickTime is available.</div></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="dojox.embed.Quicktime.initialized"></a><span class="booleanIcon">dojox.embed.Quicktime.initialized</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/embed/Quicktime">dojox.embed.Quicktime</a></div><div class="jsdoc-summary">Whether or not the QuickTime engine is available for use.</div></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="dojox.embed.Quicktime.minSupported"></a><span class="numberIcon">dojox.embed.Quicktime.minSupported</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/embed/Quicktime">dojox.embed.Quicktime</a></div><div class="jsdoc-summary">The minimum supported version of the QuickTime Player, defaults to
-	6.</div></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="dojox.embed.Quicktime.supported"></a><span class="booleanIcon">dojox.embed.Quicktime.supported</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/embed/Quicktime">dojox.embed.Quicktime</a></div><div class="jsdoc-summary">Whether or not the QuickTime Player installed is supported by
-	dojox.embed.</div></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="dojox.embed.Quicktime.version"></a><span class="objectIcon">dojox.embed.Quicktime.version</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/embed/Quicktime">dojox.embed.Quicktime</a></div><div class="jsdoc-summary">The version of the installed QuickTime Player; takes the form of
-	{ major, minor, rev }.  To get the major version, you'd do this:
-	var v=dojox.embed.Quicktime.version.major;</div></div><h2>Methods</h2><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="dojox.embed.Quicktime.place"></a><span class="functionIcon">dojox.embed.Quicktime.place</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/embed/Quicktime">dojox.embed.Quicktime</a></div><div class="jsdoc-return-type">Returns <strong>QuickTimeObject</strong></div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">kwArgs</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">node</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><h2>Events</h2><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="dojox.embed.Quicktime.onInitialize"></a><span class="functionIcon">dojox.embed.Quicktime.onInitialize</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/embed/Quicktime">dojox.embed.Quicktime</a></div><div class="jsdoc-summary">A stub you can connect to if you are looking to fire code when the
-	engine becomes available.  A note: do NOT use this stub to embed
-	a movie in your document; this WILL be fired before DOMContentLoaded
-	is fired, and you will get an error.  You should use dojo.addOnLoad
-	to place your movie instead.</div></div></div></div>
+to use this.
+</p>
+</div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">kwArgs</td>
+    <td class="jsdoc-param-type">Object</td>
+    <td class="jsdoc-param-description">
+    </td>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">node</td>
+    <td class="jsdoc-param-type">DOMNode</td>
+    <td class="jsdoc-param-description">
+    </td>
+  </tr>
+</table>
+<p>See the <a href="/reference-guide/1.8/dojox/embed/Quicktime.html" target="_blank">dojox/embed/Quicktime reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-field-list">
+    <div class="jsdoc-examples">
+      <h2>Examples</h2>
+      <div class="jsdoc-example">
+        <h3>Example 1</h3><p>Embed a QuickTime movie in a document using the new operator, and get a reference to it.
+
+</p>
+<pre><code>var movie = new dojox.embed.Quicktime({
+    path: &quot;path/to/my/movie.mov&quot;,
+    width: 400,
+    height: 300
+}, myWrapperNode);</code></pre>
+
+      </div>
+      <div class="jsdoc-example">
+        <h3>Example 2</h3><p>Embed a movie in a document without using the new operator.
+
+</p>
+<pre><code>var movie = dojox.embed.Quicktime({
+    path: &quot;path/to/my/movie.mov&quot;,
+    width: 400,
+    height: 300
+}, myWrapperNode);</code></pre>
+
+      </div>
+    </div>
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="booleanIcon"><a href="#1_8dojox_embed_Quicktime_initialized" class="inline-link"> initialized </a><span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojox_embed_Quicktime_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>kwArgs, node) <span>Returns a reference to the HTMLObject/HTMLEmbed that is created to
+place the movie in the document.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_embed_Quicktime_initialized"></a><span class="booleanIcon">initialized</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/embed/Quicktime" class="jsdoc-link">dojox/embed/Quicktime</a>
+        </div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_embed_Quicktime_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(kwArgs, node)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/embed/Quicktime" class="jsdoc-link">dojox/embed/Quicktime</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Returns a reference to the HTMLObject/HTMLEmbed that is created to
+place the movie in the document.  You can use this either with or
+without the new operator.  Note that with any other DOM manipulation,
+you must wait until the document is finished loading before trying
+to use this.
+</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">kwArgs</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description"><p>An object with the following properties:</p><ul><li>path (String): <p>The URL of the movie to embed.</p>
+</li><li>id (String, optional): <p>A unique key that will be used as the id of the created markup.  If you don&#39;t
+provide this, a unique key will be generated.</p>
+</li><li>width (Number, optional): <p>The width of the embedded movie; the default value is 320px.</p>
+</li><li>height (Number, optional): <p>The height of the embedded movie; the default value is 240px</p>
+</li><li>params (Object, optional): <p>A set of key/value pairs that you want to define in the resultant markup.</p>
+</li><li>redirect (String, optional): <p>A url to redirect the browser to if the current QuickTime version is not supported.</p>
+</li></ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">node</td>
+            <td class="jsdoc-param-type">DOMNode</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+        <div class="jsdoc-examples">
+          <h2>Examples</h2>
+          <div class="jsdoc-example">
+            <h3>Example 1</h3><p>Embed a QuickTime movie in a document using the new operator, and get a reference to it.
+
+</p>
+<pre><code>var movie = new dojox.embed.Quicktime({
+    path: &quot;path/to/my/movie.mov&quot;,
+    width: 400,
+    height: 300
+}, myWrapperNode);</code></pre>
+
+          </div>
+          <div class="jsdoc-example">
+            <h3>Example 2</h3><p>Embed a movie in a document without using the new operator.
+
+</p>
+<pre><code>var movie = dojox.embed.Quicktime({
+    path: &quot;path/to/my/movie.mov&quot;,
+    width: 400,
+    height: 300
+}, myWrapperNode);</code></pre>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/embed/Quicktime" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

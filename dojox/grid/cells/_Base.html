@@ -1,8 +1,813 @@
-<div class="jsdoc-permalink" style="display:none;">/api/1.7/dojox/grid/cells/_Base</div><h1 class="jsdoc-title constructorIcon36">dojox.grid.cells._Base <span style="font-size:11px;color:#999;">(version 1.7)</span></h1><div class="jsdoc-prototype">Object &raquo; dojox.grid.cells._Base</div><div class="jsdoc-require">dojo.require("dojox.grid.cells._base");</div><div class="jsdoc-prototype">Defined in dojox/grid/cells/_base.js</div><div class="jsdoc-function-information"><h3>Usage:</h3><div class="function-signature"><span class="keyword">var</span> foo = new dojox.grid.cells._Base(<span class="jsdoc-comment-type">/*  */</span> inProps);</div></div><div class="jsdoc-full-summary"><p>Respresents a grid cell and contains information about column options and methods
+
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/grid/cells/_base" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/grid/cells/_base.html</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/grid/cells/_base<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>Represents a grid cell and contains information about column options and methods
 for retrieving cell related information.
 Each column in a grid layout has a cell object and most events and many methods
-provide access to these objects.
-private</p>
-</div><div class="jsdoc-children"><div class="jsdoc-field-list"><h2 class="jsdoc-summary-heading">Property Summary <span class="jsdoc-summary-toggle"></span></h2><div class="jsdoc-summary-list"><ul><li class="objectIcon private inherited even"><a class="inline-link" href="#_formatPending">_formatPending</a></li><li class="objectIcon private inherited odd"><a class="inline-link" href="#_props">_props</a></li><li class="stringIcon private inherited even"><a class="inline-link" href="#_valueProp">_valueProp</a></li><li class="objectIcon public inherited odd"><a class="inline-link" href="#alwaysEditing">alwaysEditing</a></li><li class="stringIcon public inherited even"><a class="inline-link" href="#classes">classes</a></li><li class="stringIcon public inherited odd"><a class="inline-link" href="#defaultValue">defaultValue</a></li><li class="objectIcon public inherited even"><a class="inline-link" href="#draggable">draggable</a></li><li class="objectIcon public inherited odd"><a class="inline-link" href="#editable">editable</a></li><li class="objectIcon public inherited even"><a class="inline-link" href="#formatter">formatter</a></li><li class="objectIcon public inherited odd"><a class="inline-link" href="#hidden">hidden</a></li><li class="objectIcon public inherited even"><a class="inline-link" href="#noresize">noresize</a></li><li class="stringIcon public inherited odd"><a class="inline-link" href="#styles">styles</a></li><li class="objectIcon public inherited even"><a class="inline-link" href="#unitWidth">unitWidth</a></li><li class="objectIcon public inherited odd"><a class="inline-link" href="#value">value</a></li></ul></div><h2 class="jsdoc-summary-heading">Method Summary <span class="jsdoc-summary-toggle"></span></h2><div class="jsdoc-summary-list"><ul><li class="functionIcon public inherited even"><a class="inline-link" href="#dojox.grid.cells._Base.markupFactory">dojox.grid.cells._Base.markupFactory</a><span class="parameters">(node, cellDef)</span></li><li class="functionIcon private inherited odd"><a class="inline-link" href="#_defaultFormat">_defaultFormat</a><span class="parameters">(inValue, callArgs)</span></li><li class="functionIcon private inherited even"><a class="inline-link" href="#_finish">_finish</a><span class="parameters">(inRowIndex)</span> <span>called when editing is completed to clean up editor</span></li><li class="functionIcon private inherited odd"><a class="inline-link" href="#_formatNode">_formatNode</a><span class="parameters">(inDatum, inRowIndex)</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#apply">apply</a><span class="parameters">(inRowIndex)</span> <span>apply edit from cell editor</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#applyEdit">applyEdit</a><span class="parameters">(inValue, inRowIndex)</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#canResize">canResize</a><span class="parameters">()</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#cancel">cancel</a><span class="parameters">(inRowIndex)</span> <span>cancel cell edit</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#cancelEdit">cancelEdit</a><span class="parameters">(inRowIndex)</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#cancelFormatNode">cancelFormatNode</a><span class="parameters">()</span></li><li class="functionIcon public  even"><a class="inline-link" href="#constructor">constructor</a><span class="parameters">(inProps)</span><span class="jsdoc-returns"> returns dojox.grid.cells._Base</span> <span>A reference to the constructor function for this object.</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#dispatchEvent">dispatchEvent</a><span class="parameters">(m, e)</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#focus">focus</a><span class="parameters">(inRowIndex, inNode)</span> <span>focus the grid editor</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#format">format</a><span class="parameters">(inRowIndex, inItem)</span> <span>provides the html for a given grid cell.</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#formatEditing">formatEditing</a><span class="parameters">(inDatum, inRowIndex)</span> <span>formats the cell for editing</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#formatNode">formatNode</a><span class="parameters">(inNode, inDatum, inRowIndex)</span> <span>format the editing dom node. Use when editor is a widget.</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#getEditNode">getEditNode</a><span class="parameters">(inRowIndex)</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#getHeaderNode">getHeaderNode</a><span class="parameters">()</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#getNode">getNode</a><span class="parameters">(inRowIndex)</span> <span>gets the dom node for a given grid cell.</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#getValue">getValue</a><span class="parameters">(inRowIndex)</span> <span>returns value entered into editor</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#isFlex">isFlex</a><span class="parameters">()</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#needFormatNode">needFormatNode</a><span class="parameters">(inDatum, inRowIndex)</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#registerOnBlur">registerOnBlur</a><span class="parameters">(inNode, inRowIndex)</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#restore">restore</a><span class="parameters">(inRowIndex)</span> <span>restore editor state</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#save">save</a><span class="parameters">(inRowIndex)</span> <span>save editor state</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#setValue">setValue</a><span class="parameters">(inRowIndex, inValue)</span> <span>set the value of the grid editor</span></li></ul></div><h2 class="jsdoc-summary-heading">Event Summary <span class="jsdoc-summary-toggle"></span></h2><div class="jsdoc-summary-list"><ul><li class="functionIcon private inherited even"><a class="inline-link" href="#_onEditBlur">_onEditBlur</a><span class="parameters">(inRowIndex)</span></li></ul></div><h2 class="jsdoc-summary-heading">Attached Objects <span class="jsdoc-summary-toggle"></span></h2><div class="jsdoc-summary-list"><div class="jsdoc-field"><div class="jsdoc-title"><span class="object"><a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base/grid">dojox.grid.cells._Base.grid</a></span></div></div><div class="jsdoc-field"><div class="jsdoc-title"><span class="object"><a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base/grid/edit">dojox.grid.cells._Base.grid.edit</a></span></div></div></div></div></div><div class="jsdoc-children"><div class="jsdoc-fields"><h2>Properties</h2><div class="jsdoc-field private inherited even"><div class="jsdoc-title"><a name="_formatPending"></a><span class="objectIcon">_formatPending</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div></div><div class="jsdoc-field private inherited odd"><div class="jsdoc-title"><a name="_props"></a><span class="objectIcon">_props</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div></div><div class="jsdoc-field private inherited even"><div class="jsdoc-title"><a name="_valueProp"></a><span class="stringIcon">_valueProp</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="alwaysEditing"></a><span class="objectIcon">alwaysEditing</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="classes"></a><span class="stringIcon">classes</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="defaultValue"></a><span class="stringIcon">defaultValue</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="draggable"></a><span class="objectIcon">draggable</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="editable"></a><span class="objectIcon">editable</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="formatter"></a><span class="objectIcon">formatter</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="hidden"></a><span class="objectIcon">hidden</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="noresize"></a><span class="objectIcon">noresize</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="styles"></a><span class="stringIcon">styles</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="unitWidth"></a><span class="objectIcon">unitWidth</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="value"></a><span class="objectIcon">value</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div></div><h2>Methods</h2><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="dojox.grid.cells._Base.markupFactory"></a><span class="functionIcon">dojox.grid.cells._Base.markupFactory</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">node</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">cellDef</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field private inherited odd"><div class="jsdoc-title"><a name="_defaultFormat"></a><span class="functionIcon">_defaultFormat</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">inValue</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">callArgs</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field private inherited even"><div class="jsdoc-title"><a name="_finish"></a><span class="functionIcon">_finish</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div><div class="jsdoc-summary">called when editing is completed to clean up editor</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">inRowIndex</td><td class="jsdoc-param-type">int</td><td class="jsdoc-param-description">grid row index</td></tr></table></div><div class="jsdoc-field private inherited odd"><div class="jsdoc-title"><a name="_formatNode"></a><span class="functionIcon">_formatNode</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">inDatum</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">inRowIndex</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="apply"></a><span class="functionIcon">apply</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div><div class="jsdoc-summary">apply edit from cell editor</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">inRowIndex</td><td class="jsdoc-param-type">int</td><td class="jsdoc-param-description">grid row index</td></tr></table></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="applyEdit"></a><span class="functionIcon">applyEdit</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">inValue</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">inRowIndex</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="canResize"></a><span class="functionIcon">canResize</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="cancel"></a><span class="functionIcon">cancel</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div><div class="jsdoc-summary">cancel cell edit</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">inRowIndex</td><td class="jsdoc-param-type">int</td><td class="jsdoc-param-description">grid row index</td></tr></table></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="cancelEdit"></a><span class="functionIcon">cancelEdit</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">inRowIndex</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="cancelFormatNode"></a><span class="functionIcon">cancelFormatNode</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div></div><div class="jsdoc-field public  even"><div class="jsdoc-title"><a name="constructor"></a><span class="functionIcon">constructor</span></div><div class="jsdoc-inheritance">Overrides <a class="jsdoc-link" href="/api/1.7/Object">Object</a></div><div class="jsdoc-return-type">Returns <strong>dojox.grid.cells._Base</strong></div><div class="jsdoc-summary">A reference to the constructor function for this object.</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">inProps</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="dispatchEvent"></a><span class="functionIcon">dispatchEvent</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">m</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">e</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="focus"></a><span class="functionIcon">focus</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div><div class="jsdoc-summary">focus the grid editor</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">inRowIndex</td><td class="jsdoc-param-type">int</td><td class="jsdoc-param-description">grid row index</td></tr><tr><td class="jsdoc-param-name">inNode</td><td class="jsdoc-param-type">dom</td><td class="jsdoc-param-description">node
-	editor node</td></tr></table></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="format"></a><span class="functionIcon">format</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div><div class="jsdoc-return-type"><div class="jsdoc-return-description">html for a given grid cell</div></div><div class="jsdoc-summary">provides the html for a given grid cell.</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">inRowIndex</td><td class="jsdoc-param-type">int</td><td class="jsdoc-param-description">grid row index</td></tr><tr><td class="jsdoc-param-name">inItem</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="formatEditing"></a><span class="functionIcon">formatEditing</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div><div class="jsdoc-return-type"><div class="jsdoc-return-description">string of html to place in grid cell</div></div><div class="jsdoc-summary">formats the cell for editing</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">inDatum</td><td class="jsdoc-param-type">anything</td><td class="jsdoc-param-description">cell data to edit</td></tr><tr><td class="jsdoc-param-name">inRowIndex</td><td class="jsdoc-param-type">int</td><td class="jsdoc-param-description">grid row index</td></tr></table></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="formatNode"></a><span class="functionIcon">formatNode</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div><div class="jsdoc-summary">format the editing dom node. Use when editor is a widget.</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">inNode</td><td class="jsdoc-param-type">dom</td><td class="jsdoc-param-description">node
-	dom node for the editor</td></tr><tr><td class="jsdoc-param-name">inDatum</td><td class="jsdoc-param-type">anything</td><td class="jsdoc-param-description">cell data to edit</td></tr><tr><td class="jsdoc-param-name">inRowIndex</td><td class="jsdoc-param-type">int</td><td class="jsdoc-param-description">grid row index</td></tr></table></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="getEditNode"></a><span class="functionIcon">getEditNode</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">inRowIndex</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="getHeaderNode"></a><span class="functionIcon">getHeaderNode</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="getNode"></a><span class="functionIcon">getNode</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div><div class="jsdoc-return-type"><div class="jsdoc-return-description">dom node for a given grid cell</div></div><div class="jsdoc-summary">gets the dom node for a given grid cell.</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">inRowIndex</td><td class="jsdoc-param-type">int</td><td class="jsdoc-param-description">grid row index</td></tr></table></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="getValue"></a><span class="functionIcon">getValue</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div><div class="jsdoc-return-type"><div class="jsdoc-return-description">value of editor</div></div><div class="jsdoc-summary">returns value entered into editor</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">inRowIndex</td><td class="jsdoc-param-type">int</td><td class="jsdoc-param-description">grid row index</td></tr></table></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="isFlex"></a><span class="functionIcon">isFlex</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="needFormatNode"></a><span class="functionIcon">needFormatNode</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">inDatum</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">inRowIndex</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="registerOnBlur"></a><span class="functionIcon">registerOnBlur</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">inNode</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">inRowIndex</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="restore"></a><span class="functionIcon">restore</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div><div class="jsdoc-summary">restore editor state</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">inRowIndex</td><td class="jsdoc-param-type">int</td><td class="jsdoc-param-description">grid row index</td></tr></table></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="save"></a><span class="functionIcon">save</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div><div class="jsdoc-summary">save editor state</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">inRowIndex</td><td class="jsdoc-param-type">int</td><td class="jsdoc-param-description">grid row index</td></tr></table></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="setValue"></a><span class="functionIcon">setValue</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div><div class="jsdoc-summary">set the value of the grid editor</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">inRowIndex</td><td class="jsdoc-param-type">int</td><td class="jsdoc-param-description">grid row index</td></tr><tr><td class="jsdoc-param-name">inValue</td><td class="jsdoc-param-type">anything</td><td class="jsdoc-param-description">value of editor</td></tr></table></div><h2>Events</h2><div class="jsdoc-field private inherited even"><div class="jsdoc-title"><a name="_onEditBlur"></a><span class="functionIcon">_onEditBlur</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/grid/cells/_Base">dojox.grid.cells._Base</a></div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">inRowIndex</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div></div></div>
+provide access to these objects.</p>
+</div>
+<div class="jsdoc-function-information">
+  <h3>Usage:</h3>
+  <div class="function-signature"><span class="keyword">var</span> foo = new _base<span class="parameters">(inProps);</span></div>
+</div>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/grid/cells/_base">dojox/grid/cells/_base</a></div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">inProps</td>
+    <td class="jsdoc-param-type">undefined</td>
+    <td class="jsdoc-param-description">
+    </td>
+  </tr>
+</table>
+<div class="jsdoc-children">
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="booleanIcon private"><a href="#1_8dojox_grid_cells__base__formatPending" class="inline-link"> _formatPending </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="stringIcon private"><a href="#1_8dojox_grid_cells__base__valueProp" class="inline-link"> _valueProp </a><span></span><span title="private" class="jsdoc-private"></span>
+        </li>
+        <li class="booleanIcon"><a href="#1_8dojox_grid_cells__base_alwaysEditing" class="inline-link"> alwaysEditing </a><span></span>
+        </li>
+        <li class="stringIcon"><a href="#1_8dojox_grid_cells__base_classes" class="inline-link"> classes </a><span></span>
+        </li>
+        <li class="stringIcon"><a href="#1_8dojox_grid_cells__base_defaultValue" class="inline-link"> defaultValue </a><span></span>
+        </li>
+        <li class="booleanIcon"><a href="#1_8dojox_grid_cells__base_draggable" class="inline-link"> draggable </a><span></span>
+        </li>
+        <li class="booleanIcon"><a href="#1_8dojox_grid_cells__base_editable" class="inline-link"> editable </a><span></span>
+        </li>
+        <li class="objectIcon"><a href="#1_8dojox_grid_cells__base_formatter" class="inline-link"> formatter </a><span></span>
+        </li>
+        <li class="booleanIcon"><a href="#1_8dojox_grid_cells__base_hidden" class="inline-link"> hidden </a><span></span>
+        </li>
+        <li class="booleanIcon"><a href="#1_8dojox_grid_cells__base_noresize" class="inline-link"> noresize </a><span></span>
+        </li>
+        <li class="stringIcon"><a href="#1_8dojox_grid_cells__base_styles" class="inline-link"> styles </a><span></span>
+        </li>
+        <li class="objectIcon"><a href="#1_8dojox_grid_cells__base_value" class="inline-link"> value </a><span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_grid_cells__base__defaultFormat" class="inline-link"> _defaultFormat</a><span class="parameters">(</span>inValue, callArgs) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_cells__base__finish" class="inline-link"> _finish</a><span class="parameters">(</span>inRowIndex) <span>called when editing is completed to clean up editor</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_8dojox_grid_cells__base__formatNode" class="inline-link"> _formatNode</a><span class="parameters">(</span>inDatum, inRowIndex) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_apply" class="inline-link"> apply</a><span class="parameters">(</span>inRowIndex) <span>apply edit from cell editor</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_applyEdit" class="inline-link"> applyEdit</a><span class="parameters">(</span>inValue, inRowIndex) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_cancel" class="inline-link"> cancel</a><span class="parameters">(</span>inRowIndex) <span>cancel cell edit</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_cancelEdit" class="inline-link"> cancelEdit</a><span class="parameters">(</span>inRowIndex) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_cancelFormatNode" class="inline-link"> cancelFormatNode</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_canResize" class="inline-link"> canResize</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>inProps) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_dispatchEvent" class="inline-link"> dispatchEvent</a><span class="parameters">(</span>m, e) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_focus" class="inline-link"> focus</a><span class="parameters">(</span>inRowIndex, inNode) <span>focus the grid editor</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_format" class="inline-link"> format</a><span class="parameters">(</span>inRowIndex, inItem) <span>provides the html for a given grid cell.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_formatEditing" class="inline-link"> formatEditing</a><span class="parameters">(</span>inDatum, inRowIndex) <span>formats the cell for editing</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_formatNode" class="inline-link"> formatNode</a><span class="parameters">(</span>inNode, inDatum, inRowIndex) <span>format the editing dom node.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_getEditNode" class="inline-link"> getEditNode</a><span class="parameters">(</span>inRowIndex) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_getHeaderNode" class="inline-link"> getHeaderNode</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_getNode" class="inline-link"> getNode</a><span class="parameters">(</span>inRowIndex) <span>gets the dom node for a given grid cell.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_getValue" class="inline-link"> getValue</a><span class="parameters">(</span>inRowIndex) <span>returns value entered into editor</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_isFlex" class="inline-link"> isFlex</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_markupFactory" class="inline-link"> markupFactory</a><span class="parameters">(</span>node, cellDef) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_needFormatNode" class="inline-link"> needFormatNode</a><span class="parameters">(</span>inDatum, inRowIndex) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_registerOnBlur" class="inline-link"> registerOnBlur</a><span class="parameters">(</span>inNode, inRowIndex) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_restore" class="inline-link"> restore</a><span class="parameters">(</span>inRowIndex) <span>restore editor state</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_save" class="inline-link"> save</a><span class="parameters">(</span>inRowIndex) <span>save editor state</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_grid_cells__base_setValue" class="inline-link"> setValue</a><span class="parameters">(</span>inRowIndex, inValue) <span>set the value of the grid editor</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojox_grid_cells__base__onEditBlur" class="inline-link"> _onEditBlur</a><span class="parameters">(</span>inRowIndex) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base__formatPending"></a><span class="booleanIcon">_formatPending</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a>
+        </div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base__valueProp"></a><span class="stringIcon">_valueProp</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base_alwaysEditing"></a><span class="booleanIcon">alwaysEditing</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base_classes"></a><span class="stringIcon">classes</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base_defaultValue"></a><span class="stringIcon">defaultValue</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base_draggable"></a><span class="booleanIcon">draggable</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base_editable"></a><span class="booleanIcon">editable</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base_formatter"></a><span class="objectIcon">formatter</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base_hidden"></a><span class="booleanIcon">hidden</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base_noresize"></a><span class="booleanIcon">noresize</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base_styles"></a><span class="stringIcon">styles</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base_value"></a><span class="objectIcon">value</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a>
+        </div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base__defaultFormat"></a><span class="functionIcon">_defaultFormat</span><span class="parameters">(inValue, callArgs)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inValue</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">callArgs</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined | string | instance</span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base__finish"></a><span class="functionIcon">_finish</span><span class="parameters">(inRowIndex)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>called when editing is completed to clean up editor</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inRowIndex</td>
+            <td class="jsdoc-param-type">int</td>
+            <td class="jsdoc-param-description"><p>grid row index</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base__formatNode"></a><span class="functionIcon">_formatNode</span><span class="parameters">(inDatum, inRowIndex)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inDatum</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inRowIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base_apply"></a><span class="functionIcon">apply</span><span class="parameters">(inRowIndex)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>apply edit from cell editor</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inRowIndex</td>
+            <td class="jsdoc-param-type">int</td>
+            <td class="jsdoc-param-description"><p>grid row index</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base_applyEdit"></a><span class="functionIcon">applyEdit</span><span class="parameters">(inValue, inRowIndex)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inValue</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inRowIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base_cancel"></a><span class="functionIcon">cancel</span><span class="parameters">(inRowIndex)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>cancel cell edit</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inRowIndex</td>
+            <td class="jsdoc-param-type">int</td>
+            <td class="jsdoc-param-description"><p>grid row index</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base_cancelEdit"></a><span class="functionIcon">cancelEdit</span><span class="parameters">(inRowIndex)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inRowIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base_cancelFormatNode"></a><span class="functionIcon">cancelFormatNode</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base_canResize"></a><span class="functionIcon">canResize</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(inProps)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inProps</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base_dispatchEvent"></a><span class="functionIcon">dispatchEvent</span><span class="parameters">(m, e)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">m</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">e</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base_focus"></a><span class="functionIcon">focus</span><span class="parameters">(inRowIndex, inNode)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>focus the grid editor</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inRowIndex</td>
+            <td class="jsdoc-param-type">int</td>
+            <td class="jsdoc-param-description"><p>grid row index</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inNode</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description"><p>editor node</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base_format"></a><span class="functionIcon">format</span><span class="parameters">(inRowIndex, inItem)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>provides the html for a given grid cell.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inRowIndex</td>
+            <td class="jsdoc-param-type">int</td>
+            <td class="jsdoc-param-description"><p>grid row index</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inItem</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
+        <div class="jsdoc-return-description"><p>html for a given grid cell</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base_formatEditing"></a><span class="functionIcon">formatEditing</span><span class="parameters">(inDatum, inRowIndex)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>formats the cell for editing</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inDatum</td>
+            <td class="jsdoc-param-type">anything</td>
+            <td class="jsdoc-param-description"><p>cell data to edit</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inRowIndex</td>
+            <td class="jsdoc-param-type">int</td>
+            <td class="jsdoc-param-description"><p>grid row index</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any</span></div>
+        <div class="jsdoc-return-description"><p>string of html to place in grid cell</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base_formatNode"></a><span class="functionIcon">formatNode</span><span class="parameters">(inNode, inDatum, inRowIndex)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>format the editing dom node. Use when editor is a widget.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inNode</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description"><p>dom node for the editor</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inDatum</td>
+            <td class="jsdoc-param-type">anything</td>
+            <td class="jsdoc-param-description"><p>cell data to edit</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inRowIndex</td>
+            <td class="jsdoc-param-type">int</td>
+            <td class="jsdoc-param-description"><p>grid row index</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base_getEditNode"></a><span class="functionIcon">getEditNode</span><span class="parameters">(inRowIndex)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inRowIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">number</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base_getHeaderNode"></a><span class="functionIcon">getHeaderNode</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base_getNode"></a><span class="functionIcon">getNode</span><span class="parameters">(inRowIndex)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>gets the dom node for a given grid cell.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inRowIndex</td>
+            <td class="jsdoc-param-type">int</td>
+            <td class="jsdoc-param-description"><p>grid row index</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
+        <div class="jsdoc-return-description"><p>dom node for a given grid cell</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base_getValue"></a><span class="functionIcon">getValue</span><span class="parameters">(inRowIndex)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>returns value entered into editor</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inRowIndex</td>
+            <td class="jsdoc-param-type">int</td>
+            <td class="jsdoc-param-description"><p>grid row index</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
+        <div class="jsdoc-return-description"><p>value of editor</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base_isFlex"></a><span class="functionIcon">isFlex</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base_markupFactory"></a><span class="functionIcon">markupFactory</span><span class="parameters">(node, cellDef)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">node</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">cellDef</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base_needFormatNode"></a><span class="functionIcon">needFormatNode</span><span class="parameters">(inDatum, inRowIndex)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inDatum</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inRowIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base_registerOnBlur"></a><span class="functionIcon">registerOnBlur</span><span class="parameters">(inNode, inRowIndex)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inNode</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inRowIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base_restore"></a><span class="functionIcon">restore</span><span class="parameters">(inRowIndex)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>restore editor state</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inRowIndex</td>
+            <td class="jsdoc-param-type">int</td>
+            <td class="jsdoc-param-description"><p>grid row index</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base_save"></a><span class="functionIcon">save</span><span class="parameters">(inRowIndex)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>save editor state</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inRowIndex</td>
+            <td class="jsdoc-param-type">int</td>
+            <td class="jsdoc-param-description"><p>grid row index</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base_setValue"></a><span class="functionIcon">setValue</span><span class="parameters">(inRowIndex, inValue)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>set the value of the grid editor</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inRowIndex</td>
+            <td class="jsdoc-param-type">int</td>
+            <td class="jsdoc-param-description"><p>grid row index</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inValue</td>
+            <td class="jsdoc-param-type">anything</td>
+            <td class="jsdoc-param-description"><p>value of editor</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <h2>Events</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_cells__base__onEditBlur"></a><span class="functionIcon">_onEditBlur</span><span class="parameters">(inRowIndex)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/grid/cells/_base" class="jsdoc-link">dojox/grid/cells/_base</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+    </div>
+  </div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/grid/cells/_base" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

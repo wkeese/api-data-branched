@@ -1,11 +1,278 @@
-<div class="jsdoc-permalink" style="display:none;">/api/1.7/dojox/encoding/crypto/RSAKey</div><h1 class="jsdoc-title constructorIcon36">dojox.encoding.crypto.RSAKey <span style="font-size:11px;color:#999;">(version 1.7)</span></h1><div class="jsdoc-prototype">Object &raquo; dojox.encoding.crypto.RSAKey</div><div class="jsdoc-function-information"><h3>Usage:</h3><div class="function-signature"><span class="keyword">var</span> foo = new dojox.encoding.crypto.RSAKey(<span class="jsdoc-comment-type">/*  */</span> rngf);</div></div><div class="jsdoc-full-summary"><p>&quot;empty&quot; RSA key constructor
-rndf: Function?:
-function that returns an instance of a random number generator
-(see dojox.math.random for details)</p>
-</div><div class="jsdoc-children"><div class="jsdoc-field-list"><h2 class="jsdoc-summary-heading">Property Summary <span class="jsdoc-summary-toggle"></span></h2><div class="jsdoc-summary-list"><ul><li class="objectIcon public inherited even"><a class="inline-link" href="#coeff">coeff</a></li><li class="objectIcon public inherited odd"><a class="inline-link" href="#d">d</a></li><li class="objectIcon public inherited even"><a class="inline-link" href="#dmp1">dmp1</a></li><li class="objectIcon public inherited odd"><a class="inline-link" href="#dmq1">dmq1</a></li><li class="numberIcon public inherited even"><a class="inline-link" href="#e">e</a></li><li class="objectIcon public inherited odd"><a class="inline-link" href="#n">n</a></li><li class="objectIcon public inherited even"><a class="inline-link" href="#p">p</a></li><li class="objectIcon public inherited odd"><a class="inline-link" href="#q">q</a></li><li class="objectIcon public inherited even"><a class="inline-link" href="#rngf">rngf</a></li></ul></div><h2 class="jsdoc-summary-heading">Method Summary <span class="jsdoc-summary-toggle"></span></h2><div class="jsdoc-summary-list"><ul><li class="functionIcon public  odd"><a class="inline-link" href="#constructor">constructor</a><span class="parameters">(rngf)</span><span class="jsdoc-returns"> returns dojox.encoding.crypto.RSAKey</span> <span>&quot;empty&quot; RSA key constructor
-	rndf: Function?:
-	function that returns an instance of a random number generator
-	(see dojox.math.random for details)</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#decrypt">decrypt</a><span class="parameters">(ctext)</span> <span>Return the PKCS#1 RSA decryption of &quot;ctext&quot;.</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#encrypt">encrypt</a><span class="parameters">(text)</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#setPublic">setPublic</a><span class="parameters">(N, E)</span> <span>Set the public key fields N and e from hex strings</span></li></ul></div><h2 class="jsdoc-summary-heading">Attached Objects <span class="jsdoc-summary-toggle"></span></h2><div class="jsdoc-summary-list"><div class="jsdoc-field"><div class="jsdoc-title"><span class="constructor"><a class="jsdoc-link" href="/api/1.7/dojox/encoding/crypto/RSAKey/setPrivate">dojox.encoding.crypto.RSAKey.setPrivate</a></span></div></div><div class="jsdoc-field"><div class="jsdoc-title"><span class="constructor"><a class="jsdoc-link" href="/api/1.7/dojox/encoding/crypto/RSAKey/setPrivateEx">dojox.encoding.crypto.RSAKey.setPrivateEx</a></span></div></div><div class="jsdoc-field"><div class="jsdoc-title"><span class="constructor"><a class="jsdoc-link" href="/api/1.7/dojox/encoding/crypto/RSAKey/generate">dojox.encoding.crypto.RSAKey.generate</a></span></div></div></div></div></div><div class="jsdoc-children"><div class="jsdoc-fields"><h2>Properties</h2><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="coeff"></a><span class="objectIcon">coeff</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/encoding/crypto/RSAKey">dojox.encoding.crypto.RSAKey</a></div></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="d"></a><span class="objectIcon">d</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/encoding/crypto/RSAKey">dojox.encoding.crypto.RSAKey</a></div></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="dmp1"></a><span class="objectIcon">dmp1</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/encoding/crypto/RSAKey">dojox.encoding.crypto.RSAKey</a></div></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="dmq1"></a><span class="objectIcon">dmq1</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/encoding/crypto/RSAKey">dojox.encoding.crypto.RSAKey</a></div></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="e"></a><span class="numberIcon">e</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/encoding/crypto/RSAKey">dojox.encoding.crypto.RSAKey</a></div></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="n"></a><span class="objectIcon">n</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/encoding/crypto/RSAKey">dojox.encoding.crypto.RSAKey</a></div></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="p"></a><span class="objectIcon">p</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/encoding/crypto/RSAKey">dojox.encoding.crypto.RSAKey</a></div></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="q"></a><span class="objectIcon">q</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/encoding/crypto/RSAKey">dojox.encoding.crypto.RSAKey</a></div></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="rngf"></a><span class="objectIcon">rngf</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/encoding/crypto/RSAKey">dojox.encoding.crypto.RSAKey</a></div></div><h2>Methods</h2><div class="jsdoc-field public  odd"><div class="jsdoc-title"><a name="constructor"></a><span class="functionIcon">constructor</span></div><div class="jsdoc-inheritance">Overrides <a class="jsdoc-link" href="/api/1.7/Object">Object</a></div><div class="jsdoc-return-type">Returns <strong>dojox.encoding.crypto.RSAKey</strong></div><div class="jsdoc-summary">&quot;empty&quot; RSA key constructor
-	rndf: Function?:
-	function that returns an instance of a random number generator
-	(see dojox.math.random for details)</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">rngf</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="decrypt"></a><span class="functionIcon">decrypt</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/encoding/crypto/RSAKey">dojox.encoding.crypto.RSAKey</a></div><div class="jsdoc-return-type"><div class="jsdoc-return-description">a plain string.</div></div><div class="jsdoc-summary">Return the PKCS#1 RSA decryption of &quot;ctext&quot;.</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">ctext</td><td class="jsdoc-param-type">String:</td><td class="jsdoc-param-description">an even-length hex string</td></tr></table></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="encrypt"></a><span class="functionIcon">encrypt</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/encoding/crypto/RSAKey">dojox.encoding.crypto.RSAKey</a></div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">text</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="setPublic"></a><span class="functionIcon">setPublic</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/encoding/crypto/RSAKey">dojox.encoding.crypto.RSAKey</a></div><div class="jsdoc-summary">Set the public key fields N and e from hex strings</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">N</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr><tr><td class="jsdoc-param-name">E</td><td class="jsdoc-param-type"></td><td class="jsdoc-param-description"></td></tr></table></div></div></div>
+
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/encoding/crypto/RSAKey" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/encoding/crypto/RSAKey.html</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/encoding/crypto/RSAKey<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-function-information">
+  <h3>Usage:</h3>
+  <div class="function-signature"><span class="keyword">var</span> foo = new RSAKey<span class="parameters">(rngf);</span></div>
+</div>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/encoding/crypto/RSAKey">dojox/encoding/crypto/RSAKey</a></div>
+<div class="jsdoc-summary"><p>&quot;empty&quot; RSA key constructor</p>
+</div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">rngf</td>
+    <td class="jsdoc-param-type">undefined</td>
+    <td class="jsdoc-param-description">
+    </td>
+  </tr>
+</table>
+<p>See the <a href="/reference-guide/1.8/dojox/encoding/crypto/RSAKey.html" target="_blank">dojox/encoding/crypto/RSAKey reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojox_encoding_crypto_RSAKey_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>rngf) <span>&quot;empty&quot; RSA key constructor</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_encoding_crypto_RSAKey_decrypt" class="inline-link"> decrypt</a><span class="parameters">(</span>ctext) <span>Return the PKCS#1 RSA decryption of &quot;ctext&quot;.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_encoding_crypto_RSAKey_encrypt" class="inline-link"> encrypt</a><span class="parameters">(</span>text) <span></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_encoding_crypto_RSAKey_generate" class="inline-link"> generate</a><span class="parameters">(</span>B, E) <span>Generate a new random private key B bits long, using public expt E</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_encoding_crypto_RSAKey_setPrivate" class="inline-link"> setPrivate</a><span class="parameters">(</span>N, E, D) <span>Set the private key fields N, e, d and CRT params from hex strings</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_encoding_crypto_RSAKey_setPrivateEx" class="inline-link"> setPrivateEx</a><span class="parameters">(</span>N, E, D, P, Q, DP, DQ, C) <span>Set the private key fields N, e, d and CRT params from hex strings</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojox_encoding_crypto_RSAKey_setPublic" class="inline-link"> setPublic</a><span class="parameters">(</span>N, E) <span>Set the public key fields N and e from hex strings</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_encoding_crypto_RSAKey_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(rngf)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/encoding/crypto/RSAKey" class="jsdoc-link">dojox/encoding/crypto/RSAKey</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>&quot;empty&quot; RSA key constructor</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">rngf</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_encoding_crypto_RSAKey_decrypt"></a><span class="functionIcon">decrypt</span><span class="parameters">(ctext)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/encoding/crypto/RSAKey-ext" class="jsdoc-link">dojox/encoding/crypto/RSAKey-ext</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Return the PKCS#1 RSA decryption of &quot;ctext&quot;.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">ctext</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>an even-length hex string</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | null | undefined</span></div>
+        <div class="jsdoc-return-description"><p>a plain string.</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_encoding_crypto_RSAKey_encrypt"></a><span class="functionIcon">encrypt</span><span class="parameters">(text)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/encoding/crypto/RSAKey" class="jsdoc-link">dojox/encoding/crypto/RSAKey</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">text</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">null | undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_encoding_crypto_RSAKey_generate"></a><span class="functionIcon">generate</span><span class="parameters">(B, E)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/encoding/crypto/RSAKey-ext" class="jsdoc-link">dojox/encoding/crypto/RSAKey-ext</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Generate a new random private key B bits long, using public expt E</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">B</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">E</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_encoding_crypto_RSAKey_setPrivate"></a><span class="functionIcon">setPrivate</span><span class="parameters">(N, E, D)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/encoding/crypto/RSAKey-ext" class="jsdoc-link">dojox/encoding/crypto/RSAKey-ext</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Set the private key fields N, e, d and CRT params from hex strings</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">N</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">E</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">D</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_encoding_crypto_RSAKey_setPrivateEx"></a><span class="functionIcon">setPrivateEx</span><span class="parameters">(N, E, D, P, Q, DP, DQ, C)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/encoding/crypto/RSAKey-ext" class="jsdoc-link">dojox/encoding/crypto/RSAKey-ext</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Set the private key fields N, e, d and CRT params from hex strings</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">N</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">E</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">D</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">P</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">Q</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">DP</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">DQ</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">C</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_encoding_crypto_RSAKey_setPublic"></a><span class="functionIcon">setPublic</span><span class="parameters">(N, E)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/encoding/crypto/RSAKey" class="jsdoc-link">dojox/encoding/crypto/RSAKey</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Set the public key fields N and e from hex strings</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">N</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">E</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/encoding/crypto/RSAKey" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

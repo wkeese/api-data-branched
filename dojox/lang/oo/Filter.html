@@ -1,7 +1,124 @@
-<div class="jsdoc-permalink" style="display:none;">/api/1.7/dojox/lang/oo/Filter</div><h1 class="jsdoc-title constructorIcon36">dojox.lang.oo.Filter <span style="font-size:11px;color:#999;">(version 1.7)</span></h1><div class="jsdoc-prototype">Object &raquo; dojox.lang.oo.Filter</div><div class="jsdoc-function-information"><h3>Usage:</h3><div class="function-signature"><span class="keyword">var</span> foo = new dojox.lang.oo.Filter(<span class="jsdoc-comment-type">/* Object: */</span> bag, <span class="jsdoc-comment-type">/* Function|Object: */</span> filter);</div></div><div class="jsdoc-full-summary"><p>This object is used as a holder of an original object
-(whose properites are to be copied), and a filter
+
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojox/lang/oo/Filter" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/lang/oo/Filter.html</div>
+<h1 class="functionIcon36 jsdoc-title">dojox/lang/oo/Filter<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>Filter to control mixing in objects by skipping
+properties and renaming them.</p>
+</div>
+<div class="jsdoc-full-summary"><p>This object is used as a holder of an original object
+(whose properties are to be copied), and a filter
 function used while copying by dojox.lang.oo.mixin.</p>
-</div><div class="jsdoc-children"><div class="jsdoc-field-list"><h2 class="jsdoc-summary-heading">Property Summary <span class="jsdoc-summary-toggle"></span></h2><div class="jsdoc-summary-list"><ul><li class="objectIcon public inherited even"><a class="inline-link" href="#bag">bag</a> <span>object to be filtered</span></li><li class="objectIcon public inherited odd"><a class="inline-link" href="#filter">filter</a> <span>a function to handle the name filtering,
-	or an object with exec() method</span></li></ul></div><h2 class="jsdoc-summary-heading">Method Summary <span class="jsdoc-summary-toggle"></span></h2><div class="jsdoc-summary-list"><ul><li class="functionIcon public  even"><a class="inline-link" href="#constructor">constructor</a><span class="parameters">(bag, filter)</span><span class="jsdoc-returns"> returns dojox.lang.oo.Filter</span> <span>object to be filtered</span></li></ul></div></div></div><div class="jsdoc-children"><div class="jsdoc-fields"><h2>Properties</h2><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="bag"></a><span class="objectIcon">bag</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/lang/oo/Filter">dojox.lang.oo.Filter</a></div><div class="jsdoc-summary">object to be filtered</div></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="filter"></a><span class="objectIcon">filter</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojox/lang/oo/Filter">dojox.lang.oo.Filter</a></div><div class="jsdoc-summary">a function to handle the name filtering,
-	or an object with exec() method</div></div><h2>Methods</h2><div class="jsdoc-field public  even"><div class="jsdoc-title"><a name="constructor"></a><span class="functionIcon">constructor</span></div><div class="jsdoc-inheritance">Overrides <a class="jsdoc-link" href="/api/1.7/Object">Object</a></div><div class="jsdoc-return-type">Returns <strong>dojox.lang.oo.Filter</strong></div><div class="jsdoc-summary">object to be filtered</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">bag</td><td class="jsdoc-param-type">Object:</td><td class="jsdoc-param-description">object to be filtered</td></tr><tr><td class="jsdoc-param-name">filter</td><td class="jsdoc-param-type">Function|Object:</td><td class="jsdoc-param-description">a function to handle the name filtering,
-	or an object with exec() method</td></tr></table></div></div></div>
+</div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">bag</td>
+    <td class="jsdoc-param-type">Object</td>
+    <td class="jsdoc-param-description"><p>object to be filtered</p>
+ 
+    </td>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">filter</td>
+    <td class="jsdoc-param-type">Function | Object</td>
+    <td class="jsdoc-param-description"><p>a function to handle the name filtering,
+or an object with exec() method</p>
+ 
+    </td>
+  </tr>
+</table>
+<p>See the <a href="/reference-guide/1.8/dojox/lang/oo.html" target="_blank">dojox/lang/oo/Filter reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="objectIcon"><a href="#1_8dojox_lang_oo_Filter_bag" class="inline-link"> bag </a><span>object to be filtered</span>
+        </li>
+        <li class="functionIcon"><a href="#1_8dojox_lang_oo_Filter_filter" class="inline-link"> filter </a><span>a function to handle the name filtering,
+or an object with exec() method</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojox_lang_oo_Filter_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>bag, filter) <span>Filter to control mixing in objects by skipping
+properties and renaming them.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_lang_oo_Filter_bag"></a><span class="objectIcon">bag</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/lang/oo/Filter" class="jsdoc-link">dojox/lang/oo/Filter</a>
+        </div>
+        <div class="jsdoc-summary"><p>object to be filtered</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_lang_oo_Filter_filter"></a><span class="functionIcon">filter</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/lang/oo/Filter" class="jsdoc-link">dojox/lang/oo/Filter</a>
+        </div>
+        <div class="jsdoc-summary"><p>a function to handle the name filtering,
+or an object with exec() method</p>
+</div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_lang_oo_Filter_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(bag, filter)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/lang/oo/Filter" class="jsdoc-link">dojox/lang/oo/Filter</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Filter to control mixing in objects by skipping
+properties and renaming them.</p>
+</div>
+        <div class="jsdoc-full-summary"><p>This object is used as a holder of an original object
+(whose properties are to be copied), and a filter
+function used while copying by dojox.lang.oo.mixin.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">bag</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description"><p>object to be filtered</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">filter</td>
+            <td class="jsdoc-param-type">Function | Object</td>
+            <td class="jsdoc-param-description"><p>a function to handle the name filtering,
+or an object with exec() method</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/lang/oo/Filter" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

@@ -1,4 +1,349 @@
-<div class="jsdoc-permalink" style="display:none;">/api/1.7/dojo/dnd/Manager</div><h1 class="jsdoc-title constructorIcon36">dojo.dnd.Manager <span style="font-size:11px;color:#999;">(version 1.7)</span></h1><div class="jsdoc-prototype">Object &raquo; dojo.dnd.Manager</div><div class="jsdoc-function-information"><h3>Usage:</h3><div class="function-signature"><span class="keyword">var</span> foo = new dojo.dnd.Manager();</div></div><div class="jsdoc-full-summary"><p>the manager of DnD operations (usually a singleton)</p>
-</div><div class="jsdoc-children"><div class="jsdoc-field-list"><h2 class="jsdoc-summary-heading">Property Summary <span class="jsdoc-summary-toggle"></span></h2><div class="jsdoc-summary-list"><ul><li class="numberIcon public inherited even"><a class="inline-link" href="#OFFSET_X">OFFSET_X</a></li><li class="numberIcon public inherited odd"><a class="inline-link" href="#OFFSET_Y">OFFSET_Y</a></li><li class="objectIcon public inherited even"><a class="inline-link" href="#avatar">avatar</a></li><li class="objectIcon public inherited odd"><a class="inline-link" href="#canDropFlag">canDropFlag</a></li><li class="objectIcon public inherited even"><a class="inline-link" href="#copy">copy</a></li><li class="arrayIcon public inherited odd"><a class="inline-link" href="#events">events</a></li><li class="arrayIcon public inherited even"><a class="inline-link" href="#nodes">nodes</a></li><li class="objectIcon public inherited odd"><a class="inline-link" href="#source">source</a></li><li class="objectIcon public inherited even"><a class="inline-link" href="#target">target</a></li></ul></div><h2 class="jsdoc-summary-heading">Method Summary <span class="jsdoc-summary-toggle"></span></h2><div class="jsdoc-summary-list"><ul><li class="functionIcon private inherited odd"><a class="inline-link" href="#_setCopyStatus">_setCopyStatus</a><span class="parameters">(copy)</span> <span>changes the copy status</span></li><li class="functionIcon public  even"><a class="inline-link" href="#constructor">constructor</a><span class="parameters">()</span><span class="jsdoc-returns"> returns dojo.dnd.Manager</span> <span>A reference to the constructor function for this object.</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#makeAvatar">makeAvatar</a><span class="parameters">()</span> <span>Makes the avatar, it is separate to be overwritten dynamically, if needed.</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#outSource">outSource</a><span class="parameters">(source)</span> <span>called when a source detected a mouse-out condition</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#overSource">overSource</a><span class="parameters">(source)</span> <span>called when a source detected a mouse-over condition</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#startDrag">startDrag</a><span class="parameters">(source, nodes, copy)</span> <span>called to initiate the DnD operation</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#stopDrag">stopDrag</a><span class="parameters">()</span> <span>stop the DnD in progress</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#updateAvatar">updateAvatar</a><span class="parameters">()</span> <span>updates the avatar; it is separate to be overwritten dynamically, if needed</span></li></ul></div><h2 class="jsdoc-summary-heading">Event Summary <span class="jsdoc-summary-toggle"></span></h2><div class="jsdoc-summary-list"><ul><li class="functionIcon public inherited odd"><a class="inline-link" href="#onKeyDown">onKeyDown</a><span class="parameters">(e)</span> <span>event processor for onkeydown:
-	watching for CTRL for copy/move status, watching for ESCAPE to cancel the drag</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#onKeyUp">onKeyUp</a><span class="parameters">(e)</span> <span>event processor for onkeyup, watching for CTRL for copy/move status</span></li><li class="functionIcon public inherited odd"><a class="inline-link" href="#onMouseMove">onMouseMove</a><span class="parameters">(e)</span> <span>event processor for onmousemove</span></li><li class="functionIcon public inherited even"><a class="inline-link" href="#onMouseUp">onMouseUp</a><span class="parameters">(e)</span> <span>event processor for onmouseup</span></li></ul></div><h2 class="jsdoc-summary-heading">Attached Objects <span class="jsdoc-summary-toggle"></span></h2><div class="jsdoc-summary-list"><div class="jsdoc-field"><div class="jsdoc-title"><span class="constructor"><a class="jsdoc-link" href="/api/1.7/dojo/dnd/Manager/canDrop">dojo.dnd.Manager.canDrop</a></span></div></div></div></div></div><div class="jsdoc-children"><div class="jsdoc-fields"><h2>Properties</h2><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="OFFSET_X"></a><span class="numberIcon">OFFSET_X</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojo/dnd/Manager">dojo.dnd.Manager</a></div></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="OFFSET_Y"></a><span class="numberIcon">OFFSET_Y</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojo/dnd/Manager">dojo.dnd.Manager</a></div></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="avatar"></a><span class="objectIcon">avatar</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojo/dnd/Manager">dojo.dnd.Manager</a></div></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="canDropFlag"></a><span class="objectIcon">canDropFlag</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojo/dnd/Manager">dojo.dnd.Manager</a></div></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="copy"></a><span class="objectIcon">copy</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojo/dnd/Manager">dojo.dnd.Manager</a></div></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="events"></a><span class="arrayIcon">events</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojo/dnd/Manager">dojo.dnd.Manager</a></div></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="nodes"></a><span class="arrayIcon">nodes</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojo/dnd/Manager">dojo.dnd.Manager</a></div></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="source"></a><span class="objectIcon">source</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojo/dnd/Manager">dojo.dnd.Manager</a></div></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="target"></a><span class="objectIcon">target</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojo/dnd/Manager">dojo.dnd.Manager</a></div></div><h2>Methods</h2><div class="jsdoc-field private inherited odd"><div class="jsdoc-title"><a name="_setCopyStatus"></a><span class="functionIcon">_setCopyStatus</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojo/dnd/Manager">dojo.dnd.Manager</a></div><div class="jsdoc-summary">changes the copy status</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">copy</td><td class="jsdoc-param-type">Boolean</td><td class="jsdoc-param-description">the copy status</td></tr></table></div><div class="jsdoc-field public  even"><div class="jsdoc-title"><a name="constructor"></a><span class="functionIcon">constructor</span></div><div class="jsdoc-inheritance">Overrides <a class="jsdoc-link" href="/api/1.7/Object">Object</a></div><div class="jsdoc-return-type">Returns <strong>dojo.dnd.Manager</strong></div><div class="jsdoc-summary">A reference to the constructor function for this object.</div></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="makeAvatar"></a><span class="functionIcon">makeAvatar</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojo/dnd/Manager">dojo.dnd.Manager</a></div><div class="jsdoc-summary">Makes the avatar, it is separate to be overwritten dynamically, if needed.</div></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="outSource"></a><span class="functionIcon">outSource</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojo/dnd/Manager">dojo.dnd.Manager</a></div><div class="jsdoc-summary">called when a source detected a mouse-out condition</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">source</td><td class="jsdoc-param-type">Object</td><td class="jsdoc-param-description">the reporter</td></tr></table></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="overSource"></a><span class="functionIcon">overSource</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojo/dnd/Manager">dojo.dnd.Manager</a></div><div class="jsdoc-summary">called when a source detected a mouse-over condition</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">source</td><td class="jsdoc-param-type">Object</td><td class="jsdoc-param-description">the reporter</td></tr></table></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="startDrag"></a><span class="functionIcon">startDrag</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojo/dnd/Manager">dojo.dnd.Manager</a></div><div class="jsdoc-summary">called to initiate the DnD operation</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">source</td><td class="jsdoc-param-type">Object</td><td class="jsdoc-param-description">the source which provides items</td></tr><tr><td class="jsdoc-param-name">nodes</td><td class="jsdoc-param-type">Array</td><td class="jsdoc-param-description">the list of transferred items</td></tr><tr><td class="jsdoc-param-name">copy</td><td class="jsdoc-param-type">Boolean</td><td class="jsdoc-param-description">copy items, if true, move items otherwise</td></tr></table></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="stopDrag"></a><span class="functionIcon">stopDrag</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojo/dnd/Manager">dojo.dnd.Manager</a></div><div class="jsdoc-summary">stop the DnD in progress</div></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="updateAvatar"></a><span class="functionIcon">updateAvatar</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojo/dnd/Manager">dojo.dnd.Manager</a></div><div class="jsdoc-summary">updates the avatar; it is separate to be overwritten dynamically, if needed</div></div><h2>Events</h2><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="onKeyDown"></a><span class="functionIcon">onKeyDown</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojo/dnd/Manager">dojo.dnd.Manager</a></div><div class="jsdoc-summary">event processor for onkeydown:
-	watching for CTRL for copy/move status, watching for ESCAPE to cancel the drag</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">e</td><td class="jsdoc-param-type">Event</td><td class="jsdoc-param-description">keyboard event</td></tr></table></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="onKeyUp"></a><span class="functionIcon">onKeyUp</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojo/dnd/Manager">dojo.dnd.Manager</a></div><div class="jsdoc-summary">event processor for onkeyup, watching for CTRL for copy/move status</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">e</td><td class="jsdoc-param-type">Event</td><td class="jsdoc-param-description">keyboard event</td></tr></table></div><div class="jsdoc-field public inherited odd"><div class="jsdoc-title"><a name="onMouseMove"></a><span class="functionIcon">onMouseMove</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojo/dnd/Manager">dojo.dnd.Manager</a></div><div class="jsdoc-summary">event processor for onmousemove</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">e</td><td class="jsdoc-param-type">Event</td><td class="jsdoc-param-description">mouse event</td></tr></table></div><div class="jsdoc-field public inherited even"><div class="jsdoc-title"><a name="onMouseUp"></a><span class="functionIcon">onMouseUp</span></div><div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.7/dojo/dnd/Manager">dojo.dnd.Manager</a></div><div class="jsdoc-summary">event processor for onmouseup</div><table class="jsdoc-parameters"><tr><th>Parameter</th><th>Type</th><th>Description</th></tr><tr><td class="jsdoc-param-name">e</td><td class="jsdoc-param-type">Event</td><td class="jsdoc-param-description">mouse event</td></tr></table></div></div></div>
+
+<script type="text/javascript">
+  // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
+  // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
+  // Also, when this page is loaded via XHR this script block should be ignored.
+  location = "/api/?qs=1.8/dojo/dnd/Manager" + location.hash;
+  
+</script>
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/dnd/Manager.html</div>
+<h1 class="constructorIcon36 jsdoc-title">dojo/dnd/Manager<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-mixins">
+  <label>Extends </label><a href="/api/1.8/dojo/Evented" class="jsdoc-link">dojo/Evented</a>
+</div>
+<div class="jsdoc-full-summary"><p>the manager of DnD operations (usually a singleton)</p>
+</div>
+<div class="jsdoc-function-information">
+  <h3>Usage:</h3>
+  <div class="function-signature"><span class="keyword">var</span> foo = new Manager<span class="parameters">();</span></div>
+</div>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojo/dnd/Manager">dojo/dnd/Manager</a></div>
+<p>See the <a href="/reference-guide/1.8/dojo/dnd.html" target="_blank">dojo/dnd/Manager reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-field-list">
+    <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="numberIcon"><a href="#1_8dojo_dnd_Manager_OFFSET_X" class="inline-link"> OFFSET_X </a><span></span>
+        </li>
+        <li class="numberIcon"><a href="#1_8dojo_dnd_Manager_OFFSET_Y" class="inline-link"> OFFSET_Y </a><span></span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon private"><a href="#1_8dojo_dnd_Manager__setCopyStatus" class="inline-link"> _setCopyStatus</a><span class="parameters">(</span>copy) <span>changes the copy status</span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Manager_canDrop" class="inline-link"> canDrop</a><span class="parameters">(</span>flag) <span>called to notify if the current target can accept items</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Manager_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_Manager_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, event) <span></span><span title="inherited from dojo/Evented" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Manager_makeAvatar" class="inline-link"> makeAvatar</a><span class="parameters">(</span>) <span>makes the avatar; it is separate to be overwritten dynamically, if needed</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Manager_manager" class="inline-link"> manager</a><span class="parameters">(</span>) <span>Returns the current DnD manager.</span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_8dojo_dnd_Manager_on" class="inline-link"> on</a><span class="parameters">(</span>type, listener) <span></span><span title="inherited from dojo/Evented" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Manager_outSource" class="inline-link"> outSource</a><span class="parameters">(</span>source) <span>called when a source detected a mouse-out condition</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Manager_overSource" class="inline-link"> overSource</a><span class="parameters">(</span>source) <span>called when a source detected a mouse-over condition</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Manager_startDrag" class="inline-link"> startDrag</a><span class="parameters">(</span>source, nodes, copy) <span>called to initiate the DnD operation</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Manager_stopDrag" class="inline-link"> stopDrag</a><span class="parameters">(</span>) <span>stop the DnD in progress</span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Manager_updateAvatar" class="inline-link"> updateAvatar</a><span class="parameters">(</span>) <span>updates the avatar; it is separate to be overwritten dynamically, if needed</span>
+        </li>
+      </ul>
+    </div>
+    <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+    <div class="jsdoc-summary-list">
+      <ul class="jsdoc-property-list">
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Manager_onKeyDown" class="inline-link"> onKeyDown</a><span class="parameters">(</span>e) <span>event processor for onkeydown:
+watching for CTRL for copy/move status, watching for ESCAPE to cancel the drag</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Manager_onKeyUp" class="inline-link"> onKeyUp</a><span class="parameters">(</span>e) <span>event processor for onkeyup, watching for CTRL for copy/move status</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Manager_onMouseMove" class="inline-link"> onMouseMove</a><span class="parameters">(</span>e) <span>event processor for onmousemove</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+        <li class="functionIcon "><a href="#1_8dojo_dnd_Manager_onMouseUp" class="inline-link"> onMouseUp</a><span class="parameters">(</span>e) <span>event processor for onmouseup</span><span title="TODO" class="jsdoc-extension"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojo_dnd_Manager_OFFSET_X"></a><span class="numberIcon">OFFSET_X</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojo/dnd/Manager" class="jsdoc-link">dojo/dnd/Manager</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojo_dnd_Manager_OFFSET_Y"></a><span class="numberIcon">OFFSET_Y</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojo/dnd/Manager" class="jsdoc-link">dojo/dnd/Manager</a>
+        </div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojo_dnd_Manager__setCopyStatus"></a><span class="functionIcon">_setCopyStatus</span><span class="parameters">(copy)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/dnd/Manager" class="jsdoc-link">dojo/dnd/Manager</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>changes the copy status</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">copy</td>
+            <td class="jsdoc-param-type">Boolean</td>
+            <td class="jsdoc-param-description"><p>the copy status</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_dnd_Manager_canDrop"></a><span class="functionIcon">canDrop</span><span class="parameters">(flag)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/dnd/Manager" class="jsdoc-link">dojo/dnd/Manager</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>called to notify if the current target can accept items</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">flag</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_dnd_Manager_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/dnd/Manager" class="jsdoc-link">dojo/dnd/Manager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojo_dnd_Manager_emit"></a><span class="functionIcon">emit</span><span class="parameters">(type, event)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/Evented" class="jsdoc-link">dojo/Evented</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">event</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_dnd_Manager_makeAvatar"></a><span class="functionIcon">makeAvatar</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/dnd/Manager" class="jsdoc-link">dojo/dnd/Manager</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>makes the avatar; it is separate to be overwritten dynamically, if needed</p>
+</div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">instance</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_dnd_Manager_manager"></a><span class="functionIcon">manager</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/dnd/Manager" class="jsdoc-link">dojo/dnd/Manager</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Returns the current DnD manager.  Creates one if it is not created yet.</p>
+</div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">instance</span></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojo_dnd_Manager_on"></a><span class="functionIcon">on</span><span class="parameters">(type, listener)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/Evented" class="jsdoc-link">dojo/Evented</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">listener</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_dnd_Manager_outSource"></a><span class="functionIcon">outSource</span><span class="parameters">(source)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/dnd/Manager" class="jsdoc-link">dojo/dnd/Manager</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>called when a source detected a mouse-out condition</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">source</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description"><p>the reporter</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_dnd_Manager_overSource"></a><span class="functionIcon">overSource</span><span class="parameters">(source)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/dnd/Manager" class="jsdoc-link">dojo/dnd/Manager</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>called when a source detected a mouse-over condition</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">source</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description"><p>the reporter</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_dnd_Manager_startDrag"></a><span class="functionIcon">startDrag</span><span class="parameters">(source, nodes, copy)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/dnd/Manager" class="jsdoc-link">dojo/dnd/Manager</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>called to initiate the DnD operation</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">source</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description"><p>the source which provides items</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">nodes</td>
+            <td class="jsdoc-param-type">Array</td>
+            <td class="jsdoc-param-description"><p>the list of transferred items</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">copy</td>
+            <td class="jsdoc-param-type">Boolean</td>
+            <td class="jsdoc-param-description"><p>copy items, if true, move items otherwise</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_dnd_Manager_stopDrag"></a><span class="functionIcon">stopDrag</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/dnd/Manager" class="jsdoc-link">dojo/dnd/Manager</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>stop the DnD in progress</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_dnd_Manager_updateAvatar"></a><span class="functionIcon">updateAvatar</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/dnd/Manager" class="jsdoc-link">dojo/dnd/Manager</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>updates the avatar; it is separate to be overwritten dynamically, if needed</p>
+</div>
+      </div>
+    </div>
+    <h2>Events</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_dnd_Manager_onKeyDown"></a><span class="functionIcon">onKeyDown</span><span class="parameters">(e)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojo/dnd/Manager" class="jsdoc-link">dojo/dnd/Manager</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>event processor for onkeydown:
+watching for CTRL for copy/move status, watching for ESCAPE to cancel the drag</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_dnd_Manager_onKeyUp"></a><span class="functionIcon">onKeyUp</span><span class="parameters">(e)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojo/dnd/Manager" class="jsdoc-link">dojo/dnd/Manager</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>event processor for onkeyup, watching for CTRL for copy/move status</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_dnd_Manager_onMouseMove"></a><span class="functionIcon">onMouseMove</span><span class="parameters">(e)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojo/dnd/Manager" class="jsdoc-link">dojo/dnd/Manager</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>event processor for onmousemove</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_dnd_Manager_onMouseUp"></a><span class="functionIcon">onMouseUp</span><span class="parameters">(e)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojo/dnd/Manager" class="jsdoc-link">dojo/dnd/Manager</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>event processor for onmouseup</p>
+</div>
+      </div>
+    </div>
+  </div>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojo/dnd/Manager" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>
