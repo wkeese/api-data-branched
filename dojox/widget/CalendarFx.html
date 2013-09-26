@@ -3,106 +3,114 @@
   // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
   // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
   // Also, when this page is loaded via XHR this script block should be ignored.
-  location = "/api/?qs=1.8/dojox/widget/CalendarFx" + location.hash;
+  location = "/api/?qs=1.9/dojox/widget/CalendarFx" + location.hash;
   
 </script>
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/widget/CalendarFx.html</div>
-<h1 class="constructorIcon36 jsdoc-title">dojox/widget/CalendarFx<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/widget/CalendarFx.html</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/widget/CalendarFx<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dojox/widget/CalendarFisheye" class="jsdoc-link">dojox/widget/CalendarFisheye, </a><a href="/api/1.8/dojox/widget/_FisheyeFX" class="jsdoc-link">dojox/widget/_FisheyeFX</a>
+  <label>Extends </label><a href="/api/1.9/dojox/widget/CalendarFisheye" class="jsdoc-link">dojox/widget/CalendarFisheye, </a><a href="/api/1.9/dojox/widget/_FisheyeFX" class="jsdoc-link">dojox/widget/_FisheyeFX</a>
 </div>
-<div class="jsdoc-full-summary"><p>The visual effects extensions for <a class="jsdoc-link" href="/api/1.8/dojox/widget/Calendar">dojox/widget/Calendar</a>.</p>
+<div class="jsdoc-full-summary"><p>The visual effects extensions for <a class="jsdoc-link" href="/api/1.9/dojox/widget/Calendar">dojox/widget/Calendar</a>.</p>
 </div>
 <div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new CalendarFx<span class="parameters">();</span></div>
 </div>
-<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/widget/_CalendarBase">dojox/widget/_CalendarBase</a></div>
-<p>See the <a href="/reference-guide/1.8/dojox/widget/CalendarFx.html" target="_blank">dojox/widget/CalendarFx reference documentation</a> for more information.</p>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.9/dojox/widget/_CalendarBase">dojox/widget/_CalendarBase</a></div>
+<p>See the <a href="/reference-guide/1.9/dojox/widget/CalendarFx.html" target="_blank">dojox/widget/CalendarFx reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-field-list">
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="objectIcon private inherited"><a href="#1_8dojox_widget_CalendarFx__attachEvents" class="inline-link"> _attachEvents </a><span>List of connections associated with data-dojo-attach-event=... in the
-template</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        <li class="objectIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__attachEvents" class="inline-link"> _attachEvents </a><span>List of connections associated with data-dojo-attach-event=... in the
+template</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon private inherited"><a href="#1_8dojox_widget_CalendarFx__attachPoints" class="inline-link"> _attachPoints </a><span>List of widget attribute names associated with data-dojo-attach-point=... in the
-template, ex: [&quot;containerNode&quot;, &quot;labelNode&quot;]</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        <li class="objectIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__attachPoints" class="inline-link"> _attachPoints </a><span>List of widget attribute names associated with data-dojo-attach-point=... in the
+template, ex: [&quot;containerNode&quot;, &quot;labelNode&quot;]</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon private inherited"><a href="#1_8dojox_widget_CalendarFx__attrPairNames" class="inline-link"> _attrPairNames </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="objectIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__attrPairNames" class="inline-link"> _attrPairNames </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon private inherited"><a href="#1_8dojox_widget_CalendarFx__blankGif" class="inline-link"> _blankGif </a><span>Path to a blank 1x1 image.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="stringIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__blankGif" class="inline-link"> _blankGif </a><span>Path to a blank 1x1 image.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="booleanIcon private inherited"><a href="#1_8dojox_widget_CalendarFx__earlyTemplatedStartup" class="inline-link"> _earlyTemplatedStartup </a><span>A fallback to preserve the 1.0 - 1.3 behavior of children in
+        <li class="booleanIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__earlyTemplatedStartup" class="inline-link"> _earlyTemplatedStartup </a><span>A fallback to preserve the 1.0 - 1.3 behavior of children in
 templates having their startup called before the parent widget
-fires postCreate.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+fires postCreate.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetsInTemplateMixin" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon private inherited"><a href="#1_8dojox_widget_CalendarFx__setClassAttr" class="inline-link"> _setClassAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="booleanIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__rendered" class="inline-link"> _rendered </a><span>Not normally use, but this flag can be set by the app if the server has already rendered the template,
+i.e. already inlining the template for the widget into the main page.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon private inherited"><a href="#1_8dojox_widget_CalendarFx__setDirAttr" class="inline-link"> _setDirAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="objectIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__setClassAttr" class="inline-link"> _setClassAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon private inherited"><a href="#1_8dojox_widget_CalendarFx__setIdAttr" class="inline-link"> _setIdAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="objectIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__setDirAttr" class="inline-link"> _setDirAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon private inherited"><a href="#1_8dojox_widget_CalendarFx__setLangAttr" class="inline-link"> _setLangAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="stringIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__setIdAttr" class="inline-link"> _setIdAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="booleanIcon private inherited"><a href="#1_8dojox_widget_CalendarFx__skipNodeCache" class="inline-link"> _skipNodeCache </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        <li class="objectIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__setLangAttr" class="inline-link"> _setLangAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="booleanIcon private inherited"><a href="#1_8dojox_widget_CalendarFx__started" class="inline-link"> _started </a><span>startup() has completed.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="booleanIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__skipNodeCache" class="inline-link"> _skipNodeCache </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
         </li>
-        <li class="arrayIcon private inherited"><a href="#1_8dojox_widget_CalendarFx__views" class="inline-link"> _views </a><span>The list of mixin views available on this calendar.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
+        <li class="booleanIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__started" class="inline-link"> _started </a><span>startup() has completed.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon inherited"><a href="#1_8dojox_widget_CalendarFx_attributeMap" class="inline-link"> attributeMap </a><span>Deprecated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="arrayIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__views" class="inline-link"> _views </a><span>The list of mixin views available on this calendar.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_8dojox_widget_CalendarFx_baseClass" class="inline-link"> baseClass </a><span>Root CSS class of the widget (ex: dijitTextBox), used to construct CSS classes to indicate
+        <li class="objectIcon inherited"><a href="#1_9dojox_widget_CalendarFx_attachScope" class="inline-link"> attachScope </a><span>Object to which attach points and events will be scoped.</span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="objectIcon inherited"><a href="#1_9dojox_widget_CalendarFx_attributeMap" class="inline-link"> attributeMap </a><span>Deprecated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_widget_CalendarFx_baseClass" class="inline-link"> baseClass </a><span>Root CSS class of the widget (ex: dijitTextBox), used to construct CSS classes to indicate
 widget state.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_8dojox_widget_CalendarFx_class" class="inline-link"> class </a><span></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="stringIcon inherited"><a href="#1_9dojox_widget_CalendarFx_class" class="inline-link"> class </a><span></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon inherited"><a href="#1_8dojox_widget_CalendarFx_constraints" class="inline-link"> constraints </a><span></span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
+        <li class="objectIcon inherited"><a href="#1_9dojox_widget_CalendarFx_constraints" class="inline-link"> constraints </a><span></span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="domnodeIcon inherited"><a href="#1_8dojox_widget_CalendarFx_containerNode" class="inline-link"> containerNode </a><span>Designates where children of the source DOM node will be placed.
+        <li class="domnodeIcon inherited"><a href="#1_9dojox_widget_CalendarFx_containerNode" class="inline-link"> containerNode </a><span>Designates where children of the source DOM node will be placed.
 &quot;Children&quot; in this case refers to both DOM nodes and widgets.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_8dojox_widget_CalendarFx_dir" class="inline-link"> dir </a><span>Bi-directional support, as defined by the HTML DIR
+        <li class="functionIcon inherited"><a href="#1_9dojox_widget_CalendarFx_contextRequire" class="inline-link"> contextRequire </a><span>Used to provide a context require to the dojo/parser in order to be
+able to use relative MIDs (e.g. ./Widget) in the widget&#39;s template.</span><span title="inherited from dijit/_WidgetsInTemplateMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="stringIcon inherited"><a href="#1_9dojox_widget_CalendarFx_dir" class="inline-link"> dir </a><span>Bi-directional support, as defined by the HTML DIR
 attribute.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="domnodeIcon inherited"><a href="#1_8dojox_widget_CalendarFx_domNode" class="inline-link"> domNode </a><span>This is our visible representation of the widget!</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="domnodeIcon inherited"><a href="#1_9dojox_widget_CalendarFx_domNode" class="inline-link"> domNode </a><span>This is our visible representation of the widget!</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="booleanIcon inherited"><a href="#1_8dojox_widget_CalendarFx_focused" class="inline-link"> focused </a><span>This widget or a widget it contains has focus, or is &quot;active&quot; because
+        <li class="booleanIcon inherited"><a href="#1_9dojox_widget_CalendarFx_focused" class="inline-link"> focused </a><span>This widget or a widget it contains has focus, or is &quot;active&quot; because
 it was recently clicked.</span><span title="Must manually require () dijit/_FocusMixin to access" class="jsdoc-extension"></span><span title="inherited from dijit/_FocusMixin" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_8dojox_widget_CalendarFx_footerFormat" class="inline-link"> footerFormat </a><span>The date format of the date displayed in the footer.</span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
+        <li class="stringIcon inherited"><a href="#1_9dojox_widget_CalendarFx_footerFormat" class="inline-link"> footerFormat </a><span>The date format of the date displayed in the footer.</span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_8dojox_widget_CalendarFx_id" class="inline-link"> id </a><span>A unique, opaque ID string that can be assigned by users or by the
+        <li class="stringIcon inherited"><a href="#1_9dojox_widget_CalendarFx_id" class="inline-link"> id </a><span>A unique, opaque ID string that can be assigned by users or by the
 system.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_8dojox_widget_CalendarFx_lang" class="inline-link"> lang </a><span>Rarely used.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="stringIcon inherited"><a href="#1_9dojox_widget_CalendarFx_lang" class="inline-link"> lang </a><span>Rarely used.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon inherited"><a href="#1_8dojox_widget_CalendarFx_ownerDocument" class="inline-link"> ownerDocument </a><span>The document this widget belongs to.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="objectIcon inherited"><a href="#1_9dojox_widget_CalendarFx_ownerDocument" class="inline-link"> ownerDocument </a><span>The document this widget belongs to.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon inherited"><a href="#1_8dojox_widget_CalendarFx_parent" class="inline-link"> parent </a><span></span><span title="inherited from dojox/widget/_CalendarDay" class="jsdoc-inherited"></span>
+        <li class="objectIcon inherited"><a href="#1_9dojox_widget_CalendarFx_parent" class="inline-link"> parent </a><span></span><span title="inherited from dojox/widget/_CalendarDay" class="jsdoc-inherited"></span>
         </li>
-        <li class="domnodeIcon inherited"><a href="#1_8dojox_widget_CalendarFx_srcNodeRef" class="inline-link"> srcNodeRef </a><span>pointer to original DOM node</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_widget_CalendarFx_searchContainerNode" class="inline-link"> searchContainerNode </a><span></span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_8dojox_widget_CalendarFx_style" class="inline-link"> style </a><span>HTML style attributes as cssText string or name/value hash</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="domnodeIcon inherited"><a href="#1_9dojox_widget_CalendarFx_srcNodeRef" class="inline-link"> srcNodeRef </a><span>pointer to original DOM node</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_8dojox_widget_CalendarFx_templatePath" class="inline-link"> templatePath </a><span>Path to template (HTML file) for this widget relative to dojo.baseUrl.</span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        <li class="stringIcon inherited"><a href="#1_9dojox_widget_CalendarFx_style" class="inline-link"> style </a><span>HTML style attributes as cssText string or name/value hash</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_8dojox_widget_CalendarFx_templateString" class="inline-link"> templateString </a><span>The template to be used to construct the widget.</span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
+        <li class="stringIcon inherited"><a href="#1_9dojox_widget_CalendarFx_templatePath" class="inline-link"> templatePath </a><span>Path to template (HTML file) for this widget relative to dojo.baseUrl.</span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_8dojox_widget_CalendarFx_textDir" class="inline-link"> textDir </a><span>Bi-directional support, the main variable which is responsible for the direction of the text.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="stringIcon inherited"><a href="#1_9dojox_widget_CalendarFx_templateString" class="inline-link"> templateString </a><span>The template to be used to construct the widget.</span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_8dojox_widget_CalendarFx_title" class="inline-link"> title </a><span>HTML title attribute.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="stringIcon inherited"><a href="#1_9dojox_widget_CalendarFx_title" class="inline-link"> title </a><span>HTML title attribute.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_8dojox_widget_CalendarFx_tooltip" class="inline-link"> tooltip </a><span>When this widget&#39;s title attribute is used to for a tab label, accordion pane title, etc.,
+        <li class="stringIcon inherited"><a href="#1_9dojox_widget_CalendarFx_tooltip" class="inline-link"> tooltip </a><span>When this widget&#39;s title attribute is used to for a tab label, accordion pane title, etc.,
 this specifies the tooltip to appear when the mouse is hovered over that text.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="booleanIcon inherited"><a href="#1_8dojox_widget_CalendarFx_useFx" class="inline-link"> useFx </a><span>Specifies if visual effects should be applied to the widget.</span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_widget_CalendarFx_useFx" class="inline-link"> useFx </a><span>Specifies if visual effects should be applied to the widget.</span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="dateIcon inherited"><a href="#1_8dojox_widget_CalendarFx_value" class="inline-link"> value </a><span>The currently selected Date</span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
+        <li class="dateIcon inherited"><a href="#1_9dojox_widget_CalendarFx_value" class="inline-link"> value </a><span>The currently selected Date</span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="booleanIcon inherited"><a href="#1_8dojox_widget_CalendarFx_widgetsInTemplate" class="inline-link"> widgetsInTemplate </a><span>Should we parse the template to find widgets that might be
+        <li class="booleanIcon inherited"><a href="#1_9dojox_widget_CalendarFx_widgetsInTemplate" class="inline-link"> widgetsInTemplate </a><span>Should we parse the template to find widgets that might be
 declared in markup inside it?  (Remove for 2.0 and assume true)</span><span title="inherited from dijit/_WidgetsInTemplateMixin" class="jsdoc-inherited"></span>
         </li>
       </ul>
@@ -110,178 +118,188 @@ declared in markup inside it?  (Remove for 2.0 and assume true)</span><span titl
     <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="functionIcon private inherited"><a href="#1_8dojox_widget_CalendarFx__addView" class="inline-link"> _addView</a><span class="parameters">(</span>view) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__addView" class="inline-link"> _addView</a><span class="parameters">(</span>view) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_widget_CalendarFx__adjustDisplay" class="inline-link"> _adjustDisplay</a><span class="parameters">(</span>part, amount, noSlide) <span>This function overrides the base function defined in dijit/Calendar.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__adjustDisplay" class="inline-link"> _adjustDisplay</a><span class="parameters">(</span>part, amount, noSlide) <span>This function overrides the base function defined in dijit/Calendar.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_widget_CalendarFx__applyAttributes" class="inline-link"> _applyAttributes</a><span class="parameters">(</span>) <span>Step during widget creation to copy  widget attributes to the
+        <li class="functionIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__applyAttributes" class="inline-link"> _applyAttributes</a><span class="parameters">(</span>) <span>Step during widget creation to copy  widget attributes to the
 DOM according to attributeMap and _setXXXAttr objects, and also to call
 custom _setXXXAttr() methods.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_widget_CalendarFx__attachTemplateNodes" class="inline-link"> _attachTemplateNodes</a><span class="parameters">(</span>rootNode, getAttrFunc) <span>Iterate through the template and attach functions and nodes accordingly.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__attach" class="inline-link"> _attach</a><span class="parameters">(</span>node, type, func) <span>Roughly corresponding to dojo/on, this is the default function for processing a
+data-dojo-attach-event.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_widget_CalendarFx__attrToDom" class="inline-link"> _attrToDom</a><span class="parameters">(</span>attr, value, commands) <span>Reflect a widget attribute (title, tabIndex, duration etc.) to
+        <li class="functionIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__attachTemplateNodes" class="inline-link"> _attachTemplateNodes</a><span class="parameters">(</span>rootNode) <span>Iterate through the dom nodes and attach functions and nodes accordingly.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__attrToDom" class="inline-link"> _attrToDom</a><span class="parameters">(</span>attr, value, commands) <span>Reflect a widget attribute (title, tabIndex, duration etc.) to
 the widget DOM, as specified by commands parameter.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_widget_CalendarFx__beforeFillContent" class="inline-link"> _beforeFillContent</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__beforeFillContent" class="inline-link"> _beforeFillContent</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_widget_CalendarFx__changeAttrValue" class="inline-link"> _changeAttrValue</a><span class="parameters">(</span>name, value) <span>Internal helper for directly changing an attribute value.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__changeAttrValue" class="inline-link"> _changeAttrValue</a><span class="parameters">(</span>name, value) <span>Internal helper for directly changing an attribute value.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_widget_CalendarFx__fillContent" class="inline-link"> _fillContent</a><span class="parameters">(</span>source) <span>Relocate source contents to templated container node.
+        <li class="functionIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__detachTemplateNodes" class="inline-link"> _detachTemplateNodes</a><span class="parameters">(</span>) <span>Detach and clean up the attachments made in _attachtempalteNodes.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__fillContent" class="inline-link"> _fillContent</a><span class="parameters">(</span>source) <span>Relocate source contents to templated container node.
 this.containerNode must be able to receive children, or exceptions will be thrown.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_widget_CalendarFx__get" class="inline-link"> _get</a><span class="parameters">(</span>name, names) <span>Private function that does a get based off a hash of names</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__get" class="inline-link"> _get</a><span class="parameters">(</span>name) <span>Helper function to get value for specified property stored by this._set(),
+i.e. for properties with custom setters.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_widget_CalendarFx__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_widget_CalendarFx__getSiblingOfChild" class="inline-link"> _getSiblingOfChild</a><span class="parameters">(</span>child, dir) <span>Get the next or previous widget sibling of child</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_Container" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__getSiblingOfChild" class="inline-link"> _getSiblingOfChild</a><span class="parameters">(</span>child, dir) <span>Get the next or previous widget sibling of child</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_Container" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_widget_CalendarFx__isInvalidDate" class="inline-link"> _isInvalidDate</a><span class="parameters">(</span>value) <span>Runs various tests on the value, checking for invalid conditions</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__introspect" class="inline-link"> _introspect</a><span class="parameters">(</span>) <span>Collect metadata about this widget (only once per class, not once per instance):
+
+
+- list of attributes with custom setters, storing in this.constructor._setterAttrs
+- generate this.constructor._onMap, mapping names like &quot;mousedown&quot; to functions like onMouseDown</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_widget_CalendarFx__makeDate" class="inline-link"> _makeDate</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__isInvalidDate" class="inline-link"> _isInvalidDate</a><span class="parameters">(</span>value) <span>Runs various tests on the value, checking for invalid conditions</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_widget_CalendarFx__set" class="inline-link"> _set</a><span class="parameters">(</span>name, value) <span>Helper function to set new value for specified attribute, and call handlers
+        <li class="functionIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__makeDate" class="inline-link"> _makeDate</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__processTemplateNode" class="inline-link"> _processTemplateNode</a><span class="parameters">(</span>baseNode, getAttrFunc, attachFunc) <span>Process data-dojo-attach-point and data-dojo-attach-event for given node or widget.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_AttachMixin" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__set" class="inline-link"> _set</a><span class="parameters">(</span>name, value) <span>Helper function to set new value for specified property, and call handlers
 registered with watch() if the value has changed.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_widget_CalendarFx__setConstraintsAttr" class="inline-link"> _setConstraintsAttr</a><span class="parameters">(</span>constraints) <span>Sets minimum and maximum constraints</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__setConstraintsAttr" class="inline-link"> _setConstraintsAttr</a><span class="parameters">(</span>constraints) <span>Sets minimum and maximum constraints</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_widget_CalendarFx__setOwnerDocumentAttr" class="inline-link"> _setOwnerDocumentAttr</a><span class="parameters">(</span>val) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__setOwnerDocumentAttr" class="inline-link"> _setOwnerDocumentAttr</a><span class="parameters">(</span>val) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_widget_CalendarFx__setStyleAttr" class="inline-link"> _setStyleAttr</a><span class="parameters">(</span>value) <span>Sets the style attribute of the widget according to value,
+        <li class="functionIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__setStyleAttr" class="inline-link"> _setStyleAttr</a><span class="parameters">(</span>value) <span>Sets the style attribute of the widget according to value,
 which is either a hash like {height: &quot;5px&quot;, width: &quot;3px&quot;}
 or a plain string</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_widget_CalendarFx__setValueAttr" class="inline-link"> _setValueAttr</a><span class="parameters">(</span>value) <span>Set the current date and update the UI.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__setValueAttr" class="inline-link"> _setValueAttr</a><span class="parameters">(</span>value) <span>Set the current date and update the UI.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_widget_CalendarFx__slideTable" class="inline-link"> _slideTable</a><span class="parameters">(</span>widget, direction, callback) <span>Animates the horizontal sliding of a table.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__slideTable" class="inline-link"> _slideTable</a><span class="parameters">(</span>widget, direction, callback) <span>Animates the horizontal sliding of a table.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_widget_CalendarFx__stringRepl" class="inline-link"> _stringRepl</a><span class="parameters">(</span>tmpl) <span>Does substitution of ${foo} type properties in template string</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__stringRepl" class="inline-link"> _stringRepl</a><span class="parameters">(</span>tmpl) <span>Does substitution of ${foo} type properties in template string</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_TemplatedMixin" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_widget_CalendarFx__transitionVert" class="inline-link"> _transitionVert</a><span class="parameters">(</span>direction) <span>Animates the views to show one and hide another, in a
+        <li class="functionIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__transitionVert" class="inline-link"> _transitionVert</a><span class="parameters">(</span>direction) <span>Animates the views to show one and hide another, in a
 vertical direction.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_widget_CalendarFx__updateTitleStyle" class="inline-link"> _updateTitleStyle</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__updateTitleStyle" class="inline-link"> _updateTitleStyle</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_addChild" class="inline-link"> addChild</a><span class="parameters">(</span>widget, insertIndex) <span>Makes the given widget a child of this widget.</span><span title="inherited from dijit/_Container" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_addChild" class="inline-link"> addChild</a><span class="parameters">(</span>widget, insertIndex) <span>Makes the given widget a child of this widget.</span><span title="inherited from dijit/_Container" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_addFx" class="inline-link"> addFx</a><span class="parameters">(</span>query, fromNode) <span></span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_addFx" class="inline-link"> addFx</a><span class="parameters">(</span>query, fromNode) <span></span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_applyTextDir" class="inline-link"> applyTextDir</a><span class="parameters">(</span>element, text) <span>The function overridden in the _BidiSupport module,
-originally used for setting element.dir according to this.textDir.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_buildRendering" class="inline-link"> buildRendering</a><span class="parameters">(</span>) <span>Construct the UI for this widget, setting this.domNode.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_buildRendering" class="inline-link"> buildRendering</a><span class="parameters">(</span>) <span>Construct the UI for this widget, setting this.domNode.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_connect" class="inline-link"> connect</a><span class="parameters">(</span>obj, event, method) <span>Deprecated, will be removed in 2.0, use this.own(on(...)) or this.own(aspect.after(...)) instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_connect" class="inline-link"> connect</a><span class="parameters">(</span>obj, event, method) <span>Deprecated, will be removed in 2.0, use this.own(on(...)) or this.own(aspect.after(...)) instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_widget_CalendarFx_create" class="inline-link"> create</a><span class="parameters">(</span>params, srcNodeRef) <span>Kick off the life-cycle of a widget</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_widget_CalendarFx_create" class="inline-link"> create</a><span class="parameters">(</span>params, srcNodeRef) <span>Kick off the life-cycle of a widget</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-        </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_defer" class="inline-link"> defer</a><span class="parameters">(</span>fcn, delay) <span>Wrapper to setTimeout to avoid deferred functions executing
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_defer" class="inline-link"> defer</a><span class="parameters">(</span>fcn, delay) <span>Wrapper to setTimeout to avoid deferred functions executing
 after the originating widget has been destroyed.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>preserveDom) <span>Destroy this widget, but not its descendants.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>preserveDom) <span>Destroy this widget, but not its descendants.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_destroyDescendants" class="inline-link"> destroyDescendants</a><span class="parameters">(</span>preserveDom) <span>Recursively destroy the children of this widget and their
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_destroyDescendants" class="inline-link"> destroyDescendants</a><span class="parameters">(</span>preserveDom) <span>Recursively destroy the children of this widget and their
 descendants.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_destroyRecursive" class="inline-link"> destroyRecursive</a><span class="parameters">(</span>preserveDom) <span>Destroy this widget and its descendants</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_destroyRecursive" class="inline-link"> destroyRecursive</a><span class="parameters">(</span>preserveDom) <span>Destroy this widget and its descendants</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_destroyRendering" class="inline-link"> destroyRendering</a><span class="parameters">(</span>preserveDom) <span>Destroys the DOM nodes associated with this widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_destroyRendering" class="inline-link"> destroyRendering</a><span class="parameters">(</span>preserveDom) <span>Destroys the DOM nodes associated with this widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>handle) <span>Deprecated, will be removed in 2.0, use handle.remove() instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>handle) <span>Deprecated, will be removed in 2.0, use handle.remove() instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, eventObj, callbackArgs) <span>Used by widgets to signal that a synthetic event occurred, ex:
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, eventObj, callbackArgs) <span>Used by widgets to signal that a synthetic event occurred, ex:
 
 
 myWidget.emit(&quot;attrmodified-selectedChildWidget&quot;, {}).</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property from a widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property from a widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_getChildren" class="inline-link"> getChildren</a><span class="parameters">(</span>) <span>Returns all the widgets contained by this, i.e., all widgets underneath this.containerNode.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_getChildren" class="inline-link"> getChildren</a><span class="parameters">(</span>) <span>Returns all direct children of this widget, i.e. all widgets underneath this.containerNode whose parent
+is this widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_getClassForDate" class="inline-link"> getClassForDate</a><span class="parameters">(</span>dateObject, locale) <span>May be overridden to return CSS classes to associate with the date entry for the given dateObject,
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_getClassForDate" class="inline-link"> getClassForDate</a><span class="parameters">(</span>dateObject, locale) <span>May be overridden to return CSS classes to associate with the date entry for the given dateObject,
 for example to indicate a holiday in specified locale.</span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_getIndexOfChild" class="inline-link"> getIndexOfChild</a><span class="parameters">(</span>child) <span>Gets the index of the child in this container or -1 if not found</span><span title="inherited from dijit/_Container" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_getIndexOfChild" class="inline-link"> getIndexOfChild</a><span class="parameters">(</span>child) <span>Gets the index of the child in this container or -1 if not found</span><span title="inherited from dijit/_Container" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_getParent" class="inline-link"> getParent</a><span class="parameters">(</span>) <span>Returns the parent widget of this widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_getParent" class="inline-link"> getParent</a><span class="parameters">(</span>) <span>Returns the parent widget of this widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_getTextDir" class="inline-link"> getTextDir</a><span class="parameters">(</span>text, originalDir) <span>Return direction of the text.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_goToToday" class="inline-link"> goToToday</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_goToToday" class="inline-link"> goToToday</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_hasChildren" class="inline-link"> hasChildren</a><span class="parameters">(</span>) <span>Returns true if widget has child widgets, i.e. if this.containerNode contains widgets.</span><span title="inherited from dijit/_Container" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_hasChildren" class="inline-link"> hasChildren</a><span class="parameters">(</span>) <span>Returns true if widget has child widgets, i.e. if this.containerNode contains widgets.</span><span title="inherited from dijit/_Container" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_isDisabledDate" class="inline-link"> isDisabledDate</a><span class="parameters">(</span>date, locale) <span>May be overridden to disable certain dates in the calendar e.g. isDisabledDate=dojo.date.locale.isWeekend</span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_isDisabledDate" class="inline-link"> isDisabledDate</a><span class="parameters">(</span>date, locale) <span>May be overridden to disable certain dates in the calendar e.g. isDisabledDate=dojo.date.locale.isWeekend</span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
-        </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_isFocusable" class="inline-link"> isFocusable</a><span class="parameters">(</span>) <span>Return true if this widget can currently be focused
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_isFocusable" class="inline-link"> isFocusable</a><span class="parameters">(</span>) <span>Return true if this widget can currently be focused
 and false if not</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_isLeftToRight" class="inline-link"> isLeftToRight</a><span class="parameters">(</span>) <span>Return this widget&#39;s explicit or implicit orientation (true for LTR, false for RTL)</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_isLeftToRight" class="inline-link"> isLeftToRight</a><span class="parameters">(</span>) <span>Return this widget&#39;s explicit or implicit orientation (true for LTR, false for RTL)</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_on" class="inline-link"> on</a><span class="parameters">(</span>type, func) <span>Call specified function when event occurs, ex: myWidget.on(&quot;click&quot;, function(){ ... }).</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_on" class="inline-link"> on</a><span class="parameters">(</span>type, func) <span>Call specified function when event occurs, ex: myWidget.on(&quot;click&quot;, function(){ ... }).</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_own" class="inline-link"> own</a><span class="parameters">(</span>) <span>Track specified handles and remove/destroy them when this instance is destroyed, unless they were
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_own" class="inline-link"> own</a><span class="parameters">(</span>) <span>Track specified handles and remove/destroy them when this instance is destroyed, unless they were
 already removed/destroyed manually.</span><span title="inherited from dijit/Destroyable" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_parseInitialValue" class="inline-link"> parseInitialValue</a><span class="parameters">(</span>value) <span></span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_parseInitialValue" class="inline-link"> parseInitialValue</a><span class="parameters">(</span>value) <span></span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_placeAt" class="inline-link"> placeAt</a><span class="parameters">(</span>reference, position) <span>Place this widget somewhere in the DOM based
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_placeAt" class="inline-link"> placeAt</a><span class="parameters">(</span>reference, position) <span>Place this widget somewhere in the DOM based
 on standard domConstruct.place() conventions.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span>Instantiates the mixin views</span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span>Instantiates the mixin views</span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_postMixInProperties" class="inline-link"> postMixInProperties</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_postMixInProperties" class="inline-link"> postMixInProperties</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/widget/_CalendarBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_widget_CalendarFx_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>params, srcNodeRef) <span>Kicks off widget instantiation.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_widget_CalendarFx_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>params, srcNodeRef) <span>Kicks off widget instantiation.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_removeChild" class="inline-link"> removeChild</a><span class="parameters">(</span>widget) <span>Removes the passed widget instance from this widget but does
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_removeChild" class="inline-link"> removeChild</a><span class="parameters">(</span>widget) <span>Removes the passed widget instance from this widget but does
 not destroy it.</span><span title="inherited from dijit/_Container" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span>Processing after the DOM fragment is added to the document</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span>Processing after the DOM fragment is added to the document</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_subscribe" class="inline-link"> subscribe</a><span class="parameters">(</span>t, method) <span>Deprecated, will be removed in 2.0, use this.own(topic.subscribe()) instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_subscribe" class="inline-link"> subscribe</a><span class="parameters">(</span>t, method) <span>Deprecated, will be removed in 2.0, use this.own(topic.subscribe()) instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span>Returns a string that represents the widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span>Returns a string that represents the widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_uninitialize" class="inline-link"> uninitialize</a><span class="parameters">(</span>) <span>Deprecated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_uninitialize" class="inline-link"> uninitialize</a><span class="parameters">(</span>) <span>Deprecated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_unsubscribe" class="inline-link"> unsubscribe</a><span class="parameters">(</span>handle) <span>Deprecated, will be removed in 2.0, use handle.remove() instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_unsubscribe" class="inline-link"> unsubscribe</a><span class="parameters">(</span>handle) <span>Deprecated, will be removed in 2.0, use handle.remove() instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_watch" class="inline-link"> watch</a><span class="parameters">(</span>name, callback) <span>Watches a property for changes</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_watch" class="inline-link"> watch</a><span class="parameters">(</span>name, callback) <span>Watches a property for changes</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
         </li>
       </ul>
     </div>
     <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="functionIcon private"><a href="#1_8dojox_widget_CalendarFx__onBlur" class="inline-link"> _onBlur</a><span class="parameters">(</span>) <span>This is where widgets do processing for when they stop being active,
+        <li class="functionIcon private"><a href="#1_9dojox_widget_CalendarFx__onBlur" class="inline-link"> _onBlur</a><span class="parameters">(</span>) <span>This is where widgets do processing for when they stop being active,
 such as changing CSS classes.</span><span title="TODO" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_widget_CalendarFx__onDateSelected" class="inline-link"> _onDateSelected</a><span class="parameters">(</span>date, formattedValue, force) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__onDateSelected" class="inline-link"> _onDateSelected</a><span class="parameters">(</span>date, formattedValue, force) <span></span><span title="TODO" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojox_widget_CalendarFx__onFocus" class="inline-link"> _onFocus</a><span class="parameters">(</span>) <span>This is where widgets do processing for when they are active,
+        <li class="functionIcon private"><a href="#1_9dojox_widget_CalendarFx__onFocus" class="inline-link"> _onFocus</a><span class="parameters">(</span>) <span>This is where widgets do processing for when they are active,
 such as changing CSS classes.</span><span title="TODO" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_widget_CalendarFx__onMap" class="inline-link"> _onMap</a><span class="parameters">(</span>type) <span>Maps on() type parameter (ex: &quot;mousemove&quot;) to method name (ex: &quot;onMouseMove&quot;).</span><span title="TODO" class="jsdoc-extension"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_widget_CalendarFx__onMap" class="inline-link"> _onMap</a><span class="parameters">(</span>type) <span>Maps on() type parameter (ex: &quot;mousemove&quot;) to method name (ex: &quot;onMouseMove&quot;).</span><span title="TODO" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_widget_CalendarFx_onBlur" class="inline-link"> onBlur</a><span class="parameters">(</span>) <span>Called when the widget stops being &quot;active&quot; because
+        <li class="functionIcon "><a href="#1_9dojox_widget_CalendarFx_onBlur" class="inline-link"> onBlur</a><span class="parameters">(</span>) <span>Called when the widget stops being &quot;active&quot; because
 focus moved to something outside of it, or the user
 clicked somewhere outside of it, or the widget was
 hidden.</span><span title="TODO" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_onChange" class="inline-link"> onChange</a><span class="parameters">(</span>date) <span>Called only when the selected date has changed</span><span title="TODO" class="jsdoc-extension"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_onChange" class="inline-link"> onChange</a><span class="parameters">(</span>date) <span>Called only when the selected date has changed</span><span title="TODO" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_widget_CalendarFx_onFocus" class="inline-link"> onFocus</a><span class="parameters">(</span>) <span>Called when the widget becomes &quot;active&quot; because
+        <li class="functionIcon "><a href="#1_9dojox_widget_CalendarFx_onFocus" class="inline-link"> onFocus</a><span class="parameters">(</span>) <span>Called when the widget becomes &quot;active&quot; because
 it or a widget inside of it either has focus, or has recently
 been clicked.</span><span title="TODO" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_onHeaderClick" class="inline-link"> onHeaderClick</a><span class="parameters">(</span>e) <span>Transitions to the next view.</span><span title="TODO" class="jsdoc-extension"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_onHeaderClick" class="inline-link"> onHeaderClick</a><span class="parameters">(</span>e) <span>Transitions to the next view.</span><span title="TODO" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_widget_CalendarFx_onValueSelected" class="inline-link"> onValueSelected</a><span class="parameters">(</span>date) <span>A date cell was selected.</span><span title="TODO" class="jsdoc-extension"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_widget_CalendarFx_onValueSelected" class="inline-link"> onValueSelected</a><span class="parameters">(</span>date) <span>A date cell was selected.</span><span title="TODO" class="jsdoc-extension"></span>
         </li>
       </ul>
     </div>
@@ -292,42 +310,42 @@ been clicked.</span><span title="TODO" class="jsdoc-extension"></span>
     <h2>Properties</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx__attachEvents"></a><span class="objectIcon">_attachEvents</span><span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__attachEvents"></a><span class="objectIcon">_attachEvents</span><span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_TemplatedMixin" class="jsdoc-link">dijit/_TemplatedMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_AttachMixin" class="jsdoc-link">dijit/_AttachMixin</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>List of connections associated with data-dojo-attach-event=... in the
 template</p>
 </div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx__attachPoints"></a><span class="objectIcon">_attachPoints</span><span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__attachPoints"></a><span class="objectIcon">_attachPoints</span><span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_TemplatedMixin" class="jsdoc-link">dijit/_TemplatedMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_AttachMixin" class="jsdoc-link">dijit/_AttachMixin</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>List of widget attribute names associated with data-dojo-attach-point=... in the
 template, ex: [&quot;containerNode&quot;, &quot;labelNode&quot;]</p>
 </div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx__attrPairNames"></a><span class="objectIcon">_attrPairNames</span><span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__attrPairNames"></a><span class="objectIcon">_attrPairNames</span><span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx__blankGif"></a><span class="stringIcon">_blankGif</span><span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__blankGif"></a><span class="stringIcon">_blankGif</span><span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>Path to a blank 1x1 image.
 Used by <code>&lt;img&gt;</code> nodes in templates that really get their image via CSS background-image.</p>
 </div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx__earlyTemplatedStartup"></a><span class="booleanIcon">_earlyTemplatedStartup</span><span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__earlyTemplatedStartup"></a><span class="booleanIcon">_earlyTemplatedStartup</span><span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_TemplatedMixin" class="jsdoc-link">dijit/_TemplatedMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetsInTemplateMixin" class="jsdoc-link">dijit/_WidgetsInTemplateMixin</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>A fallback to preserve the 1.0 - 1.3 behavior of children in
 templates having their startup called before the parent widget
@@ -338,55 +356,74 @@ have their .startup() called immediately before a parent widget
 </div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx__setClassAttr"></a><span class="objectIcon">_setClassAttr</span><span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__rendered"></a><span class="booleanIcon">_rendered</span><span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_TemplatedMixin" class="jsdoc-link">dijit/_TemplatedMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Not normally use, but this flag can be set by the app if the server has already rendered the template,
+i.e. already inlining the template for the widget into the main page.   Reduces _TemplatedMixin to
+just function like _AttachMixin.</p>
+</div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__setClassAttr"></a><span class="objectIcon">_setClassAttr</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx__setDirAttr"></a><span class="objectIcon">_setDirAttr</span><span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__setDirAttr"></a><span class="objectIcon">_setDirAttr</span><span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
-        </div>
-      </div>
-      <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx__setIdAttr"></a><span class="stringIcon">_setIdAttr</span><span title="private" class="jsdoc-private"> </span>
-        </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx__setLangAttr"></a><span class="objectIcon">_setLangAttr</span><span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__setIdAttr"></a><span class="stringIcon">_setIdAttr</span><span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
-        </div>
-      </div>
-      <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx__skipNodeCache"></a><span class="booleanIcon">_skipNodeCache</span><span title="private" class="jsdoc-private"> </span>
-        </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_TemplatedMixin" class="jsdoc-link">dijit/_TemplatedMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx__started"></a><span class="booleanIcon">_started</span><span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__setLangAttr"></a><span class="objectIcon">_setLangAttr</span><span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__skipNodeCache"></a><span class="booleanIcon">_skipNodeCache</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_TemplatedMixin" class="jsdoc-link">dijit/_TemplatedMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__started"></a><span class="booleanIcon">_started</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>startup() has completed.</p>
 </div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx__views"></a><span class="arrayIcon">_views</span><span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__views"></a><span class="arrayIcon">_views</span><span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>The list of mixin views available on this calendar.</p>
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_attributeMap"></a><span class="objectIcon">attributeMap</span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_attachScope"></a><span class="objectIcon">attachScope</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_AttachMixin" class="jsdoc-link">dijit/_AttachMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Object to which attach points and events will be scoped.  Defaults
+to &#39;this&#39;.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_attributeMap"></a><span class="objectIcon">attributeMap</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>Deprecated. Instead of attributeMap, widget should have a _setXXXAttr attribute
 for each XXX attribute to be mapped to the DOM.
@@ -448,30 +485,30 @@ formats of the above list.
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_baseClass"></a><span class="stringIcon">baseClass</span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_baseClass"></a><span class="stringIcon">baseClass</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>Root CSS class of the widget (ex: dijitTextBox), used to construct CSS classes to indicate
 widget state.</p>
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_class"></a><span class="stringIcon">class</span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_class"></a><span class="stringIcon">class</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
-        </div>
-      </div>
-      <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_constraints"></a><span class="objectIcon">constraints</span>
-        </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_containerNode"></a><span class="domnodeIcon">containerNode</span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_constraints"></a><span class="objectIcon">constraints</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_containerNode"></a><span class="domnodeIcon">containerNode</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>Designates where children of the source DOM node will be placed.
 &quot;Children&quot; in this case refers to both DOM nodes and widgets.
@@ -501,9 +538,18 @@ is null for widgets that don&#39;t, like TextBox.</p>
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_dir"></a><span class="stringIcon">dir</span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_contextRequire"></a><span class="functionIcon">contextRequire</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetsInTemplateMixin" class="jsdoc-link">dijit/_WidgetsInTemplateMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Used to provide a context require to the <a class="jsdoc-link" href="/api/1.9/dojo/parser">dojo/parser</a> in order to be
+able to use relative MIDs (e.g. <code>./Widget</code>) in the widget&#39;s template.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_dir"></a><span class="stringIcon">dir</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>Bi-directional support, as defined by the <a href="http://www.w3.org/TR/html401/struct/dirlang.html#adef-dir">HTML DIR</a>
 attribute. Either left-to-right &quot;ltr&quot; or right-to-left &quot;rtl&quot;.  If undefined, widgets renders in page&#39;s
@@ -511,9 +557,9 @@ default direction.</p>
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_domNode"></a><span class="domnodeIcon">domNode</span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_domNode"></a><span class="domnodeIcon">domNode</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>This is our visible representation of the widget! Other DOM
 Nodes may by assigned to other properties, usually through the
@@ -522,27 +568,27 @@ property is the canonical &quot;top level&quot; node in widget UI.</p>
 </div>
       </div>
       <div class="jsdoc-field public extension-module">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_focused"></a><span class="booleanIcon">focused</span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_focused"></a><span class="booleanIcon">focused</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_FocusMixin" class="jsdoc-link">dijit/_FocusMixin</a><span title="Must manually require () dijit/_FocusMixin to access" class="jsdoc-extension"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_FocusMixin" class="jsdoc-link">dijit/_FocusMixin</a><span title="Must manually require () dijit/_FocusMixin to access" class="jsdoc-extension"></span>
         </div>
         <div class="jsdoc-summary"><p>This widget or a widget it contains has focus, or is &quot;active&quot; because
 it was recently clicked.</p>
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_footerFormat"></a><span class="stringIcon">footerFormat</span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_footerFormat"></a><span class="stringIcon">footerFormat</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>The date format of the date displayed in the footer.    Can be
 &#39;short&#39;, &#39;medium&#39;, and &#39;long&#39;</p>
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_id"></a><span class="stringIcon">id</span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_id"></a><span class="stringIcon">id</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>A unique, opaque ID string that can be assigned by users or by the
 system. If the developer passes an ID which is known not to be
@@ -551,9 +597,9 @@ used instead.</p>
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_lang"></a><span class="stringIcon">lang</span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_lang"></a><span class="stringIcon">lang</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>Rarely used.  Overrides the default Dojo locale used to render this widget,
 as defined by the <a href="http://www.w3.org/TR/html401/struct/dirlang.html#adef-lang">HTML LANG</a> attribute.
@@ -562,78 +608,63 @@ formatted according to <a href="http://www.ietf.org/rfc/rfc3066.txt">RFC 3066</a
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_ownerDocument"></a><span class="objectIcon">ownerDocument</span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_ownerDocument"></a><span class="objectIcon">ownerDocument</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>The document this widget belongs to.  If not specified to constructor, will default to
-srcNodeRef.ownerDocument, or if no sourceRef specified, then to <a class="jsdoc-link" href="/api/1.8/dojo/_base/window">dojo/_base/window</a>::doc</p>
+srcNodeRef.ownerDocument, or if no sourceRef specified, then to the document global</p>
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_parent"></a><span class="objectIcon">parent</span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_parent"></a><span class="objectIcon">parent</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/widget/_CalendarDay" class="jsdoc-link">dojox/widget/_CalendarDay</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/widget/_CalendarDay" class="jsdoc-link">dojox/widget/_CalendarDay</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_srcNodeRef"></a><span class="domnodeIcon">srcNodeRef</span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_searchContainerNode"></a><span class="booleanIcon">searchContainerNode</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_TemplatedMixin" class="jsdoc-link">dijit/_TemplatedMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_srcNodeRef"></a><span class="domnodeIcon">srcNodeRef</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>pointer to original DOM node</p>
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_style"></a><span class="stringIcon">style</span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_style"></a><span class="stringIcon">style</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>HTML style attributes as cssText string or name/value hash</p>
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_templatePath"></a><span class="stringIcon">templatePath</span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_templatePath"></a><span class="stringIcon">templatePath</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_TemplatedMixin" class="jsdoc-link">dijit/_TemplatedMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_TemplatedMixin" class="jsdoc-link">dijit/_TemplatedMixin</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>Path to template (HTML file) for this widget relative to dojo.baseUrl.
-Deprecated: use templateString with require([... &quot;<a class="jsdoc-link" href="/api/1.8/dojo/text">dojo/text</a>!...&quot;], ...) instead</p>
+Deprecated: use templateString with require([... &quot;<a class="jsdoc-link" href="/api/1.9/dojo/text">dojo/text</a>!...&quot;], ...) instead</p>
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_templateString"></a><span class="stringIcon">templateString</span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_templateString"></a><span class="stringIcon">templateString</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>The template to be used to construct the widget.</p>
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_textDir"></a><span class="stringIcon">textDir</span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_title"></a><span class="stringIcon">title</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
-        </div>
-        <div class="jsdoc-summary"><p>Bi-directional support, the main variable which is responsible for the direction of the text.
-The text direction can be different than the GUI direction by using this parameter in creation
-of a widget.
-
-</p>
-<p>Allowed values:
-
-</p>
-<ol>
-<li>&quot;ltr&quot;</li>
-<li>&quot;rtl&quot;</li>
-<li>&quot;auto&quot; - contextual the direction of a text defined by first strong letter.</li>
-</ol>
-<p>By default is as the page direction.</p>
-</div>
-      </div>
-      <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_title"></a><span class="stringIcon">title</span>
-        </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>HTML title attribute.
 
@@ -643,22 +674,23 @@ the widget (just like the native HTML title attribute).
 
 </p>
 <p>For TitlePane or for when this widget is a child of a TabContainer, AccordionContainer,
-etc., it&#39;s used to specify the tab label, accordion pane title, etc.</p>
+etc., it&#39;s used to specify the tab label, accordion pane title, etc.  In this case it&#39;s
+interpreted as HTML.</p>
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_tooltip"></a><span class="stringIcon">tooltip</span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_tooltip"></a><span class="stringIcon">tooltip</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>When this widget&#39;s title attribute is used to for a tab label, accordion pane title, etc.,
 this specifies the tooltip to appear when the mouse is hovered over that text.</p>
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_useFx"></a><span class="booleanIcon">useFx</span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_useFx"></a><span class="booleanIcon">useFx</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>Specifies if visual effects should be applied to the widget.
 The default behavior of the widget does not contain any effects.
@@ -666,17 +698,17 @@ The dojox.widget.CalendarFx package is needed for these.</p>
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_value"></a><span class="dateIcon">value</span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_value"></a><span class="dateIcon">value</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>The currently selected Date</p>
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_widgetsInTemplate"></a><span class="booleanIcon">widgetsInTemplate</span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_widgetsInTemplate"></a><span class="booleanIcon">widgetsInTemplate</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetsInTemplateMixin" class="jsdoc-link">dijit/_WidgetsInTemplateMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetsInTemplateMixin" class="jsdoc-link">dijit/_WidgetsInTemplateMixin</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>Should we parse the template to find widgets that might be
 declared in markup inside it?  (Remove for 2.0 and assume true)</p>
@@ -686,9 +718,9 @@ declared in markup inside it?  (Remove for 2.0 and assume true)</p>
     <h2>Methods</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx__addView"></a><span class="functionIcon">_addView</span><span class="parameters">(view)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__addView"></a><span class="functionIcon">_addView</span><span class="parameters">(view)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -706,9 +738,9 @@ declared in markup inside it?  (Remove for 2.0 and assume true)</p>
         </table>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx__adjustDisplay"></a><span class="functionIcon">_adjustDisplay</span><span class="parameters">(part, amount, noSlide)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__adjustDisplay"></a><span class="functionIcon">_adjustDisplay</span><span class="parameters">(part, amount, noSlide)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>This function overrides the base function defined in dijit/Calendar.
 It changes the displayed years, months and days depending on the inputs.</p>
@@ -740,9 +772,9 @@ It changes the displayed years, months and days depending on the inputs.</p>
         </table>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx__applyAttributes"></a><span class="functionIcon">_applyAttributes</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__applyAttributes"></a><span class="functionIcon">_applyAttributes</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Step during widget creation to copy  widget attributes to the
 DOM according to attributeMap and _setXXXAttr objects, and also to call
@@ -759,13 +791,48 @@ _setXXXAttr is a hash/string/array, but _setXXXAttr as a functions override attr
 </div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx__attachTemplateNodes"></a><span class="functionIcon">_attachTemplateNodes</span><span class="parameters">(rootNode, getAttrFunc)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__attach"></a><span class="functionIcon">_attach</span><span class="parameters">(node, type, func)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_TemplatedMixin" class="jsdoc-link">dijit/_TemplatedMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_AttachMixin" class="jsdoc-link">dijit/_AttachMixin</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-full-summary"><p>Iterate through the template and attach functions and nodes accordingly.
-Alternately, if rootNode is an array of widgets, then will process data-dojo-attach-point
-etc. for those widgets.</p>
+        <div class="jsdoc-full-summary"><p>Roughly corresponding to dojo/on, this is the default function for processing a
+data-dojo-attach-event.  Meant to attach to DOMNodes, not to widgets.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">node</td>
+            <td class="jsdoc-param-type">DOMNode</td>
+            <td class="jsdoc-param-description"><p>The node to setup a listener on.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>Event name like &quot;click&quot;.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">func</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__attachTemplateNodes"></a><span class="functionIcon">_attachTemplateNodes</span><span class="parameters">(rootNode)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_AttachMixin" class="jsdoc-link">dijit/_AttachMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Iterate through the dom nodes and attach functions and nodes accordingly.</p>
 </div>
         <div class="jsdoc-full-summary"><p>Map widget properties and functions to the handlers specified in
 the dom node and it&#39;s descendants. This function iterates over all
@@ -785,25 +852,17 @@ nodes and looks for these properties:
           </tr>
           <tr>
             <td class="jsdoc-param-name">rootNode</td>
-            <td class="jsdoc-param-type">DomNode | Widget[]</td>
-            <td class="jsdoc-param-description"><p>the node to search for properties. All children will be searched.</p>
- 
-            </td>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">getAttrFunc</td>
-            <td class="jsdoc-param-type">Function</td>
-            <td class="jsdoc-param-description"><p>a function which will be used to obtain property for a given
-DomNode/Widget</p>
+            <td class="jsdoc-param-type">DomNode</td>
+            <td class="jsdoc-param-description"><p>The node to search for properties. All descendants will be searched.</p>
  
             </td>
           </tr>
         </table>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx__attrToDom"></a><span class="functionIcon">_attrToDom</span><span class="parameters">(attr, value, commands)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__attrToDom"></a><span class="functionIcon">_attrToDom</span><span class="parameters">(attr, value, commands)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Reflect a widget attribute (title, tabIndex, duration etc.) to
 the widget DOM, as specified by commands parameter.
@@ -841,16 +900,16 @@ to DOMNode inside the widget, or alternately pointing to a subwidget</p>
         </table>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx__beforeFillContent"></a><span class="functionIcon">_beforeFillContent</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__beforeFillContent"></a><span class="functionIcon">_beforeFillContent</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_TemplatedMixin" class="jsdoc-link">dijit/_TemplatedMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_AttachMixin" class="jsdoc-link">dijit/_AttachMixin</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"></div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx__changeAttrValue"></a><span class="functionIcon">_changeAttrValue</span><span class="parameters">(name, value)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__changeAttrValue"></a><span class="functionIcon">_changeAttrValue</span><span class="parameters">(name, value)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Internal helper for directly changing an attribute value.
 </p>
@@ -888,9 +947,17 @@ of attributes that are linked, but calling .set() is not appropriate.</p>
 </div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx__fillContent"></a><span class="functionIcon">_fillContent</span><span class="parameters">(source)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__detachTemplateNodes"></a><span class="functionIcon">_detachTemplateNodes</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_TemplatedMixin" class="jsdoc-link">dijit/_TemplatedMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_AttachMixin" class="jsdoc-link">dijit/_AttachMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Detach and clean up the attachments made in _attachtempalteNodes.</p>
+</div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__fillContent"></a><span class="functionIcon">_fillContent</span><span class="parameters">(source)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_TemplatedMixin" class="jsdoc-link">dijit/_TemplatedMixin</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Relocate source contents to templated container node.
 this.containerNode must be able to receive children, or exceptions will be thrown.</p>
@@ -910,11 +977,15 @@ this.containerNode must be able to receive children, or exceptions will be throw
         </table>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx__get"></a><span class="functionIcon">_get</span><span class="parameters">(name, names)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__get"></a><span class="functionIcon">_get</span><span class="parameters">(name)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-full-summary"><p>Private function that does a get based off a hash of names</p>
+        <div class="jsdoc-full-summary"><p>Helper function to get value for specified property stored by this._set(),
+i.e. for properties with custom setters.  Used mainly by custom getters.
+
+</p>
+<p>For example, CheckBox._getValueAttr() calls this._get(&quot;value&quot;).</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -924,24 +995,17 @@ this.containerNode must be able to receive children, or exceptions will be throw
           </tr>
           <tr>
             <td class="jsdoc-param-name">name</td>
-            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-type">String</td>
             <td class="jsdoc-param-description">
-            </td>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">names</td>
-            <td class="jsdoc-param-type">undefined</td>
-            <td class="jsdoc-param-description"><p>Hash of names of custom attributes</p>
- 
             </td>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx__getAttrNames"></a><span class="functionIcon">_getAttrNames</span><span class="parameters">(name)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__getAttrNames"></a><span class="functionIcon">_getAttrNames</span><span class="parameters">(name)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Helper function for get() and set().
 Caches attribute name values so we don&#39;t do the string ops every time.</p>
@@ -962,9 +1026,9 @@ Caches attribute name values so we don&#39;t do the string ops every time.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined | object</span></div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx__getSiblingOfChild"></a><span class="functionIcon">_getSiblingOfChild</span><span class="parameters">(child, dir)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__getSiblingOfChild"></a><span class="functionIcon">_getSiblingOfChild</span><span class="parameters">(child, dir)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_Container" class="jsdoc-link">dijit/_Container</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_Container" class="jsdoc-link">dijit/_Container</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Get the next or previous widget sibling of child</p>
 </div>
@@ -992,9 +1056,21 @@ if -1, get the previous sibling</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx__isInvalidDate"></a><span class="functionIcon">_isInvalidDate</span><span class="parameters">(value)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__introspect"></a><span class="functionIcon">_introspect</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Collect metadata about this widget (only once per class, not once per instance):
+
+</p>
+<pre><code>- list of attributes with custom setters, storing in this.constructor._setterAttrs
+- generate this.constructor._onMap, mapping names like &quot;mousedown&quot; to functions like onMouseDown</code></pre>
+</div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__isInvalidDate"></a><span class="functionIcon">_isInvalidDate</span><span class="parameters">(value)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Runs various tests on the value, checking for invalid conditions</p>
 </div>
@@ -1014,9 +1090,9 @@ if -1, get the previous sibling</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx__makeDate"></a><span class="functionIcon">_makeDate</span><span class="parameters">(value)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__makeDate"></a><span class="functionIcon">_makeDate</span><span class="parameters">(value)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -1035,11 +1111,49 @@ if -1, get the previous sibling</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx__set"></a><span class="functionIcon">_set</span><span class="parameters">(name, value)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__processTemplateNode"></a><span class="functionIcon">_processTemplateNode</span><span class="parameters">(baseNode, getAttrFunc, attachFunc)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_AttachMixin" class="jsdoc-link">dijit/_AttachMixin</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-full-summary"><p>Helper function to set new value for specified attribute, and call handlers
+        <div class="jsdoc-full-summary"><p>Process data-dojo-attach-point and data-dojo-attach-event for given node or widget.
+Returns true if caller should process baseNode&#39;s children too.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">baseNode</td>
+            <td class="jsdoc-param-type">DOMNode | Widget</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">getAttrFunc</td>
+            <td class="jsdoc-param-type">Function</td>
+            <td class="jsdoc-param-description"><p>Function to get the specified property for a given DomNode/Widget.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">attachFunc</td>
+            <td class="jsdoc-param-type">Function</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>Attaches an event handler from the specified node/widget to specified function.</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__set"></a><span class="functionIcon">_set</span><span class="parameters">(name, value)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Helper function to set new value for specified property, and call handlers
 registered with watch() if the value has changed.</p>
 </div>
         <table class="jsdoc-parameters">
@@ -1063,9 +1177,9 @@ registered with watch() if the value has changed.</p>
         </table>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx__setConstraintsAttr"></a><span class="functionIcon">_setConstraintsAttr</span><span class="parameters">(constraints)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__setConstraintsAttr"></a><span class="functionIcon">_setConstraintsAttr</span><span class="parameters">(constraints)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Sets minimum and maximum constraints</p>
 </div>
@@ -1084,9 +1198,9 @@ registered with watch() if the value has changed.</p>
         </table>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx__setOwnerDocumentAttr"></a><span class="functionIcon">_setOwnerDocumentAttr</span><span class="parameters">(val)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__setOwnerDocumentAttr"></a><span class="functionIcon">_setOwnerDocumentAttr</span><span class="parameters">(val)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -1104,9 +1218,9 @@ registered with watch() if the value has changed.</p>
         </table>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx__setStyleAttr"></a><span class="functionIcon">_setStyleAttr</span><span class="parameters">(value)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__setStyleAttr"></a><span class="functionIcon">_setStyleAttr</span><span class="parameters">(value)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Sets the style attribute of the widget according to value,
 which is either a hash like {height: &quot;5px&quot;, width: &quot;3px&quot;}
@@ -1130,9 +1244,9 @@ in attributeMap.</p>
         </table>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx__setValueAttr"></a><span class="functionIcon">_setValueAttr</span><span class="parameters">(value)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__setValueAttr"></a><span class="functionIcon">_setValueAttr</span><span class="parameters">(value)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Set the current date and update the UI. If the date is disabled, the selection will
 not change, but the display will change to the corresponding month.</p>
@@ -1153,9 +1267,9 @@ not change, but the display will change to the corresponding month.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx__slideTable"></a><span class="functionIcon">_slideTable</span><span class="parameters">(widget, direction, callback)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__slideTable"></a><span class="functionIcon">_slideTable</span><span class="parameters">(widget, direction, callback)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Animates the horizontal sliding of a table.</p>
 </div>
@@ -1186,9 +1300,9 @@ not change, but the display will change to the corresponding month.</p>
         </table>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx__stringRepl"></a><span class="functionIcon">_stringRepl</span><span class="parameters">(tmpl)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__stringRepl"></a><span class="functionIcon">_stringRepl</span><span class="parameters">(tmpl)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_TemplatedMixin" class="jsdoc-link">dijit/_TemplatedMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_TemplatedMixin" class="jsdoc-link">dijit/_TemplatedMixin</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Does substitution of ${foo} type properties in template string</p>
 </div>
@@ -1208,9 +1322,9 @@ not change, but the display will change to the corresponding month.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx__transitionVert"></a><span class="functionIcon">_transitionVert</span><span class="parameters">(direction)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__transitionVert"></a><span class="functionIcon">_transitionVert</span><span class="parameters">(direction)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Animates the views to show one and hide another, in a
 vertical direction.
@@ -1233,25 +1347,21 @@ If &#39;direction&#39; is -1, the views slide downwards.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx__updateTitleStyle"></a><span class="functionIcon">_updateTitleStyle</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__updateTitleStyle"></a><span class="functionIcon">_updateTitleStyle</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_addChild"></a><span class="functionIcon">addChild</span><span class="parameters">(widget, insertIndex)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_addChild"></a><span class="functionIcon">addChild</span><span class="parameters">(widget, insertIndex)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_Container" class="jsdoc-link">dijit/_Container</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_Container" class="jsdoc-link">dijit/_Container</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Makes the given widget a child of this widget.</p>
 </div>
         <div class="jsdoc-full-summary"><p>Inserts specified child widget&#39;s dom node as a child of this widget&#39;s
-container node, and possibly does other processing (such as layout).
-
-</p>
-<p>Functionality is undefined if this widget contains anything besides
-a list of child widgets (ie, if it contains arbitrary non-widget HTML).</p>
+container node, and possibly does other processing (such as layout).</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -1275,9 +1385,9 @@ a list of child widgets (ie, if it contains arbitrary non-widget HTML).</p>
         </table>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_addFx"></a><span class="functionIcon">addFx</span><span class="parameters">(query, fromNode)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_addFx"></a><span class="functionIcon">addFx</span><span class="parameters">(query, fromNode)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -1301,47 +1411,18 @@ a list of child widgets (ie, if it contains arbitrary non-widget HTML).</p>
         </table>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_applyTextDir"></a><span class="functionIcon">applyTextDir</span><span class="parameters">(element, text)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_buildRendering"></a><span class="functionIcon">buildRendering</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
-        </div>
-        <div class="jsdoc-full-summary"><p>The function overridden in the _BidiSupport module,
-originally used for setting element.dir according to this.textDir.
-In this case does nothing.</p>
-</div>
-        <table class="jsdoc-parameters">
-          <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">element</td>
-            <td class="jsdoc-param-type">DOMNode</td>
-            <td class="jsdoc-param-description">
-            </td>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">text</td>
-            <td class="jsdoc-param-type">String</td>
-            <td class="jsdoc-param-description">
-            </td>
-          </tr>
-        </table>
-      </div>
-      <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_buildRendering"></a><span class="functionIcon">buildRendering</span><span class="parameters">()</span> 
-        </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Construct the UI for this widget, setting this.domNode.
 Most widgets will mixin <code>dijit._TemplatedMixin</code>, which implements this method.</p>
 </div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_connect"></a><span class="functionIcon">connect</span><span class="parameters">(obj, event, method)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_connect"></a><span class="functionIcon">connect</span><span class="parameters">(obj, event, method)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Deprecated, will be removed in 2.0, use this.own(on(...)) or this.own(aspect.after(...)) instead.
 
@@ -1398,16 +1479,16 @@ btn.connect(foo, &quot;bar&quot;, function(){
         </div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"></div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_create"></a><span class="functionIcon">create</span><span class="parameters">(params, srcNodeRef)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_create"></a><span class="functionIcon">create</span><span class="parameters">(params, srcNodeRef)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Kick off the life-cycle of a widget</p>
 </div>
@@ -1452,9 +1533,9 @@ The hash can contain any of the widget&#39;s properties, excluding read-only pro
         </table>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_defer"></a><span class="functionIcon">defer</span><span class="parameters">(fcn, delay)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_defer"></a><span class="functionIcon">defer</span><span class="parameters">(fcn, delay)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Wrapper to setTimeout to avoid deferred functions executing
 after the originating widget has been destroyed.
@@ -1482,12 +1563,21 @@ Returns an object handle with a remove method (that returns null) (replaces clea
         <div><strong>Returns: </strong><span class="jsdoc-return-type">object</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_destroy"></a><span class="functionIcon">destroy</span><span class="parameters">(preserveDom)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_destroy"></a><span class="functionIcon">destroy</span><span class="parameters">(preserveDom)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-full-summary"><p>Destroy this widget, but not its descendants.
-This method will, however, destroy internal widgets such as those used within a template.</p>
+        <div class="jsdoc-full-summary"><p>Destroy this widget, but not its descendants.  Descendants means widgets inside of
+this.containerNode.   Will also destroy any resources (including widgets) registered via this.own().
+
+</p>
+<p>This method will also destroy internal widgets such as those created from a template,
+assuming those widgets exist inside of this.domNode but outside of this.containerNode.
+
+</p>
+<p>For 2.0 it&#39;s planned that this method will also destroy descendant widgets, so apps should not
+depend on the current ability to destroy a widget without destroying its descendants.   Generally
+they should use destroyRecursive() for widgets with children.</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -1499,16 +1589,16 @@ This method will, however, destroy internal widgets such as those used within a 
             <td class="jsdoc-param-name">preserveDom</td>
             <td class="jsdoc-param-type">Boolean</td>
             <td class="jsdoc-param-description"><p>If true, this method will leave the original DOM structure alone.
-Note: This will not yet work with _Templated widgets</p>
+Note: This will not yet work with _TemplatedMixin widgets</p>
  
             </td>
           </tr>
         </table>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_destroyDescendants"></a><span class="functionIcon">destroyDescendants</span><span class="parameters">(preserveDom)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_destroyDescendants"></a><span class="functionIcon">destroyDescendants</span><span class="parameters">(preserveDom)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Recursively destroy the children of this widget and their
 descendants.</p>
@@ -1532,9 +1622,9 @@ widgets.</p>
         </table>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_destroyRecursive"></a><span class="functionIcon">destroyRecursive</span><span class="parameters">(preserveDom)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_destroyRecursive"></a><span class="functionIcon">destroyRecursive</span><span class="parameters">(preserveDom)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Destroy this widget and its descendants</p>
 </div>
@@ -1554,18 +1644,18 @@ destroyed, it is removed from the manager object.</p>
             <td class="jsdoc-param-description">
               <div><em>Optional</em></div><p>If true, this method will leave the original DOM structure
 alone of descendant Widgets. Note: This will NOT work with
-dijit._Templated widgets.</p>
+dijit._TemplatedMixin widgets.</p>
  
             </td>
           </tr>
         </table>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_destroyRendering"></a><span class="functionIcon">destroyRendering</span><span class="parameters">(preserveDom)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_destroyRendering"></a><span class="functionIcon">destroyRendering</span><span class="parameters">(preserveDom)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-full-summary"><p>Destroys the DOM nodes associated with this widget</p>
+        <div class="jsdoc-full-summary"><p>Destroys the DOM nodes associated with this widget.</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -1586,9 +1676,9 @@ widgets yet.</p>
         </table>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_disconnect"></a><span class="functionIcon">disconnect</span><span class="parameters">(handle)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_disconnect"></a><span class="functionIcon">disconnect</span><span class="parameters">(handle)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Deprecated, will be removed in 2.0, use handle.remove() instead.
 
@@ -1610,9 +1700,9 @@ widgets yet.</p>
         </table>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_emit"></a><span class="functionIcon">emit</span><span class="parameters">(type, eventObj, callbackArgs)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_emit"></a><span class="functionIcon">emit</span><span class="parameters">(type, eventObj, callbackArgs)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Used by widgets to signal that a synthetic event occurred, ex:
 
@@ -1653,9 +1743,9 @@ Modifies eventObj by adding missing parameters (bubbles, cancelable, widget).</p
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_get"></a><span class="functionIcon">get</span><span class="parameters">(name)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_get"></a><span class="functionIcon">get</span><span class="parameters">(name)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Get a property from a widget.</p>
 </div>
@@ -1688,19 +1778,29 @@ would be equivalent to the expression
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_getChildren"></a><span class="functionIcon">getChildren</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_getChildren"></a><span class="functionIcon">getChildren</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-full-summary"><p>Returns all the widgets contained by this, i.e., all widgets underneath this.containerNode.
-Does not return nested widgets, nor widgets that are part of this widget&#39;s template.</p>
+        <div class="jsdoc-full-summary"><p>Returns all direct children of this widget, i.e. all widgets underneath this.containerNode whose parent
+is this widget.   Note that it does not return all descendants, but rather just direct children.
+Analogous to <a href="https://developer.mozilla.org/en-US/docs/DOM/Node.childNodes">Node.childNodes</a>,
+except containing widgets rather than DOMNodes.
+
+</p>
+<p>The result intentionally excludes internally created widgets (a.k.a. supporting widgets)
+outside of this.containerNode.
+
+</p>
+<p>Note that the array returned is a simple array.  Application code should not assume
+existence of methods like forEach().</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Array</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_getClassForDate"></a><span class="functionIcon">getClassForDate</span><span class="parameters">(dateObject, locale)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_getClassForDate"></a><span class="functionIcon">getClassForDate</span><span class="parameters">(dateObject, locale)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>May be overridden to return CSS classes to associate with the date entry for the given dateObject,
 for example to indicate a holiday in specified locale.</p>
@@ -1728,9 +1828,9 @@ for example to indicate a holiday in specified locale.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">string</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_getIndexOfChild"></a><span class="functionIcon">getIndexOfChild</span><span class="parameters">(child)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_getIndexOfChild"></a><span class="functionIcon">getIndexOfChild</span><span class="parameters">(child)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_Container" class="jsdoc-link">dijit/_Container</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_Container" class="jsdoc-link">dijit/_Container</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Gets the index of the child in this container or -1 if not found</p>
 </div>
@@ -1750,65 +1850,34 @@ for example to indicate a holiday in specified locale.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_getParent"></a><span class="functionIcon">getParent</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_getParent"></a><span class="functionIcon">getParent</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-full-summary"><p>Returns the parent widget of this widget</p>
+        <div class="jsdoc-full-summary"><p>Returns the parent widget of this widget.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_getTextDir"></a><span class="functionIcon">getTextDir</span><span class="parameters">(text, originalDir)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_goToToday"></a><span class="functionIcon">goToToday</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
-        </div>
-        <div class="jsdoc-full-summary"><p>Return direction of the text.
-The function overridden in the _BidiSupport module,
-its main purpose is to calculate the direction of the
-text, if was defined by the programmer through textDir.</p>
-</div>
-        <table class="jsdoc-parameters">
-          <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">text</td>
-            <td class="jsdoc-param-type">String</td>
-            <td class="jsdoc-param-description">
-            </td>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">originalDir</td>
-            <td class="jsdoc-param-type">String</td>
-            <td class="jsdoc-param-description">
-            </td>
-          </tr>
-        </table>
-        <div><strong>Returns: </strong><span class="jsdoc-return-type">String</span></div>
-      </div>
-      <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_goToToday"></a><span class="functionIcon">goToToday</span><span class="parameters">()</span> 
-        </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_hasChildren"></a><span class="functionIcon">hasChildren</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_hasChildren"></a><span class="functionIcon">hasChildren</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_Container" class="jsdoc-link">dijit/_Container</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_Container" class="jsdoc-link">dijit/_Container</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Returns true if widget has child widgets, i.e. if this.containerNode contains widgets.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_isDisabledDate"></a><span class="functionIcon">isDisabledDate</span><span class="parameters">(date, locale)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_isDisabledDate"></a><span class="functionIcon">isDisabledDate</span><span class="parameters">(date, locale)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>May be overridden to disable certain dates in the calendar e.g. <code>isDisabledDate=dojo.date.locale.isWeekend</code></p>
 </div>
@@ -1835,9 +1904,9 @@ text, if was defined by the programmer through textDir.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_isFocusable"></a><span class="functionIcon">isFocusable</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_isFocusable"></a><span class="functionIcon">isFocusable</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Return true if this widget can currently be focused
 and false if not</p>
@@ -1845,18 +1914,18 @@ and false if not</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_isLeftToRight"></a><span class="functionIcon">isLeftToRight</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_isLeftToRight"></a><span class="functionIcon">isLeftToRight</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Return this widget&#39;s explicit or implicit orientation (true for LTR, false for RTL)</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_on"></a><span class="functionIcon">on</span><span class="parameters">(type, func)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_on"></a><span class="functionIcon">on</span><span class="parameters">(type, func)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Call specified function when event occurs, ex: myWidget.on(&quot;click&quot;, function(){ ... }).</p>
 </div>
@@ -1887,9 +1956,9 @@ widget&#39;s scope you must do <code>myWidget.on(&quot;click&quot;, lang.hitch(m
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_own"></a><span class="functionIcon">own</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_own"></a><span class="functionIcon">own</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/Destroyable" class="jsdoc-link">dijit/Destroyable</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/Destroyable" class="jsdoc-link">dijit/Destroyable</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Track specified handles and remove/destroy them when this instance is destroyed, unless they were
 already removed/destroyed manually.</p>
@@ -1902,9 +1971,9 @@ already removed/destroyed manually.</p>
 </div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_parseInitialValue"></a><span class="functionIcon">parseInitialValue</span><span class="parameters">(value)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_parseInitialValue"></a><span class="functionIcon">parseInitialValue</span><span class="parameters">(value)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -1923,9 +1992,9 @@ already removed/destroyed manually.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">instance | undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_placeAt"></a><span class="functionIcon">placeAt</span><span class="parameters">(reference, position)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_placeAt"></a><span class="functionIcon">placeAt</span><span class="parameters">(reference, position)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Place this widget somewhere in the DOM based
 on standard domConstruct.place() conventions.</p>
@@ -1963,7 +2032,7 @@ the position argument can be a numeric index or a string
             </td>
           </tr>
         </table>
-        <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dijit/_WidgetBase">dijit/_WidgetBase</a> | function</span></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.9/dijit/_WidgetBase">dijit/_WidgetBase</a> | function</span></div>
         <div class="jsdoc-return-description"><p>Provides a useful return of the newly created dijit._Widget instance so you
 can &quot;chain&quot; this function by instantiating, placing, then saving the return value
 to a variable.</p>
@@ -1996,24 +2065,24 @@ new ContentPane({ href:&quot;foo.html&quot;, title:&quot;Wow!&quot; }).placeAt(t
         </div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_postCreate"></a><span class="functionIcon">postCreate</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_postCreate"></a><span class="functionIcon">postCreate</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Instantiates the mixin views</p>
 </div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_postMixInProperties"></a><span class="functionIcon">postMixInProperties</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_postMixInProperties"></a><span class="functionIcon">postMixInProperties</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"></div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_postscript"></a><span class="functionIcon">postscript</span><span class="parameters">(params, srcNodeRef)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_postscript"></a><span class="functionIcon">postscript</span><span class="parameters">(params, srcNodeRef)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Kicks off widget instantiation.  See create() for details.</p>
 </div>
@@ -2039,9 +2108,9 @@ new ContentPane({ href:&quot;foo.html&quot;, title:&quot;Wow!&quot; }).placeAt(t
         </table>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_removeChild"></a><span class="functionIcon">removeChild</span><span class="parameters">(widget)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_removeChild"></a><span class="functionIcon">removeChild</span><span class="parameters">(widget)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_Container" class="jsdoc-link">dijit/_Container</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_Container" class="jsdoc-link">dijit/_Container</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Removes the passed widget instance from this widget but does
 not destroy it.  You can also pass in an integer indicating
@@ -2062,9 +2131,9 @@ the index within the container to remove (ie, removeChild(5) removes the sixth w
         </table>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_set"></a><span class="functionIcon">set</span><span class="parameters">(name, value)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_set"></a><span class="functionIcon">set</span><span class="parameters">(name, value)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Set a property on a widget</p>
 </div>
@@ -2115,22 +2184,26 @@ would be equivalent to the statement <code>widget.bar = 3;</code>
 </div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_startup"></a><span class="functionIcon">startup</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_startup"></a><span class="functionIcon">startup</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Processing after the DOM fragment is added to the document</p>
 </div>
         <div class="jsdoc-full-summary"><p>Called after a widget and its children have been created and added to the page,
 and all related widgets have finished their create() cycle, up through postCreate().
-This is useful for composite widgets that need to control or layout sub-widgets.
-Many layout widgets can use this as a wiring phase.</p>
+
+</p>
+<p>Note that startup() may be called while the widget is still hidden, for example if the widget is
+inside a hidden <a class="jsdoc-link" href="/api/1.9/dijit/Dialog">dijit/Dialog</a> or an unselected tab of a <a class="jsdoc-link" href="/api/1.9/dijit/layout/TabContainer">dijit/layout/TabContainer</a>.
+For widgets that need to do layout, it&#39;s best to put that layout code inside resize(), and then
+extend <a class="jsdoc-link" href="/api/1.9/dijit/layout/_LayoutWidget">dijit/layout/_LayoutWidget</a> so that resize() is called when the widget is visible.</p>
 </div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_subscribe"></a><span class="functionIcon">subscribe</span><span class="parameters">(t, method)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_subscribe"></a><span class="functionIcon">subscribe</span><span class="parameters">(t, method)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Deprecated, will be removed in 2.0, use this.own(topic.subscribe()) instead.
 
@@ -2178,11 +2251,11 @@ btn.subscribe(&quot;/my/topic&quot;, function(v){
         </div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_toString"></a><span class="functionIcon">toString</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_toString"></a><span class="functionIcon">toString</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-full-summary"><p>Returns a string that represents the widget</p>
+        <div class="jsdoc-full-summary"><p>Returns a string that represents the widget.</p>
 </div>
         <div class="jsdoc-full-summary"><p>When a widget is cast to a string, this method will be used to generate the
 output. Currently, it does not implement any sort of reversible
@@ -2191,9 +2264,9 @@ serialization.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">string</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_uninitialize"></a><span class="functionIcon">uninitialize</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_uninitialize"></a><span class="functionIcon">uninitialize</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Deprecated. Override destroy() instead to implement custom widget tear-down
 behavior.</p>
@@ -2201,9 +2274,9 @@ behavior.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_unsubscribe"></a><span class="functionIcon">unsubscribe</span><span class="parameters">(handle)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_unsubscribe"></a><span class="functionIcon">unsubscribe</span><span class="parameters">(handle)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Deprecated, will be removed in 2.0, use handle.remove() instead.
 
@@ -2226,9 +2299,9 @@ Also removes handle from this widget&#39;s list of subscriptions</p>
         </table>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_watch"></a><span class="functionIcon">watch</span><span class="parameters">(name, callback)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_watch"></a><span class="functionIcon">watch</span><span class="parameters">(name, callback)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Watches a property for changes</p>
 </div>
@@ -2271,38 +2344,38 @@ watchHandle.unwatch(); // callback won&#39;t be called now</code></pre>
     <h2>Events</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx__onBlur"></a><span class="functionIcon">_onBlur</span><span class="parameters">()</span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__onBlur"></a><span class="functionIcon">_onBlur</span><span class="parameters">()</span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dijit/_FocusMixin" class="jsdoc-link">dijit/_FocusMixin</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.9/dijit/_FocusMixin" class="jsdoc-link">dijit/_FocusMixin</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
         <div class="jsdoc-summary"><p>This is where widgets do processing for when they stop being active,
 such as changing CSS classes.  See onBlur() for more details.</p>
 </div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx__onDateSelected"></a><span class="functionIcon">_onDateSelected</span><span class="parameters">(date, formattedValue, force)</span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__onDateSelected"></a><span class="functionIcon">_onDateSelected</span><span class="parameters">(date, formattedValue, force)</span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.9/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx__onFocus"></a><span class="functionIcon">_onFocus</span><span class="parameters">()</span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__onFocus"></a><span class="functionIcon">_onFocus</span><span class="parameters">()</span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dijit/_FocusMixin" class="jsdoc-link">dijit/_FocusMixin</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.9/dijit/_FocusMixin" class="jsdoc-link">dijit/_FocusMixin</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
         <div class="jsdoc-summary"><p>This is where widgets do processing for when they are active,
 such as changing CSS classes.  See onFocus() for more details.</p>
 </div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx__onMap"></a><span class="functionIcon">_onMap</span><span class="parameters">(type)</span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx__onMap"></a><span class="functionIcon">_onMap</span><span class="parameters">(type)</span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
         <div class="jsdoc-summary"><p>Maps on() type parameter (ex: &quot;mousemove&quot;) to method name (ex: &quot;onMouseMove&quot;).
 If type is a synthetic event like touch.press then returns undefined.</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_onBlur"></a><span class="functionIcon">onBlur</span><span class="parameters">()</span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_onBlur"></a><span class="functionIcon">onBlur</span><span class="parameters">()</span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dijit/_FocusMixin" class="jsdoc-link">dijit/_FocusMixin</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.9/dijit/_FocusMixin" class="jsdoc-link">dijit/_FocusMixin</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
         <div class="jsdoc-summary"><p>Called when the widget stops being &quot;active&quot; because
 focus moved to something outside of it, or the user
 clicked somewhere outside of it, or the widget was
@@ -2310,35 +2383,35 @@ hidden.</p>
 </div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_onChange"></a><span class="functionIcon">onChange</span><span class="parameters">(date)</span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_onChange"></a><span class="functionIcon">onChange</span><span class="parameters">(date)</span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.9/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
         <div class="jsdoc-summary"><p>Called only when the selected date has changed</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_onFocus"></a><span class="functionIcon">onFocus</span><span class="parameters">()</span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_onFocus"></a><span class="functionIcon">onFocus</span><span class="parameters">()</span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dijit/_FocusMixin" class="jsdoc-link">dijit/_FocusMixin</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.9/dijit/_FocusMixin" class="jsdoc-link">dijit/_FocusMixin</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
         <div class="jsdoc-summary"><p>Called when the widget becomes &quot;active&quot; because
 it or a widget inside of it either has focus, or has recently
 been clicked.</p>
 </div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_onHeaderClick"></a><span class="functionIcon">onHeaderClick</span><span class="parameters">(e)</span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_onHeaderClick"></a><span class="functionIcon">onHeaderClick</span><span class="parameters">(e)</span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.9/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
         <div class="jsdoc-summary"><p>Transitions to the next view.</p>
 </div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_widget_CalendarFx_onValueSelected"></a><span class="functionIcon">onValueSelected</span><span class="parameters">(date)</span>
+        <div class="jsdoc-title"><a name="1_9dojox_widget_CalendarFx_onValueSelected"></a><span class="functionIcon">onValueSelected</span><span class="parameters">(date)</span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.9/dojox/widget/_CalendarBase" class="jsdoc-link">dojox/widget/_CalendarBase</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
         <div class="jsdoc-summary"><p>A date cell was selected. It may be the same as the previous value.</p>
 </div>
       </div>
     </div>
   </div>
-</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/widget/CalendarFx" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/widget/CalendarFx" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

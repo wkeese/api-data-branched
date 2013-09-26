@@ -3,11 +3,11 @@
   // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
   // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
   // Also, when this page is loaded via XHR this script block should be ignored.
-  location = "/api/?qs=1.8/dojox/drawing/util/common" + location.hash;
+  location = "/api/?qs=1.9/dojox/drawing/util/common" + location.hash;
   
 </script>
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/drawing/util/common.html</div>
-<h1 class="objectIcon36 jsdoc-title">dojox/drawing/util/common<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/drawing/util/common.html</div>
+<h1 class="objectIcon36 jsdoc-title">dojox/drawing/util/common<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>A collection of common methods used for DojoX Drawing.
 This singleton is accessible in most Drawing classes
 as this.util</p>
@@ -17,60 +17,60 @@ as this.util</p>
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="objectIcon"><a href="#1_8dojox_drawing_util_common_objects" class="inline-link"> objects </a><span></span>
+        <li class="objectIcon"><a href="#1_9dojox_drawing_util_common_objects" class="inline-link"> objects </a><span></span>
         </li>
       </ul>
     </div>
     <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="functionIcon "><a href="#1_8dojox_drawing_util_common_abbr" class="inline-link"> abbr</a><span class="parameters">(</span>type) <span>Converts a namespace (typically a tool or a stencil) into
+        <li class="functionIcon "><a href="#1_9dojox_drawing_util_common_abbr" class="inline-link"> abbr</a><span class="parameters">(</span>type) <span>Converts a namespace (typically a tool or a stencil) into
 an abbreviation</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_drawing_util_common_angle" class="inline-link"> angle</a><span class="parameters">(</span>obj, snap) <span>Return angle based on mouse object</span>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_util_common_angle" class="inline-link"> angle</a><span class="parameters">(</span>obj, snap) <span>Return angle based on mouse object</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_drawing_util_common_argsToObj" class="inline-link"> argsToObj</a><span class="parameters">(</span>) <span>Attempts to determine in a Mouse Object
+        <li class="functionIcon "><a href="#1_9dojox_drawing_util_common_argsToObj" class="inline-link"> argsToObj</a><span class="parameters">(</span>) <span>Attempts to determine in a Mouse Object
 was passed or indiviual numbers.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_drawing_util_common_attr" class="inline-link"> attr</a><span class="parameters">(</span>elem, prop, value, squelchErrors) <span>Helper function to attach attributes to SVG and VML raw nodes.</span>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_util_common_attr" class="inline-link"> attr</a><span class="parameters">(</span>elem, prop, value, squelchErrors) <span>Helper function to attach attributes to SVG and VML raw nodes.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_drawing_util_common_byId" class="inline-link"> byId</a><span class="parameters">(</span>id) <span>Get an object that was registered with util.register</span>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_util_common_byId" class="inline-link"> byId</a><span class="parameters">(</span>id) <span>Get an object that was registered with util.register</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_drawing_util_common_constrainAngle" class="inline-link"> constrainAngle</a><span class="parameters">(</span>obj, min, max) <span>Ensures the angle in the Mouse Object is within the
+        <li class="functionIcon "><a href="#1_9dojox_drawing_util_common_constrainAngle" class="inline-link"> constrainAngle</a><span class="parameters">(</span>obj, min, max) <span>Ensures the angle in the Mouse Object is within the
 min and max limits.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_drawing_util_common_degToRad" class="inline-link"> degToRad</a><span class="parameters">(</span>n) <span>Convert the passed number to radians.</span>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_util_common_degToRad" class="inline-link"> degToRad</a><span class="parameters">(</span>n) <span>Convert the passed number to radians.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_drawing_util_common_distance" class="inline-link"> distance</a><span class="parameters">(</span>) <span>Return the length derived from the coordinates
+        <li class="functionIcon "><a href="#1_9dojox_drawing_util_common_distance" class="inline-link"> distance</a><span class="parameters">(</span>) <span>Return the length derived from the coordinates
 in the Mouse object.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_drawing_util_common_idSetStart" class="inline-link"> idSetStart</a><span class="parameters">(</span>num) <span></span>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_util_common_idSetStart" class="inline-link"> idSetStart</a><span class="parameters">(</span>num) <span></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_drawing_util_common_length" class="inline-link"> length</a><span class="parameters">(</span>o) <span>Return the length derived from the coordinates
+        <li class="functionIcon "><a href="#1_9dojox_drawing_util_common_length" class="inline-link"> length</a><span class="parameters">(</span>o) <span>Return the length derived from the coordinates
 in the Mouse object.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_drawing_util_common_lineSub" class="inline-link"> lineSub</a><span class="parameters">(</span>x1, y1, x2, y2, amt) <span>Subtract an amount from a line</span>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_util_common_lineSub" class="inline-link"> lineSub</a><span class="parameters">(</span>x1, y1, x2, y2, amt) <span>Subtract an amount from a line</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_drawing_util_common_mixin" class="inline-link"> mixin</a><span class="parameters">(</span>o1, o2) <span></span>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_util_common_mixin" class="inline-link"> mixin</a><span class="parameters">(</span>o1, o2) <span></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_drawing_util_common_oppAngle" class="inline-link"> oppAngle</a><span class="parameters">(</span>ang) <span></span>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_util_common_oppAngle" class="inline-link"> oppAngle</a><span class="parameters">(</span>ang) <span></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_drawing_util_common_pointOnCircle" class="inline-link"> pointOnCircle</a><span class="parameters">(</span>cx, cy, radius, angle) <span>A very helpful method.</span>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_util_common_pointOnCircle" class="inline-link"> pointOnCircle</a><span class="parameters">(</span>cx, cy, radius, angle) <span>A very helpful method.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_drawing_util_common_radians" class="inline-link"> radians</a><span class="parameters">(</span>o) <span>Return the radians derived from the coordinates
+        <li class="functionIcon "><a href="#1_9dojox_drawing_util_common_radians" class="inline-link"> radians</a><span class="parameters">(</span>o) <span>Return the radians derived from the coordinates
 in the Mouse object.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_drawing_util_common_radToDeg" class="inline-link"> radToDeg</a><span class="parameters">(</span>n) <span>Convert the passed number to degrees.</span>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_util_common_radToDeg" class="inline-link"> radToDeg</a><span class="parameters">(</span>n) <span>Convert the passed number to degrees.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_drawing_util_common_register" class="inline-link"> register</a><span class="parameters">(</span>obj) <span>Since util is the only Singleton in Drawing (besides
+        <li class="functionIcon "><a href="#1_9dojox_drawing_util_common_register" class="inline-link"> register</a><span class="parameters">(</span>obj) <span>Since util is the only Singleton in Drawing (besides
 keys) it is used to help connect the Drawing object
 the Toolbar.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_drawing_util_common_slope" class="inline-link"> slope</a><span class="parameters">(</span>p1, p2) <span>Given two poits of a line, returns the slope.</span>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_util_common_slope" class="inline-link"> slope</a><span class="parameters">(</span>p1, p2) <span>Given two poits of a line, returns the slope.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_drawing_util_common_snapAngle" class="inline-link"> snapAngle</a><span class="parameters">(</span>obj, ca) <span>Snaps a line to the nearest angle</span>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_util_common_snapAngle" class="inline-link"> snapAngle</a><span class="parameters">(</span>obj, ca) <span>Snaps a line to the nearest angle</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_drawing_util_common_uid" class="inline-link"> uid</a><span class="parameters">(</span>str) <span>Creates a unique ID.</span>
+        <li class="functionIcon "><a href="#1_9dojox_drawing_util_common_uid" class="inline-link"> uid</a><span class="parameters">(</span>str) <span>Creates a unique ID.</span>
         </li>
       </ul>
     </div>
@@ -81,18 +81,18 @@ the Toolbar.</span>
     <h2>Properties</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_drawing_util_common_objects"></a><span class="objectIcon">objects</span>
+        <div class="jsdoc-title"><a name="1_9dojox_drawing_util_common_objects"></a><span class="objectIcon">objects</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
         </div>
       </div>
     </div>
     <h2>Methods</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_drawing_util_common_abbr"></a><span class="functionIcon">abbr</span><span class="parameters">(type)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_drawing_util_common_abbr"></a><span class="functionIcon">abbr</span><span class="parameters">(type)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
         </div>
         <div class="jsdoc-full-summary"><p>Converts a namespace (typically a tool or a stencil) into
 an abbreviation</p>
@@ -113,9 +113,9 @@ an abbreviation</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">number</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_drawing_util_common_angle"></a><span class="functionIcon">angle</span><span class="parameters">(obj, snap)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_drawing_util_common_angle"></a><span class="functionIcon">angle</span><span class="parameters">(obj, snap)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
         </div>
         <div class="jsdoc-full-summary"><p>Return angle based on mouse object</p>
 </div>
@@ -144,9 +144,9 @@ an abbreviation</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_drawing_util_common_argsToObj"></a><span class="functionIcon">argsToObj</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_drawing_util_common_argsToObj"></a><span class="functionIcon">argsToObj</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
         </div>
         <div class="jsdoc-full-summary"><p>Attempts to determine in a Mouse Object
 was passed or indiviual numbers. Returns
@@ -155,9 +155,9 @@ an object.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined | object</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_drawing_util_common_attr"></a><span class="functionIcon">attr</span><span class="parameters">(elem, prop, value, squelchErrors)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_drawing_util_common_attr"></a><span class="functionIcon">attr</span><span class="parameters">(elem, prop, value, squelchErrors)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
         </div>
         <div class="jsdoc-full-summary"><p>Helper function to attach attributes to SVG and VML raw nodes.</p>
 </div>
@@ -195,9 +195,9 @@ an object.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean | undefined</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_drawing_util_common_byId"></a><span class="functionIcon">byId</span><span class="parameters">(id)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_drawing_util_common_byId"></a><span class="functionIcon">byId</span><span class="parameters">(id)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
         </div>
         <div class="jsdoc-full-summary"><p>Get an object that was registered with util.register</p>
 </div>
@@ -217,9 +217,9 @@ an object.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_drawing_util_common_constrainAngle"></a><span class="functionIcon">constrainAngle</span><span class="parameters">(obj, min, max)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_drawing_util_common_constrainAngle"></a><span class="functionIcon">constrainAngle</span><span class="parameters">(obj, min, max)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
         </div>
         <div class="jsdoc-full-summary"><p>Ensures the angle in the Mouse Object is within the
 min and max limits. If not one of those limits is used.
@@ -253,9 +253,9 @@ Returns an x,y point for the angle used.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">EventObject | undefined</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_drawing_util_common_degToRad"></a><span class="functionIcon">degToRad</span><span class="parameters">(n)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_drawing_util_common_degToRad"></a><span class="functionIcon">degToRad</span><span class="parameters">(n)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
         </div>
         <div class="jsdoc-full-summary"><p>Convert the passed number to radians.</p>
 </div>
@@ -275,9 +275,9 @@ Returns an x,y point for the angle used.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">number</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_drawing_util_common_distance"></a><span class="functionIcon">distance</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_drawing_util_common_distance"></a><span class="functionIcon">distance</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
         </div>
         <div class="jsdoc-full-summary"><p>Return the length derived from the coordinates
 in the Mouse object. Different from util.length
@@ -286,9 +286,9 @@ in that this always returns an absolute value.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_drawing_util_common_idSetStart"></a><span class="functionIcon">idSetStart</span><span class="parameters">(num)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_drawing_util_common_idSetStart"></a><span class="functionIcon">idSetStart</span><span class="parameters">(num)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -306,9 +306,9 @@ in that this always returns an absolute value.</p>
         </table>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_drawing_util_common_length"></a><span class="functionIcon">length</span><span class="parameters">(o)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_drawing_util_common_length"></a><span class="functionIcon">length</span><span class="parameters">(o)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
         </div>
         <div class="jsdoc-full-summary"><p>Return the length derived from the coordinates
 in the Mouse object.</p>
@@ -329,9 +329,9 @@ in the Mouse object.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_drawing_util_common_lineSub"></a><span class="functionIcon">lineSub</span><span class="parameters">(x1, y1, x2, y2, amt)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_drawing_util_common_lineSub"></a><span class="functionIcon">lineSub</span><span class="parameters">(x1, y1, x2, y2, amt)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
         </div>
         <div class="jsdoc-full-summary"><p>Subtract an amount from a line</p>
 </div>
@@ -378,9 +378,9 @@ to subtract from it.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">object</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_drawing_util_common_mixin"></a><span class="functionIcon">mixin</span><span class="parameters">(o1, o2)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_drawing_util_common_mixin"></a><span class="functionIcon">mixin</span><span class="parameters">(o1, o2)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -404,9 +404,9 @@ to subtract from it.</p>
         </table>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_drawing_util_common_oppAngle"></a><span class="functionIcon">oppAngle</span><span class="parameters">(ang)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_drawing_util_common_oppAngle"></a><span class="functionIcon">oppAngle</span><span class="parameters">(ang)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -425,9 +425,9 @@ to subtract from it.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Angle</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_drawing_util_common_pointOnCircle"></a><span class="functionIcon">pointOnCircle</span><span class="parameters">(cx, cy, radius, angle)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_drawing_util_common_pointOnCircle"></a><span class="functionIcon">pointOnCircle</span><span class="parameters">(cx, cy, radius, angle)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
         </div>
         <div class="jsdoc-full-summary"><p>A <em>very</em> helpful method. If you know the center
 (or starting) point, length and angle, find the
@@ -467,9 +467,9 @@ x,y point at the end of that line.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">object</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_drawing_util_common_radians"></a><span class="functionIcon">radians</span><span class="parameters">(o)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_drawing_util_common_radians"></a><span class="functionIcon">radians</span><span class="parameters">(o)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
         </div>
         <div class="jsdoc-full-summary"><p>Return the radians derived from the coordinates
 in the Mouse object.</p>
@@ -490,9 +490,9 @@ in the Mouse object.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_drawing_util_common_radToDeg"></a><span class="functionIcon">radToDeg</span><span class="parameters">(n)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_drawing_util_common_radToDeg"></a><span class="functionIcon">radToDeg</span><span class="parameters">(n)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
         </div>
         <div class="jsdoc-full-summary"><p>Convert the passed number to degrees.</p>
 </div>
@@ -512,9 +512,9 @@ in the Mouse object.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">number</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_drawing_util_common_register"></a><span class="functionIcon">register</span><span class="parameters">(obj)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_drawing_util_common_register"></a><span class="functionIcon">register</span><span class="parameters">(obj)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
         </div>
         <div class="jsdoc-full-summary"><p>Since util is the only Singleton in Drawing (besides
 keys) it is used to help connect the Drawing object
@@ -537,9 +537,9 @@ on first apearance.</p>
         </table>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_drawing_util_common_slope"></a><span class="functionIcon">slope</span><span class="parameters">(p1, p2)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_drawing_util_common_slope"></a><span class="functionIcon">slope</span><span class="parameters">(p1, p2)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
         </div>
         <div class="jsdoc-full-summary"><p>Given two poits of a line, returns the slope.</p>
 </div>
@@ -565,9 +565,9 @@ on first apearance.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">number</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_drawing_util_common_snapAngle"></a><span class="functionIcon">snapAngle</span><span class="parameters">(obj, ca)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_drawing_util_common_snapAngle"></a><span class="functionIcon">snapAngle</span><span class="parameters">(obj, ca)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
         </div>
         <div class="jsdoc-full-summary"><p>Snaps a line to the nearest angle</p>
 </div>
@@ -601,9 +601,9 @@ on first apearance.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_drawing_util_common_uid"></a><span class="functionIcon">uid</span><span class="parameters">(str)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_drawing_util_common_uid"></a><span class="functionIcon">uid</span><span class="parameters">(str)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/drawing/util/common" class="jsdoc-link">dojox/drawing/util/common</a>
         </div>
         <div class="jsdoc-full-summary"><p>Creates a unique ID.</p>
 </div>
@@ -627,4 +627,4 @@ and used in the id. Otherwise &#39;shape&#39; is used.</p>
       </div>
     </div>
   </div>
-</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/drawing/util/common" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/drawing/util/common" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

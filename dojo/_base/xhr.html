@@ -3,12 +3,12 @@
   // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
   // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
   // Also, when this page is loaded via XHR this script block should be ignored.
-  location = "/api/?qs=1.8/dojo/_base/xhr" + location.hash;
+  location = "/api/?qs=1.9/dojo/_base/xhr" + location.hash;
   
 </script>
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/_base/xhr.html</div>
-<h1 class="functionIcon36 jsdoc-title">dojo/_base/xhr<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
-<div class="jsdoc-full-summary"><p>Deprecated.   Use <a class="jsdoc-link" href="/api/1.8/dojo/request">dojo/request</a> instead.</p>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/_base/xhr.html</div>
+<h1 class="functionIcon36 jsdoc-title">dojo/_base/xhr<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
+<div class="jsdoc-full-summary"><p>Deprecated.   Use <a class="jsdoc-link" href="/api/1.9/dojo/request">dojo/request</a> instead.</p>
 </div>
 <div class="jsdoc-full-summary"><p>Sends an HTTP request with the given method.
 See also dojo.xhrGet(), xhrPost(), xhrPut() and dojo.xhrDelete() for shortcuts
@@ -43,63 +43,63 @@ via dojo.rawXhrPut() and dojo.rawXhrPost() respectively.</p>
     </td>
   </tr>
 </table>
-<p>See the <a href="/reference-guide/1.8/dojo/_base/xhr.html" target="_blank">dojo/_base/xhr reference documentation</a> for more information.</p>
+<p>See the <a href="/reference-guide/1.9/dojo/_base/xhr.html" target="_blank">dojo/_base/xhr reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-field-list">
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="objectIcon"><a href="#1_8dojo__base_xhr_contentHandlers" class="inline-link"> contentHandlers </a><span>A map of available XHR transport handle types.</span>
+        <li class="objectIcon"><a href="#1_9dojo__base_xhr_contentHandlers" class="inline-link"> contentHandlers </a><span>A map of available XHR transport handle types.</span>
         </li>
       </ul>
     </div>
     <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="functionIcon private"><a href="#1_8dojo__base_xhr__getText" class="inline-link"> _getText</a><span class="parameters">(</span>url) <span></span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojo__base_xhr__getText" class="inline-link"> _getText</a><span class="parameters">(</span>url) <span></span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojo__base_xhr__ioAddQueryToUrl" class="inline-link"> _ioAddQueryToUrl</a><span class="parameters">(</span>ioArgs) <span>Adds query params discovered by the io deferred construction to the URL.</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojo__base_xhr__ioAddQueryToUrl" class="inline-link"> _ioAddQueryToUrl</a><span class="parameters">(</span>ioArgs) <span>Adds query params discovered by the io deferred construction to the URL.</span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojo__base_xhr__ioCancelAll" class="inline-link"> _ioCancelAll</a><span class="parameters">(</span>) <span>Cancels all pending IO requests, regardless of IO type
+        <li class="functionIcon private"><a href="#1_9dojo__base_xhr__ioCancelAll" class="inline-link"> _ioCancelAll</a><span class="parameters">(</span>) <span>Cancels all pending IO requests, regardless of IO type
 (xhr, script, iframe).</span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojo__base_xhr__ioNotifyStart" class="inline-link"> _ioNotifyStart</a><span class="parameters">(</span>dfd) <span>If dojo.publish is available, publish topics
+        <li class="functionIcon private"><a href="#1_9dojo__base_xhr__ioNotifyStart" class="inline-link"> _ioNotifyStart</a><span class="parameters">(</span>dfd) <span>If dojo.publish is available, publish topics
 about the start of a request queue and/or the
 the beginning of request.</span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojo__base_xhr__ioSetArgs" class="inline-link"> _ioSetArgs</a><span class="parameters">(</span>args, canceller, okHandler, errHandler) <span>sets up the Deferred and ioArgs property on the Deferred so it
+        <li class="functionIcon private"><a href="#1_9dojo__base_xhr__ioSetArgs" class="inline-link"> _ioSetArgs</a><span class="parameters">(</span>args, canceller, okHandler, errHandler) <span>sets up the Deferred and ioArgs property on the Deferred so it
 can be used in an io call.</span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojo__base_xhr__ioWatch" class="inline-link"> _ioWatch</a><span class="parameters">(</span>dfd, validCheck, ioCheck, resHandle) <span>Watches the io request represented by dfd to see if it completes.</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojo__base_xhr__ioWatch" class="inline-link"> _ioWatch</a><span class="parameters">(</span>dfd, validCheck, ioCheck, resHandle) <span>Watches the io request represented by dfd to see if it completes.</span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojo__base_xhr__isDocumentOk" class="inline-link"> _isDocumentOk</a><span class="parameters">(</span>x) <span></span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojo__base_xhr__isDocumentOk" class="inline-link"> _isDocumentOk</a><span class="parameters">(</span>x) <span></span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojo__base_xhr__xhrObj" class="inline-link"> _xhrObj</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojo__base_xhr__xhrObj" class="inline-link"> _xhrObj</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_xhr_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>method, args, hasBody) <span>Deprecated.</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_xhr_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>method, args, hasBody) <span>Deprecated.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_xhr_del" class="inline-link"> del</a><span class="parameters">(</span>args) <span>Sends an HTTP DELETE request to the server.</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_xhr_del" class="inline-link"> del</a><span class="parameters">(</span>args) <span>Sends an HTTP DELETE request to the server.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_xhr_fieldToObject" class="inline-link"> fieldToObject</a><span class="parameters">(</span>inputNode) <span>Serialize a form field to a JavaScript object.</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_xhr_fieldToObject" class="inline-link"> fieldToObject</a><span class="parameters">(</span>inputNode) <span>Serialize a form field to a JavaScript object.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_xhr_formToJson" class="inline-link"> formToJson</a><span class="parameters">(</span>formNode, prettyPrint) <span>Create a serialized JSON string from a form node or string
+        <li class="functionIcon "><a href="#1_9dojo__base_xhr_formToJson" class="inline-link"> formToJson</a><span class="parameters">(</span>formNode, prettyPrint) <span>Create a serialized JSON string from a form node or string
 ID identifying the form to serialize</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_xhr_formToObject" class="inline-link"> formToObject</a><span class="parameters">(</span>formNode) <span>Serialize a form node to a JavaScript object.</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_xhr_formToObject" class="inline-link"> formToObject</a><span class="parameters">(</span>formNode) <span>Serialize a form node to a JavaScript object.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_xhr_formToQuery" class="inline-link"> formToQuery</a><span class="parameters">(</span>formNode) <span>Returns a URL-encoded string representing the form passed as either a
+        <li class="functionIcon "><a href="#1_9dojo__base_xhr_formToQuery" class="inline-link"> formToQuery</a><span class="parameters">(</span>formNode) <span>Returns a URL-encoded string representing the form passed as either a
 node or string ID identifying the form to serialize</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_xhr_get" class="inline-link"> get</a><span class="parameters">(</span>args) <span>Sends an HTTP GET request to the server.</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_xhr_get" class="inline-link"> get</a><span class="parameters">(</span>args) <span>Sends an HTTP GET request to the server.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_xhr_objectToQuery" class="inline-link"> objectToQuery</a><span class="parameters">(</span>map) <span>takes a name/value mapping object and returns a string representing
+        <li class="functionIcon "><a href="#1_9dojo__base_xhr_objectToQuery" class="inline-link"> objectToQuery</a><span class="parameters">(</span>map) <span>takes a name/value mapping object and returns a string representing
 a URL-encoded version of that object.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_xhr_post" class="inline-link"> post</a><span class="parameters">(</span>args) <span>Sends an HTTP POST request to the server.</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_xhr_post" class="inline-link"> post</a><span class="parameters">(</span>args) <span>Sends an HTTP POST request to the server.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_xhr_put" class="inline-link"> put</a><span class="parameters">(</span>args) <span>Sends an HTTP PUT request to the server.</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_xhr_put" class="inline-link"> put</a><span class="parameters">(</span>args) <span>Sends an HTTP PUT request to the server.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_xhr_queryToObject" class="inline-link"> queryToObject</a><span class="parameters">(</span>str) <span>Create an object representing a de-serialized query section of a
+        <li class="functionIcon "><a href="#1_9dojo__base_xhr_queryToObject" class="inline-link"> queryToObject</a><span class="parameters">(</span>str) <span>Create an object representing a de-serialized query section of a
 URL.</span>
         </li>
       </ul>
@@ -111,9 +111,9 @@ URL.</span>
     <h2>Properties</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojo__base_xhr_contentHandlers"></a><span class="objectIcon">contentHandlers</span>
+        <div class="jsdoc-title"><a name="1_9dojo__base_xhr_contentHandlers"></a><span class="objectIcon">contentHandlers</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
         </div>
         <div class="jsdoc-summary"><p>A map of available XHR transport handle types. Name matches the
 <code>handleAs</code> attribute passed to XHR calls.</p>
@@ -123,9 +123,9 @@ URL.</span>
     <h2>Methods</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojo__base_xhr__getText"></a><span class="functionIcon">_getText</span><span class="parameters">(url)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojo__base_xhr__getText"></a><span class="functionIcon">_getText</span><span class="parameters">(url)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -144,9 +144,9 @@ URL.</span>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojo__base_xhr__ioAddQueryToUrl"></a><span class="functionIcon">_ioAddQueryToUrl</span><span class="parameters">(ioArgs)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojo__base_xhr__ioAddQueryToUrl"></a><span class="functionIcon">_ioAddQueryToUrl</span><span class="parameters">(ioArgs)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
         </div>
         <div class="jsdoc-full-summary"><p>Adds query params discovered by the io deferred construction to the URL.
 Only use this for operations which are fundamentally GET-type operations.</p>
@@ -191,18 +191,18 @@ callbacks directly.</p>
         </table>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojo__base_xhr__ioCancelAll"></a><span class="functionIcon">_ioCancelAll</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojo__base_xhr__ioCancelAll"></a><span class="functionIcon">_ioCancelAll</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
         </div>
         <div class="jsdoc-full-summary"><p>Cancels all pending IO requests, regardless of IO type
 (xhr, script, iframe).</p>
 </div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojo__base_xhr__ioNotifyStart"></a><span class="functionIcon">_ioNotifyStart</span><span class="parameters">(dfd)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojo__base_xhr__ioNotifyStart"></a><span class="functionIcon">_ioNotifyStart</span><span class="parameters">(dfd)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
         </div>
         <div class="jsdoc-full-summary"><p>If dojo.publish is available, publish topics
 about the start of a request queue and/or the
@@ -227,9 +227,9 @@ call this method before making the network connection.</p>
         </table>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojo__base_xhr__ioSetArgs"></a><span class="functionIcon">_ioSetArgs</span><span class="parameters">(args, canceller, okHandler, errHandler)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojo__base_xhr__ioSetArgs"></a><span class="functionIcon">_ioSetArgs</span><span class="parameters">(args, canceller, okHandler, errHandler)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
         </div>
         <div class="jsdoc-full-summary"><p>sets up the Deferred and ioArgs property on the Deferred so it
 can be used in an io call.</p>
@@ -279,9 +279,9 @@ Error object) and dfd, the Deferred object returned from this function.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">instance</span></div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojo__base_xhr__ioWatch"></a><span class="functionIcon">_ioWatch</span><span class="parameters">(dfd, validCheck, ioCheck, resHandle)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojo__base_xhr__ioWatch"></a><span class="functionIcon">_ioWatch</span><span class="parameters">(dfd, validCheck, ioCheck, resHandle)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
         </div>
         <div class="jsdoc-full-summary"><p>Watches the io request represented by dfd to see if it completes.</p>
 </div>
@@ -325,9 +325,9 @@ object as its only argument.</p>
         </table>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojo__base_xhr__isDocumentOk"></a><span class="functionIcon">_isDocumentOk</span><span class="parameters">(x)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojo__base_xhr__isDocumentOk"></a><span class="functionIcon">_isDocumentOk</span><span class="parameters">(x)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -346,17 +346,17 @@ object as its only argument.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojo__base_xhr__xhrObj"></a><span class="functionIcon">_xhrObj</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojo__base_xhr__xhrObj"></a><span class="functionIcon">_xhrObj</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
         </div>
         <div class="jsdoc-full-summary"></div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">instance</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_xhr_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(method, args, hasBody)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_xhr_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(method, args, hasBody)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
         </div>
         <div class="jsdoc-full-summary"><p>Deprecated.   Use dojo/request instead.</p>
 </div>
@@ -437,9 +437,9 @@ See dojo/main.__IoPublish for a list of topics that are published.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_xhr_del"></a><span class="functionIcon">del</span><span class="parameters">(args)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_xhr_del"></a><span class="functionIcon">del</span><span class="parameters">(args)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
         </div>
         <div class="jsdoc-full-summary"><p>Sends an HTTP DELETE request to the server.</p>
 </div>
@@ -500,9 +500,9 @@ See dojo/main.__IoPublish for a list of topics that are published.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_xhr_fieldToObject"></a><span class="functionIcon">fieldToObject</span><span class="parameters">(inputNode)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_xhr_fieldToObject"></a><span class="functionIcon">fieldToObject</span><span class="parameters">(inputNode)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
         </div>
         <div class="jsdoc-full-summary"><p>Serialize a form field to a JavaScript object.</p>
 </div>
@@ -527,9 +527,9 @@ elements are returned as an array of string values.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Object | undefined</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_xhr_formToJson"></a><span class="functionIcon">formToJson</span><span class="parameters">(formNode, prettyPrint)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_xhr_formToJson"></a><span class="functionIcon">formToJson</span><span class="parameters">(formNode, prettyPrint)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
         </div>
         <div class="jsdoc-full-summary"><p>Create a serialized JSON string from a form node or string
 ID identifying the form to serialize</p>
@@ -557,9 +557,9 @@ ID identifying the form to serialize</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">String | undefined</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_xhr_formToObject"></a><span class="functionIcon">formToObject</span><span class="parameters">(formNode)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_xhr_formToObject"></a><span class="functionIcon">formToObject</span><span class="parameters">(formNode)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
         </div>
         <div class="jsdoc-full-summary"><p>Serialize a form node to a JavaScript object.</p>
 </div>
@@ -615,9 +615,9 @@ formToObject():
         </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_xhr_formToQuery"></a><span class="functionIcon">formToQuery</span><span class="parameters">(formNode)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_xhr_formToQuery"></a><span class="functionIcon">formToQuery</span><span class="parameters">(formNode)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
         </div>
         <div class="jsdoc-full-summary"><p>Returns a URL-encoded string representing the form passed as either a
 node or string ID identifying the form to serialize</p>
@@ -638,9 +638,9 @@ node or string ID identifying the form to serialize</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">String | undefined</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_xhr_get"></a><span class="functionIcon">get</span><span class="parameters">(args)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_xhr_get"></a><span class="functionIcon">get</span><span class="parameters">(args)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
         </div>
         <div class="jsdoc-full-summary"><p>Sends an HTTP GET request to the server.</p>
 </div>
@@ -701,9 +701,9 @@ See dojo/main.__IoPublish for a list of topics that are published.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_xhr_objectToQuery"></a><span class="functionIcon">objectToQuery</span><span class="parameters">(map)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_xhr_objectToQuery"></a><span class="functionIcon">objectToQuery</span><span class="parameters">(map)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
         </div>
         <div class="jsdoc-full-summary"><p>takes a name/value mapping object and returns a string representing
 a URL-encoded version of that object.</p>
@@ -746,9 +746,9 @@ a URL-encoded version of that object.</p>
         </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_xhr_post"></a><span class="functionIcon">post</span><span class="parameters">(args)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_xhr_post"></a><span class="functionIcon">post</span><span class="parameters">(args)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
         </div>
         <div class="jsdoc-full-summary"><p>Sends an HTTP POST request to the server. In addition to the properties
 listed for the dojo.__XhrArgs type, the following property is allowed:</p>
@@ -810,9 +810,9 @@ See dojo/main.__IoPublish for a list of topics that are published.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_xhr_put"></a><span class="functionIcon">put</span><span class="parameters">(args)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_xhr_put"></a><span class="functionIcon">put</span><span class="parameters">(args)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
         </div>
         <div class="jsdoc-full-summary"><p>Sends an HTTP PUT request to the server. In addition to the properties
 listed for the dojo.__XhrArgs type, the following property is allowed:</p>
@@ -874,9 +874,9 @@ See dojo/main.__IoPublish for a list of topics that are published.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_xhr_queryToObject"></a><span class="functionIcon">queryToObject</span><span class="parameters">(str)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_xhr_queryToObject"></a><span class="functionIcon">queryToObject</span><span class="parameters">(str)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/xhr" class="jsdoc-link">dojo/_base/xhr</a>
         </div>
         <div class="jsdoc-full-summary"><p>Create an object representing a de-serialized query section of a
 URL. Query keys with multiple values are returned in an array.
@@ -921,4 +921,4 @@ handled.</p>
       </div>
     </div>
   </div>
-</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojo/_base/xhr" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojo/_base/xhr" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

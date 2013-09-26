@@ -3,94 +3,94 @@
   // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
   // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
   // Also, when this page is loaded via XHR this script block should be ignored.
-  location = "/api/?qs=1.8/dojox/mdnd/AreaManager" + location.hash;
+  location = "/api/?qs=1.9/dojox/mdnd/AreaManager" + location.hash;
   
 </script>
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/mdnd/AreaManager.html</div>
-<h1 class="constructorIcon36 jsdoc-title">dojox/mdnd/AreaManager<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/mdnd/AreaManager.html</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/mdnd/AreaManager<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>Drag And Drop manager</p>
 </div>
 <div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new AreaManager<span class="parameters">();</span></div>
 </div>
-<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/mdnd/AreaManager">dojox/mdnd/AreaManager</a></div>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.9/dojox/mdnd/AreaManager">dojox/mdnd/AreaManager</a></div>
 <div class="jsdoc-summary"><p>Constructor of AreaManager class.
 Initialize arrays, connects and subscribes.</p>
 </div>
-<p>See the <a href="/reference-guide/1.8/dojox/mdnd.html" target="_blank">dojox/mdnd/AreaManager reference documentation</a> for more information.</p>
+<p>See the <a href="/reference-guide/1.9/dojox/mdnd.html" target="_blank">dojox/mdnd/AreaManager reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-field-list">
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="stringIcon"><a href="#1_8dojox_mdnd_AreaManager_areaClass" class="inline-link"> areaClass </a><span>CSS class enabled an area if areaClass is defined</span>
+        <li class="stringIcon"><a href="#1_9dojox_mdnd_AreaManager_areaClass" class="inline-link"> areaClass </a><span>CSS class enabled an area if areaClass is defined</span>
         </li>
-        <li class="booleanIcon"><a href="#1_8dojox_mdnd_AreaManager_autoRefresh" class="inline-link"> autoRefresh </a><span>Enable the refresh of registered areas on drag start.</span>
+        <li class="booleanIcon"><a href="#1_9dojox_mdnd_AreaManager_autoRefresh" class="inline-link"> autoRefresh </a><span>Enable the refresh of registered areas on drag start.</span>
         </li>
-        <li class="stringIcon"><a href="#1_8dojox_mdnd_AreaManager_dragHandleClass" class="inline-link"> dragHandleClass </a><span>CSS class enabled a drag handle.</span>
+        <li class="stringIcon"><a href="#1_9dojox_mdnd_AreaManager_dragHandleClass" class="inline-link"> dragHandleClass </a><span>CSS class enabled a drag handle.</span>
         </li>
       </ul>
     </div>
     <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="functionIcon private"><a href="#1_8dojox_mdnd_AreaManager__addMoveableItem" class="inline-link"> _addMoveableItem</a><span class="parameters">(</span>node) <span>Create a draggable item with a DOM node.</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojox_mdnd_AreaManager__addMoveableItem" class="inline-link"> _addMoveableItem</a><span class="parameters">(</span>node) <span>Create a draggable item with a DOM node.</span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojox_mdnd_AreaManager__deleteMoveableItem" class="inline-link"> _deleteMoveableItem</a><span class="parameters">(</span>objItem) <span>Delete the Moveable object associated with a node.</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojox_mdnd_AreaManager__deleteMoveableItem" class="inline-link"> _deleteMoveableItem</a><span class="parameters">(</span>objItem) <span>Delete the Moveable object associated with a node.</span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojox_mdnd_AreaManager__getChildren" class="inline-link"> _getChildren</a><span class="parameters">(</span>area) <span>Get the children of a D&amp;D area.</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojox_mdnd_AreaManager__getChildren" class="inline-link"> _getChildren</a><span class="parameters">(</span>area) <span>Get the children of a D&amp;D area.</span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojox_mdnd_AreaManager__getIndexArea" class="inline-link"> _getIndexArea</a><span class="parameters">(</span>area) <span>Get the index of an area.</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojox_mdnd_AreaManager__getIndexArea" class="inline-link"> _getIndexArea</a><span class="parameters">(</span>area) <span>Get the index of an area.</span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojox_mdnd_AreaManager__isAccepted" class="inline-link"> _isAccepted</a><span class="parameters">(</span>type, accept) <span>True if user can drop widget on this node.</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojox_mdnd_AreaManager__isAccepted" class="inline-link"> _isAccepted</a><span class="parameters">(</span>type, accept) <span>True if user can drop widget on this node.</span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojox_mdnd_AreaManager__placeDropIndicator" class="inline-link"> _placeDropIndicator</a><span class="parameters">(</span>size) <span>place the dropIndicator</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojox_mdnd_AreaManager__placeDropIndicator" class="inline-link"> _placeDropIndicator</a><span class="parameters">(</span>size) <span>place the dropIndicator</span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojox_mdnd_AreaManager__resetAfterDrop" class="inline-link"> _resetAfterDrop</a><span class="parameters">(</span>) <span>reset manager properties after dropping an item</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojox_mdnd_AreaManager__resetAfterDrop" class="inline-link"> _resetAfterDrop</a><span class="parameters">(</span>) <span>reset manager properties after dropping an item</span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojox_mdnd_AreaManager__searchDragHandle" class="inline-link"> _searchDragHandle</a><span class="parameters">(</span>node) <span>Return the node which contains the first specific CSS class handle.</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojox_mdnd_AreaManager__searchDragHandle" class="inline-link"> _searchDragHandle</a><span class="parameters">(</span>node) <span>Return the node which contains the first specific CSS class handle.</span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojox_mdnd_AreaManager__setMarginArea" class="inline-link"> _setMarginArea</a><span class="parameters">(</span>area, node) <span>Set the value of margin in the data type of areaManager
+        <li class="functionIcon private"><a href="#1_9dojox_mdnd_AreaManager__setMarginArea" class="inline-link"> _setMarginArea</a><span class="parameters">(</span>area, node) <span>Set the value of margin in the data type of areaManager
 only when the margin has never been computed.</span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mdnd_AreaManager_addDragItem" class="inline-link"> addDragItem</a><span class="parameters">(</span>area, node, index, notCheckParent) <span>To add an item programmatically.</span>
+        <li class="functionIcon "><a href="#1_9dojox_mdnd_AreaManager_addDragItem" class="inline-link"> addDragItem</a><span class="parameters">(</span>area, node, index, notCheckParent) <span>To add an item programmatically.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mdnd_AreaManager_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span>Constructor of AreaManager class.</span>
+        <li class="functionIcon "><a href="#1_9dojox_mdnd_AreaManager_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span>Constructor of AreaManager class.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mdnd_AreaManager_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>Destroy the component.</span>
+        <li class="functionIcon "><a href="#1_9dojox_mdnd_AreaManager_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>Destroy the component.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mdnd_AreaManager_findCurrentIndexArea" class="inline-link"> findCurrentIndexArea</a><span class="parameters">(</span>coords, size) <span>find the nearest target area according to coordinates.</span>
+        <li class="functionIcon "><a href="#1_9dojox_mdnd_AreaManager_findCurrentIndexArea" class="inline-link"> findCurrentIndexArea</a><span class="parameters">(</span>coords, size) <span>find the nearest target area according to coordinates.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mdnd_AreaManager_init" class="inline-link"> init</a><span class="parameters">(</span>) <span>Initialize the manager by calling the registerByClass method</span>
+        <li class="functionIcon "><a href="#1_9dojox_mdnd_AreaManager_init" class="inline-link"> init</a><span class="parameters">(</span>) <span>Initialize the manager by calling the registerByClass method</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mdnd_AreaManager_placeDropIndicator" class="inline-link"> placeDropIndicator</a><span class="parameters">(</span>coords, size) <span>Search the right place to insert the dropIndicator and display the dropIndicator.</span>
+        <li class="functionIcon "><a href="#1_9dojox_mdnd_AreaManager_placeDropIndicator" class="inline-link"> placeDropIndicator</a><span class="parameters">(</span>coords, size) <span>Search the right place to insert the dropIndicator and display the dropIndicator.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mdnd_AreaManager_registerByClass" class="inline-link"> registerByClass</a><span class="parameters">(</span>) <span>Register all Dnd Areas identified by the attribute areaClass :
+        <li class="functionIcon "><a href="#1_9dojox_mdnd_AreaManager_registerByClass" class="inline-link"> registerByClass</a><span class="parameters">(</span>) <span>Register all Dnd Areas identified by the attribute areaClass :
 insert Dnd Areas using the specific sort of dropMode.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mdnd_AreaManager_registerByNode" class="inline-link"> registerByNode</a><span class="parameters">(</span>area, notInitAreas) <span>To register Dnd Area : insert the DndArea using the specific sort of dropMode.</span>
+        <li class="functionIcon "><a href="#1_9dojox_mdnd_AreaManager_registerByNode" class="inline-link"> registerByNode</a><span class="parameters">(</span>area, notInitAreas) <span>To register Dnd Area : insert the DndArea using the specific sort of dropMode.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mdnd_AreaManager_removeDragItem" class="inline-link"> removeDragItem</a><span class="parameters">(</span>area, node) <span>Delete a moveable item programmatically.</span>
+        <li class="functionIcon "><a href="#1_9dojox_mdnd_AreaManager_removeDragItem" class="inline-link"> removeDragItem</a><span class="parameters">(</span>area, node) <span>Delete a moveable item programmatically.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mdnd_AreaManager_unregister" class="inline-link"> unregister</a><span class="parameters">(</span>area) <span>Unregister a D&amp;D Area and its children into the AreaManager.</span>
+        <li class="functionIcon "><a href="#1_9dojox_mdnd_AreaManager_unregister" class="inline-link"> unregister</a><span class="parameters">(</span>area) <span>Unregister a D&amp;D Area and its children into the AreaManager.</span>
         </li>
       </ul>
     </div>
     <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="functionIcon "><a href="#1_8dojox_mdnd_AreaManager_onDrag" class="inline-link"> onDrag</a><span class="parameters">(</span>node, coords, size, mousePosition) <span>Occurs when the dojo.dnd.Moveable.onDrag is fired.</span><span title="TODO" class="jsdoc-extension"></span>
+        <li class="functionIcon "><a href="#1_9dojox_mdnd_AreaManager_onDrag" class="inline-link"> onDrag</a><span class="parameters">(</span>node, coords, size, mousePosition) <span>Occurs when the dojo.dnd.Moveable.onDrag is fired.</span><span title="TODO" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mdnd_AreaManager_onDragEnter" class="inline-link"> onDragEnter</a><span class="parameters">(</span>coords, size) <span>Optionally called by the getTargetArea method of TargetFinder class.</span><span title="TODO" class="jsdoc-extension"></span>
+        <li class="functionIcon "><a href="#1_9dojox_mdnd_AreaManager_onDragEnter" class="inline-link"> onDragEnter</a><span class="parameters">(</span>coords, size) <span>Optionally called by the getTargetArea method of TargetFinder class.</span><span title="TODO" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mdnd_AreaManager_onDragExit" class="inline-link"> onDragExit</a><span class="parameters">(</span>coords, size) <span>Optionally called by the getTargetArea method of TargetFinder class.</span><span title="TODO" class="jsdoc-extension"></span>
+        <li class="functionIcon "><a href="#1_9dojox_mdnd_AreaManager_onDragExit" class="inline-link"> onDragExit</a><span class="parameters">(</span>coords, size) <span>Optionally called by the getTargetArea method of TargetFinder class.</span><span title="TODO" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mdnd_AreaManager_onDragStart" class="inline-link"> onDragStart</a><span class="parameters">(</span>node, coords, size) <span>Initialize the drag (see dojox.mdnd.Moveable.initOffsetDrag())</span><span title="TODO" class="jsdoc-extension"></span>
+        <li class="functionIcon "><a href="#1_9dojox_mdnd_AreaManager_onDragStart" class="inline-link"> onDragStart</a><span class="parameters">(</span>node, coords, size) <span>Initialize the drag (see dojox.mdnd.Moveable.initOffsetDrag())</span><span title="TODO" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mdnd_AreaManager_onDrop" class="inline-link"> onDrop</a><span class="parameters">(</span>node) <span>Drop the dragged item where the dropIndicator is displayed.</span><span title="TODO" class="jsdoc-extension"></span>
+        <li class="functionIcon "><a href="#1_9dojox_mdnd_AreaManager_onDrop" class="inline-link"> onDrop</a><span class="parameters">(</span>node) <span>Drop the dragged item where the dropIndicator is displayed.</span><span title="TODO" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mdnd_AreaManager_onDropCancel" class="inline-link"> onDropCancel</a><span class="parameters">(</span>) <span>Cancel the drop.</span><span title="TODO" class="jsdoc-extension"></span>
+        <li class="functionIcon "><a href="#1_9dojox_mdnd_AreaManager_onDropCancel" class="inline-link"> onDropCancel</a><span class="parameters">(</span>) <span>Cancel the drop.</span><span title="TODO" class="jsdoc-extension"></span>
         </li>
       </ul>
     </div>
@@ -101,25 +101,25 @@ insert Dnd Areas using the specific sort of dropMode.</span>
     <h2>Properties</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_mdnd_AreaManager_areaClass"></a><span class="stringIcon">areaClass</span>
+        <div class="jsdoc-title"><a name="1_9dojox_mdnd_AreaManager_areaClass"></a><span class="stringIcon">areaClass</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
         </div>
         <div class="jsdoc-summary"><p>CSS class enabled an area if areaClass is defined</p>
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_mdnd_AreaManager_autoRefresh"></a><span class="booleanIcon">autoRefresh</span>
+        <div class="jsdoc-title"><a name="1_9dojox_mdnd_AreaManager_autoRefresh"></a><span class="booleanIcon">autoRefresh</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
         </div>
         <div class="jsdoc-summary"><p>Enable the refresh of registered areas on drag start.</p>
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_mdnd_AreaManager_dragHandleClass"></a><span class="stringIcon">dragHandleClass</span>
+        <div class="jsdoc-title"><a name="1_9dojox_mdnd_AreaManager_dragHandleClass"></a><span class="stringIcon">dragHandleClass</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
         </div>
         <div class="jsdoc-summary"><p>CSS class enabled a drag handle.</p>
 </div>
@@ -128,9 +128,9 @@ insert Dnd Areas using the specific sort of dropMode.</span>
     <h2>Methods</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_mdnd_AreaManager__addMoveableItem"></a><span class="functionIcon">_addMoveableItem</span><span class="parameters">(node)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_mdnd_AreaManager__addMoveableItem"></a><span class="functionIcon">_addMoveableItem</span><span class="parameters">(node)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
         </div>
         <div class="jsdoc-full-summary"><p>Create a draggable item with a DOM node.</p>
 </div>
@@ -153,9 +153,9 @@ insert Dnd Areas using the specific sort of dropMode.</span>
 </div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_mdnd_AreaManager__deleteMoveableItem"></a><span class="functionIcon">_deleteMoveableItem</span><span class="parameters">(objItem)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_mdnd_AreaManager__deleteMoveableItem"></a><span class="functionIcon">_deleteMoveableItem</span><span class="parameters">(objItem)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
         </div>
         <div class="jsdoc-full-summary"><p>Delete the Moveable object associated with a node.</p>
 </div>
@@ -174,9 +174,9 @@ insert Dnd Areas using the specific sort of dropMode.</span>
         </table>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_mdnd_AreaManager__getChildren"></a><span class="functionIcon">_getChildren</span><span class="parameters">(area)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_mdnd_AreaManager__getChildren"></a><span class="functionIcon">_getChildren</span><span class="parameters">(area)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
         </div>
         <div class="jsdoc-full-summary"><p>Get the children of a D&amp;D area.</p>
 </div>
@@ -199,9 +199,9 @@ insert Dnd Areas using the specific sort of dropMode.</span>
 </div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_mdnd_AreaManager__getIndexArea"></a><span class="functionIcon">_getIndexArea</span><span class="parameters">(area)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_mdnd_AreaManager__getIndexArea"></a><span class="functionIcon">_getIndexArea</span><span class="parameters">(area)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
         </div>
         <div class="jsdoc-full-summary"><p>Get the index of an area.</p>
 </div>
@@ -224,9 +224,9 @@ insert Dnd Areas using the specific sort of dropMode.</span>
 </div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_mdnd_AreaManager__isAccepted"></a><span class="functionIcon">_isAccepted</span><span class="parameters">(type, accept)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_mdnd_AreaManager__isAccepted"></a><span class="functionIcon">_isAccepted</span><span class="parameters">(type, accept)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
         </div>
         <div class="jsdoc-full-summary"><p>True if user can drop widget on this node.</p>
 </div>
@@ -253,9 +253,9 @@ insert Dnd Areas using the specific sort of dropMode.</span>
         </table>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_mdnd_AreaManager__placeDropIndicator"></a><span class="functionIcon">_placeDropIndicator</span><span class="parameters">(size)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_mdnd_AreaManager__placeDropIndicator"></a><span class="functionIcon">_placeDropIndicator</span><span class="parameters">(size)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
         </div>
         <div class="jsdoc-full-summary"><p>place the dropIndicator</p>
 </div>
@@ -275,17 +275,17 @@ insert Dnd Areas using the specific sort of dropMode.</span>
         </table>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_mdnd_AreaManager__resetAfterDrop"></a><span class="functionIcon">_resetAfterDrop</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_mdnd_AreaManager__resetAfterDrop"></a><span class="functionIcon">_resetAfterDrop</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
         </div>
         <div class="jsdoc-full-summary"><p>reset manager properties after dropping an item</p>
 </div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_mdnd_AreaManager__searchDragHandle"></a><span class="functionIcon">_searchDragHandle</span><span class="parameters">(node)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_mdnd_AreaManager__searchDragHandle"></a><span class="functionIcon">_searchDragHandle</span><span class="parameters">(node)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
         </div>
         <div class="jsdoc-full-summary"><p>Return the node which contains the first specific CSS class handle.</p>
 </div>
@@ -308,9 +308,9 @@ insert Dnd Areas using the specific sort of dropMode.</span>
 </div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_mdnd_AreaManager__setMarginArea"></a><span class="functionIcon">_setMarginArea</span><span class="parameters">(area, node)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_mdnd_AreaManager__setMarginArea"></a><span class="functionIcon">_setMarginArea</span><span class="parameters">(area, node)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
         </div>
         <div class="jsdoc-full-summary"><p>Set the value of margin in the data type of areaManager
 only when the margin has never been computed.</p>
@@ -338,9 +338,9 @@ only when the margin has never been computed.</p>
         </table>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mdnd_AreaManager_addDragItem"></a><span class="functionIcon">addDragItem</span><span class="parameters">(area, node, index, notCheckParent)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mdnd_AreaManager_addDragItem"></a><span class="functionIcon">addDragItem</span><span class="parameters">(area, node, index, notCheckParent)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
         </div>
         <div class="jsdoc-full-summary"><p>To add an item programmatically.</p>
 </div>
@@ -383,26 +383,26 @@ only when the margin has never been computed.</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mdnd_AreaManager_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mdnd_AreaManager_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
         </div>
         <div class="jsdoc-full-summary"><p>Constructor of AreaManager class.
 Initialize arrays, connects and subscribes.</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mdnd_AreaManager_destroy"></a><span class="functionIcon">destroy</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mdnd_AreaManager_destroy"></a><span class="functionIcon">destroy</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
         </div>
         <div class="jsdoc-full-summary"><p>Destroy the component.</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mdnd_AreaManager_findCurrentIndexArea"></a><span class="functionIcon">findCurrentIndexArea</span><span class="parameters">(coords, size)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mdnd_AreaManager_findCurrentIndexArea"></a><span class="functionIcon">findCurrentIndexArea</span><span class="parameters">(coords, size)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
         </div>
         <div class="jsdoc-full-summary"><p>find the nearest target area according to coordinates.
 Coordinates are representing by an object : for example, {&#39;x&#39;:10,&#39;y&#39;:10}</p>
@@ -433,17 +433,17 @@ Coordinates are representing by an object : for example, {&#39;x&#39;:10,&#39;y&
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mdnd_AreaManager_init"></a><span class="functionIcon">init</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mdnd_AreaManager_init"></a><span class="functionIcon">init</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
         </div>
         <div class="jsdoc-full-summary"><p>Initialize the manager by calling the registerByClass method</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mdnd_AreaManager_placeDropIndicator"></a><span class="functionIcon">placeDropIndicator</span><span class="parameters">(coords, size)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mdnd_AreaManager_placeDropIndicator"></a><span class="functionIcon">placeDropIndicator</span><span class="parameters">(coords, size)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
         </div>
         <div class="jsdoc-full-summary"><p>Search the right place to insert the dropIndicator and display the dropIndicator.</p>
 </div>
@@ -473,18 +473,18 @@ Coordinates are representing by an object : for example, {&#39;x&#39;:10,&#39;y&
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mdnd_AreaManager_registerByClass"></a><span class="functionIcon">registerByClass</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mdnd_AreaManager_registerByClass"></a><span class="functionIcon">registerByClass</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
         </div>
         <div class="jsdoc-full-summary"><p>Register all Dnd Areas identified by the attribute areaClass :
 insert Dnd Areas using the specific sort of dropMode.</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mdnd_AreaManager_registerByNode"></a><span class="functionIcon">registerByNode</span><span class="parameters">(area, notInitAreas)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mdnd_AreaManager_registerByNode"></a><span class="functionIcon">registerByNode</span><span class="parameters">(area, notInitAreas)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
         </div>
         <div class="jsdoc-full-summary"><p>To register Dnd Area : insert the DndArea using the specific sort of dropMode.</p>
 </div>
@@ -511,9 +511,9 @@ insert Dnd Areas using the specific sort of dropMode.</p>
         </table>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mdnd_AreaManager_removeDragItem"></a><span class="functionIcon">removeDragItem</span><span class="parameters">(area, node)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mdnd_AreaManager_removeDragItem"></a><span class="functionIcon">removeDragItem</span><span class="parameters">(area, node)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
         </div>
         <div class="jsdoc-full-summary"><p>Delete a moveable item programmatically. The node is removed from the area.</p>
 </div>
@@ -543,9 +543,9 @@ insert Dnd Areas using the specific sort of dropMode.</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mdnd_AreaManager_unregister"></a><span class="functionIcon">unregister</span><span class="parameters">(area)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mdnd_AreaManager_unregister"></a><span class="functionIcon">unregister</span><span class="parameters">(area)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a>
         </div>
         <div class="jsdoc-full-summary"><p>Unregister a D&amp;D Area and its children into the AreaManager.</p>
 </div>
@@ -571,49 +571,49 @@ insert Dnd Areas using the specific sort of dropMode.</p>
     <h2>Events</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mdnd_AreaManager_onDrag"></a><span class="functionIcon">onDrag</span><span class="parameters">(node, coords, size, mousePosition)</span>
+        <div class="jsdoc-title"><a name="1_9dojox_mdnd_AreaManager_onDrag"></a><span class="functionIcon">onDrag</span><span class="parameters">(node, coords, size, mousePosition)</span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.9/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
         <div class="jsdoc-summary"><p>Occurs when the dojo.dnd.Moveable.onDrag is fired.
 Search the nearest target area and called the placeDropIndicator</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mdnd_AreaManager_onDragEnter"></a><span class="functionIcon">onDragEnter</span><span class="parameters">(coords, size)</span>
+        <div class="jsdoc-title"><a name="1_9dojox_mdnd_AreaManager_onDragEnter"></a><span class="functionIcon">onDragEnter</span><span class="parameters">(coords, size)</span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.9/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
         <div class="jsdoc-summary"><p>Optionally called by the getTargetArea method of TargetFinder class.</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mdnd_AreaManager_onDragExit"></a><span class="functionIcon">onDragExit</span><span class="parameters">(coords, size)</span>
+        <div class="jsdoc-title"><a name="1_9dojox_mdnd_AreaManager_onDragExit"></a><span class="functionIcon">onDragExit</span><span class="parameters">(coords, size)</span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.9/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
         <div class="jsdoc-summary"><p>Optionally called by the getTargetArea method of TargetFinder class.</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mdnd_AreaManager_onDragStart"></a><span class="functionIcon">onDragStart</span><span class="parameters">(node, coords, size)</span>
+        <div class="jsdoc-title"><a name="1_9dojox_mdnd_AreaManager_onDragStart"></a><span class="functionIcon">onDragStart</span><span class="parameters">(node, coords, size)</span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.9/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
         <div class="jsdoc-summary"><p>Initialize the drag (see dojox.mdnd.Moveable.initOffsetDrag())</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mdnd_AreaManager_onDrop"></a><span class="functionIcon">onDrop</span><span class="parameters">(node)</span>
+        <div class="jsdoc-title"><a name="1_9dojox_mdnd_AreaManager_onDrop"></a><span class="functionIcon">onDrop</span><span class="parameters">(node)</span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.9/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
         <div class="jsdoc-summary"><p>Drop the dragged item where the dropIndicator is displayed.</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mdnd_AreaManager_onDropCancel"></a><span class="functionIcon">onDropCancel</span><span class="parameters">()</span>
+        <div class="jsdoc-title"><a name="1_9dojox_mdnd_AreaManager_onDropCancel"></a><span class="functionIcon">onDropCancel</span><span class="parameters">()</span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.9/dojox/mdnd/AreaManager" class="jsdoc-link">dojox/mdnd/AreaManager</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
         <div class="jsdoc-summary"><p>Cancel the drop.
 The dragNode returns into the source.</p>
 </div>
       </div>
     </div>
   </div>
-</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/mdnd/AreaManager" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/mdnd/AreaManager" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

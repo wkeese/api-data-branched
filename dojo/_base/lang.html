@@ -3,20 +3,20 @@
   // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
   // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
   // Also, when this page is loaded via XHR this script block should be ignored.
-  location = "/api/?qs=1.8/dojo/_base/lang" + location.hash;
+  location = "/api/?qs=1.9/dojo/_base/lang" + location.hash;
   
 </script>
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/_base/lang.html</div>
-<h1 class="objectIcon36 jsdoc-title">dojo/_base/lang<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/_base/lang.html</div>
+<h1 class="objectIcon36 jsdoc-title">dojo/_base/lang<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>This module defines Javascript language extensions.</p>
 </div>
-<p>See the <a href="/reference-guide/1.8/dojo/_base/lang.html" target="_blank">dojo/_base/lang reference documentation</a> for more information.</p>
+<p>See the <a href="/reference-guide/1.9/dojo/_base/lang.html" target="_blank">dojo/_base/lang reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-field-list">
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="objectIcon private"><a href="#1_8dojo__base_lang__extraNames" class="inline-link"> _extraNames </a><span>Lists property names that must be explicitly processed during for-in iteration
+        <li class="objectIcon private"><a href="#1_9dojo__base_lang__extraNames" class="inline-link"> _extraNames </a><span>Lists property names that must be explicitly processed during for-in iteration
 in environments that have has(&quot;bug-for-in-skips-shadowed&quot;) true.</span><span title="private" class="jsdoc-private"></span>
         </li>
       </ul>
@@ -24,52 +24,52 @@ in environments that have has(&quot;bug-for-in-skips-shadowed&quot;) true.</span
     <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="functionIcon private"><a href="#1_8dojo__base_lang__hitchArgs" class="inline-link"> _hitchArgs</a><span class="parameters">(</span>scope, method) <span></span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojo__base_lang__hitchArgs" class="inline-link"> _hitchArgs</a><span class="parameters">(</span>scope, method) <span></span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojo__base_lang__mixin" class="inline-link"> _mixin</a><span class="parameters">(</span>dest, source, copyFunc) <span>Copies/adds all properties of source to dest; returns dest.</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojo__base_lang__mixin" class="inline-link"> _mixin</a><span class="parameters">(</span>dest, source, copyFunc) <span>Copies/adds all properties of source to dest; returns dest.</span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojo__base_lang__toArray" class="inline-link"> _toArray</a><span class="parameters">(</span>obj, offset, startWith) <span>Converts an array-like object (i.e. arguments, DOMCollection) to an
+        <li class="functionIcon private"><a href="#1_9dojo__base_lang__toArray" class="inline-link"> _toArray</a><span class="parameters">(</span>obj, offset, startWith) <span>Converts an array-like object (i.e. arguments, DOMCollection) to an
 array.</span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_lang_clone" class="inline-link"> clone</a><span class="parameters">(</span>src) <span>Clones objects (including DOM nodes) and all children.</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_lang_clone" class="inline-link"> clone</a><span class="parameters">(</span>src) <span>Clones objects (including DOM nodes) and all children.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_lang_delegate" class="inline-link"> delegate</a><span class="parameters">(</span>obj, props) <span>Returns a new object which &quot;looks&quot; to obj for properties which it
+        <li class="functionIcon "><a href="#1_9dojo__base_lang_delegate" class="inline-link"> delegate</a><span class="parameters">(</span>obj, props) <span>Returns a new object which &quot;looks&quot; to obj for properties which it
 does not have a value for.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_lang_exists" class="inline-link"> exists</a><span class="parameters">(</span>name, obj) <span>determine if an object supports a given method</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_lang_exists" class="inline-link"> exists</a><span class="parameters">(</span>name, obj) <span>determine if an object supports a given method</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_lang_extend" class="inline-link"> extend</a><span class="parameters">(</span>ctor, props) <span>Adds all properties and methods of props to constructor&#39;s
+        <li class="functionIcon "><a href="#1_9dojo__base_lang_extend" class="inline-link"> extend</a><span class="parameters">(</span>ctor, props) <span>Adds all properties and methods of props to constructor&#39;s
 prototype, making them available to all instances created with
 constructor.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_lang_getObject" class="inline-link"> getObject</a><span class="parameters">(</span>name, create, context) <span>Get a property from a dot-separated string, such as &quot;A.B.C&quot;</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_lang_getObject" class="inline-link"> getObject</a><span class="parameters">(</span>name, create, context) <span>Get a property from a dot-separated string, such as &quot;A.B.C&quot;</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_lang_hitch" class="inline-link"> hitch</a><span class="parameters">(</span>scope, method) <span>Returns a function that will only ever execute in the a given scope.</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_lang_hitch" class="inline-link"> hitch</a><span class="parameters">(</span>scope, method) <span>Returns a function that will only ever execute in the a given scope.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_lang_isAlien" class="inline-link"> isAlien</a><span class="parameters">(</span>it) <span>Returns true if it is a built-in function or some other kind of
+        <li class="functionIcon "><a href="#1_9dojo__base_lang_isAlien" class="inline-link"> isAlien</a><span class="parameters">(</span>it) <span>Returns true if it is a built-in function or some other kind of
 oddball that should report as a function but doesn&#39;t</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_lang_isArray" class="inline-link"> isArray</a><span class="parameters">(</span>it) <span>Return true if it is an Array.</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_lang_isArray" class="inline-link"> isArray</a><span class="parameters">(</span>it) <span>Return true if it is an Array.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_lang_isArrayLike" class="inline-link"> isArrayLike</a><span class="parameters">(</span>it) <span>similar to isArray() but more permissive</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_lang_isArrayLike" class="inline-link"> isArrayLike</a><span class="parameters">(</span>it) <span>similar to isArray() but more permissive</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_lang_isFunction" class="inline-link"> isFunction</a><span class="parameters">(</span>it) <span>Return true if it is a Function</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_lang_isFunction" class="inline-link"> isFunction</a><span class="parameters">(</span>it) <span>Return true if it is a Function</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_lang_isObject" class="inline-link"> isObject</a><span class="parameters">(</span>it) <span>Returns true if it is a JavaScript object (or an Array, a Function
+        <li class="functionIcon "><a href="#1_9dojo__base_lang_isObject" class="inline-link"> isObject</a><span class="parameters">(</span>it) <span>Returns true if it is a JavaScript object (or an Array, a Function
 or null)</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_lang_isString" class="inline-link"> isString</a><span class="parameters">(</span>it) <span>Return true if it is a String</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_lang_isString" class="inline-link"> isString</a><span class="parameters">(</span>it) <span>Return true if it is a String</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_lang_mixin" class="inline-link"> mixin</a><span class="parameters">(</span>dest, sources) <span>Copies/adds all properties of one or more sources to dest; returns dest.</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_lang_mixin" class="inline-link"> mixin</a><span class="parameters">(</span>dest, sources) <span>Copies/adds all properties of one or more sources to dest; returns dest.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_lang_partial" class="inline-link"> partial</a><span class="parameters">(</span>method) <span>similar to hitch() except that the scope object is left to be
+        <li class="functionIcon "><a href="#1_9dojo__base_lang_partial" class="inline-link"> partial</a><span class="parameters">(</span>method) <span>similar to hitch() except that the scope object is left to be
 whatever the execution context eventually becomes.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_lang_replace" class="inline-link"> replace</a><span class="parameters">(</span>tmpl, map, pattern) <span>Performs parameterized substitutions on a string.</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_lang_replace" class="inline-link"> replace</a><span class="parameters">(</span>tmpl, map, pattern) <span>Performs parameterized substitutions on a string.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_lang_setObject" class="inline-link"> setObject</a><span class="parameters">(</span>name, value, context) <span>Set a property from a dot-separated string, such as &quot;A.B.C&quot;</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_lang_setObject" class="inline-link"> setObject</a><span class="parameters">(</span>name, value, context) <span>Set a property from a dot-separated string, such as &quot;A.B.C&quot;</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_lang_trim" class="inline-link"> trim</a><span class="parameters">(</span>str) <span>Trims whitespace from both sides of the string</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_lang_trim" class="inline-link"> trim</a><span class="parameters">(</span>str) <span>Trims whitespace from both sides of the string</span>
         </li>
       </ul>
     </div>
@@ -80,9 +80,9 @@ whatever the execution context eventually becomes.</span>
     <h2>Properties</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojo__base_lang__extraNames"></a><span class="objectIcon">_extraNames</span><span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojo__base_lang__extraNames"></a><span class="objectIcon">_extraNames</span><span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
         </div>
         <div class="jsdoc-summary"><p>Lists property names that must be explicitly processed during for-in iteration
 in environments that have has(&quot;bug-for-in-skips-shadowed&quot;) true.</p>
@@ -92,9 +92,9 @@ in environments that have has(&quot;bug-for-in-skips-shadowed&quot;) true.</p>
     <h2>Methods</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojo__base_lang__hitchArgs"></a><span class="functionIcon">_hitchArgs</span><span class="parameters">(scope, method)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojo__base_lang__hitchArgs"></a><span class="functionIcon">_hitchArgs</span><span class="parameters">(scope, method)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -119,9 +119,9 @@ in environments that have has(&quot;bug-for-in-skips-shadowed&quot;) true.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">function</span></div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojo__base_lang__mixin"></a><span class="functionIcon">_mixin</span><span class="parameters">(dest, source, copyFunc)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojo__base_lang__mixin"></a><span class="functionIcon">_mixin</span><span class="parameters">(dest, source, copyFunc)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
         </div>
         <div class="jsdoc-full-summary"><p>Copies/adds all properties of source to dest; returns dest.</p>
 </div>
@@ -164,9 +164,9 @@ Notice that by default, _mixin executes a so-called &quot;shallow copy&quot; and
 </div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojo__base_lang__toArray"></a><span class="functionIcon">_toArray</span><span class="parameters">(obj, offset, startWith)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojo__base_lang__toArray"></a><span class="functionIcon">_toArray</span><span class="parameters">(obj, offset, startWith)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
         </div>
         <div class="jsdoc-full-summary"><p>Converts an array-like object (i.e. arguments, DOMCollection) to an
 array. Returns a new Array with the elements of obj.</p>
@@ -208,9 +208,9 @@ startWith is the returned array.</p>
         </table>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_lang_clone"></a><span class="functionIcon">clone</span><span class="parameters">(src)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_lang_clone"></a><span class="functionIcon">clone</span><span class="parameters">(src)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
         </div>
         <div class="jsdoc-full-summary"><p>Clones objects (including DOM nodes) and all children.
 Warning: do not clone cyclic structures.</p>
@@ -234,9 +234,9 @@ Warning: do not clone cyclic structures.</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_lang_delegate"></a><span class="functionIcon">delegate</span><span class="parameters">(obj, props)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_lang_delegate"></a><span class="functionIcon">delegate</span><span class="parameters">(obj, props)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
         </div>
         <div class="jsdoc-full-summary"><p>Returns a new object which &quot;looks&quot; to obj for properties which it
 does not have a value for. Optionally takes a bag of properties to
@@ -289,9 +289,9 @@ thinger.bar == &quot;thonk&quot;; // still delegated to foo&#39;s bar</code></pr
         </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_lang_exists"></a><span class="functionIcon">exists</span><span class="parameters">(name, obj)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_lang_exists"></a><span class="functionIcon">exists</span><span class="parameters">(name, obj)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
         </div>
         <div class="jsdoc-full-summary"><p>determine if an object supports a given method</p>
 </div>
@@ -342,9 +342,9 @@ lang.exists(&quot;bar.baz&quot;, foo); // false</code></pre>
         </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_lang_extend"></a><span class="functionIcon">extend</span><span class="parameters">(ctor, props)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_lang_extend"></a><span class="functionIcon">extend</span><span class="parameters">(ctor, props)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
         </div>
         <div class="jsdoc-full-summary"><p>Adds all properties and methods of props to constructor&#39;s
 prototype, making them available to all instances created with
@@ -376,9 +376,9 @@ constructor.</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_lang_getObject"></a><span class="functionIcon">getObject</span><span class="parameters">(name, create, context)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_lang_getObject"></a><span class="functionIcon">getObject</span><span class="parameters">(name, create, context)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
         </div>
         <div class="jsdoc-full-summary"><p>Get a property from a dot-separated string, such as &quot;A.B.C&quot;</p>
 </div>
@@ -420,9 +420,9 @@ created at any point along the &#39;path&#39; that is undefined.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_lang_hitch"></a><span class="functionIcon">hitch</span><span class="parameters">(scope, method)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_lang_hitch"></a><span class="functionIcon">hitch</span><span class="parameters">(scope, method)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
         </div>
         <div class="jsdoc-full-summary"><p>Returns a function that will only ever execute in the a given scope.
 This allows for easy use of object member functions
@@ -491,9 +491,9 @@ lang.hitch(foo, function(){ this.bar = 10; })();</code></pre>
         </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_lang_isAlien"></a><span class="functionIcon">isAlien</span><span class="parameters">(it)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_lang_isAlien"></a><span class="functionIcon">isAlien</span><span class="parameters">(it)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
         </div>
         <div class="jsdoc-full-summary"><p>Returns true if it is a built-in function or some other kind of
 oddball that <em>should</em> report as a function but doesn&#39;t</p>
@@ -514,9 +514,9 @@ oddball that <em>should</em> report as a function but doesn&#39;t</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_lang_isArray"></a><span class="functionIcon">isArray</span><span class="parameters">(it)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_lang_isArray"></a><span class="functionIcon">isArray</span><span class="parameters">(it)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
         </div>
         <div class="jsdoc-full-summary"><p>Return true if it is an Array.
 Does not work on Arrays created in other windows.</p>
@@ -538,9 +538,9 @@ Does not work on Arrays created in other windows.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_lang_isArrayLike"></a><span class="functionIcon">isArrayLike</span><span class="parameters">(it)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_lang_isArrayLike"></a><span class="functionIcon">isArrayLike</span><span class="parameters">(it)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
         </div>
         <div class="jsdoc-full-summary"><p>similar to isArray() but more permissive</p>
 </div>
@@ -569,9 +569,9 @@ isArray().</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_lang_isFunction"></a><span class="functionIcon">isFunction</span><span class="parameters">(it)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_lang_isFunction"></a><span class="functionIcon">isFunction</span><span class="parameters">(it)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
         </div>
         <div class="jsdoc-full-summary"><p>Return true if it is a Function</p>
 </div>
@@ -592,9 +592,9 @@ isArray().</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_lang_isObject"></a><span class="functionIcon">isObject</span><span class="parameters">(it)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_lang_isObject"></a><span class="functionIcon">isObject</span><span class="parameters">(it)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
         </div>
         <div class="jsdoc-full-summary"><p>Returns true if it is a JavaScript object (or an Array, a Function
 or null)</p>
@@ -616,9 +616,9 @@ or null)</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_lang_isString"></a><span class="functionIcon">isString</span><span class="parameters">(it)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_lang_isString"></a><span class="functionIcon">isString</span><span class="parameters">(it)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
         </div>
         <div class="jsdoc-full-summary"><p>Return true if it is a String</p>
 </div>
@@ -639,9 +639,9 @@ or null)</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_lang_mixin"></a><span class="functionIcon">mixin</span><span class="parameters">(dest, sources)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_lang_mixin"></a><span class="functionIcon">mixin</span><span class="parameters">(dest, sources)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
         </div>
         <div class="jsdoc-full-summary"><p>Copies/adds all properties of one or more sources to dest; returns dest.</p>
 </div>
@@ -731,9 +731,9 @@ console.log(flattened.braces);</code></pre>
         </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_lang_partial"></a><span class="functionIcon">partial</span><span class="parameters">(method)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_lang_partial"></a><span class="functionIcon">partial</span><span class="parameters">(method)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
         </div>
         <div class="jsdoc-full-summary"><p>similar to hitch() except that the scope object is left to be
 whatever the execution context eventually becomes.</p>
@@ -760,9 +760,9 @@ whatever the execution context eventually becomes.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_lang_replace"></a><span class="functionIcon">replace</span><span class="parameters">(tmpl, map, pattern)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_lang_replace"></a><span class="functionIcon">replace</span><span class="parameters">(tmpl, map, pattern)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
         </div>
         <div class="jsdoc-full-summary"><p>Performs parameterized substitutions on a string. Throws an
 exception if any parameter is unmatched.</p>
@@ -864,9 +864,9 @@ lang.replace(&quot;Hello, ${0} ${2}!&quot;,
         </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_lang_setObject"></a><span class="functionIcon">setObject</span><span class="parameters">(name, value, context)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_lang_setObject"></a><span class="functionIcon">setObject</span><span class="parameters">(name, value, context)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
         </div>
         <div class="jsdoc-full-summary"><p>Set a property from a dot-separated string, such as &quot;A.B.C&quot;</p>
 </div>
@@ -935,9 +935,9 @@ obj.parent.child.prop = &quot;some value&quot;;</code></pre>
         </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_lang_trim"></a><span class="functionIcon">trim</span><span class="parameters">(str)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_lang_trim"></a><span class="functionIcon">trim</span><span class="parameters">(str)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/lang" class="jsdoc-link">dojo/_base/lang</a>
         </div>
         <div class="jsdoc-full-summary"><p>Trims whitespace from both sides of the string</p>
 </div>
@@ -968,4 +968,4 @@ lang.string.trim()</p>
       </div>
     </div>
   </div>
-</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojo/_base/lang" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojo/_base/lang" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

@@ -3,11 +3,11 @@
   // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
   // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
   // Also, when this page is loaded via XHR this script block should be ignored.
-  location = "/api/?qs=1.8/dojox/uuid/Uuid" + location.hash;
+  location = "/api/?qs=1.9/dojox/uuid/Uuid" + location.hash;
   
 </script>
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/uuid/Uuid.html</div>
-<h1 class="functionIcon36 jsdoc-title">dojox/uuid/Uuid<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/uuid/Uuid.html</div>
+<h1 class="functionIcon36 jsdoc-title">dojox/uuid/Uuid<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>This is the constructor for the Uuid class.  The Uuid class offers
 methods for inspecting existing UUIDs.</p>
 </div>
@@ -25,7 +25,7 @@ methods for inspecting existing UUIDs.</p>
     </td>
   </tr>
 </table>
-<p>See the <a href="/reference-guide/1.8/dojox/uuid.html" target="_blank">dojox/uuid/Uuid reference documentation</a> for more information.</p>
+<p>See the <a href="/reference-guide/1.9/dojox/uuid.html" target="_blank">dojox/uuid/Uuid reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-field-list">
     <div class="jsdoc-examples">
@@ -45,34 +45,34 @@ dojox.uuid.assert(!uuid.isEqual(dojox.uuid.NIL_UUID));</p>
     <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="functionIcon "><a href="#1_8dojox_uuid_Uuid_compare" class="inline-link"> compare</a><span class="parameters">(</span>otherUuid) <span>Compares this UUID to another UUID, and returns 0, 1, or -1.</span>
+        <li class="functionIcon "><a href="#1_9dojox_uuid_Uuid_compare" class="inline-link"> compare</a><span class="parameters">(</span>otherUuid) <span>Compares this UUID to another UUID, and returns 0, 1, or -1.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_uuid_Uuid_compare" class="inline-link"> compare</a><span class="parameters">(</span>uuidOne, uuidTwo) <span>Given two UUIDs to compare, this method returns 0, 1, or -1.</span>
+        <li class="functionIcon "><a href="#1_9dojox_uuid_Uuid_compare" class="inline-link"> compare</a><span class="parameters">(</span>uuidOne, uuidTwo) <span>Given two UUIDs to compare, this method returns 0, 1, or -1.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_uuid_Uuid_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>input) <span>This is the constructor for the Uuid class.</span>
+        <li class="functionIcon "><a href="#1_9dojox_uuid_Uuid_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>input) <span>This is the constructor for the Uuid class.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_uuid_Uuid_getGenerator" class="inline-link"> getGenerator</a><span class="parameters">(</span>) <span>Returns the default generator.</span>
+        <li class="functionIcon "><a href="#1_9dojox_uuid_Uuid_getGenerator" class="inline-link"> getGenerator</a><span class="parameters">(</span>) <span>Returns the default generator.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_uuid_Uuid_getNode" class="inline-link"> getNode</a><span class="parameters">(</span>) <span>If this is a version 1 UUID (a time-based UUID), getNode() returns a
+        <li class="functionIcon "><a href="#1_9dojox_uuid_Uuid_getNode" class="inline-link"> getNode</a><span class="parameters">(</span>) <span>If this is a version 1 UUID (a time-based UUID), getNode() returns a
 12-character string with the &quot;node&quot; or &quot;pseudonode&quot; portion of the UUID,
 which is the rightmost 12 characters.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_uuid_Uuid_getTimestamp" class="inline-link"> getTimestamp</a><span class="parameters">(</span>returnType) <span>If this is a version 1 UUID (a time-based UUID), this method returns
+        <li class="functionIcon "><a href="#1_9dojox_uuid_Uuid_getTimestamp" class="inline-link"> getTimestamp</a><span class="parameters">(</span>returnType) <span>If this is a version 1 UUID (a time-based UUID), this method returns
 the timestamp value encoded in the UUID.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_uuid_Uuid_getVariant" class="inline-link"> getVariant</a><span class="parameters">(</span>) <span>Returns a variant code that indicates what type of UUID this is.</span>
+        <li class="functionIcon "><a href="#1_9dojox_uuid_Uuid_getVariant" class="inline-link"> getVariant</a><span class="parameters">(</span>) <span>Returns a variant code that indicates what type of UUID this is.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_uuid_Uuid_getVersion" class="inline-link"> getVersion</a><span class="parameters">(</span>) <span>Returns a version number that indicates what type of UUID this is.</span>
+        <li class="functionIcon "><a href="#1_9dojox_uuid_Uuid_getVersion" class="inline-link"> getVersion</a><span class="parameters">(</span>) <span>Returns a version number that indicates what type of UUID this is.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_uuid_Uuid_isEqual" class="inline-link"> isEqual</a><span class="parameters">(</span>otherUuid) <span>Returns true if this UUID is equal to the otherUuid, or false otherwise.</span>
+        <li class="functionIcon "><a href="#1_9dojox_uuid_Uuid_isEqual" class="inline-link"> isEqual</a><span class="parameters">(</span>otherUuid) <span>Returns true if this UUID is equal to the otherUuid, or false otherwise.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_uuid_Uuid_isValid" class="inline-link"> isValid</a><span class="parameters">(</span>) <span>Returns true if the UUID was initialized with a valid value.</span>
+        <li class="functionIcon "><a href="#1_9dojox_uuid_Uuid_isValid" class="inline-link"> isValid</a><span class="parameters">(</span>) <span>Returns true if the UUID was initialized with a valid value.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_uuid_Uuid_setGenerator" class="inline-link"> setGenerator</a><span class="parameters">(</span>generator) <span>Sets the default generator, which will be used by the
+        <li class="functionIcon "><a href="#1_9dojox_uuid_Uuid_setGenerator" class="inline-link"> setGenerator</a><span class="parameters">(</span>generator) <span>Sets the default generator, which will be used by the
 &quot;new dojox.uuid.Uuid()&quot; constructor if no parameters
 are passed in.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_uuid_Uuid_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span>This method returns a standard 36-character string representing
+        <li class="functionIcon "><a href="#1_9dojox_uuid_Uuid_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span>This method returns a standard 36-character string representing
 the UUID, such as &quot;3b12f1df-5232-4804-897e-917bf397618a&quot;.</span>
         </li>
       </ul>
@@ -84,9 +84,9 @@ the UUID, such as &quot;3b12f1df-5232-4804-897e-917bf397618a&quot;.</span>
     <h2>Methods</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_uuid_Uuid_compare"></a><span class="functionIcon">compare</span><span class="parameters">(otherUuid)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_uuid_Uuid_compare"></a><span class="functionIcon">compare</span><span class="parameters">(otherUuid)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/uuid/Uuid" class="jsdoc-link">dojox/uuid/Uuid</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/uuid/Uuid" class="jsdoc-link">dojox/uuid/Uuid</a>
         </div>
         <div class="jsdoc-full-summary"><p>Compares this UUID to another UUID, and returns 0, 1, or -1.</p>
 </div>
@@ -108,9 +108,9 @@ in IETF RFC 4122: <a href="http://www.ietf.org/rfc/rfc4122.txt">http://www.ietf.
         </table>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_uuid_Uuid_compare"></a><span class="functionIcon">compare</span><span class="parameters">(uuidOne, uuidTwo)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_uuid_Uuid_compare"></a><span class="functionIcon">compare</span><span class="parameters">(uuidOne, uuidTwo)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/uuid/Uuid" class="jsdoc-link">dojox/uuid/Uuid</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/uuid/Uuid" class="jsdoc-link">dojox/uuid/Uuid</a>
         </div>
         <div class="jsdoc-full-summary"><p>Given two UUIDs to compare, this method returns 0, 1, or -1.</p>
 </div>
@@ -140,9 +140,9 @@ intended to match the sample implementation in IETF RFC 4122:
         </table>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_uuid_Uuid_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(input)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_uuid_Uuid_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(input)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/uuid/Uuid" class="jsdoc-link">dojox/uuid/Uuid</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/uuid/Uuid" class="jsdoc-link">dojox/uuid/Uuid</a>
         </div>
         <div class="jsdoc-full-summary"><p>This is the constructor for the Uuid class.  The Uuid class offers
 methods for inspecting existing UUIDs.</p>
@@ -177,17 +177,17 @@ dojox.uuid.assert(!uuid.isEqual(dojox.uuid.NIL_UUID));</p>
         </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_uuid_Uuid_getGenerator"></a><span class="functionIcon">getGenerator</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_uuid_Uuid_getGenerator"></a><span class="functionIcon">getGenerator</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/uuid/Uuid" class="jsdoc-link">dojox/uuid/Uuid</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/uuid/Uuid" class="jsdoc-link">dojox/uuid/Uuid</a>
         </div>
         <div class="jsdoc-full-summary"><p>Returns the default generator.  See setGenerator().</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_uuid_Uuid_getNode"></a><span class="functionIcon">getNode</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_uuid_Uuid_getNode"></a><span class="functionIcon">getNode</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/uuid/Uuid" class="jsdoc-link">dojox/uuid/Uuid</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/uuid/Uuid" class="jsdoc-link">dojox/uuid/Uuid</a>
         </div>
         <div class="jsdoc-full-summary"><p>If this is a version 1 UUID (a time-based UUID), getNode() returns a
 12-character string with the &quot;node&quot; or &quot;pseudonode&quot; portion of the UUID,
@@ -195,9 +195,9 @@ which is the rightmost 12 characters.</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_uuid_Uuid_getTimestamp"></a><span class="functionIcon">getTimestamp</span><span class="parameters">(returnType)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_uuid_Uuid_getTimestamp"></a><span class="functionIcon">getTimestamp</span><span class="parameters">(returnType)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/uuid/Uuid" class="jsdoc-link">dojox/uuid/Uuid</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/uuid/Uuid" class="jsdoc-link">dojox/uuid/Uuid</a>
         </div>
         <div class="jsdoc-full-summary"><p>If this is a version 1 UUID (a time-based UUID), this method returns
 the timestamp value encoded in the UUID.  The caller can ask for the
@@ -235,18 +235,18 @@ hexString = uuid.getTimestamp(&quot;hex&quot;); // &quot;1da86cdb4308fb0&quot;</
         </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_uuid_Uuid_getVariant"></a><span class="functionIcon">getVariant</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_uuid_Uuid_getVariant"></a><span class="functionIcon">getVariant</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/uuid/Uuid" class="jsdoc-link">dojox/uuid/Uuid</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/uuid/Uuid" class="jsdoc-link">dojox/uuid/Uuid</a>
         </div>
         <div class="jsdoc-full-summary"><p>Returns a variant code that indicates what type of UUID this is.
 Returns one of the enumerated dojox.uuid.variant values.</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_uuid_Uuid_getVersion"></a><span class="functionIcon">getVersion</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_uuid_Uuid_getVersion"></a><span class="functionIcon">getVersion</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/uuid/Uuid" class="jsdoc-link">dojox/uuid/Uuid</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/uuid/Uuid" class="jsdoc-link">dojox/uuid/Uuid</a>
         </div>
         <div class="jsdoc-full-summary"><p>Returns a version number that indicates what type of UUID this is.
 Returns one of the enumerated dojox.uuid.version values.</p>
@@ -262,9 +262,9 @@ dojox.uuid.assert(version == dojox.uuid.version.TIME_BASED);</p>
         </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_uuid_Uuid_isEqual"></a><span class="functionIcon">isEqual</span><span class="parameters">(otherUuid)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_uuid_Uuid_isEqual"></a><span class="functionIcon">isEqual</span><span class="parameters">(otherUuid)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/uuid/Uuid" class="jsdoc-link">dojox/uuid/Uuid</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/uuid/Uuid" class="jsdoc-link">dojox/uuid/Uuid</a>
         </div>
         <div class="jsdoc-full-summary"><p>Returns true if this UUID is equal to the otherUuid, or false otherwise.</p>
 </div>
@@ -283,17 +283,17 @@ dojox.uuid.assert(version == dojox.uuid.version.TIME_BASED);</p>
         </table>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_uuid_Uuid_isValid"></a><span class="functionIcon">isValid</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_uuid_Uuid_isValid"></a><span class="functionIcon">isValid</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/uuid/Uuid" class="jsdoc-link">dojox/uuid/Uuid</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/uuid/Uuid" class="jsdoc-link">dojox/uuid/Uuid</a>
         </div>
         <div class="jsdoc-full-summary"><p>Returns true if the UUID was initialized with a valid value.</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_uuid_Uuid_setGenerator"></a><span class="functionIcon">setGenerator</span><span class="parameters">(generator)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_uuid_Uuid_setGenerator"></a><span class="functionIcon">setGenerator</span><span class="parameters">(generator)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/uuid/Uuid" class="jsdoc-link">dojox/uuid/Uuid</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/uuid/Uuid" class="jsdoc-link">dojox/uuid/Uuid</a>
         </div>
         <div class="jsdoc-full-summary"><p>Sets the default generator, which will be used by the
 &quot;new dojox.uuid.Uuid()&quot; constructor if no parameters
@@ -315,9 +315,9 @@ are passed in.</p>
         </table>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_uuid_Uuid_toString"></a><span class="functionIcon">toString</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_uuid_Uuid_toString"></a><span class="functionIcon">toString</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/uuid/Uuid" class="jsdoc-link">dojox/uuid/Uuid</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/uuid/Uuid" class="jsdoc-link">dojox/uuid/Uuid</a>
         </div>
         <div class="jsdoc-full-summary"><p>This method returns a standard 36-character string representing
 the UUID, such as &quot;3b12f1df-5232-4804-897e-917bf397618a&quot;.</p>
@@ -325,4 +325,4 @@ the UUID, such as &quot;3b12f1df-5232-4804-897e-917bf397618a&quot;.</p>
       </div>
     </div>
   </div>
-</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/uuid/Uuid" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/uuid/Uuid" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

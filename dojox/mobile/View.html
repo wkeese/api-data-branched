@@ -3,26 +3,34 @@
   // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
   // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
   // Also, when this page is loaded via XHR this script block should be ignored.
-  location = "/api/?qs=1.8/dojox/mobile/View" + location.hash;
+  location = "/api/?qs=1.9/dojox/mobile/View" + location.hash;
   
 </script>
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/mobile/View.html</div>
-<h1 class="constructorIcon36 jsdoc-title">dojox/mobile/View<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/mobile/View.html</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/mobile/View<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-mixins">
-  <label>Extends </label><a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase, </a><a href="/api/1.8/dijit/_Container" class="jsdoc-link">dijit/_Container, </a><a href="/api/1.8/dijit/_Contained" class="jsdoc-link">dijit/_Contained</a>
+  <label>Extends </label><a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase, </a><a href="/api/1.9/dijit/_Container" class="jsdoc-link">dijit/_Container, </a><a href="/api/1.9/dijit/_Contained" class="jsdoc-link">dijit/_Contained</a>
 </div>
 <div class="jsdoc-full-summary"><p>A widget that represents a view that occupies the full screen</p>
 </div>
-<div class="jsdoc-full-summary"><p>View acts as a container for any HTML and/or widgets. An entire
-HTML page can have multiple View widgets and the user can
-navigate through the views back and forth without page
-transitions.</p>
+<div class="jsdoc-full-summary"><p>View is a container widget for any HTML element and/or Dojo widgets.
+As a Dojo widget container it can itself contain View widgets
+forming a set of nested views. A Dojo Mobile application is usually
+made of multiple View widgets and the user can navigate through
+the views back and forth with animated transition effects.
+
+</p>
+<p>When using several sibling views (direct children of the same
+element), you can use the &#39;selected&#39; attribute to define whether
+the view should be displayed when the application is launched.
+If no view has selected=true, the first sibling view is displayed
+at startup time.</p>
 </div>
 <div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new View<span class="parameters">(params,node);</span></div>
 </div>
-<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/mobile/View">dojox/mobile/View</a></div>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.9/dojox/mobile/View">dojox/mobile/View</a></div>
 <div class="jsdoc-summary"><p>Creates a new instance of the class.</p>
 </div>
 <table class="jsdoc-parameters">
@@ -47,65 +55,63 @@ transitions.</p>
     </td>
   </tr>
 </table>
-<p>See the <a href="/reference-guide/1.8/dojox/mobile/View.html" target="_blank">dojox/mobile/View reference documentation</a> for more information.</p>
+<p>See the <a href="/reference-guide/1.9/dojox/mobile/View.html" target="_blank">dojox/mobile/View reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-field-list">
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="objectIcon private inherited"><a href="#1_8dojox_mobile_View__attrPairNames" class="inline-link"> _attrPairNames </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="objectIcon private inherited"><a href="#1_9dojox_mobile_View__attrPairNames" class="inline-link"> _attrPairNames </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon private inherited"><a href="#1_8dojox_mobile_View__blankGif" class="inline-link"> _blankGif </a><span>Path to a blank 1x1 image.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="stringIcon private inherited"><a href="#1_9dojox_mobile_View__blankGif" class="inline-link"> _blankGif </a><span>Path to a blank 1x1 image.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon private inherited"><a href="#1_8dojox_mobile_View__setClassAttr" class="inline-link"> _setClassAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="objectIcon private inherited"><a href="#1_9dojox_mobile_View__setClassAttr" class="inline-link"> _setClassAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon private inherited"><a href="#1_8dojox_mobile_View__setDirAttr" class="inline-link"> _setDirAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="objectIcon private inherited"><a href="#1_9dojox_mobile_View__setDirAttr" class="inline-link"> _setDirAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon private inherited"><a href="#1_8dojox_mobile_View__setIdAttr" class="inline-link"> _setIdAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="stringIcon private inherited"><a href="#1_9dojox_mobile_View__setIdAttr" class="inline-link"> _setIdAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon private inherited"><a href="#1_8dojox_mobile_View__setLangAttr" class="inline-link"> _setLangAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="objectIcon private inherited"><a href="#1_9dojox_mobile_View__setLangAttr" class="inline-link"> _setLangAttr </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="booleanIcon private inherited"><a href="#1_8dojox_mobile_View__started" class="inline-link"> _started </a><span>startup() has completed.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="booleanIcon private inherited"><a href="#1_9dojox_mobile_View__started" class="inline-link"> _started </a><span>startup() has completed.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon inherited"><a href="#1_8dojox_mobile_View_attributeMap" class="inline-link"> attributeMap </a><span>Deprecated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="objectIcon inherited"><a href="#1_9dojox_mobile_View_attributeMap" class="inline-link"> attributeMap </a><span>Deprecated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_8dojox_mobile_View_baseClass" class="inline-link"> baseClass </a><span></span><span title="inherited from dojox/mobile/View" class="jsdoc-inherited"></span>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_View_baseClass" class="inline-link"> baseClass </a><span></span><span title="inherited from dojox/mobile/View" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_8dojox_mobile_View_class" class="inline-link"> class </a><span></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_View_class" class="inline-link"> class </a><span></span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="domnodeIcon inherited"><a href="#1_8dojox_mobile_View_containerNode" class="inline-link"> containerNode </a><span>Designates where children of the source DOM node will be placed.
+        <li class="domnodeIcon inherited"><a href="#1_9dojox_mobile_View_containerNode" class="inline-link"> containerNode </a><span>Designates where children of the source DOM node will be placed.
 &quot;Children&quot; in this case refers to both DOM nodes and widgets.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_8dojox_mobile_View_dir" class="inline-link"> dir </a><span>Bi-directional support, as defined by the HTML DIR
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_View_dir" class="inline-link"> dir </a><span>Bi-directional support, as defined by the HTML DIR
 attribute.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="domnodeIcon inherited"><a href="#1_8dojox_mobile_View_domNode" class="inline-link"> domNode </a><span>This is our visible representation of the widget!</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="domnodeIcon inherited"><a href="#1_9dojox_mobile_View_domNode" class="inline-link"> domNode </a><span>This is our visible representation of the widget!</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="booleanIcon inherited"><a href="#1_8dojox_mobile_View_focused" class="inline-link"> focused </a><span>This widget or a widget it contains has focus, or is &quot;active&quot; because
+        <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_View_focused" class="inline-link"> focused </a><span>This widget or a widget it contains has focus, or is &quot;active&quot; because
 it was recently clicked.</span><span title="Must manually require () dijit/_FocusMixin to access" class="jsdoc-extension"></span><span title="inherited from dijit/_FocusMixin" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_8dojox_mobile_View_id" class="inline-link"> id </a><span>A unique, opaque ID string that can be assigned by users or by the
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_View_id" class="inline-link"> id </a><span>A unique, opaque ID string that can be assigned by users or by the
 system.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="booleanIcon inherited"><a href="#1_8dojox_mobile_View_keepScrollPos" class="inline-link"> keepScrollPos </a><span>If true, the scroll position is kept when transition occurs between views.</span><span title="inherited from dojox/mobile/View" class="jsdoc-inherited"></span>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_View_keepScrollPos" class="inline-link"> keepScrollPos </a><span>If true, the scroll position is kept when transition occurs between views.</span><span title="inherited from dojox/mobile/View" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_8dojox_mobile_View_lang" class="inline-link"> lang </a><span>Rarely used.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_View_lang" class="inline-link"> lang </a><span>Rarely used.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="objectIcon inherited"><a href="#1_8dojox_mobile_View_ownerDocument" class="inline-link"> ownerDocument </a><span>The document this widget belongs to.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="objectIcon inherited"><a href="#1_9dojox_mobile_View_ownerDocument" class="inline-link"> ownerDocument </a><span>The document this widget belongs to.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="booleanIcon inherited"><a href="#1_8dojox_mobile_View_selected" class="inline-link"> selected </a><span>If true, the view is displayed at startup time.</span><span title="inherited from dojox/mobile/View" class="jsdoc-inherited"></span>
+        <li class="booleanIcon inherited"><a href="#1_9dojox_mobile_View_selected" class="inline-link"> selected </a><span>If true, the view is displayed at startup time.</span><span title="inherited from dojox/mobile/View" class="jsdoc-inherited"></span>
         </li>
-        <li class="domnodeIcon inherited"><a href="#1_8dojox_mobile_View_srcNodeRef" class="inline-link"> srcNodeRef </a><span>pointer to original DOM node</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="domnodeIcon inherited"><a href="#1_9dojox_mobile_View_srcNodeRef" class="inline-link"> srcNodeRef </a><span>pointer to original DOM node</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_8dojox_mobile_View_style" class="inline-link"> style </a><span>HTML style attributes as cssText string or name/value hash</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_View_style" class="inline-link"> style </a><span>HTML style attributes as cssText string or name/value hash</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_8dojox_mobile_View_tag" class="inline-link"> tag </a><span>A name of the HTML tag to create as domNode.</span><span title="inherited from dojox/mobile/View" class="jsdoc-inherited"></span>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_View_tag" class="inline-link"> tag </a><span>The name of the HTML tag to create as domNode.</span><span title="inherited from dojox/mobile/View" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_8dojox_mobile_View_textDir" class="inline-link"> textDir </a><span>Bi-directional support, the main variable which is responsible for the direction of the text.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_View_title" class="inline-link"> title </a><span>HTML title attribute.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="stringIcon inherited"><a href="#1_8dojox_mobile_View_title" class="inline-link"> title </a><span>HTML title attribute.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-        </li>
-        <li class="stringIcon inherited"><a href="#1_8dojox_mobile_View_tooltip" class="inline-link"> tooltip </a><span>When this widget&#39;s title attribute is used to for a tab label, accordion pane title, etc.,
+        <li class="stringIcon inherited"><a href="#1_9dojox_mobile_View_tooltip" class="inline-link"> tooltip </a><span>When this widget&#39;s title attribute is used to for a tab label, accordion pane title, etc.,
 this specifies the tooltip to appear when the mouse is hovered over that text.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
       </ul>
@@ -113,196 +119,203 @@ this specifies the tooltip to appear when the mouse is hovered over that text.</
     <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_View__applyAttributes" class="inline-link"> _applyAttributes</a><span class="parameters">(</span>) <span>Step during widget creation to copy  widget attributes to the
+        <li class="functionIcon private"><a href="#1_9dojox_mobile_View__addTransitionPaddingTop" class="inline-link"> _addTransitionPaddingTop</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_View__applyAttributes" class="inline-link"> _applyAttributes</a><span class="parameters">(</span>) <span>Step during widget creation to copy  widget attributes to the
 DOM according to attributeMap and _setXXXAttr objects, and also to call
 custom _setXXXAttr() methods.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_View__attrToDom" class="inline-link"> _attrToDom</a><span class="parameters">(</span>attr, value, commands) <span>Reflect a widget attribute (title, tabIndex, duration etc.) to
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_View__attrToDom" class="inline-link"> _attrToDom</a><span class="parameters">(</span>attr, value, commands) <span>Reflect a widget attribute (title, tabIndex, duration etc.) to
 the widget DOM, as specified by commands parameter.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_View__changeAttrValue" class="inline-link"> _changeAttrValue</a><span class="parameters">(</span>name, value) <span>Internal helper for directly changing an attribute value.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_View__changeAttrValue" class="inline-link"> _changeAttrValue</a><span class="parameters">(</span>name, value) <span>Internal helper for directly changing an attribute value.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojox_mobile_View__clearClasses" class="inline-link"> _clearClasses</a><span class="parameters">(</span>node) <span>Clean up the domNode classes that were added while making a transition.</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojox_mobile_View__clearClasses" class="inline-link"> _clearClasses</a><span class="parameters">(</span>node) <span>Clean up the domNode classes that were added while making a transition.</span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojox_mobile_View__doTransition" class="inline-link"> _doTransition</a><span class="parameters">(</span>fromNode, toNode, transition, dir) <span></span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojox_mobile_View__doTransition" class="inline-link"> _doTransition</a><span class="parameters">(</span>fromNode, toNode, transition, dir) <span></span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojox_mobile_View__fixViewState" class="inline-link"> _fixViewState</a><span class="parameters">(</span>toNode) <span>Sanity check for view transition states.</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojox_mobile_View__fixViewState" class="inline-link"> _fixViewState</a><span class="parameters">(</span>toNode) <span>Sanity check for view transition states.</span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_View__get" class="inline-link"> _get</a><span class="parameters">(</span>name, names) <span>Private function that does a get based off a hash of names</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_View__get" class="inline-link"> _get</a><span class="parameters">(</span>name) <span>Helper function to get value for specified property stored by this._set(),
+i.e. for properties with custom setters.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_View__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_View__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_View__getSibling" class="inline-link"> _getSibling</a><span class="parameters">(</span>which) <span>Returns next or previous sibling</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_Contained" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_View__getSibling" class="inline-link"> _getSibling</a><span class="parameters">(</span>which) <span>Returns next or previous sibling</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_Contained" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_View__getSiblingOfChild" class="inline-link"> _getSiblingOfChild</a><span class="parameters">(</span>child, dir) <span>Get the next or previous widget sibling of child</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_Container" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_View__getSiblingOfChild" class="inline-link"> _getSiblingOfChild</a><span class="parameters">(</span>child, dir) <span>Get the next or previous widget sibling of child</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_Container" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojox_mobile_View__isBookmarkable" class="inline-link"> _isBookmarkable</a><span class="parameters">(</span>detail) <span></span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_View__introspect" class="inline-link"> _introspect</a><span class="parameters">(</span>) <span>Collect metadata about this widget (only once per class, not once per instance):
+
+
+- list of attributes with custom setters, storing in this.constructor._setterAttrs
+- generate this.constructor._onMap, mapping names like &quot;mousedown&quot; to functions like onMouseDown</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_View__set" class="inline-link"> _set</a><span class="parameters">(</span>name, value) <span>Helper function to set new value for specified attribute, and call handlers
+        <li class="functionIcon private"><a href="#1_9dojox_mobile_View__isBookmarkable" class="inline-link"> _isBookmarkable</a><span class="parameters">(</span>detail) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private"><a href="#1_9dojox_mobile_View__removeTransitionPaddingTop" class="inline-link"> _removeTransitionPaddingTop</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+        </li>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_View__set" class="inline-link"> _set</a><span class="parameters">(</span>name, value) <span>Helper function to set new value for specified property, and call handlers
 registered with watch() if the value has changed.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_View__setOwnerDocumentAttr" class="inline-link"> _setOwnerDocumentAttr</a><span class="parameters">(</span>val) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_View__setOwnerDocumentAttr" class="inline-link"> _setOwnerDocumentAttr</a><span class="parameters">(</span>val) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_View__setStyleAttr" class="inline-link"> _setStyleAttr</a><span class="parameters">(</span>value) <span>Sets the style attribute of the widget according to value,
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_View__setStyleAttr" class="inline-link"> _setStyleAttr</a><span class="parameters">(</span>value) <span>Sets the style attribute of the widget according to value,
 which is either a hash like {height: &quot;5px&quot;, width: &quot;3px&quot;}
 or a plain string</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojox_mobile_View__toCls" class="inline-link"> _toCls</a><span class="parameters">(</span>s) <span></span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojox_mobile_View__toCls" class="inline-link"> _toCls</a><span class="parameters">(</span>s) <span></span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_View_addChild" class="inline-link"> addChild</a><span class="parameters">(</span>widget, insertIndex) <span>Makes the given widget a child of this widget.</span><span title="inherited from dijit/_Container" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_View_addChild" class="inline-link"> addChild</a><span class="parameters">(</span>widget, insertIndex) <span>Makes the given widget a child of this widget.</span><span title="inherited from dijit/_Container" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mobile_View_addTransitionInfo" class="inline-link"> addTransitionInfo</a><span class="parameters">(</span>) <span></span>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_View_addTransitionInfo" class="inline-link"> addTransitionInfo</a><span class="parameters">(</span>) <span></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_View_applyTextDir" class="inline-link"> applyTextDir</a><span class="parameters">(</span>element, text) <span>The function overridden in the _BidiSupport module,
-originally used for setting element.dir according to this.textDir.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_View_buildRendering" class="inline-link"> buildRendering</a><span class="parameters">(</span>) <span></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mobile_View_buildRendering" class="inline-link"> buildRendering</a><span class="parameters">(</span>) <span></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_View_connect" class="inline-link"> connect</a><span class="parameters">(</span>obj, event, method) <span>Deprecated, will be removed in 2.0, use this.own(on(...)) or this.own(aspect.after(...)) instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_View_connect" class="inline-link"> connect</a><span class="parameters">(</span>obj, event, method) <span>Deprecated, will be removed in 2.0, use this.own(on(...)) or this.own(aspect.after(...)) instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_View_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>params, node) <span>Creates a new instance of the class.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mobile_View_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>params, node) <span>Creates a new instance of the class.</span>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_View_convertToId" class="inline-link"> convertToId</a><span class="parameters">(</span>moveTo) <span></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mobile_View_convertToId" class="inline-link"> convertToId</a><span class="parameters">(</span>moveTo) <span></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_View_create" class="inline-link"> create</a><span class="parameters">(</span>params, srcNodeRef) <span>Kick off the life-cycle of a widget</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_View_create" class="inline-link"> create</a><span class="parameters">(</span>params, srcNodeRef) <span>Kick off the life-cycle of a widget</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
-        </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_View_defer" class="inline-link"> defer</a><span class="parameters">(</span>fcn, delay) <span>Wrapper to setTimeout to avoid deferred functions executing
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_View_defer" class="inline-link"> defer</a><span class="parameters">(</span>fcn, delay) <span>Wrapper to setTimeout to avoid deferred functions executing
 after the originating widget has been destroyed.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mobile_View_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_View_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_View_destroyDescendants" class="inline-link"> destroyDescendants</a><span class="parameters">(</span>preserveDom) <span>Recursively destroy the children of this widget and their
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_View_destroyDescendants" class="inline-link"> destroyDescendants</a><span class="parameters">(</span>preserveDom) <span>Recursively destroy the children of this widget and their
 descendants.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_View_destroyRecursive" class="inline-link"> destroyRecursive</a><span class="parameters">(</span>preserveDom) <span>Destroy this widget and its descendants</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_View_destroyRecursive" class="inline-link"> destroyRecursive</a><span class="parameters">(</span>preserveDom) <span>Destroy this widget and its descendants</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_View_destroyRendering" class="inline-link"> destroyRendering</a><span class="parameters">(</span>preserveDom) <span>Destroys the DOM nodes associated with this widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_View_destroyRendering" class="inline-link"> destroyRendering</a><span class="parameters">(</span>preserveDom) <span>Destroys the DOM nodes associated with this widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_View_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>handle) <span>Deprecated, will be removed in 2.0, use handle.remove() instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_View_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>handle) <span>Deprecated, will be removed in 2.0, use handle.remove() instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_View_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, eventObj, callbackArgs) <span>Used by widgets to signal that a synthetic event occurred, ex:
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_View_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, eventObj, callbackArgs) <span>Used by widgets to signal that a synthetic event occurred, ex:
 
 
 myWidget.emit(&quot;attrmodified-selectedChildWidget&quot;, {}).</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_View_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property from a widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_View_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property from a widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_View_getChildren" class="inline-link"> getChildren</a><span class="parameters">(</span>) <span>Returns all the widgets contained by this, i.e., all widgets underneath this.containerNode.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_View_getChildren" class="inline-link"> getChildren</a><span class="parameters">(</span>) <span>Returns all direct children of this widget, i.e. all widgets underneath this.containerNode whose parent
+is this widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_View_getIndexInParent" class="inline-link"> getIndexInParent</a><span class="parameters">(</span>) <span>Returns the index of this widget within its container parent.</span><span title="inherited from dijit/_Contained" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_View_getIndexInParent" class="inline-link"> getIndexInParent</a><span class="parameters">(</span>) <span>Returns the index of this widget within its container parent.</span><span title="inherited from dijit/_Contained" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_View_getIndexOfChild" class="inline-link"> getIndexOfChild</a><span class="parameters">(</span>child) <span>Gets the index of the child in this container or -1 if not found</span><span title="inherited from dijit/_Container" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_View_getIndexOfChild" class="inline-link"> getIndexOfChild</a><span class="parameters">(</span>child) <span>Gets the index of the child in this container or -1 if not found</span><span title="inherited from dijit/_Container" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_View_getNextSibling" class="inline-link"> getNextSibling</a><span class="parameters">(</span>) <span>Returns null if this is the last child of the parent,
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_View_getNextSibling" class="inline-link"> getNextSibling</a><span class="parameters">(</span>) <span>Returns null if this is the last child of the parent,
 otherwise returns the next element sibling to the &quot;right&quot;.</span><span title="inherited from dijit/_Contained" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_View_getParent" class="inline-link"> getParent</a><span class="parameters">(</span>) <span>Returns the parent widget of this widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_View_getParent" class="inline-link"> getParent</a><span class="parameters">(</span>) <span>Returns the parent widget of this widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_View_getPreviousSibling" class="inline-link"> getPreviousSibling</a><span class="parameters">(</span>) <span>Returns null if this is the first child of the parent,
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_View_getPreviousSibling" class="inline-link"> getPreviousSibling</a><span class="parameters">(</span>) <span>Returns null if this is the first child of the parent,
 otherwise returns the next element sibling to the &quot;left&quot;.</span><span title="inherited from dijit/_Contained" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mobile_View_getShowingView" class="inline-link"> getShowingView</a><span class="parameters">(</span>) <span>Find the currently showing view from my sibling views.</span>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_View_getShowingView" class="inline-link"> getShowingView</a><span class="parameters">(</span>) <span>Find the currently showing view from my sibling views.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mobile_View_getSiblingViews" class="inline-link"> getSiblingViews</a><span class="parameters">(</span>) <span>Returns an array of the sibling views.</span>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_View_getSiblingViews" class="inline-link"> getSiblingViews</a><span class="parameters">(</span>) <span>Returns an array of the sibling views.</span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_View_getTextDir" class="inline-link"> getTextDir</a><span class="parameters">(</span>text, originalDir) <span>Return direction of the text.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_View_getTransitionInfo" class="inline-link"> getTransitionInfo</a><span class="parameters">(</span>) <span></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mobile_View_getTransitionInfo" class="inline-link"> getTransitionInfo</a><span class="parameters">(</span>) <span></span>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_View_handleFragIds" class="inline-link"> handleFragIds</a><span class="parameters">(</span>) <span></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mobile_View_handleFragIds" class="inline-link"> handleFragIds</a><span class="parameters">(</span>) <span></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_View_hasChildren" class="inline-link"> hasChildren</a><span class="parameters">(</span>) <span>Returns true if widget has child widgets, i.e. if this.containerNode contains widgets.</span><span title="inherited from dijit/_Container" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_View_hasChildren" class="inline-link"> hasChildren</a><span class="parameters">(</span>) <span>Returns true if widget has child widgets, i.e. if this.containerNode contains widgets.</span><span title="inherited from dijit/_Container" class="jsdoc-inherited"></span>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_View_hide" class="inline-link"> hide</a><span class="parameters">(</span>) <span>Hides this view without a transition animation.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mobile_View_hide" class="inline-link"> hide</a><span class="parameters">(</span>) <span>Hides this view without a transition animation.</span>
-        </li>
-        <li class="functionIcon "><a href="#1_8dojox_mobile_View_invokeCallback" class="inline-link"> invokeCallback</a><span class="parameters">(</span>) <span>A function to be called after performing a transition to
+        <li class="functionIcon "><a href="#1_9dojox_mobile_View_invokeCallback" class="inline-link"> invokeCallback</a><span class="parameters">(</span>) <span>A function to be called after performing a transition to
 call a specified callback.</span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_View_isFocusable" class="inline-link"> isFocusable</a><span class="parameters">(</span>) <span>Return true if this widget can currently be focused
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_View_isFocusable" class="inline-link"> isFocusable</a><span class="parameters">(</span>) <span>Return true if this widget can currently be focused
 and false if not</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_View_isLeftToRight" class="inline-link"> isLeftToRight</a><span class="parameters">(</span>) <span>Return this widget&#39;s explicit or implicit orientation (true for LTR, false for RTL)</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_View_isLeftToRight" class="inline-link"> isLeftToRight</a><span class="parameters">(</span>) <span>Return this widget&#39;s explicit or implicit orientation (true for LTR, false for RTL)</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mobile_View_isVisible" class="inline-link"> isVisible</a><span class="parameters">(</span>checkAncestors) <span>Return true if this view is visible</span>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_View_isVisible" class="inline-link"> isVisible</a><span class="parameters">(</span>checkAncestors) <span>Return true if this view is visible</span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_View_on" class="inline-link"> on</a><span class="parameters">(</span>type, func) <span>Call specified function when event occurs, ex: myWidget.on(&quot;click&quot;, function(){ ... }).</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_View_on" class="inline-link"> on</a><span class="parameters">(</span>type, func) <span>Call specified function when event occurs, ex: myWidget.on(&quot;click&quot;, function(){ ... }).</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_View_own" class="inline-link"> own</a><span class="parameters">(</span>) <span>Track specified handles and remove/destroy them when this instance is destroyed, unless they were
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_View_own" class="inline-link"> own</a><span class="parameters">(</span>) <span>Track specified handles and remove/destroy them when this instance is destroyed, unless they were
 already removed/destroyed manually.</span><span title="inherited from dijit/Destroyable" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mobile_View_performTransition" class="inline-link"> performTransition</a><span class="parameters">(</span>moveTo, transitionDir, transition, context, method) <span>Function to perform the various types of view transitions, such as fade, slide, and flip.</span>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_View_performTransition" class="inline-link"> performTransition</a><span class="parameters">(</span>moveTo, transitionDir, transition, context, method) <span>Function to perform the various types of view transitions, such as fade, slide, and flip.</span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_View_placeAt" class="inline-link"> placeAt</a><span class="parameters">(</span>reference, position) <span>Place this widget somewhere in the DOM based
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_View_placeAt" class="inline-link"> placeAt</a><span class="parameters">(</span>reference, position) <span>Place this widget somewhere in the DOM based
 on standard domConstruct.place() conventions.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_View_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span>Processing after the DOM fragment is created</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_View_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span>Processing after the DOM fragment is created</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_View_postMixInProperties" class="inline-link"> postMixInProperties</a><span class="parameters">(</span>) <span>Called after the parameters to the widget have been read-in,
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_View_postMixInProperties" class="inline-link"> postMixInProperties</a><span class="parameters">(</span>) <span>Called after the parameters to the widget have been read-in,
 but before the widget template is instantiated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_View_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>params, srcNodeRef) <span>Kicks off widget instantiation.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_View_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>params, srcNodeRef) <span>Kicks off widget instantiation.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_View_removeChild" class="inline-link"> removeChild</a><span class="parameters">(</span>widget) <span>Removes the passed widget instance from this widget but does
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_View_removeChild" class="inline-link"> removeChild</a><span class="parameters">(</span>widget) <span>Removes the passed widget instance from this widget but does
 not destroy it.</span><span title="inherited from dijit/_Container" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mobile_View_resize" class="inline-link"> resize</a><span class="parameters">(</span>) <span>Calls resize() of each child widget.</span>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_View_resize" class="inline-link"> resize</a><span class="parameters">(</span>) <span>Calls resize() of each child widget.</span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_View_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_View_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mobile_View_setFragIds" class="inline-link"> setFragIds</a><span class="parameters">(</span>) <span></span>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_View_setFragIds" class="inline-link"> setFragIds</a><span class="parameters">(</span>) <span></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mobile_View_show" class="inline-link"> show</a><span class="parameters">(</span>noEvent, doNotHideOthers) <span>Shows this view without a transition animation.</span>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_View_show" class="inline-link"> show</a><span class="parameters">(</span>noEvent, doNotHideOthers) <span>Shows this view without a transition animation.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mobile_View_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span></span>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_View_startup" class="inline-link"> startup</a><span class="parameters">(</span>) <span></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_View_subscribe" class="inline-link"> subscribe</a><span class="parameters">(</span>t, method) <span>Deprecated, will be removed in 2.0, use this.own(topic.subscribe()) instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_View_subscribe" class="inline-link"> subscribe</a><span class="parameters">(</span>t, method) <span>Deprecated, will be removed in 2.0, use this.own(topic.subscribe()) instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_View_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span>Returns a string that represents the widget</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_View_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span>Returns a string that represents the widget.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_View_uninitialize" class="inline-link"> uninitialize</a><span class="parameters">(</span>) <span>Deprecated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_View_uninitialize" class="inline-link"> uninitialize</a><span class="parameters">(</span>) <span>Deprecated.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_View_unsubscribe" class="inline-link"> unsubscribe</a><span class="parameters">(</span>handle) <span>Deprecated, will be removed in 2.0, use handle.remove() instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_View_unsubscribe" class="inline-link"> unsubscribe</a><span class="parameters">(</span>handle) <span>Deprecated, will be removed in 2.0, use handle.remove() instead.</span><span title="inherited from dijit/_WidgetBase" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mobile_View_wakeUp" class="inline-link"> wakeUp</a><span class="parameters">(</span>node) <span>Function to force IE to redraw a node since its layout
+        <li class="functionIcon "><a href="#1_9dojox_mobile_View_wakeUp" class="inline-link"> wakeUp</a><span class="parameters">(</span>node) <span>Function to force IE to redraw a node since its layout
 code tends to misrender in partial draws.</span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_mobile_View_watch" class="inline-link"> watch</a><span class="parameters">(</span>name, callback) <span>Watches a property for changes</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_mobile_View_watch" class="inline-link"> watch</a><span class="parameters">(</span>name, callback) <span>Watches a property for changes</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
         </li>
       </ul>
     </div>
     <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="functionIcon private"><a href="#1_8dojox_mobile_View__onBlur" class="inline-link"> _onBlur</a><span class="parameters">(</span>) <span>This is where widgets do processing for when they stop being active,
+        <li class="functionIcon private"><a href="#1_9dojox_mobile_View__onBlur" class="inline-link"> _onBlur</a><span class="parameters">(</span>) <span>This is where widgets do processing for when they stop being active,
 such as changing CSS classes.</span><span title="TODO" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojox_mobile_View__onFocus" class="inline-link"> _onFocus</a><span class="parameters">(</span>) <span>This is where widgets do processing for when they are active,
+        <li class="functionIcon private"><a href="#1_9dojox_mobile_View__onFocus" class="inline-link"> _onFocus</a><span class="parameters">(</span>) <span>This is where widgets do processing for when they are active,
 such as changing CSS classes.</span><span title="TODO" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_mobile_View__onMap" class="inline-link"> _onMap</a><span class="parameters">(</span>type) <span>Maps on() type parameter (ex: &quot;mousemove&quot;) to method name (ex: &quot;onMouseMove&quot;).</span><span title="TODO" class="jsdoc-extension"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_mobile_View__onMap" class="inline-link"> _onMap</a><span class="parameters">(</span>type) <span>Maps on() type parameter (ex: &quot;mousemove&quot;) to method name (ex: &quot;onMouseMove&quot;).</span><span title="TODO" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mobile_View_onAfterTransitionIn" class="inline-link"> onAfterTransitionIn</a><span class="parameters">(</span>moveTo, dir, transition, context, method) <span>Stub function to connect to from your application.</span><span title="TODO" class="jsdoc-extension"></span>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_View_onAfterTransitionIn" class="inline-link"> onAfterTransitionIn</a><span class="parameters">(</span>moveTo, dir, transition, context, method) <span>Stub function to connect to from your application.</span><span title="TODO" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mobile_View_onAfterTransitionOut" class="inline-link"> onAfterTransitionOut</a><span class="parameters">(</span>moveTo, dir, transition, context, method) <span>Stub function to connect to from your application.</span><span title="TODO" class="jsdoc-extension"></span>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_View_onAfterTransitionOut" class="inline-link"> onAfterTransitionOut</a><span class="parameters">(</span>moveTo, dir, transition, context, method) <span>Stub function to connect to from your application.</span><span title="TODO" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mobile_View_onAnimationEnd" class="inline-link"> onAnimationEnd</a><span class="parameters">(</span>e) <span>A handler that is called after transition animation ends.</span><span title="TODO" class="jsdoc-extension"></span>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_View_onAnimationEnd" class="inline-link"> onAnimationEnd</a><span class="parameters">(</span>e) <span>A handler that is called after transition animation ends.</span><span title="TODO" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mobile_View_onAnimationStart" class="inline-link"> onAnimationStart</a><span class="parameters">(</span>e) <span>A handler that is called when transition animation starts.</span><span title="TODO" class="jsdoc-extension"></span>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_View_onAnimationStart" class="inline-link"> onAnimationStart</a><span class="parameters">(</span>e) <span>A handler that is called when transition animation starts.</span><span title="TODO" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mobile_View_onBeforeTransitionIn" class="inline-link"> onBeforeTransitionIn</a><span class="parameters">(</span>moveTo, dir, transition, context, method) <span>Stub function to connect to from your application.</span><span title="TODO" class="jsdoc-extension"></span>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_View_onBeforeTransitionIn" class="inline-link"> onBeforeTransitionIn</a><span class="parameters">(</span>moveTo, dir, transition, context, method) <span>Stub function to connect to from your application.</span><span title="TODO" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mobile_View_onBeforeTransitionOut" class="inline-link"> onBeforeTransitionOut</a><span class="parameters">(</span>moveTo, dir, transition, context, method) <span>Stub function to connect to from your application.</span><span title="TODO" class="jsdoc-extension"></span>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_View_onBeforeTransitionOut" class="inline-link"> onBeforeTransitionOut</a><span class="parameters">(</span>moveTo, dir, transition, context, method) <span>Stub function to connect to from your application.</span><span title="TODO" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mobile_View_onBlur" class="inline-link"> onBlur</a><span class="parameters">(</span>) <span>Called when the widget stops being &quot;active&quot; because
+        <li class="functionIcon "><a href="#1_9dojox_mobile_View_onBlur" class="inline-link"> onBlur</a><span class="parameters">(</span>) <span>Called when the widget stops being &quot;active&quot; because
 focus moved to something outside of it, or the user
 clicked somewhere outside of it, or the widget was
 hidden.</span><span title="TODO" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mobile_View_onFocus" class="inline-link"> onFocus</a><span class="parameters">(</span>) <span>Called when the widget becomes &quot;active&quot; because
+        <li class="functionIcon "><a href="#1_9dojox_mobile_View_onFocus" class="inline-link"> onFocus</a><span class="parameters">(</span>) <span>Called when the widget becomes &quot;active&quot; because
 it or a widget inside of it either has focus, or has recently
 been clicked.</span><span title="TODO" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_mobile_View_onStartView" class="inline-link"> onStartView</a><span class="parameters">(</span>) <span>Stub function to connect to from your application.</span><span title="TODO" class="jsdoc-extension"></span>
+        <li class="functionIcon "><a href="#1_9dojox_mobile_View_onStartView" class="inline-link"> onStartView</a><span class="parameters">(</span>) <span>Stub function to connect to from your application.</span><span title="TODO" class="jsdoc-extension"></span>
         </li>
       </ul>
     </div>
@@ -313,56 +326,56 @@ been clicked.</span><span title="TODO" class="jsdoc-extension"></span>
     <h2>Properties</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View__attrPairNames"></a><span class="objectIcon">_attrPairNames</span><span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View__attrPairNames"></a><span class="objectIcon">_attrPairNames</span><span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View__blankGif"></a><span class="stringIcon">_blankGif</span><span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View__blankGif"></a><span class="stringIcon">_blankGif</span><span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>Path to a blank 1x1 image.
 Used by <code>&lt;img&gt;</code> nodes in templates that really get their image via CSS background-image.</p>
 </div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View__setClassAttr"></a><span class="objectIcon">_setClassAttr</span><span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View__setClassAttr"></a><span class="objectIcon">_setClassAttr</span><span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
-        </div>
-      </div>
-      <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View__setDirAttr"></a><span class="objectIcon">_setDirAttr</span><span title="private" class="jsdoc-private"> </span>
-        </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View__setIdAttr"></a><span class="stringIcon">_setIdAttr</span><span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View__setDirAttr"></a><span class="objectIcon">_setDirAttr</span><span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
-        </div>
-      </div>
-      <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View__setLangAttr"></a><span class="objectIcon">_setLangAttr</span><span title="private" class="jsdoc-private"> </span>
-        </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View__started"></a><span class="booleanIcon">_started</span><span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View__setIdAttr"></a><span class="stringIcon">_setIdAttr</span><span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View__setLangAttr"></a><span class="objectIcon">_setLangAttr</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View__started"></a><span class="booleanIcon">_started</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>startup() has completed.</p>
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_attributeMap"></a><span class="objectIcon">attributeMap</span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_attributeMap"></a><span class="objectIcon">attributeMap</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>Deprecated. Instead of attributeMap, widget should have a _setXXXAttr attribute
 for each XXX attribute to be mapped to the DOM.
@@ -424,21 +437,21 @@ formats of the above list.
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_baseClass"></a><span class="stringIcon">baseClass</span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_baseClass"></a><span class="stringIcon">baseClass</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a><span title="inherited" class="jsdoc-inherited"></span>
-        </div>
-      </div>
-      <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_class"></a><span class="stringIcon">class</span>
-        </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_containerNode"></a><span class="domnodeIcon">containerNode</span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_class"></a><span class="stringIcon">class</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_containerNode"></a><span class="domnodeIcon">containerNode</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>Designates where children of the source DOM node will be placed.
 &quot;Children&quot; in this case refers to both DOM nodes and widgets.
@@ -468,9 +481,9 @@ is null for widgets that don&#39;t, like TextBox.</p>
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_dir"></a><span class="stringIcon">dir</span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_dir"></a><span class="stringIcon">dir</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>Bi-directional support, as defined by the <a href="http://www.w3.org/TR/html401/struct/dirlang.html#adef-dir">HTML DIR</a>
 attribute. Either left-to-right &quot;ltr&quot; or right-to-left &quot;rtl&quot;.  If undefined, widgets renders in page&#39;s
@@ -478,9 +491,9 @@ default direction.</p>
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_domNode"></a><span class="domnodeIcon">domNode</span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_domNode"></a><span class="domnodeIcon">domNode</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>This is our visible representation of the widget! Other DOM
 Nodes may by assigned to other properties, usually through the
@@ -489,18 +502,18 @@ property is the canonical &quot;top level&quot; node in widget UI.</p>
 </div>
       </div>
       <div class="jsdoc-field public extension-module">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_focused"></a><span class="booleanIcon">focused</span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_focused"></a><span class="booleanIcon">focused</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_FocusMixin" class="jsdoc-link">dijit/_FocusMixin</a><span title="Must manually require () dijit/_FocusMixin to access" class="jsdoc-extension"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_FocusMixin" class="jsdoc-link">dijit/_FocusMixin</a><span title="Must manually require () dijit/_FocusMixin to access" class="jsdoc-extension"></span>
         </div>
         <div class="jsdoc-summary"><p>This widget or a widget it contains has focus, or is &quot;active&quot; because
 it was recently clicked.</p>
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_id"></a><span class="stringIcon">id</span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_id"></a><span class="stringIcon">id</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>A unique, opaque ID string that can be assigned by users or by the
 system. If the developer passes an ID which is known not to be
@@ -509,17 +522,17 @@ used instead.</p>
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_keepScrollPos"></a><span class="booleanIcon">keepScrollPos</span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_keepScrollPos"></a><span class="booleanIcon">keepScrollPos</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>If true, the scroll position is kept when transition occurs between views.</p>
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_lang"></a><span class="stringIcon">lang</span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_lang"></a><span class="stringIcon">lang</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>Rarely used.  Overrides the default Dojo locale used to render this widget,
 as defined by the <a href="http://www.w3.org/TR/html401/struct/dirlang.html#adef-lang">HTML LANG</a> attribute.
@@ -528,71 +541,50 @@ formatted according to <a href="http://www.ietf.org/rfc/rfc3066.txt">RFC 3066</a
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_ownerDocument"></a><span class="objectIcon">ownerDocument</span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_ownerDocument"></a><span class="objectIcon">ownerDocument</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>The document this widget belongs to.  If not specified to constructor, will default to
-srcNodeRef.ownerDocument, or if no sourceRef specified, then to <a class="jsdoc-link" href="/api/1.8/dojo/_base/window">dojo/_base/window</a>::doc</p>
+srcNodeRef.ownerDocument, or if no sourceRef specified, then to the document global</p>
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_selected"></a><span class="booleanIcon">selected</span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_selected"></a><span class="booleanIcon">selected</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>If true, the view is displayed at startup time.</p>
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_srcNodeRef"></a><span class="domnodeIcon">srcNodeRef</span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_srcNodeRef"></a><span class="domnodeIcon">srcNodeRef</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>pointer to original DOM node</p>
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_style"></a><span class="stringIcon">style</span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_style"></a><span class="stringIcon">style</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>HTML style attributes as cssText string or name/value hash</p>
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_tag"></a><span class="stringIcon">tag</span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_tag"></a><span class="stringIcon">tag</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-summary"><p>A name of the HTML tag to create as domNode.</p>
+        <div class="jsdoc-summary"><p>The name of the HTML tag to create as domNode. The default value is &quot;div&quot;.</p>
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_textDir"></a><span class="stringIcon">textDir</span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_title"></a><span class="stringIcon">title</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
-        </div>
-        <div class="jsdoc-summary"><p>Bi-directional support, the main variable which is responsible for the direction of the text.
-The text direction can be different than the GUI direction by using this parameter in creation
-of a widget.
-
-</p>
-<p>Allowed values:
-
-</p>
-<ol>
-<li>&quot;ltr&quot;</li>
-<li>&quot;rtl&quot;</li>
-<li>&quot;auto&quot; - contextual the direction of a text defined by first strong letter.</li>
-</ol>
-<p>By default is as the page direction.</p>
-</div>
-      </div>
-      <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_title"></a><span class="stringIcon">title</span>
-        </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>HTML title attribute.
 
@@ -602,13 +594,14 @@ the widget (just like the native HTML title attribute).
 
 </p>
 <p>For TitlePane or for when this widget is a child of a TabContainer, AccordionContainer,
-etc., it&#39;s used to specify the tab label, accordion pane title, etc.</p>
+etc., it&#39;s used to specify the tab label, accordion pane title, etc.  In this case it&#39;s
+interpreted as HTML.</p>
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_tooltip"></a><span class="stringIcon">tooltip</span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_tooltip"></a><span class="stringIcon">tooltip</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-summary"><p>When this widget&#39;s title attribute is used to for a tab label, accordion pane title, etc.,
 this specifies the tooltip to appear when the mouse is hovered over that text.</p>
@@ -617,10 +610,30 @@ this specifies the tooltip to appear when the mouse is hovered over that text.</
     </div>
     <h2>Methods</h2>
     <div class="jsdoc-property-list">
-      <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View__applyAttributes"></a><span class="functionIcon">_applyAttributes</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View__addTransitionPaddingTop"></a><span class="functionIcon">_addTransitionPaddingTop</span><span class="parameters">(value)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">value</td>
+            <td class="jsdoc-param-type">String | Integer</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View__applyAttributes"></a><span class="functionIcon">_applyAttributes</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Step during widget creation to copy  widget attributes to the
 DOM according to attributeMap and _setXXXAttr objects, and also to call
@@ -637,9 +650,9 @@ _setXXXAttr is a hash/string/array, but _setXXXAttr as a functions override attr
 </div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View__attrToDom"></a><span class="functionIcon">_attrToDom</span><span class="parameters">(attr, value, commands)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View__attrToDom"></a><span class="functionIcon">_attrToDom</span><span class="parameters">(attr, value, commands)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Reflect a widget attribute (title, tabIndex, duration etc.) to
 the widget DOM, as specified by commands parameter.
@@ -677,9 +690,9 @@ to DOMNode inside the widget, or alternately pointing to a subwidget</p>
         </table>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View__changeAttrValue"></a><span class="functionIcon">_changeAttrValue</span><span class="parameters">(name, value)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View__changeAttrValue"></a><span class="functionIcon">_changeAttrValue</span><span class="parameters">(name, value)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Internal helper for directly changing an attribute value.
 </p>
@@ -717,9 +730,9 @@ of attributes that are linked, but calling .set() is not appropriate.</p>
 </div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View__clearClasses"></a><span class="functionIcon">_clearClasses</span><span class="parameters">(node)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View__clearClasses"></a><span class="functionIcon">_clearClasses</span><span class="parameters">(node)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a>
         </div>
         <div class="jsdoc-full-summary"><p>Clean up the domNode classes that were added while making a transition.</p>
 </div>
@@ -740,9 +753,9 @@ of attributes that are linked, but calling .set() is not appropriate.</p>
         </table>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View__doTransition"></a><span class="functionIcon">_doTransition</span><span class="parameters">(fromNode, toNode, transition, dir)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View__doTransition"></a><span class="functionIcon">_doTransition</span><span class="parameters">(fromNode, toNode, transition, dir)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mobile/_compat" class="jsdoc-link">dojox/mobile/_compat</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mobile/_compat" class="jsdoc-link">dojox/mobile/_compat</a>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -778,9 +791,9 @@ of attributes that are linked, but calling .set() is not appropriate.</p>
         </table>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View__fixViewState"></a><span class="functionIcon">_fixViewState</span><span class="parameters">(toNode)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View__fixViewState"></a><span class="functionIcon">_fixViewState</span><span class="parameters">(toNode)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a>
         </div>
         <div class="jsdoc-full-summary"><p>Sanity check for view transition states.</p>
 </div>
@@ -803,11 +816,15 @@ This function does the uninitialization for all the sibling views.</p>
         </table>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View__get"></a><span class="functionIcon">_get</span><span class="parameters">(name, names)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View__get"></a><span class="functionIcon">_get</span><span class="parameters">(name)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-full-summary"><p>Private function that does a get based off a hash of names</p>
+        <div class="jsdoc-full-summary"><p>Helper function to get value for specified property stored by this._set(),
+i.e. for properties with custom setters.  Used mainly by custom getters.
+
+</p>
+<p>For example, CheckBox._getValueAttr() calls this._get(&quot;value&quot;).</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -817,24 +834,17 @@ This function does the uninitialization for all the sibling views.</p>
           </tr>
           <tr>
             <td class="jsdoc-param-name">name</td>
-            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-type">String</td>
             <td class="jsdoc-param-description">
-            </td>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">names</td>
-            <td class="jsdoc-param-type">undefined</td>
-            <td class="jsdoc-param-description"><p>Hash of names of custom attributes</p>
- 
             </td>
           </tr>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View__getAttrNames"></a><span class="functionIcon">_getAttrNames</span><span class="parameters">(name)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View__getAttrNames"></a><span class="functionIcon">_getAttrNames</span><span class="parameters">(name)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Helper function for get() and set().
 Caches attribute name values so we don&#39;t do the string ops every time.</p>
@@ -855,9 +865,9 @@ Caches attribute name values so we don&#39;t do the string ops every time.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined | object</span></div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View__getSibling"></a><span class="functionIcon">_getSibling</span><span class="parameters">(which)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View__getSibling"></a><span class="functionIcon">_getSibling</span><span class="parameters">(which)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_Contained" class="jsdoc-link">dijit/_Contained</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_Contained" class="jsdoc-link">dijit/_Contained</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Returns next or previous sibling</p>
 </div>
@@ -878,9 +888,9 @@ Caches attribute name values so we don&#39;t do the string ops every time.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View__getSiblingOfChild"></a><span class="functionIcon">_getSiblingOfChild</span><span class="parameters">(child, dir)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View__getSiblingOfChild"></a><span class="functionIcon">_getSiblingOfChild</span><span class="parameters">(child, dir)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_Container" class="jsdoc-link">dijit/_Container</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_Container" class="jsdoc-link">dijit/_Container</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Get the next or previous widget sibling of child</p>
 </div>
@@ -907,10 +917,22 @@ if -1, get the previous sibling</p>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
-      <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View__isBookmarkable"></a><span class="functionIcon">_isBookmarkable</span><span class="parameters">(detail)</span> <span title="private" class="jsdoc-private"> </span>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View__introspect"></a><span class="functionIcon">_introspect</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Collect metadata about this widget (only once per class, not once per instance):
+
+</p>
+<pre><code>- list of attributes with custom setters, storing in this.constructor._setterAttrs
+- generate this.constructor._onMap, mapping names like &quot;mousedown&quot; to functions like onMouseDown</code></pre>
+</div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View__isBookmarkable"></a><span class="functionIcon">_isBookmarkable</span><span class="parameters">(detail)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -928,12 +950,19 @@ if -1, get the previous sibling</p>
         </table>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View__removeTransitionPaddingTop"></a><span class="functionIcon">_removeTransitionPaddingTop</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View__set"></a><span class="functionIcon">_set</span><span class="parameters">(name, value)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View__set"></a><span class="functionIcon">_set</span><span class="parameters">(name, value)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-full-summary"><p>Helper function to set new value for specified attribute, and call handlers
+        <div class="jsdoc-full-summary"><p>Helper function to set new value for specified property, and call handlers
 registered with watch() if the value has changed.</p>
 </div>
         <table class="jsdoc-parameters">
@@ -957,9 +986,9 @@ registered with watch() if the value has changed.</p>
         </table>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View__setOwnerDocumentAttr"></a><span class="functionIcon">_setOwnerDocumentAttr</span><span class="parameters">(val)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View__setOwnerDocumentAttr"></a><span class="functionIcon">_setOwnerDocumentAttr</span><span class="parameters">(val)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -977,9 +1006,9 @@ registered with watch() if the value has changed.</p>
         </table>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View__setStyleAttr"></a><span class="functionIcon">_setStyleAttr</span><span class="parameters">(value)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View__setStyleAttr"></a><span class="functionIcon">_setStyleAttr</span><span class="parameters">(value)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Sets the style attribute of the widget according to value,
 which is either a hash like {height: &quot;5px&quot;, width: &quot;3px&quot;}
@@ -1003,9 +1032,9 @@ in attributeMap.</p>
         </table>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View__toCls"></a><span class="functionIcon">_toCls</span><span class="parameters">(s)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View__toCls"></a><span class="functionIcon">_toCls</span><span class="parameters">(s)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -1024,18 +1053,14 @@ in attributeMap.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">string</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_addChild"></a><span class="functionIcon">addChild</span><span class="parameters">(widget, insertIndex)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_addChild"></a><span class="functionIcon">addChild</span><span class="parameters">(widget, insertIndex)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_Container" class="jsdoc-link">dijit/_Container</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_Container" class="jsdoc-link">dijit/_Container</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Makes the given widget a child of this widget.</p>
 </div>
         <div class="jsdoc-full-summary"><p>Inserts specified child widget&#39;s dom node as a child of this widget&#39;s
-container node, and possibly does other processing (such as layout).
-
-</p>
-<p>Functionality is undefined if this widget contains anything besides
-a list of child widgets (ie, if it contains arbitrary non-widget HTML).</p>
+container node, and possibly does other processing (such as layout).</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -1059,52 +1084,23 @@ a list of child widgets (ie, if it contains arbitrary non-widget HTML).</p>
         </table>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_addTransitionInfo"></a><span class="functionIcon">addTransitionInfo</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_addTransitionInfo"></a><span class="functionIcon">addTransitionInfo</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mobile/bookmarkable" class="jsdoc-link">dojox/mobile/bookmarkable</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mobile/bookmarkable" class="jsdoc-link">dojox/mobile/bookmarkable</a>
         </div>
         <div class="jsdoc-full-summary"></div>
-      </div>
-      <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_applyTextDir"></a><span class="functionIcon">applyTextDir</span><span class="parameters">(element, text)</span> 
-        </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
-        </div>
-        <div class="jsdoc-full-summary"><p>The function overridden in the _BidiSupport module,
-originally used for setting element.dir according to this.textDir.
-In this case does nothing.</p>
-</div>
-        <table class="jsdoc-parameters">
-          <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">element</td>
-            <td class="jsdoc-param-type">DOMNode</td>
-            <td class="jsdoc-param-description">
-            </td>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">text</td>
-            <td class="jsdoc-param-type">String</td>
-            <td class="jsdoc-param-description">
-            </td>
-          </tr>
-        </table>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_buildRendering"></a><span class="functionIcon">buildRendering</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_buildRendering"></a><span class="functionIcon">buildRendering</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a>
         </div>
         <div class="jsdoc-full-summary"></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_connect"></a><span class="functionIcon">connect</span><span class="parameters">(obj, event, method)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_connect"></a><span class="functionIcon">connect</span><span class="parameters">(obj, event, method)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Deprecated, will be removed in 2.0, use this.own(on(...)) or this.own(aspect.after(...)) instead.
 
@@ -1161,9 +1157,9 @@ btn.connect(foo, &quot;bar&quot;, function(){
         </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(params, node)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(params, node)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a>
         </div>
         <div class="jsdoc-full-summary"><p>Creates a new instance of the class.</p>
 </div>
@@ -1191,9 +1187,9 @@ btn.connect(foo, &quot;bar&quot;, function(){
         </table>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_convertToId"></a><span class="functionIcon">convertToId</span><span class="parameters">(moveTo)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_convertToId"></a><span class="functionIcon">convertToId</span><span class="parameters">(moveTo)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -1212,9 +1208,9 @@ btn.connect(foo, &quot;bar&quot;, function(){
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_create"></a><span class="functionIcon">create</span><span class="parameters">(params, srcNodeRef)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_create"></a><span class="functionIcon">create</span><span class="parameters">(params, srcNodeRef)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Kick off the life-cycle of a widget</p>
 </div>
@@ -1259,9 +1255,9 @@ The hash can contain any of the widget&#39;s properties, excluding read-only pro
         </table>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_defer"></a><span class="functionIcon">defer</span><span class="parameters">(fcn, delay)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_defer"></a><span class="functionIcon">defer</span><span class="parameters">(fcn, delay)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Wrapper to setTimeout to avoid deferred functions executing
 after the originating widget has been destroyed.
@@ -1289,16 +1285,16 @@ Returns an object handle with a remove method (that returns null) (replaces clea
         <div><strong>Returns: </strong><span class="jsdoc-return-type">object</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_destroy"></a><span class="functionIcon">destroy</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_destroy"></a><span class="functionIcon">destroy</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a>
         </div>
         <div class="jsdoc-full-summary"></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_destroyDescendants"></a><span class="functionIcon">destroyDescendants</span><span class="parameters">(preserveDom)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_destroyDescendants"></a><span class="functionIcon">destroyDescendants</span><span class="parameters">(preserveDom)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Recursively destroy the children of this widget and their
 descendants.</p>
@@ -1322,9 +1318,9 @@ widgets.</p>
         </table>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_destroyRecursive"></a><span class="functionIcon">destroyRecursive</span><span class="parameters">(preserveDom)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_destroyRecursive"></a><span class="functionIcon">destroyRecursive</span><span class="parameters">(preserveDom)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Destroy this widget and its descendants</p>
 </div>
@@ -1344,18 +1340,18 @@ destroyed, it is removed from the manager object.</p>
             <td class="jsdoc-param-description">
               <div><em>Optional</em></div><p>If true, this method will leave the original DOM structure
 alone of descendant Widgets. Note: This will NOT work with
-dijit._Templated widgets.</p>
+dijit._TemplatedMixin widgets.</p>
  
             </td>
           </tr>
         </table>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_destroyRendering"></a><span class="functionIcon">destroyRendering</span><span class="parameters">(preserveDom)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_destroyRendering"></a><span class="functionIcon">destroyRendering</span><span class="parameters">(preserveDom)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-full-summary"><p>Destroys the DOM nodes associated with this widget</p>
+        <div class="jsdoc-full-summary"><p>Destroys the DOM nodes associated with this widget.</p>
 </div>
         <table class="jsdoc-parameters">
           <tr>
@@ -1376,9 +1372,9 @@ widgets yet.</p>
         </table>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_disconnect"></a><span class="functionIcon">disconnect</span><span class="parameters">(handle)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_disconnect"></a><span class="functionIcon">disconnect</span><span class="parameters">(handle)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Deprecated, will be removed in 2.0, use handle.remove() instead.
 
@@ -1400,9 +1396,9 @@ widgets yet.</p>
         </table>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_emit"></a><span class="functionIcon">emit</span><span class="parameters">(type, eventObj, callbackArgs)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_emit"></a><span class="functionIcon">emit</span><span class="parameters">(type, eventObj, callbackArgs)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Used by widgets to signal that a synthetic event occurred, ex:
 
@@ -1443,9 +1439,9 @@ Modifies eventObj by adding missing parameters (bubbles, cancelable, widget).</p
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_get"></a><span class="functionIcon">get</span><span class="parameters">(name)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_get"></a><span class="functionIcon">get</span><span class="parameters">(name)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Get a property from a widget.</p>
 </div>
@@ -1478,30 +1474,40 @@ would be equivalent to the expression
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_getChildren"></a><span class="functionIcon">getChildren</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_getChildren"></a><span class="functionIcon">getChildren</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-full-summary"><p>Returns all the widgets contained by this, i.e., all widgets underneath this.containerNode.
-Does not return nested widgets, nor widgets that are part of this widget&#39;s template.</p>
+        <div class="jsdoc-full-summary"><p>Returns all direct children of this widget, i.e. all widgets underneath this.containerNode whose parent
+is this widget.   Note that it does not return all descendants, but rather just direct children.
+Analogous to <a href="https://developer.mozilla.org/en-US/docs/DOM/Node.childNodes">Node.childNodes</a>,
+except containing widgets rather than DOMNodes.
+
+</p>
+<p>The result intentionally excludes internally created widgets (a.k.a. supporting widgets)
+outside of this.containerNode.
+
+</p>
+<p>Note that the array returned is a simple array.  Application code should not assume
+existence of methods like forEach().</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Array</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_getIndexInParent"></a><span class="functionIcon">getIndexInParent</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_getIndexInParent"></a><span class="functionIcon">getIndexInParent</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_Contained" class="jsdoc-link">dijit/_Contained</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_Contained" class="jsdoc-link">dijit/_Contained</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Returns the index of this widget within its container parent.
 It returns -1 if the parent does not exist, or if the parent
-is not a dijit._Container</p>
+is not a dijit/_Container</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">number | undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_getIndexOfChild"></a><span class="functionIcon">getIndexOfChild</span><span class="parameters">(child)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_getIndexOfChild"></a><span class="functionIcon">getIndexOfChild</span><span class="parameters">(child)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_Container" class="jsdoc-link">dijit/_Container</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_Container" class="jsdoc-link">dijit/_Container</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Gets the index of the child in this container or -1 if not found</p>
 </div>
@@ -1521,9 +1527,9 @@ is not a dijit._Container</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_getNextSibling"></a><span class="functionIcon">getNextSibling</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_getNextSibling"></a><span class="functionIcon">getNextSibling</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_Contained" class="jsdoc-link">dijit/_Contained</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_Contained" class="jsdoc-link">dijit/_Contained</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Returns null if this is the last child of the parent,
 otherwise returns the next element sibling to the &quot;right&quot;.</p>
@@ -1531,18 +1537,18 @@ otherwise returns the next element sibling to the &quot;right&quot;.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_getParent"></a><span class="functionIcon">getParent</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_getParent"></a><span class="functionIcon">getParent</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-full-summary"><p>Returns the parent widget of this widget</p>
+        <div class="jsdoc-full-summary"><p>Returns the parent widget of this widget.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_getPreviousSibling"></a><span class="functionIcon">getPreviousSibling</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_getPreviousSibling"></a><span class="functionIcon">getPreviousSibling</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_Contained" class="jsdoc-link">dijit/_Contained</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_Contained" class="jsdoc-link">dijit/_Contained</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Returns null if this is the first child of the parent,
 otherwise returns the next element sibling to the &quot;left&quot;.</p>
@@ -1550,9 +1556,9 @@ otherwise returns the next element sibling to the &quot;left&quot;.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_getShowingView"></a><span class="functionIcon">getShowingView</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_getShowingView"></a><span class="functionIcon">getShowingView</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a>
         </div>
         <div class="jsdoc-full-summary"><p>Find the currently showing view from my sibling views.</p>
 </div>
@@ -1562,89 +1568,58 @@ the found view may not be actually shown.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined | null</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_getSiblingViews"></a><span class="functionIcon">getSiblingViews</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_getSiblingViews"></a><span class="functionIcon">getSiblingViews</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a>
         </div>
         <div class="jsdoc-full-summary"><p>Returns an array of the sibling views.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Array | undefined</span></div>
       </div>
-      <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_getTextDir"></a><span class="functionIcon">getTextDir</span><span class="parameters">(text, originalDir)</span> 
-        </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
-        </div>
-        <div class="jsdoc-full-summary"><p>Return direction of the text.
-The function overridden in the _BidiSupport module,
-its main purpose is to calculate the direction of the
-text, if was defined by the programmer through textDir.</p>
-</div>
-        <table class="jsdoc-parameters">
-          <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">text</td>
-            <td class="jsdoc-param-type">String</td>
-            <td class="jsdoc-param-description">
-            </td>
-          </tr>
-          <tr>
-            <td class="jsdoc-param-name">originalDir</td>
-            <td class="jsdoc-param-type">String</td>
-            <td class="jsdoc-param-description">
-            </td>
-          </tr>
-        </table>
-        <div><strong>Returns: </strong><span class="jsdoc-return-type">String</span></div>
-      </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_getTransitionInfo"></a><span class="functionIcon">getTransitionInfo</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_getTransitionInfo"></a><span class="functionIcon">getTransitionInfo</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mobile/bookmarkable" class="jsdoc-link">dojox/mobile/bookmarkable</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mobile/bookmarkable" class="jsdoc-link">dojox/mobile/bookmarkable</a>
         </div>
         <div class="jsdoc-full-summary"></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_handleFragIds"></a><span class="functionIcon">handleFragIds</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_handleFragIds"></a><span class="functionIcon">handleFragIds</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mobile/bookmarkable" class="jsdoc-link">dojox/mobile/bookmarkable</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mobile/bookmarkable" class="jsdoc-link">dojox/mobile/bookmarkable</a>
         </div>
         <div class="jsdoc-full-summary"></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_hasChildren"></a><span class="functionIcon">hasChildren</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_hasChildren"></a><span class="functionIcon">hasChildren</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_Container" class="jsdoc-link">dijit/_Container</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_Container" class="jsdoc-link">dijit/_Container</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Returns true if widget has child widgets, i.e. if this.containerNode contains widgets.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_hide"></a><span class="functionIcon">hide</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_hide"></a><span class="functionIcon">hide</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a>
         </div>
         <div class="jsdoc-full-summary"><p>Hides this view without a transition animation.</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_invokeCallback"></a><span class="functionIcon">invokeCallback</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_invokeCallback"></a><span class="functionIcon">invokeCallback</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a>
         </div>
         <div class="jsdoc-full-summary"><p>A function to be called after performing a transition to
 call a specified callback.</p>
 </div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_isFocusable"></a><span class="functionIcon">isFocusable</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_isFocusable"></a><span class="functionIcon">isFocusable</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Return true if this widget can currently be focused
 and false if not</p>
@@ -1652,18 +1627,18 @@ and false if not</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_isLeftToRight"></a><span class="functionIcon">isLeftToRight</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_isLeftToRight"></a><span class="functionIcon">isLeftToRight</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Return this widget&#39;s explicit or implicit orientation (true for LTR, false for RTL)</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_isVisible"></a><span class="functionIcon">isVisible</span><span class="parameters">(checkAncestors)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_isVisible"></a><span class="functionIcon">isVisible</span><span class="parameters">(checkAncestors)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a>
         </div>
         <div class="jsdoc-full-summary"><p>Return true if this view is visible</p>
 </div>
@@ -1687,9 +1662,9 @@ shown or not.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean | undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_on"></a><span class="functionIcon">on</span><span class="parameters">(type, func)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_on"></a><span class="functionIcon">on</span><span class="parameters">(type, func)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Call specified function when event occurs, ex: myWidget.on(&quot;click&quot;, function(){ ... }).</p>
 </div>
@@ -1720,9 +1695,9 @@ widget&#39;s scope you must do <code>myWidget.on(&quot;click&quot;, lang.hitch(m
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_own"></a><span class="functionIcon">own</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_own"></a><span class="functionIcon">own</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/Destroyable" class="jsdoc-link">dijit/Destroyable</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/Destroyable" class="jsdoc-link">dijit/Destroyable</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Track specified handles and remove/destroy them when this instance is destroyed, unless they were
 already removed/destroyed manually.</p>
@@ -1735,9 +1710,9 @@ already removed/destroyed manually.</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_performTransition"></a><span class="functionIcon">performTransition</span><span class="parameters">(moveTo, transitionDir, transition, context, method)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_performTransition"></a><span class="functionIcon">performTransition</span><span class="parameters">(moveTo, transitionDir, transition, context, method)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a>
         </div>
         <div class="jsdoc-full-summary"><p>Function to perform the various types of view transitions, such as fade, slide, and flip.</p>
 </div>
@@ -1821,9 +1796,9 @@ A function reference, or name of a function in context.</p>
         </div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_placeAt"></a><span class="functionIcon">placeAt</span><span class="parameters">(reference, position)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_placeAt"></a><span class="functionIcon">placeAt</span><span class="parameters">(reference, position)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Place this widget somewhere in the DOM based
 on standard domConstruct.place() conventions.</p>
@@ -1861,7 +1836,7 @@ the position argument can be a numeric index or a string
             </td>
           </tr>
         </table>
-        <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dijit/_WidgetBase">dijit/_WidgetBase</a> | function</span></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.9/dijit/_WidgetBase">dijit/_WidgetBase</a> | function</span></div>
         <div class="jsdoc-return-description"><p>Provides a useful return of the newly created dijit._Widget instance so you
 can &quot;chain&quot; this function by instantiating, placing, then saving the return value
 to a variable.</p>
@@ -1894,9 +1869,9 @@ new ContentPane({ href:&quot;foo.html&quot;, title:&quot;Wow!&quot; }).placeAt(t
         </div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_postCreate"></a><span class="functionIcon">postCreate</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_postCreate"></a><span class="functionIcon">postCreate</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Processing after the DOM fragment is created</p>
 </div>
@@ -1906,9 +1881,9 @@ node dimensions or placement.</p>
 </div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_postMixInProperties"></a><span class="functionIcon">postMixInProperties</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_postMixInProperties"></a><span class="functionIcon">postMixInProperties</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Called after the parameters to the widget have been read-in,
 but before the widget template is instantiated. Especially
@@ -1917,9 +1892,9 @@ template.</p>
 </div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_postscript"></a><span class="functionIcon">postscript</span><span class="parameters">(params, srcNodeRef)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_postscript"></a><span class="functionIcon">postscript</span><span class="parameters">(params, srcNodeRef)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Kicks off widget instantiation.  See create() for details.</p>
 </div>
@@ -1945,9 +1920,9 @@ template.</p>
         </table>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_removeChild"></a><span class="functionIcon">removeChild</span><span class="parameters">(widget)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_removeChild"></a><span class="functionIcon">removeChild</span><span class="parameters">(widget)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_Container" class="jsdoc-link">dijit/_Container</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_Container" class="jsdoc-link">dijit/_Container</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Removes the passed widget instance from this widget but does
 not destroy it.  You can also pass in an integer indicating
@@ -1968,17 +1943,17 @@ the index within the container to remove (ie, removeChild(5) removes the sixth w
         </table>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_resize"></a><span class="functionIcon">resize</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_resize"></a><span class="functionIcon">resize</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a>
         </div>
         <div class="jsdoc-full-summary"><p>Calls resize() of each child widget.</p>
 </div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_set"></a><span class="functionIcon">set</span><span class="parameters">(name, value)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_set"></a><span class="functionIcon">set</span><span class="parameters">(name, value)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Set a property on a widget</p>
 </div>
@@ -2029,16 +2004,16 @@ would be equivalent to the statement <code>widget.bar = 3;</code>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_setFragIds"></a><span class="functionIcon">setFragIds</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_setFragIds"></a><span class="functionIcon">setFragIds</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mobile/bookmarkable" class="jsdoc-link">dojox/mobile/bookmarkable</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mobile/bookmarkable" class="jsdoc-link">dojox/mobile/bookmarkable</a>
         </div>
         <div class="jsdoc-full-summary"></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_show"></a><span class="functionIcon">show</span><span class="parameters">(noEvent, doNotHideOthers)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_show"></a><span class="functionIcon">show</span><span class="parameters">(noEvent, doNotHideOthers)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a>
         </div>
         <div class="jsdoc-full-summary"><p>Shows this view without a transition animation.</p>
 </div>
@@ -2065,16 +2040,16 @@ would be equivalent to the statement <code>widget.bar = 3;</code>
         </table>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_startup"></a><span class="functionIcon">startup</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_startup"></a><span class="functionIcon">startup</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a>
         </div>
         <div class="jsdoc-full-summary"></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_subscribe"></a><span class="functionIcon">subscribe</span><span class="parameters">(t, method)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_subscribe"></a><span class="functionIcon">subscribe</span><span class="parameters">(t, method)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Deprecated, will be removed in 2.0, use this.own(topic.subscribe()) instead.
 
@@ -2122,11 +2097,11 @@ btn.subscribe(&quot;/my/topic&quot;, function(v){
         </div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_toString"></a><span class="functionIcon">toString</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_toString"></a><span class="functionIcon">toString</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
-        <div class="jsdoc-full-summary"><p>Returns a string that represents the widget</p>
+        <div class="jsdoc-full-summary"><p>Returns a string that represents the widget.</p>
 </div>
         <div class="jsdoc-full-summary"><p>When a widget is cast to a string, this method will be used to generate the
 output. Currently, it does not implement any sort of reversible
@@ -2135,9 +2110,9 @@ serialization.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">string</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_uninitialize"></a><span class="functionIcon">uninitialize</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_uninitialize"></a><span class="functionIcon">uninitialize</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Deprecated. Override destroy() instead to implement custom widget tear-down
 behavior.</p>
@@ -2145,9 +2120,9 @@ behavior.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_unsubscribe"></a><span class="functionIcon">unsubscribe</span><span class="parameters">(handle)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_unsubscribe"></a><span class="functionIcon">unsubscribe</span><span class="parameters">(handle)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Deprecated, will be removed in 2.0, use handle.remove() instead.
 
@@ -2170,9 +2145,9 @@ Also removes handle from this widget&#39;s list of subscriptions</p>
         </table>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_wakeUp"></a><span class="functionIcon">wakeUp</span><span class="parameters">(node)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_wakeUp"></a><span class="functionIcon">wakeUp</span><span class="parameters">(node)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mobile/_compat" class="jsdoc-link">dojox/mobile/_compat</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/mobile/_compat" class="jsdoc-link">dojox/mobile/_compat</a>
         </div>
         <div class="jsdoc-full-summary"><p>Function to force IE to redraw a node since its layout
 code tends to misrender in partial draws.</p>
@@ -2193,9 +2168,9 @@ code tends to misrender in partial draws.</p>
         </table>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_watch"></a><span class="functionIcon">watch</span><span class="parameters">(name, callback)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_watch"></a><span class="functionIcon">watch</span><span class="parameters">(name, callback)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Watches a property for changes</p>
 </div>
@@ -2238,75 +2213,75 @@ watchHandle.unwatch(); // callback won&#39;t be called now</code></pre>
     <h2>Events</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View__onBlur"></a><span class="functionIcon">_onBlur</span><span class="parameters">()</span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View__onBlur"></a><span class="functionIcon">_onBlur</span><span class="parameters">()</span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dijit/_FocusMixin" class="jsdoc-link">dijit/_FocusMixin</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.9/dijit/_FocusMixin" class="jsdoc-link">dijit/_FocusMixin</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
         <div class="jsdoc-summary"><p>This is where widgets do processing for when they stop being active,
 such as changing CSS classes.  See onBlur() for more details.</p>
 </div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View__onFocus"></a><span class="functionIcon">_onFocus</span><span class="parameters">()</span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View__onFocus"></a><span class="functionIcon">_onFocus</span><span class="parameters">()</span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dijit/_FocusMixin" class="jsdoc-link">dijit/_FocusMixin</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.9/dijit/_FocusMixin" class="jsdoc-link">dijit/_FocusMixin</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
         <div class="jsdoc-summary"><p>This is where widgets do processing for when they are active,
 such as changing CSS classes.  See onFocus() for more details.</p>
 </div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View__onMap"></a><span class="functionIcon">_onMap</span><span class="parameters">(type)</span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View__onMap"></a><span class="functionIcon">_onMap</span><span class="parameters">(type)</span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.9/dijit/_WidgetBase" class="jsdoc-link">dijit/_WidgetBase</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
         <div class="jsdoc-summary"><p>Maps on() type parameter (ex: &quot;mousemove&quot;) to method name (ex: &quot;onMouseMove&quot;).
 If type is a synthetic event like touch.press then returns undefined.</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_onAfterTransitionIn"></a><span class="functionIcon">onAfterTransitionIn</span><span class="parameters">(moveTo, dir, transition, context, method)</span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_onAfterTransitionIn"></a><span class="functionIcon">onAfterTransitionIn</span><span class="parameters">(moveTo, dir, transition, context, method)</span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.9/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
         <div class="jsdoc-summary"><p>Stub function to connect to from your application.</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_onAfterTransitionOut"></a><span class="functionIcon">onAfterTransitionOut</span><span class="parameters">(moveTo, dir, transition, context, method)</span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_onAfterTransitionOut"></a><span class="functionIcon">onAfterTransitionOut</span><span class="parameters">(moveTo, dir, transition, context, method)</span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.9/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
         <div class="jsdoc-summary"><p>Stub function to connect to from your application.</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_onAnimationEnd"></a><span class="functionIcon">onAnimationEnd</span><span class="parameters">(e)</span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_onAnimationEnd"></a><span class="functionIcon">onAnimationEnd</span><span class="parameters">(e)</span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.9/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
         <div class="jsdoc-summary"><p>A handler that is called after transition animation ends.</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_onAnimationStart"></a><span class="functionIcon">onAnimationStart</span><span class="parameters">(e)</span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_onAnimationStart"></a><span class="functionIcon">onAnimationStart</span><span class="parameters">(e)</span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.9/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
         <div class="jsdoc-summary"><p>A handler that is called when transition animation starts.</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_onBeforeTransitionIn"></a><span class="functionIcon">onBeforeTransitionIn</span><span class="parameters">(moveTo, dir, transition, context, method)</span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_onBeforeTransitionIn"></a><span class="functionIcon">onBeforeTransitionIn</span><span class="parameters">(moveTo, dir, transition, context, method)</span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.9/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
         <div class="jsdoc-summary"><p>Stub function to connect to from your application.</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_onBeforeTransitionOut"></a><span class="functionIcon">onBeforeTransitionOut</span><span class="parameters">(moveTo, dir, transition, context, method)</span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_onBeforeTransitionOut"></a><span class="functionIcon">onBeforeTransitionOut</span><span class="parameters">(moveTo, dir, transition, context, method)</span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.9/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
         <div class="jsdoc-summary"><p>Stub function to connect to from your application.</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_onBlur"></a><span class="functionIcon">onBlur</span><span class="parameters">()</span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_onBlur"></a><span class="functionIcon">onBlur</span><span class="parameters">()</span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dijit/_FocusMixin" class="jsdoc-link">dijit/_FocusMixin</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.9/dijit/_FocusMixin" class="jsdoc-link">dijit/_FocusMixin</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
         <div class="jsdoc-summary"><p>Called when the widget stops being &quot;active&quot; because
 focus moved to something outside of it, or the user
 clicked somewhere outside of it, or the widget was
@@ -2314,21 +2289,21 @@ hidden.</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_onFocus"></a><span class="functionIcon">onFocus</span><span class="parameters">()</span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_onFocus"></a><span class="functionIcon">onFocus</span><span class="parameters">()</span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dijit/_FocusMixin" class="jsdoc-link">dijit/_FocusMixin</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.9/dijit/_FocusMixin" class="jsdoc-link">dijit/_FocusMixin</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
         <div class="jsdoc-summary"><p>Called when the widget becomes &quot;active&quot; because
 it or a widget inside of it either has focus, or has recently
 been clicked.</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_mobile_View_onStartView"></a><span class="functionIcon">onStartView</span><span class="parameters">()</span>
+        <div class="jsdoc-title"><a name="1_9dojox_mobile_View_onStartView"></a><span class="functionIcon">onStartView</span><span class="parameters">()</span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.9/dojox/mobile/View" class="jsdoc-link">dojox/mobile/View</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
         <div class="jsdoc-summary"><p>Stub function to connect to from your application.</p>
 </div>
       </div>
     </div>
   </div>
-</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/mobile/View" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/mobile/View" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

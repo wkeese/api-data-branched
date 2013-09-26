@@ -3,16 +3,16 @@
   // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
   // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
   // Also, when this page is loaded via XHR this script block should be ignored.
-  location = "/api/?qs=1.8/dojox/data/HtmlStore" + location.hash;
+  location = "/api/?qs=1.9/dojox/data/HtmlStore" + location.hash;
   
 </script>
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/data/HtmlStore.html</div>
-<h1 class="constructorIcon36 jsdoc-title">dojox/data/HtmlStore<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/data/HtmlStore.html</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/data/HtmlStore<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-function-information">
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new HtmlStore<span class="parameters">(args);</span></div>
 </div>
-<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/data/HtmlStore">dojox/data/HtmlStore</a></div>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.9/dojox/data/HtmlStore">dojox/data/HtmlStore</a></div>
 <div class="jsdoc-summary"><p>The HtmlStore can be created in one of two ways: a) by parsing an existing
 table or list DOM node on the current page or b) by referencing an external url and giving
 the id of the table or list in that page.  The remote url will be parsed as an html page.
@@ -91,84 +91,84 @@ backwards compatibility.</li>
     </td>
   </tr>
 </table>
-<p>See the <a href="/reference-guide/1.8/dojox/data/HtmlStore.html" target="_blank">dojox/data/HtmlStore reference documentation</a> for more information.</p>
+<p>See the <a href="/reference-guide/1.9/dojox/data/HtmlStore.html" target="_blank">dojox/data/HtmlStore reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-field-list">
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="stringIcon"><a href="#1_8dojox_data_HtmlStore_dataId" class="inline-link"> dataId </a><span>The id in the document for an element from which to get the data.</span>
+        <li class="stringIcon"><a href="#1_9dojox_data_HtmlStore_dataId" class="inline-link"> dataId </a><span>The id in the document for an element from which to get the data.</span>
         </li>
-        <li class="booleanIcon"><a href="#1_8dojox_data_HtmlStore_fetchOnCreate" class="inline-link"> fetchOnCreate </a><span>Flag to denote if it should try to load from a data id (nested in the page)
+        <li class="booleanIcon"><a href="#1_9dojox_data_HtmlStore_fetchOnCreate" class="inline-link"> fetchOnCreate </a><span>Flag to denote if it should try to load from a data id (nested in the page)
 The moment the store is created, instead of waiting for first
 fetch call.</span>
         </li>
-        <li class="booleanIcon"><a href="#1_8dojox_data_HtmlStore_trimWhitespace" class="inline-link"> trimWhitespace </a><span></span>
+        <li class="booleanIcon"><a href="#1_9dojox_data_HtmlStore_trimWhitespace" class="inline-link"> trimWhitespace </a><span></span>
         </li>
-        <li class="stringIcon"><a href="#1_8dojox_data_HtmlStore_url" class="inline-link"> url </a><span>The URL from which to load an HTML document for data loading</span>
+        <li class="stringIcon"><a href="#1_9dojox_data_HtmlStore_url" class="inline-link"> url </a><span>The URL from which to load an HTML document for data loading</span>
         </li>
-        <li class="booleanIcon"><a href="#1_8dojox_data_HtmlStore_urlPreventCache" class="inline-link"> urlPreventCache </a><span>Flag to denote if peventCache should be used on xhrGet calls.</span>
+        <li class="booleanIcon"><a href="#1_9dojox_data_HtmlStore_urlPreventCache" class="inline-link"> urlPreventCache </a><span>Flag to denote if peventCache should be used on xhrGet calls.</span>
         </li>
       </ul>
     </div>
     <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="functionIcon private"><a href="#1_8dojox_data_HtmlStore__assertIsAttribute" class="inline-link"> _assertIsAttribute</a><span class="parameters">(</span>attribute) <span>This function tests whether the item passed in is indeed a valid &#39;attribute&#39; like type for the store.</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojox_data_HtmlStore__assertIsAttribute" class="inline-link"> _assertIsAttribute</a><span class="parameters">(</span>attribute) <span>This function tests whether the item passed in is indeed a valid &#39;attribute&#39; like type for the store.</span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojox_data_HtmlStore__assertIsItem" class="inline-link"> _assertIsItem</a><span class="parameters">(</span>item) <span>This function tests whether the item passed in is indeed an item in the store.</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojox_data_HtmlStore__assertIsItem" class="inline-link"> _assertIsItem</a><span class="parameters">(</span>item) <span>This function tests whether the item passed in is indeed an item in the store.</span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojox_data_HtmlStore__containsValue" class="inline-link"> _containsValue</a><span class="parameters">(</span>item, attribute, value, regexp) <span>Internal function for looking at the values contained by the item.</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojox_data_HtmlStore__containsValue" class="inline-link"> _containsValue</a><span class="parameters">(</span>item, attribute, value, regexp) <span>Internal function for looking at the values contained by the item.</span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojox_data_HtmlStore__fetchItems" class="inline-link"> _fetchItems</a><span class="parameters">(</span>request, fetchHandler, errorHandler) <span>Fetch items (XML elements) that match to a query</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojox_data_HtmlStore__fetchItems" class="inline-link"> _fetchItems</a><span class="parameters">(</span>request, fetchHandler, errorHandler) <span>Fetch items (XML elements) that match to a query</span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojox_data_HtmlStore__finishFetchItems" class="inline-link"> _finishFetchItems</a><span class="parameters">(</span>request, fetchHandler, errorHandler) <span>Internal function for processing the passed in request and locating the requested items.</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojox_data_HtmlStore__finishFetchItems" class="inline-link"> _finishFetchItems</a><span class="parameters">(</span>request, fetchHandler, errorHandler) <span>Internal function for processing the passed in request and locating the requested items.</span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojox_data_HtmlStore__getAllItems" class="inline-link"> _getAllItems</a><span class="parameters">(</span>) <span>Function to return all rows in the table as an array of items.</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojox_data_HtmlStore__getAllItems" class="inline-link"> _getAllItems</a><span class="parameters">(</span>) <span>Function to return all rows in the table as an array of items.</span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojox_data_HtmlStore__getHeadings" class="inline-link"> _getHeadings</a><span class="parameters">(</span>) <span>Function to load the attribute names from the table header so that the
+        <li class="functionIcon private"><a href="#1_9dojox_data_HtmlStore__getHeadings" class="inline-link"> _getHeadings</a><span class="parameters">(</span>) <span>Function to load the attribute names from the table header so that the
 attributes (cells in a row), can have a reasonable name.</span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojox_data_HtmlStore__indexItems" class="inline-link"> _indexItems</a><span class="parameters">(</span>) <span>Function to index items found under the id.</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojox_data_HtmlStore__indexItems" class="inline-link"> _indexItems</a><span class="parameters">(</span>) <span>Function to index items found under the id.</span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_data_HtmlStore_close" class="inline-link"> close</a><span class="parameters">(</span>request) <span>See dojo/data/api/Read.close()</span>
+        <li class="functionIcon "><a href="#1_9dojox_data_HtmlStore_close" class="inline-link"> close</a><span class="parameters">(</span>request) <span>See dojo/data/api/Read.close()</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_data_HtmlStore_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args) <span>Initializer for the HTML table store.</span>
+        <li class="functionIcon "><a href="#1_9dojox_data_HtmlStore_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args) <span>Initializer for the HTML table store.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_data_HtmlStore_containsValue" class="inline-link"> containsValue</a><span class="parameters">(</span>item, attribute, value) <span>See dojo/data/api/Read.containsValue()</span>
+        <li class="functionIcon "><a href="#1_9dojox_data_HtmlStore_containsValue" class="inline-link"> containsValue</a><span class="parameters">(</span>item, attribute, value) <span>See dojo/data/api/Read.containsValue()</span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_data_HtmlStore_errorHandler" class="inline-link"> errorHandler</a><span class="parameters">(</span>errorData, requestObject) <span>The error handler when there is an error fetching items.</span><span title="inherited from dojo/data/util/simpleFetch" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_data_HtmlStore_errorHandler" class="inline-link"> errorHandler</a><span class="parameters">(</span>errorData, requestObject) <span>The error handler when there is an error fetching items.</span><span title="inherited from dojo/data/util/simpleFetch" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_data_HtmlStore_fetch" class="inline-link"> fetch</a><span class="parameters">(</span>request) <span>The simpleFetch mixin is designed to serve as a set of function(s) that can
+        <li class="functionIcon  inherited"><a href="#1_9dojox_data_HtmlStore_fetch" class="inline-link"> fetch</a><span class="parameters">(</span>request) <span>The simpleFetch mixin is designed to serve as a set of function(s) that can
 be mixed into other datastore implementations to accelerate their development.</span><span title="inherited from dojo/data/util/simpleFetch" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_data_HtmlStore_fetchHandler" class="inline-link"> fetchHandler</a><span class="parameters">(</span>items, requestObject) <span>The handler when items are sucessfully fetched.</span><span title="inherited from dojo/data/util/simpleFetch" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_data_HtmlStore_fetchHandler" class="inline-link"> fetchHandler</a><span class="parameters">(</span>items, requestObject) <span>The handler when items are sucessfully fetched.</span><span title="inherited from dojo/data/util/simpleFetch" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_data_HtmlStore_fetchItemByIdentity" class="inline-link"> fetchItemByIdentity</a><span class="parameters">(</span>keywordArgs) <span>See dojo/data/api/Identity.fetchItemByIdentity()</span>
+        <li class="functionIcon "><a href="#1_9dojox_data_HtmlStore_fetchItemByIdentity" class="inline-link"> fetchItemByIdentity</a><span class="parameters">(</span>keywordArgs) <span>See dojo/data/api/Identity.fetchItemByIdentity()</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_data_HtmlStore_getAttributes" class="inline-link"> getAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getAttributes()</span>
+        <li class="functionIcon "><a href="#1_9dojox_data_HtmlStore_getAttributes" class="inline-link"> getAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getAttributes()</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_data_HtmlStore_getFeatures" class="inline-link"> getFeatures</a><span class="parameters">(</span>) <span>See dojo/data/api/Read.getFeatures()</span>
+        <li class="functionIcon "><a href="#1_9dojox_data_HtmlStore_getFeatures" class="inline-link"> getFeatures</a><span class="parameters">(</span>) <span>See dojo/data/api/Read.getFeatures()</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_data_HtmlStore_getIdentity" class="inline-link"> getIdentity</a><span class="parameters">(</span>item) <span>See dojo/data/api/Identity.getIdentity()</span>
+        <li class="functionIcon "><a href="#1_9dojox_data_HtmlStore_getIdentity" class="inline-link"> getIdentity</a><span class="parameters">(</span>item) <span>See dojo/data/api/Identity.getIdentity()</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_data_HtmlStore_getIdentityAttributes" class="inline-link"> getIdentityAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Identity.getIdentityAttributes()</span>
+        <li class="functionIcon "><a href="#1_9dojox_data_HtmlStore_getIdentityAttributes" class="inline-link"> getIdentityAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Identity.getIdentityAttributes()</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_data_HtmlStore_getLabel" class="inline-link"> getLabel</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabel()</span>
+        <li class="functionIcon "><a href="#1_9dojox_data_HtmlStore_getLabel" class="inline-link"> getLabel</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabel()</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_data_HtmlStore_getLabelAttributes" class="inline-link"> getLabelAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabelAttributes()</span>
+        <li class="functionIcon "><a href="#1_9dojox_data_HtmlStore_getLabelAttributes" class="inline-link"> getLabelAttributes</a><span class="parameters">(</span>item) <span>See dojo/data/api/Read.getLabelAttributes()</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_data_HtmlStore_getValue" class="inline-link"> getValue</a><span class="parameters">(</span>item, attribute, defaultValue) <span>See dojo/data/api/Read.getValue()</span>
+        <li class="functionIcon "><a href="#1_9dojox_data_HtmlStore_getValue" class="inline-link"> getValue</a><span class="parameters">(</span>item, attribute, defaultValue) <span>See dojo/data/api/Read.getValue()</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_data_HtmlStore_getValues" class="inline-link"> getValues</a><span class="parameters">(</span>item, attribute) <span>See dojo/data/api/Read.getValues()</span>
+        <li class="functionIcon "><a href="#1_9dojox_data_HtmlStore_getValues" class="inline-link"> getValues</a><span class="parameters">(</span>item, attribute) <span>See dojo/data/api/Read.getValues()</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_data_HtmlStore_hasAttribute" class="inline-link"> hasAttribute</a><span class="parameters">(</span>item, attribute) <span>See dojo/data/api/Read.hasAttribute()</span>
+        <li class="functionIcon "><a href="#1_9dojox_data_HtmlStore_hasAttribute" class="inline-link"> hasAttribute</a><span class="parameters">(</span>item, attribute) <span>See dojo/data/api/Read.hasAttribute()</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_data_HtmlStore_isItem" class="inline-link"> isItem</a><span class="parameters">(</span>something) <span>See dojo/data/api/Read.isItem()</span>
+        <li class="functionIcon "><a href="#1_9dojox_data_HtmlStore_isItem" class="inline-link"> isItem</a><span class="parameters">(</span>something) <span>See dojo/data/api/Read.isItem()</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_data_HtmlStore_isItemLoaded" class="inline-link"> isItemLoaded</a><span class="parameters">(</span>something) <span>See dojo/data/api/Read.isItemLoaded()</span>
+        <li class="functionIcon "><a href="#1_9dojox_data_HtmlStore_isItemLoaded" class="inline-link"> isItemLoaded</a><span class="parameters">(</span>something) <span>See dojo/data/api/Read.isItemLoaded()</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_data_HtmlStore_loadItem" class="inline-link"> loadItem</a><span class="parameters">(</span>keywordArgs) <span>See dojo/data/api/Read.loadItem()</span>
+        <li class="functionIcon "><a href="#1_9dojox_data_HtmlStore_loadItem" class="inline-link"> loadItem</a><span class="parameters">(</span>keywordArgs) <span>See dojo/data/api/Read.loadItem()</span>
         </li>
       </ul>
     </div>
@@ -179,17 +179,17 @@ be mixed into other datastore implementations to accelerate their development.</
     <h2>Properties</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_data_HtmlStore_dataId"></a><span class="stringIcon">dataId</span>
+        <div class="jsdoc-title"><a name="1_9dojox_data_HtmlStore_dataId"></a><span class="stringIcon">dataId</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
         </div>
         <div class="jsdoc-summary"><p>The id in the document for an element from which to get the data.</p>
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_data_HtmlStore_fetchOnCreate"></a><span class="booleanIcon">fetchOnCreate</span>
+        <div class="jsdoc-title"><a name="1_9dojox_data_HtmlStore_fetchOnCreate"></a><span class="booleanIcon">fetchOnCreate</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
         </div>
         <div class="jsdoc-summary"><p>Flag to denote if it should try to load from a data id (nested in the page)
 The moment the store is created, instead of waiting for first
@@ -197,23 +197,23 @@ fetch call.</p>
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_data_HtmlStore_trimWhitespace"></a><span class="booleanIcon">trimWhitespace</span>
+        <div class="jsdoc-title"><a name="1_9dojox_data_HtmlStore_trimWhitespace"></a><span class="booleanIcon">trimWhitespace</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
         </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_data_HtmlStore_url"></a><span class="stringIcon">url</span>
+        <div class="jsdoc-title"><a name="1_9dojox_data_HtmlStore_url"></a><span class="stringIcon">url</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
         </div>
         <div class="jsdoc-summary"><p>The URL from which to load an HTML document for data loading</p>
 </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_data_HtmlStore_urlPreventCache"></a><span class="booleanIcon">urlPreventCache</span>
+        <div class="jsdoc-title"><a name="1_9dojox_data_HtmlStore_urlPreventCache"></a><span class="booleanIcon">urlPreventCache</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
         </div>
         <div class="jsdoc-summary"><p>Flag to denote if peventCache should be used on xhrGet calls.</p>
 </div>
@@ -222,9 +222,9 @@ fetch call.</p>
     <h2>Methods</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_data_HtmlStore__assertIsAttribute"></a><span class="functionIcon">_assertIsAttribute</span><span class="parameters">(attribute)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_data_HtmlStore__assertIsAttribute"></a><span class="functionIcon">_assertIsAttribute</span><span class="parameters">(attribute)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
         </div>
         <div class="jsdoc-full-summary"><p>This function tests whether the item passed in is indeed a valid &#39;attribute&#39; like type for the store.</p>
 </div>
@@ -247,9 +247,9 @@ fetch call.</p>
 </div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_data_HtmlStore__assertIsItem"></a><span class="functionIcon">_assertIsItem</span><span class="parameters">(item)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_data_HtmlStore__assertIsItem"></a><span class="functionIcon">_assertIsItem</span><span class="parameters">(item)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
         </div>
         <div class="jsdoc-full-summary"><p>This function tests whether the item passed in is indeed an item in the store.</p>
 </div>
@@ -269,9 +269,9 @@ fetch call.</p>
         </table>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_data_HtmlStore__containsValue"></a><span class="functionIcon">_containsValue</span><span class="parameters">(item, attribute, value, regexp)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_data_HtmlStore__containsValue"></a><span class="functionIcon">_containsValue</span><span class="parameters">(item, attribute, value, regexp)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
         </div>
         <div class="jsdoc-full-summary"><p>Internal function for looking at the values contained by the item.</p>
 </div>
@@ -319,9 +319,9 @@ If present and attribute values are string, then it can be used for comparison i
         <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_data_HtmlStore__fetchItems"></a><span class="functionIcon">_fetchItems</span><span class="parameters">(request, fetchHandler, errorHandler)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_data_HtmlStore__fetchItems"></a><span class="functionIcon">_fetchItems</span><span class="parameters">(request, fetchHandler, errorHandler)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
         </div>
         <div class="jsdoc-full-summary"><p>Fetch items (XML elements) that match to a query</p>
 </div>
@@ -364,9 +364,9 @@ If &#39;_rootItem&#39; is specified, it is used to fetch items.</p>
         </table>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_data_HtmlStore__finishFetchItems"></a><span class="functionIcon">_finishFetchItems</span><span class="parameters">(request, fetchHandler, errorHandler)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_data_HtmlStore__finishFetchItems"></a><span class="functionIcon">_finishFetchItems</span><span class="parameters">(request, fetchHandler, errorHandler)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
         </div>
         <div class="jsdoc-full-summary"><p>Internal function for processing the passed in request and locating the requested items.</p>
 </div>
@@ -397,18 +397,18 @@ If &#39;_rootItem&#39; is specified, it is used to fetch items.</p>
         </table>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_data_HtmlStore__getAllItems"></a><span class="functionIcon">_getAllItems</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_data_HtmlStore__getAllItems"></a><span class="functionIcon">_getAllItems</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
         </div>
         <div class="jsdoc-full-summary"><p>Function to return all rows in the table as an array of items.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Array</span></div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_data_HtmlStore__getHeadings"></a><span class="functionIcon">_getHeadings</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_data_HtmlStore__getHeadings"></a><span class="functionIcon">_getHeadings</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
         </div>
         <div class="jsdoc-full-summary"><p>Function to load the attribute names from the table header so that the
 attributes (cells in a row), can have a reasonable name.
@@ -416,17 +416,17 @@ For list items, returns single implicit heading, [&quot;name&quot;]</p>
 </div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_data_HtmlStore__indexItems"></a><span class="functionIcon">_indexItems</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_data_HtmlStore__indexItems"></a><span class="functionIcon">_indexItems</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
         </div>
         <div class="jsdoc-full-summary"><p>Function to index items found under the id.</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_data_HtmlStore_close"></a><span class="functionIcon">close</span><span class="parameters">(request)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_data_HtmlStore_close"></a><span class="functionIcon">close</span><span class="parameters">(request)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
         </div>
         <div class="jsdoc-full-summary"><p>See dojo/data/api/Read.close()</p>
 </div>
@@ -446,9 +446,9 @@ For list items, returns single implicit heading, [&quot;name&quot;]</p>
         </table>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_data_HtmlStore_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(args)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_data_HtmlStore_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(args)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
         </div>
         <div class="jsdoc-full-summary"><p>Initializer for the HTML table store.</p>
 </div>
@@ -532,9 +532,9 @@ backwards compatibility.</li>
         </table>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_data_HtmlStore_containsValue"></a><span class="functionIcon">containsValue</span><span class="parameters">(item, attribute, value)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_data_HtmlStore_containsValue"></a><span class="functionIcon">containsValue</span><span class="parameters">(item, attribute, value)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
         </div>
         <div class="jsdoc-full-summary"><p>See dojo/data/api/Read.containsValue()</p>
 </div>
@@ -566,9 +566,9 @@ backwards compatibility.</li>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_data_HtmlStore_errorHandler"></a><span class="functionIcon">errorHandler</span><span class="parameters">(errorData, requestObject)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_data_HtmlStore_errorHandler"></a><span class="functionIcon">errorHandler</span><span class="parameters">(errorData, requestObject)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/data/util/simpleFetch" class="jsdoc-link">dojo/data/util/simpleFetch</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/data/util/simpleFetch" class="jsdoc-link">dojo/data/util/simpleFetch</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>The error handler when there is an error fetching items.  This function should not be called
 directly and is used by simpleFetch.fetch().</p>
@@ -594,9 +594,9 @@ directly and is used by simpleFetch.fetch().</p>
         </table>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_data_HtmlStore_fetch"></a><span class="functionIcon">fetch</span><span class="parameters">(request)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_data_HtmlStore_fetch"></a><span class="functionIcon">fetch</span><span class="parameters">(request)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/data/util/simpleFetch" class="jsdoc-link">dojo/data/util/simpleFetch</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/data/util/simpleFetch" class="jsdoc-link">dojo/data/util/simpleFetch</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>The simpleFetch mixin is designed to serve as a set of function(s) that can
 be mixed into other datastore implementations to accelerate their development.</p>
@@ -624,7 +624,7 @@ with other specifics about the request that are specific to the datastore and pa
 that as the request object to the handler.
 
 </p>
-<p>For more information on this specific function, see <a class="jsdoc-link" href="/api/1.8/dojo/data/api/Read#fetch">dojo/data/api/Read.fetch()</a>
+<p>For more information on this specific function, see <a class="jsdoc-link" href="/api/1.9/dojo/data/api/Read#fetch">dojo/data/api/Read.fetch()</a>
 </p>
 </div>
         <table class="jsdoc-parameters">
@@ -788,9 +788,9 @@ of the list.  In the descending order case, it such items should appear at the t
         </table>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_data_HtmlStore_fetchHandler"></a><span class="functionIcon">fetchHandler</span><span class="parameters">(items, requestObject)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_data_HtmlStore_fetchHandler"></a><span class="functionIcon">fetchHandler</span><span class="parameters">(items, requestObject)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/data/util/simpleFetch" class="jsdoc-link">dojo/data/util/simpleFetch</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/data/util/simpleFetch" class="jsdoc-link">dojo/data/util/simpleFetch</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>The handler when items are sucessfully fetched.  This function should not be called directly
 and is used by simpleFetch.fetch().</p>
@@ -816,9 +816,9 @@ and is used by simpleFetch.fetch().</p>
         </table>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_data_HtmlStore_fetchItemByIdentity"></a><span class="functionIcon">fetchItemByIdentity</span><span class="parameters">(keywordArgs)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_data_HtmlStore_fetchItemByIdentity"></a><span class="functionIcon">fetchItemByIdentity</span><span class="parameters">(keywordArgs)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
         </div>
         <div class="jsdoc-full-summary"><p>See dojo/data/api/Identity.fetchItemByIdentity()</p>
 </div>
@@ -837,9 +837,9 @@ and is used by simpleFetch.fetch().</p>
         </table>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_data_HtmlStore_getAttributes"></a><span class="functionIcon">getAttributes</span><span class="parameters">(item)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_data_HtmlStore_getAttributes"></a><span class="functionIcon">getAttributes</span><span class="parameters">(item)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
         </div>
         <div class="jsdoc-full-summary"><p>See dojo/data/api/Read.getAttributes()</p>
 </div>
@@ -859,18 +859,18 @@ and is used by simpleFetch.fetch().</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Array</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_data_HtmlStore_getFeatures"></a><span class="functionIcon">getFeatures</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_data_HtmlStore_getFeatures"></a><span class="functionIcon">getFeatures</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
         </div>
         <div class="jsdoc-full-summary"><p>See dojo/data/api/Read.getFeatures()</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">object</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_data_HtmlStore_getIdentity"></a><span class="functionIcon">getIdentity</span><span class="parameters">(item)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_data_HtmlStore_getIdentity"></a><span class="functionIcon">getIdentity</span><span class="parameters">(item)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
         </div>
         <div class="jsdoc-full-summary"><p>See dojo/data/api/Identity.getIdentity()</p>
 </div>
@@ -890,9 +890,9 @@ and is used by simpleFetch.fetch().</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_data_HtmlStore_getIdentityAttributes"></a><span class="functionIcon">getIdentityAttributes</span><span class="parameters">(item)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_data_HtmlStore_getIdentityAttributes"></a><span class="functionIcon">getIdentityAttributes</span><span class="parameters">(item)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
         </div>
         <div class="jsdoc-full-summary"><p>See dojo/data/api/Identity.getIdentityAttributes()</p>
 </div>
@@ -912,9 +912,9 @@ and is used by simpleFetch.fetch().</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">null</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_data_HtmlStore_getLabel"></a><span class="functionIcon">getLabel</span><span class="parameters">(item)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_data_HtmlStore_getLabel"></a><span class="functionIcon">getLabel</span><span class="parameters">(item)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
         </div>
         <div class="jsdoc-full-summary"><p>See dojo/data/api/Read.getLabel()</p>
 </div>
@@ -934,9 +934,9 @@ and is used by simpleFetch.fetch().</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">string | undefined</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_data_HtmlStore_getLabelAttributes"></a><span class="functionIcon">getLabelAttributes</span><span class="parameters">(item)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_data_HtmlStore_getLabelAttributes"></a><span class="functionIcon">getLabelAttributes</span><span class="parameters">(item)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
         </div>
         <div class="jsdoc-full-summary"><p>See dojo/data/api/Read.getLabelAttributes()</p>
 </div>
@@ -956,9 +956,9 @@ and is used by simpleFetch.fetch().</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">null | Array</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_data_HtmlStore_getValue"></a><span class="functionIcon">getValue</span><span class="parameters">(item, attribute, defaultValue)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_data_HtmlStore_getValue"></a><span class="functionIcon">getValue</span><span class="parameters">(item, attribute, defaultValue)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
         </div>
         <div class="jsdoc-full-summary"><p>See dojo/data/api/Read.getValue()</p>
 </div>
@@ -991,9 +991,9 @@ and is used by simpleFetch.fetch().</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">value</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_data_HtmlStore_getValues"></a><span class="functionIcon">getValues</span><span class="parameters">(item, attribute)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_data_HtmlStore_getValues"></a><span class="functionIcon">getValues</span><span class="parameters">(item, attribute)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
         </div>
         <div class="jsdoc-full-summary"><p>See dojo/data/api/Read.getValues()</p>
 </div>
@@ -1019,9 +1019,9 @@ and is used by simpleFetch.fetch().</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">Array</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_data_HtmlStore_hasAttribute"></a><span class="functionIcon">hasAttribute</span><span class="parameters">(item, attribute)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_data_HtmlStore_hasAttribute"></a><span class="functionIcon">hasAttribute</span><span class="parameters">(item, attribute)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
         </div>
         <div class="jsdoc-full-summary"><p>See dojo/data/api/Read.hasAttribute()</p>
 </div>
@@ -1047,9 +1047,9 @@ and is used by simpleFetch.fetch().</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_data_HtmlStore_isItem"></a><span class="functionIcon">isItem</span><span class="parameters">(something)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_data_HtmlStore_isItem"></a><span class="functionIcon">isItem</span><span class="parameters">(something)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
         </div>
         <div class="jsdoc-full-summary"><p>See dojo/data/api/Read.isItem()</p>
 </div>
@@ -1069,9 +1069,9 @@ and is used by simpleFetch.fetch().</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_data_HtmlStore_isItemLoaded"></a><span class="functionIcon">isItemLoaded</span><span class="parameters">(something)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_data_HtmlStore_isItemLoaded"></a><span class="functionIcon">isItemLoaded</span><span class="parameters">(something)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
         </div>
         <div class="jsdoc-full-summary"><p>See dojo/data/api/Read.isItemLoaded()</p>
 </div>
@@ -1091,9 +1091,9 @@ and is used by simpleFetch.fetch().</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_data_HtmlStore_loadItem"></a><span class="functionIcon">loadItem</span><span class="parameters">(keywordArgs)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_data_HtmlStore_loadItem"></a><span class="functionIcon">loadItem</span><span class="parameters">(keywordArgs)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/data/HtmlStore" class="jsdoc-link">dojox/data/HtmlStore</a>
         </div>
         <div class="jsdoc-full-summary"><p>See dojo/data/api/Read.loadItem()</p>
 </div>
@@ -1113,4 +1113,4 @@ and is used by simpleFetch.fetch().</p>
       </div>
     </div>
   </div>
-</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/data/HtmlStore" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/data/HtmlStore" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

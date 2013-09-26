@@ -3,11 +3,11 @@
   // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
   // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
   // Also, when this page is loaded via XHR this script block should be ignored.
-  location = "/api/?qs=1.8/dojox/gfx/canvas_attach.Group" + location.hash;
+  location = "/api/?qs=1.9/dojox/gfx/canvas_attach.Group" + location.hash;
   
 </script>
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/gfx/canvas_attach.Group.html</div>
-<h1 class="constructorIcon36 jsdoc-title">dojox/gfx/canvas_attach.Group<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/gfx/canvas_attach.Group.html</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/gfx/canvas_attach.Group<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>a group shape (Canvas), which can be used
 to logically group shapes (e.g, to propagate matricies)</p>
 </div>
@@ -15,113 +15,119 @@ to logically group shapes (e.g, to propagate matricies)</p>
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new canvas_attach.Group<span class="parameters">();</span></div>
 </div>
-<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/gfx/canvas">dojox/gfx/canvas</a></div>
-<p>See the <a href="/reference-guide/1.8/dojox/gfx.html" target="_blank">dojox/gfx/canvas_attach.Group reference documentation</a> for more information.</p>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.9/dojox/gfx/canvas">dojox/gfx/canvas</a></div>
+<p>See the <a href="/reference-guide/1.9/dojox/gfx.html" target="_blank">dojox/gfx/canvas_attach.Group reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-field-list">
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="objectIcon inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_canvasClip" class="inline-link"> canvasClip </a><span></span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
+        <li class="objectIcon inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_canvasClip" class="inline-link"> canvasClip </a><span></span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
         </li>
       </ul>
     </div>
     <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="functionIcon private inherited"><a href="#1_8dojox_gfx_canvas_attach_Group__applyTransform" class="inline-link"> _applyTransform</a><span class="parameters">(</span>) <span>physically sets a matrix</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_gfx_canvas_attach_Group__applyTransform" class="inline-link"> _applyTransform</a><span class="parameters">(</span>) <span>physically sets a matrix</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_gfx_canvas_attach_Group__getRealMatrix" class="inline-link"> _getRealMatrix</a><span class="parameters">(</span>) <span>returns the cumulative (&#39;real&#39;) transformation matrix
+        <li class="functionIcon private inherited"><a href="#1_9dojox_gfx_canvas_attach_Group__getRealMatrix" class="inline-link"> _getRealMatrix</a><span class="parameters">(</span>) <span>returns the cumulative (&#39;real&#39;) transformation matrix
 by combining the shape&#39;s matrix with its parent&#39;s matrix</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_gfx_canvas_attach_Group__moveChildToBack" class="inline-link"> _moveChildToBack</a><span class="parameters">(</span>shape) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_gfx_canvas_attach_Group__makeDirty" class="inline-link"> _makeDirty</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_gfx_canvas_attach_Group__moveChildToFront" class="inline-link"> _moveChildToFront</a><span class="parameters">(</span>shape) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_gfx_canvas_attach_Group__moveChildToBack" class="inline-link"> _moveChildToBack</a><span class="parameters">(</span>shape) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_gfx_canvas_attach_Group__moveToBack" class="inline-link"> _moveToBack</a><span class="parameters">(</span>) <span>renderer-specific hook, see dojox/gfx/shape.Shape.moveToFront()</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_gfx_canvas_attach_Group__moveChildToFront" class="inline-link"> _moveChildToFront</a><span class="parameters">(</span>shape) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_gfx_canvas_attach_Group__moveToFront" class="inline-link"> _moveToFront</a><span class="parameters">(</span>) <span>renderer-specific hook, see dojox/gfx/shape.Shape.moveToFront()</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_gfx_canvas_attach_Group__moveToBack" class="inline-link"> _moveToBack</a><span class="parameters">(</span>) <span>renderer-specific hook, see dojox/gfx/shape.Shape.moveToFront()</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_gfx_canvas_attach_Group__render" class="inline-link"> _render</a><span class="parameters">(</span>ctx) <span>render the group</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_gfx_canvas_attach_Group__moveToFront" class="inline-link"> _moveToFront</a><span class="parameters">(</span>) <span>renderer-specific hook, see dojox/gfx/shape.Shape.moveToFront()</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_gfx_canvas_attach_Group__renderClip" class="inline-link"> _renderClip</a><span class="parameters">(</span>ctx) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_gfx_canvas_attach_Group__render" class="inline-link"> _render</a><span class="parameters">(</span>ctx) <span>render the group</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_gfx_canvas_attach_Group__renderFill" class="inline-link"> _renderFill</a><span class="parameters">(</span>ctx, apply) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_gfx_canvas_attach_Group__renderClip" class="inline-link"> _renderClip</a><span class="parameters">(</span>ctx) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_gfx_canvas_attach_Group__renderShape" class="inline-link"> _renderShape</a><span class="parameters">(</span>ctx) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_gfx_canvas_attach_Group__renderDashedStroke" class="inline-link"> _renderDashedStroke</a><span class="parameters">(</span>ctx, apply) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_gfx_canvas_attach_Group__renderStroke" class="inline-link"> _renderStroke</a><span class="parameters">(</span>ctx, apply) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_gfx_canvas_attach_Group__renderFill" class="inline-link"> _renderFill</a><span class="parameters">(</span>ctx, apply) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_gfx_canvas_attach_Group__renderTransform" class="inline-link"> _renderTransform</a><span class="parameters">(</span>ctx) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_gfx_canvas_attach_Group__renderShape" class="inline-link"> _renderShape</a><span class="parameters">(</span>ctx) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_gfx_canvas_attach_Group__setParent" class="inline-link"> _setParent</a><span class="parameters">(</span>parent, matrix) <span>sets a parent</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_gfx_canvas_attach_Group__renderStroke" class="inline-link"> _renderStroke</a><span class="parameters">(</span>ctx, apply) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon private inherited"><a href="#1_8dojox_gfx_canvas_attach_Group__updateParentMatrix" class="inline-link"> _updateParentMatrix</a><span class="parameters">(</span>matrix) <span>updates the parent matrix with new matrix</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_gfx_canvas_attach_Group__renderTransform" class="inline-link"> _renderTransform</a><span class="parameters">(</span>ctx) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_add" class="inline-link"> add</a><span class="parameters">(</span>shape) <span></span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
+        <li class="functionIcon private inherited"><a href="#1_9dojox_gfx_canvas_attach_Group__setParent" class="inline-link"> _setParent</a><span class="parameters">(</span>parent, matrix) <span>sets a parent</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_applyLeftTransform" class="inline-link"> applyLeftTransform</a><span class="parameters">(</span>matrix) <span>multiplies the existing matrix with an argument on left side
+        <li class="functionIcon private inherited"><a href="#1_9dojox_gfx_canvas_attach_Group__updateParentMatrix" class="inline-link"> _updateParentMatrix</a><span class="parameters">(</span>matrix) <span>updates the parent matrix with new matrix</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_add" class="inline-link"> add</a><span class="parameters">(</span>shape) <span></span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_applyLeftTransform" class="inline-link"> applyLeftTransform</a><span class="parameters">(</span>matrix) <span>multiplies the existing matrix with an argument on left side
 (matrix * this.matrix)</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_applyRightTransform" class="inline-link"> applyRightTransform</a><span class="parameters">(</span>matrix) <span>multiplies the existing matrix with an argument on right side
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_applyRightTransform" class="inline-link"> applyRightTransform</a><span class="parameters">(</span>matrix) <span>multiplies the existing matrix with an argument on right side
 (this.matrix * matrix)</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_applyTransform" class="inline-link"> applyTransform</a><span class="parameters">(</span>matrix) <span>a shortcut for dojox/gfx/shape.Shape.applyRightTransform</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_applyTransform" class="inline-link"> applyTransform</a><span class="parameters">(</span>matrix) <span>a shortcut for dojox/gfx/shape.Shape.applyRightTransform</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_clear" class="inline-link"> clear</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_clear" class="inline-link"> clear</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_connect" class="inline-link"> connect</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_closeBatch" class="inline-link"> closeBatch</a><span class="parameters">(</span>) <span>submits the current batch.</span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_connect" class="inline-link"> connect</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_createCircle" class="inline-link"> createCircle</a><span class="parameters">(</span>circle) <span>creates a circle shape</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_createEllipse" class="inline-link"> createEllipse</a><span class="parameters">(</span>ellipse) <span>creates an ellipse shape</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_createCircle" class="inline-link"> createCircle</a><span class="parameters">(</span>circle) <span>creates a circle shape</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_createGroup" class="inline-link"> createGroup</a><span class="parameters">(</span>) <span>creates a group shape</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_createEllipse" class="inline-link"> createEllipse</a><span class="parameters">(</span>ellipse) <span>creates an ellipse shape</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_createImage" class="inline-link"> createImage</a><span class="parameters">(</span>image) <span>creates a image shape</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_createGroup" class="inline-link"> createGroup</a><span class="parameters">(</span>) <span>creates a group shape</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_createLine" class="inline-link"> createLine</a><span class="parameters">(</span>line) <span>creates a line shape</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_createImage" class="inline-link"> createImage</a><span class="parameters">(</span>image) <span>creates a image shape</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_createObject" class="inline-link"> createObject</a><span class="parameters">(</span>shapeType, rawShape) <span>creates an instance of the passed shapeType class</span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_createLine" class="inline-link"> createLine</a><span class="parameters">(</span>line) <span>creates a line shape</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_createPath" class="inline-link"> createPath</a><span class="parameters">(</span>path) <span>creates a path shape</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_createObject" class="inline-link"> createObject</a><span class="parameters">(</span>shapeType, rawShape) <span>creates an instance of the passed shapeType class</span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_createPolyline" class="inline-link"> createPolyline</a><span class="parameters">(</span>points) <span>creates a polyline/polygon shape</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_createPath" class="inline-link"> createPath</a><span class="parameters">(</span>path) <span>creates a path shape</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_createRect" class="inline-link"> createRect</a><span class="parameters">(</span>rect) <span>creates a rectangle shape</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_createPolyline" class="inline-link"> createPolyline</a><span class="parameters">(</span>points) <span>creates a polyline/polygon shape</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_createShape" class="inline-link"> createShape</a><span class="parameters">(</span>shape) <span>creates a shape object based on its type; it is meant to be used
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_createRect" class="inline-link"> createRect</a><span class="parameters">(</span>rect) <span>creates a rectangle shape</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_createShape" class="inline-link"> createShape</a><span class="parameters">(</span>shape) <span>creates a shape object based on its type; it is meant to be used
 by group-like objects</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_createText" class="inline-link"> createText</a><span class="parameters">(</span>text) <span>creates a text shape</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_createText" class="inline-link"> createText</a><span class="parameters">(</span>text) <span>creates a text shape</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_createTextPath" class="inline-link"> createTextPath</a><span class="parameters">(</span>text) <span>creates a text shape</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_createTextPath" class="inline-link"> createTextPath</a><span class="parameters">(</span>text) <span>creates a text shape</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>Releases all internal resources owned by this shape.</span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>Releases all internal resources owned by this shape.</span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_getBoundingBox" class="inline-link"> getBoundingBox</a><span class="parameters">(</span>) <span>Returns the bounding box Rectangle for this shape.</span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_getBoundingBox" class="inline-link"> getBoundingBox</a><span class="parameters">(</span>) <span>Returns the bounding box Rectangle for this shape.</span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_getClip" class="inline-link"> getClip</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_getClip" class="inline-link"> getClip</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_getEventSource" class="inline-link"> getEventSource</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_getEventSource" class="inline-link"> getEventSource</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_getFill" class="inline-link"> getFill</a><span class="parameters">(</span>) <span>Returns the current fill object or null
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_getFill" class="inline-link"> getFill</a><span class="parameters">(</span>) <span>Returns the current fill object or null
 (see dojox/gfx.defaultLinearGradient,
 dojox/gfx.defaultRadialGradient,
 dojox/gfx.defaultPattern,
 or dojo/Color)</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_getNode" class="inline-link"> getNode</a><span class="parameters">(</span>) <span>Different graphics rendering subsystems implement shapes in different ways.</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_getNode" class="inline-link"> getNode</a><span class="parameters">(</span>) <span>Different graphics rendering subsystems implement shapes in different ways.</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_getParent" class="inline-link"> getParent</a><span class="parameters">(</span>) <span>Returns the parent Shape, Group or null if this Shape is unparented.
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_getParent" class="inline-link"> getParent</a><span class="parameters">(</span>) <span>Returns the parent Shape, Group or null if this Shape is unparented.
 (see dojox/gfx/shape.Surface,
 or dojox/gfx.Group)</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_getShape" class="inline-link"> getShape</a><span class="parameters">(</span>) <span>returns the current Shape object or null
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_getShape" class="inline-link"> getShape</a><span class="parameters">(</span>) <span>returns the current Shape object or null
 (see dojox/gfx.defaultPath,
 dojox/gfx.defaultPolyline,
 dojox/gfx.defaultRect,
@@ -130,34 +136,39 @@ dojox/gfx.defaultCircle,
 dojox/gfx.defaultLine,
 or dojox/gfx.defaultImage)</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_getStroke" class="inline-link"> getStroke</a><span class="parameters">(</span>) <span>Returns the current stroke object or null
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_getStroke" class="inline-link"> getStroke</a><span class="parameters">(</span>) <span>Returns the current stroke object or null
 (see dojox/gfx.defaultStroke)</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_getTransform" class="inline-link"> getTransform</a><span class="parameters">(</span>) <span>Returns the current transformation matrix applied to this Shape or null</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_getTransform" class="inline-link"> getTransform</a><span class="parameters">(</span>) <span>Returns the current transformation matrix applied to this Shape or null</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_getTransformedBoundingBox" class="inline-link"> getTransformedBoundingBox</a><span class="parameters">(</span>) <span>returns an array of four points or null
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_getTransformedBoundingBox" class="inline-link"> getTransformedBoundingBox</a><span class="parameters">(</span>) <span>returns an array of four points or null
 four points represent four corners of the untransformed bounding box</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_moveToBack" class="inline-link"> moveToBack</a><span class="parameters">(</span>) <span>moves a shape to back of its parent&#39;s list of shapes</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_moveToBack" class="inline-link"> moveToBack</a><span class="parameters">(</span>) <span>moves a shape to back of its parent&#39;s list of shapes</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_moveToFront" class="inline-link"> moveToFront</a><span class="parameters">(</span>) <span>moves a shape to front of its parent&#39;s list of shapes</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_moveToFront" class="inline-link"> moveToFront</a><span class="parameters">(</span>) <span>moves a shape to front of its parent&#39;s list of shapes</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_remove" class="inline-link"> remove</a><span class="parameters">(</span>shape, silently) <span></span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_on" class="inline-link"> on</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_removeShape" class="inline-link"> removeShape</a><span class="parameters">(</span>silently) <span>removes the shape from its parent&#39;s list of shapes</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_openBatch" class="inline-link"> openBatch</a><span class="parameters">(</span>) <span>starts a new batch, subsequent new child shapes will be held in
+the batch instead of appending to the container directly.</span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_setClip" class="inline-link"> setClip</a><span class="parameters">(</span>clip) <span></span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_remove" class="inline-link"> remove</a><span class="parameters">(</span>shape, silently) <span></span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_setFill" class="inline-link"> setFill</a><span class="parameters">(</span>fill) <span>sets a fill object
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_removeShape" class="inline-link"> removeShape</a><span class="parameters">(</span>silently) <span>removes the shape from its parent&#39;s list of shapes</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_setClip" class="inline-link"> setClip</a><span class="parameters">(</span>clip) <span></span><span title="inherited from dojox/gfx/canvas" class="jsdoc-inherited"></span>
+        </li>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_setFill" class="inline-link"> setFill</a><span class="parameters">(</span>fill) <span>sets a fill object
 (the default implementation simply ignores it)</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_setShape" class="inline-link"> setShape</a><span class="parameters">(</span>shape) <span>sets a shape object
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_setShape" class="inline-link"> setShape</a><span class="parameters">(</span>shape) <span>sets a shape object
 (the default implementation simply ignores it)</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_setStroke" class="inline-link"> setStroke</a><span class="parameters">(</span>stroke) <span>sets a stroke object
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_setStroke" class="inline-link"> setStroke</a><span class="parameters">(</span>stroke) <span>sets a stroke object
 (the default implementation simply ignores it)</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojox_gfx_canvas_attach_Group_setTransform" class="inline-link"> setTransform</a><span class="parameters">(</span>matrix) <span>sets a transformation matrix</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojox_gfx_canvas_attach_Group_setTransform" class="inline-link"> setTransform</a><span class="parameters">(</span>matrix) <span>sets a transformation matrix</span><span title="inherited from dojox/gfx/shape" class="jsdoc-inherited"></span>
         </li>
       </ul>
     </div>
@@ -168,18 +179,18 @@ four points represent four corners of the untransformed bounding box</span><span
     <h2>Properties</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_canvasClip"></a><span class="objectIcon">canvasClip</span>
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_canvasClip"></a><span class="objectIcon">canvasClip</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
       </div>
     </div>
     <h2>Methods</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group__applyTransform"></a><span class="functionIcon">_applyTransform</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group__applyTransform"></a><span class="functionIcon">_applyTransform</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>physically sets a matrix</p>
 </div>
@@ -188,9 +199,9 @@ four points represent four corners of the untransformed bounding box</span><span
 </div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group__getRealMatrix"></a><span class="functionIcon">_getRealMatrix</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group__getRealMatrix"></a><span class="functionIcon">_getRealMatrix</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>returns the cumulative (&#39;real&#39;) transformation matrix
 by combining the shape&#39;s matrix with its parent&#39;s matrix</p>
@@ -198,9 +209,16 @@ by combining the shape&#39;s matrix with its parent&#39;s matrix</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group__moveChildToBack"></a><span class="functionIcon">_moveChildToBack</span><span class="parameters">(shape)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group__makeDirty"></a><span class="functionIcon">_makeDirty</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group__moveChildToBack"></a><span class="functionIcon">_moveChildToBack</span><span class="parameters">(shape)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -219,9 +237,9 @@ by combining the shape&#39;s matrix with its parent&#39;s matrix</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group__moveChildToFront"></a><span class="functionIcon">_moveChildToFront</span><span class="parameters">(shape)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group__moveChildToFront"></a><span class="functionIcon">_moveChildToFront</span><span class="parameters">(shape)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -240,25 +258,25 @@ by combining the shape&#39;s matrix with its parent&#39;s matrix</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group__moveToBack"></a><span class="functionIcon">_moveToBack</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group__moveToBack"></a><span class="functionIcon">_moveToBack</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
-        </div>
-        <div class="jsdoc-full-summary"><p>renderer-specific hook, see dojox/gfx/shape.Shape.moveToFront()</p>
-</div>
-      </div>
-      <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group__moveToFront"></a><span class="functionIcon">_moveToFront</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
-        </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>renderer-specific hook, see dojox/gfx/shape.Shape.moveToFront()</p>
 </div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group__render"></a><span class="functionIcon">_render</span><span class="parameters">(ctx)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group__moveToFront"></a><span class="functionIcon">_moveToFront</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>renderer-specific hook, see dojox/gfx/shape.Shape.moveToFront()</p>
+</div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group__render"></a><span class="functionIcon">_render</span><span class="parameters">(ctx)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>render the group</p>
 </div>
@@ -277,9 +295,9 @@ by combining the shape&#39;s matrix with its parent&#39;s matrix</p>
         </table>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group__renderClip"></a><span class="functionIcon">_renderClip</span><span class="parameters">(ctx)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group__renderClip"></a><span class="functionIcon">_renderClip</span><span class="parameters">(ctx)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -297,9 +315,35 @@ by combining the shape&#39;s matrix with its parent&#39;s matrix</p>
         </table>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group__renderFill"></a><span class="functionIcon">_renderFill</span><span class="parameters">(ctx, apply)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group__renderDashedStroke"></a><span class="functionIcon">_renderDashedStroke</span><span class="parameters">(ctx, apply)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">ctx</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">apply</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group__renderFill"></a><span class="functionIcon">_renderFill</span><span class="parameters">(ctx, apply)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -323,9 +367,9 @@ by combining the shape&#39;s matrix with its parent&#39;s matrix</p>
         </table>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group__renderShape"></a><span class="functionIcon">_renderShape</span><span class="parameters">(ctx)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group__renderShape"></a><span class="functionIcon">_renderShape</span><span class="parameters">(ctx)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -343,9 +387,9 @@ by combining the shape&#39;s matrix with its parent&#39;s matrix</p>
         </table>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group__renderStroke"></a><span class="functionIcon">_renderStroke</span><span class="parameters">(ctx, apply)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group__renderStroke"></a><span class="functionIcon">_renderStroke</span><span class="parameters">(ctx, apply)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -369,9 +413,9 @@ by combining the shape&#39;s matrix with its parent&#39;s matrix</p>
         </table>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group__renderTransform"></a><span class="functionIcon">_renderTransform</span><span class="parameters">(ctx)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group__renderTransform"></a><span class="functionIcon">_renderTransform</span><span class="parameters">(ctx)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -389,9 +433,9 @@ by combining the shape&#39;s matrix with its parent&#39;s matrix</p>
         </table>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group__setParent"></a><span class="functionIcon">_setParent</span><span class="parameters">(parent, matrix)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group__setParent"></a><span class="functionIcon">_setParent</span><span class="parameters">(parent, matrix)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>sets a parent</p>
 </div>
@@ -421,9 +465,9 @@ or dojox/gfx.Group)</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field private inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group__updateParentMatrix"></a><span class="functionIcon">_updateParentMatrix</span><span class="parameters">(matrix)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group__updateParentMatrix"></a><span class="functionIcon">_updateParentMatrix</span><span class="parameters">(matrix)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>updates the parent matrix with new matrix</p>
 </div>
@@ -444,9 +488,9 @@ or dojox/gfx.Group)</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_add"></a><span class="functionIcon">add</span><span class="parameters">(shape)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_add"></a><span class="functionIcon">add</span><span class="parameters">(shape)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -465,9 +509,9 @@ or dojox/gfx.Group)</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_applyLeftTransform"></a><span class="functionIcon">applyLeftTransform</span><span class="parameters">(matrix)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_applyLeftTransform"></a><span class="functionIcon">applyLeftTransform</span><span class="parameters">(matrix)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>multiplies the existing matrix with an argument on left side
 (matrix * this.matrix)</p>
@@ -494,9 +538,9 @@ constructor for a list of acceptable arguments)</p>
 </div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_applyRightTransform"></a><span class="functionIcon">applyRightTransform</span><span class="parameters">(matrix)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_applyRightTransform"></a><span class="functionIcon">applyRightTransform</span><span class="parameters">(matrix)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>multiplies the existing matrix with an argument on right side
 (this.matrix * matrix)</p>
@@ -523,9 +567,9 @@ constructor for a list of acceptable arguments)</p>
 </div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_applyTransform"></a><span class="functionIcon">applyTransform</span><span class="parameters">(matrix)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_applyTransform"></a><span class="functionIcon">applyTransform</span><span class="parameters">(matrix)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>a shortcut for dojox/gfx/shape.Shape.applyRightTransform</p>
 </div>
@@ -550,31 +594,44 @@ constructor for a list of acceptable arguments)</p>
 </div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_clear"></a><span class="functionIcon">clear</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_clear"></a><span class="functionIcon">clear</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"></div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_connect"></a><span class="functionIcon">connect</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_closeBatch"></a><span class="functionIcon">closeBatch</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>submits the current batch.</p>
+</div>
+        <div class="jsdoc-full-summary"><p>On canvas, this method flushes the pending redraws queue.</p>
+</div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">function</span></div>
+        <div class="jsdoc-return-description"><p>submits the current batch.</p>
+</div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_connect"></a><span class="functionIcon">connect</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_createCircle"></a><span class="functionIcon">createCircle</span><span class="parameters">(circle)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_createCircle"></a><span class="functionIcon">createCircle</span><span class="parameters">(circle)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>creates a circle shape</p>
 </div>
@@ -595,9 +652,9 @@ constructor for a list of acceptable arguments)</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_createEllipse"></a><span class="functionIcon">createEllipse</span><span class="parameters">(ellipse)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_createEllipse"></a><span class="functionIcon">createEllipse</span><span class="parameters">(ellipse)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>creates an ellipse shape</p>
 </div>
@@ -618,18 +675,18 @@ constructor for a list of acceptable arguments)</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_createGroup"></a><span class="functionIcon">createGroup</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_createGroup"></a><span class="functionIcon">createGroup</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>creates a group shape</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_createImage"></a><span class="functionIcon">createImage</span><span class="parameters">(image)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_createImage"></a><span class="functionIcon">createImage</span><span class="parameters">(image)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>creates a image shape</p>
 </div>
@@ -650,9 +707,9 @@ constructor for a list of acceptable arguments)</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_createLine"></a><span class="functionIcon">createLine</span><span class="parameters">(line)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_createLine"></a><span class="functionIcon">createLine</span><span class="parameters">(line)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>creates a line shape</p>
 </div>
@@ -673,9 +730,9 @@ constructor for a list of acceptable arguments)</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_createObject"></a><span class="functionIcon">createObject</span><span class="parameters">(shapeType, rawShape)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_createObject"></a><span class="functionIcon">createObject</span><span class="parameters">(shapeType, rawShape)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>creates an instance of the passed shapeType class</p>
 </div>
@@ -703,9 +760,9 @@ constructor for a list of acceptable arguments)</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">instance</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_createPath"></a><span class="functionIcon">createPath</span><span class="parameters">(path)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_createPath"></a><span class="functionIcon">createPath</span><span class="parameters">(path)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>creates a path shape</p>
 </div>
@@ -726,9 +783,9 @@ constructor for a list of acceptable arguments)</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_createPolyline"></a><span class="functionIcon">createPolyline</span><span class="parameters">(points)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_createPolyline"></a><span class="functionIcon">createPolyline</span><span class="parameters">(points)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>creates a polyline/polygon shape</p>
 </div>
@@ -750,9 +807,9 @@ or an Array of points</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_createRect"></a><span class="functionIcon">createRect</span><span class="parameters">(rect)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_createRect"></a><span class="functionIcon">createRect</span><span class="parameters">(rect)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>creates a rectangle shape</p>
 </div>
@@ -773,9 +830,9 @@ or an Array of points</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_createShape"></a><span class="functionIcon">createShape</span><span class="parameters">(shape)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_createShape"></a><span class="functionIcon">createShape</span><span class="parameters">(shape)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>creates a shape object based on its type; it is meant to be used
 by group-like objects</p>
@@ -800,9 +857,9 @@ a fully instantiated surface-specific Shape object</p>
 </div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_createText"></a><span class="functionIcon">createText</span><span class="parameters">(text)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_createText"></a><span class="functionIcon">createText</span><span class="parameters">(text)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>creates a text shape</p>
 </div>
@@ -823,9 +880,9 @@ a fully instantiated surface-specific Shape object</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_createTextPath"></a><span class="functionIcon">createTextPath</span><span class="parameters">(text)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_createTextPath"></a><span class="functionIcon">createTextPath</span><span class="parameters">(text)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>creates a text shape</p>
 </div>
@@ -846,50 +903,50 @@ a fully instantiated surface-specific Shape object</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_destroy"></a><span class="functionIcon">destroy</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_destroy"></a><span class="functionIcon">destroy</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Releases all internal resources owned by this shape. Once this method has been called,
 the instance is considered disposed and should not be used anymore.</p>
 </div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_disconnect"></a><span class="functionIcon">disconnect</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_disconnect"></a><span class="functionIcon">disconnect</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_getBoundingBox"></a><span class="functionIcon">getBoundingBox</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_getBoundingBox"></a><span class="functionIcon">getBoundingBox</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Returns the bounding box Rectangle for this shape.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">null</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_getClip"></a><span class="functionIcon">getClip</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_getClip"></a><span class="functionIcon">getClip</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"></div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_getEventSource"></a><span class="functionIcon">getEventSource</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_getEventSource"></a><span class="functionIcon">getEventSource</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"></div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">null</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_getFill"></a><span class="functionIcon">getFill</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_getFill"></a><span class="functionIcon">getFill</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Returns the current fill object or null
 (see dojox/gfx.defaultLinearGradient,
@@ -900,9 +957,9 @@ or dojo/Color)</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_getNode"></a><span class="functionIcon">getNode</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_getNode"></a><span class="functionIcon">getNode</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Different graphics rendering subsystems implement shapes in different ways.  This
 method provides access to the underlying graphics subsystem object.  Clients calling this
@@ -913,9 +970,9 @@ Returns the underlying graphics Node, or null if no underlying graphics node is 
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_getParent"></a><span class="functionIcon">getParent</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_getParent"></a><span class="functionIcon">getParent</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Returns the parent Shape, Group or null if this Shape is unparented.
 (see dojox/gfx/shape.Surface,
@@ -924,9 +981,9 @@ or dojox/gfx.Group)</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_getShape"></a><span class="functionIcon">getShape</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_getShape"></a><span class="functionIcon">getShape</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>returns the current Shape object or null
 (see dojox/gfx.defaultPath,
@@ -940,9 +997,9 @@ or dojox/gfx.defaultImage)</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_getStroke"></a><span class="functionIcon">getStroke</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_getStroke"></a><span class="functionIcon">getStroke</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Returns the current stroke object or null
 (see dojox/gfx.defaultStroke)</p>
@@ -950,18 +1007,18 @@ or dojox/gfx.defaultImage)</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_getTransform"></a><span class="functionIcon">getTransform</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_getTransform"></a><span class="functionIcon">getTransform</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Returns the current transformation matrix applied to this Shape or null</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_getTransformedBoundingBox"></a><span class="functionIcon">getTransformedBoundingBox</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_getTransformedBoundingBox"></a><span class="functionIcon">getTransformedBoundingBox</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>returns an array of four points or null
 four points represent four corners of the untransformed bounding box</p>
@@ -969,9 +1026,9 @@ four points represent four corners of the untransformed bounding box</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">null | Array</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_moveToBack"></a><span class="functionIcon">moveToBack</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_moveToBack"></a><span class="functionIcon">moveToBack</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>moves a shape to back of its parent&#39;s list of shapes</p>
 </div>
@@ -980,9 +1037,9 @@ four points represent four corners of the untransformed bounding box</p>
 </div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_moveToFront"></a><span class="functionIcon">moveToFront</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_moveToFront"></a><span class="functionIcon">moveToFront</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>moves a shape to front of its parent&#39;s list of shapes</p>
 </div>
@@ -991,9 +1048,32 @@ four points represent four corners of the untransformed bounding box</p>
 </div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_remove"></a><span class="functionIcon">remove</span><span class="parameters">(shape, silently)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_on"></a><span class="functionIcon">on</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_openBatch"></a><span class="functionIcon">openBatch</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>starts a new batch, subsequent new child shapes will be held in
+the batch instead of appending to the container directly.</p>
+</div>
+        <div class="jsdoc-full-summary"><p>Because the canvas renderer has no DOM hierarchy, the canvas implementation differs
+such that it suspends the repaint requests for this container until the current batch is closed by a call to closeBatch().</p>
+</div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">function</span></div>
+        <div class="jsdoc-return-description"><p>starts a new batch, subsequent new child shapes will be held in
+the batch instead of appending to the container directly.</p>
+</div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_remove"></a><span class="functionIcon">remove</span><span class="parameters">(shape, silently)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -1018,9 +1098,9 @@ four points represent four corners of the untransformed bounding box</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_removeShape"></a><span class="functionIcon">removeShape</span><span class="parameters">(silently)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_removeShape"></a><span class="functionIcon">removeShape</span><span class="parameters">(silently)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>removes the shape from its parent&#39;s list of shapes</p>
 </div>
@@ -1043,9 +1123,9 @@ four points represent four corners of the untransformed bounding box</p>
 </div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_setClip"></a><span class="functionIcon">setClip</span><span class="parameters">(clip)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_setClip"></a><span class="functionIcon">setClip</span><span class="parameters">(clip)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/canvas" class="jsdoc-link">dojox/gfx/canvas</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -1064,9 +1144,9 @@ four points represent four corners of the untransformed bounding box</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">function</span></div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_setFill"></a><span class="functionIcon">setFill</span><span class="parameters">(fill)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_setFill"></a><span class="functionIcon">setFill</span><span class="parameters">(fill)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>sets a fill object
 (the default implementation simply ignores it)</p>
@@ -1095,9 +1175,9 @@ or dojo/_base/Color)</p>
 </div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_setShape"></a><span class="functionIcon">setShape</span><span class="parameters">(shape)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_setShape"></a><span class="functionIcon">setShape</span><span class="parameters">(shape)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>sets a shape object
 (the default implementation simply ignores it)</p>
@@ -1129,9 +1209,9 @@ or dojox/gfx.defaultImage)</p>
 </div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_setStroke"></a><span class="functionIcon">setStroke</span><span class="parameters">(stroke)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_setStroke"></a><span class="functionIcon">setStroke</span><span class="parameters">(stroke)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>sets a stroke object
 (the default implementation simply ignores it)</p>
@@ -1157,9 +1237,9 @@ or dojox/gfx.defaultImage)</p>
 </div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_canvas_attach_Group_setTransform"></a><span class="functionIcon">setTransform</span><span class="parameters">(matrix)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_canvas_attach_Group_setTransform"></a><span class="functionIcon">setTransform</span><span class="parameters">(matrix)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/shape" class="jsdoc-link">dojox/gfx/shape</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>sets a transformation matrix</p>
 </div>
@@ -1183,4 +1263,4 @@ constructor for a list of acceptable arguments)</p>
       </div>
     </div>
   </div>
-</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/gfx/canvas_attach.Group" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/gfx/canvas_attach.Group" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

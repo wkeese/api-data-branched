@@ -3,11 +3,11 @@
   // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
   // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
   // Also, when this page is loaded via XHR this script block should be ignored.
-  location = "/api/?qs=1.8/dojo/_base/connect" + location.hash;
+  location = "/api/?qs=1.9/dojo/_base/connect" + location.hash;
   
 </script>
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/_base/connect.html</div>
-<h1 class="objectIcon36 jsdoc-title">dojo/_base/connect<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/_base/connect.html</div>
+<h1 class="objectIcon36 jsdoc-title">dojo/_base/connect<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>This module defines the dojo.connect API.
 This modules also provides keyboard event handling helpers.
 This module exports an extension event for emulating Firefox&#39;s keypress handling.
@@ -16,29 +16,29 @@ is not recommended. WebKit and IE uses an alternate keypress handling (only
 firing for printable characters, to distinguish from keydown events), and most
 consider the WebKit/IE behavior more desirable.</p>
 </div>
-<p>See the <a href="/reference-guide/1.8/dojo/_base/connect.html" target="_blank">dojo/_base/connect reference documentation</a> for more information.</p>
+<p>See the <a href="/reference-guide/1.9/dojo/_base/connect.html" target="_blank">dojo/_base/connect reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-field-list">
     <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="functionIcon private"><a href="#1_8dojo__base_connect__keypress" class="inline-link"> _keypress</a><span class="parameters">(</span>object, listener) <span></span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojo__base_connect__keypress" class="inline-link"> _keypress</a><span class="parameters">(</span>object, listener) <span></span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_connect_connect" class="inline-link"> connect</a><span class="parameters">(</span>obj, event, context, method, dontFix) <span>dojo.connect is a deprecated event handling and delegation method in
+        <li class="functionIcon "><a href="#1_9dojo__base_connect_connect" class="inline-link"> connect</a><span class="parameters">(</span>obj, event, context, method, dontFix) <span>dojo.connect is a deprecated event handling and delegation method in
 Dojo.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_connect_connectPublisher" class="inline-link"> connectPublisher</a><span class="parameters">(</span>topic, obj, event) <span>Ensure that every time obj.event() is called, a message is published
+        <li class="functionIcon "><a href="#1_9dojo__base_connect_connectPublisher" class="inline-link"> connectPublisher</a><span class="parameters">(</span>topic, obj, event) <span>Ensure that every time obj.event() is called, a message is published
 on the topic.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_connect_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>handle) <span>Remove a link created by dojo.connect.</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_connect_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>handle) <span>Remove a link created by dojo.connect.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_connect_isCopyKey" class="inline-link"> isCopyKey</a><span class="parameters">(</span>e) <span>Checks an event for the copy key (meta on Mac, and ctrl anywhere else)</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_connect_isCopyKey" class="inline-link"> isCopyKey</a><span class="parameters">(</span>e) <span>Checks an event for the copy key (meta on Mac, and ctrl anywhere else)</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_connect_publish" class="inline-link"> publish</a><span class="parameters">(</span>topic, args) <span>Invoke all listener method subscribed to topic.</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_connect_publish" class="inline-link"> publish</a><span class="parameters">(</span>topic, args) <span>Invoke all listener method subscribed to topic.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_connect_subscribe" class="inline-link"> subscribe</a><span class="parameters">(</span>topic, context, method) <span>Attach a listener to a named topic.</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_connect_subscribe" class="inline-link"> subscribe</a><span class="parameters">(</span>topic, context, method) <span>Attach a listener to a named topic.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_connect_unsubscribe" class="inline-link"> unsubscribe</a><span class="parameters">(</span>handle) <span>Remove a topic listener.</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_connect_unsubscribe" class="inline-link"> unsubscribe</a><span class="parameters">(</span>handle) <span>Remove a topic listener.</span>
         </li>
       </ul>
     </div>
@@ -49,9 +49,9 @@ on the topic.</span>
     <h2>Methods</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojo__base_connect__keypress"></a><span class="functionIcon">_keypress</span><span class="parameters">(object, listener)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojo__base_connect__keypress"></a><span class="functionIcon">_keypress</span><span class="parameters">(object, listener)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/connect" class="jsdoc-link">dojo/_base/connect</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/connect" class="jsdoc-link">dojo/_base/connect</a>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -76,9 +76,9 @@ on the topic.</span>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_connect_connect"></a><span class="functionIcon">connect</span><span class="parameters">(obj, event, context, method, dontFix)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_connect_connect"></a><span class="functionIcon">connect</span><span class="parameters">(obj, event, context, method, dontFix)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/connect" class="jsdoc-link">dojo/_base/connect</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/connect" class="jsdoc-link">dojo/_base/connect</a>
         </div>
         <div class="jsdoc-full-summary"><p><code>dojo.connect</code> is a deprecated event handling and delegation method in
 Dojo. It allows one function to &quot;listen in&quot; on the execution of
@@ -241,9 +241,9 @@ dojo.connect(&quot;globalEvent&quot;, globalHandler); // same</code></pre>
         </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_connect_connectPublisher"></a><span class="functionIcon">connectPublisher</span><span class="parameters">(topic, obj, event)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_connect_connectPublisher"></a><span class="functionIcon">connectPublisher</span><span class="parameters">(topic, obj, event)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/connect" class="jsdoc-link">dojo/_base/connect</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/connect" class="jsdoc-link">dojo/_base/connect</a>
         </div>
         <div class="jsdoc-full-summary"><p>Ensure that every time obj.event() is called, a message is published
 on the topic. Returns a handle which can be passed to
@@ -291,9 +291,9 @@ I.e. identifies a property obj[event].</p>
         </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_connect_disconnect"></a><span class="functionIcon">disconnect</span><span class="parameters">(handle)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_connect_disconnect"></a><span class="functionIcon">disconnect</span><span class="parameters">(handle)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/connect" class="jsdoc-link">dojo/_base/connect</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/connect" class="jsdoc-link">dojo/_base/connect</a>
         </div>
         <div class="jsdoc-full-summary"><p>Remove a link created by dojo.connect.</p>
 </div>
@@ -315,9 +315,9 @@ I.e. identifies a property obj[event].</p>
         </table>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_connect_isCopyKey"></a><span class="functionIcon">isCopyKey</span><span class="parameters">(e)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_connect_isCopyKey"></a><span class="functionIcon">isCopyKey</span><span class="parameters">(e)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/connect" class="jsdoc-link">dojo/_base/connect</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/connect" class="jsdoc-link">dojo/_base/connect</a>
         </div>
         <div class="jsdoc-full-summary"><p>Checks an event for the copy key (meta on Mac, and ctrl anywhere else)</p>
 </div>
@@ -338,9 +338,9 @@ I.e. identifies a property obj[event].</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_connect_publish"></a><span class="functionIcon">publish</span><span class="parameters">(topic, args)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_connect_publish"></a><span class="functionIcon">publish</span><span class="parameters">(topic, args)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/connect" class="jsdoc-link">dojo/_base/connect</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/connect" class="jsdoc-link">dojo/_base/connect</a>
         </div>
         <div class="jsdoc-full-summary"><p>Invoke all listener method subscribed to topic.</p>
 </div>
@@ -378,9 +378,9 @@ dojo.publish(&quot;alerts&quot;, [ &quot;read this&quot;, &quot;hello world&quot
         </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_connect_subscribe"></a><span class="functionIcon">subscribe</span><span class="parameters">(topic, context, method)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_connect_subscribe"></a><span class="functionIcon">subscribe</span><span class="parameters">(topic, context, method)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/connect" class="jsdoc-link">dojo/_base/connect</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/connect" class="jsdoc-link">dojo/_base/connect</a>
         </div>
         <div class="jsdoc-full-summary"><p>Attach a listener to a named topic. The listener function is invoked whenever the
 named topic is published (see: dojo.publish).
@@ -427,9 +427,9 @@ dojo.publish(&quot;alerts&quot;, [ &quot;read this&quot;, &quot;hello world&quot
         </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_connect_unsubscribe"></a><span class="functionIcon">unsubscribe</span><span class="parameters">(handle)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_connect_unsubscribe"></a><span class="functionIcon">unsubscribe</span><span class="parameters">(handle)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/connect" class="jsdoc-link">dojo/_base/connect</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/connect" class="jsdoc-link">dojo/_base/connect</a>
         </div>
         <div class="jsdoc-full-summary"><p>Remove a topic listener.</p>
 </div>
@@ -459,4 +459,4 @@ dojo.unsubscribe(alerter);</code></pre>
       </div>
     </div>
   </div>
-</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojo/_base/connect" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojo/_base/connect" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

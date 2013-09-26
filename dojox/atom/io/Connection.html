@@ -3,11 +3,11 @@
   // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
   // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
   // Also, when this page is loaded via XHR this script block should be ignored.
-  location = "/api/?qs=1.8/dojox/atom/io/Connection" + location.hash;
+  location = "/api/?qs=1.9/dojox/atom/io/Connection" + location.hash;
   
 </script>
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/atom/io/Connection.html</div>
-<h1 class="constructorIcon36 jsdoc-title">dojox/atom/io/Connection<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/atom/io/Connection.html</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/atom/io/Connection<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>This object implements a transport layer for working with ATOM feeds and ATOM publishing protocols.</p>
 </div>
 <div class="jsdoc-full-summary"><p>This object implements a transport layer for working with ATOM feeds and ATOM publishing protocols.
@@ -18,7 +18,7 @@ deleted, and modified.  It also provides access to the introspection data.</p>
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new Connection<span class="parameters">(sync,preventCache);</span></div>
 </div>
-<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/atom/io/Connection">dojox/atom/io/Connection</a></div>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.9/dojox/atom/io/Connection">dojox/atom/io/Connection</a></div>
 <div class="jsdoc-summary"><p>initializer</p>
 </div>
 <table class="jsdoc-parameters">
@@ -40,36 +40,36 @@ deleted, and modified.  It also provides access to the introspection data.</p>
     </td>
   </tr>
 </table>
-<p>See the <a href="/reference-guide/1.8/dojox/atom/io/Connection.html" target="_blank">dojox/atom/io/Connection reference documentation</a> for more information.</p>
+<p>See the <a href="/reference-guide/1.9/dojox/atom/io/Connection.html" target="_blank">dojox/atom/io/Connection reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-field-list">
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="booleanIcon"><a href="#1_8dojox_atom_io_Connection_alertsEnabled" class="inline-link"> alertsEnabled </a><span></span>
+        <li class="booleanIcon"><a href="#1_9dojox_atom_io_Connection_alertsEnabled" class="inline-link"> alertsEnabled </a><span></span>
         </li>
-        <li class="booleanIcon"><a href="#1_8dojox_atom_io_Connection_preventCache" class="inline-link"> preventCache </a><span></span>
+        <li class="booleanIcon"><a href="#1_9dojox_atom_io_Connection_preventCache" class="inline-link"> preventCache </a><span></span>
         </li>
       </ul>
     </div>
     <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="functionIcon private"><a href="#1_8dojox_atom_io_Connection__getXmlDoc" class="inline-link"> _getXmlDoc</a><span class="parameters">(</span>url, nodeName, newNode, namespace, callback, errorCallback, scope) <span>Internal Function to retrieve an XML document and pass the results to a callback.</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojox_atom_io_Connection__getXmlDoc" class="inline-link"> _getXmlDoc</a><span class="parameters">(</span>url, nodeName, newNode, namespace, callback, errorCallback, scope) <span>Internal Function to retrieve an XML document and pass the results to a callback.</span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_atom_io_Connection_addEntry" class="inline-link"> addEntry</a><span class="parameters">(</span>entry, url, callback, errorCallback, retrieveEntry, scope) <span>Function to add a new ATOM entry by posting the new entry via APP.</span>
+        <li class="functionIcon "><a href="#1_9dojox_atom_io_Connection_addEntry" class="inline-link"> addEntry</a><span class="parameters">(</span>entry, url, callback, errorCallback, retrieveEntry, scope) <span>Function to add a new ATOM entry by posting the new entry via APP.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_atom_io_Connection_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>sync, preventCache) <span>initializer</span>
+        <li class="functionIcon "><a href="#1_9dojox_atom_io_Connection_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>sync, preventCache) <span>initializer</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_atom_io_Connection_deleteEntry" class="inline-link"> deleteEntry</a><span class="parameters">(</span>entry, callback, errorCallback, xmethod, scope) <span>Function to delete a specific ATOM entry via APP.</span>
+        <li class="functionIcon "><a href="#1_9dojox_atom_io_Connection_deleteEntry" class="inline-link"> deleteEntry</a><span class="parameters">(</span>entry, callback, errorCallback, xmethod, scope) <span>Function to delete a specific ATOM entry via APP.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_atom_io_Connection_getEntry" class="inline-link"> getEntry</a><span class="parameters">(</span>url, callback, errorCallback, scope) <span>Function to retrieve a single entry from an ATOM feed from the given URL.</span>
+        <li class="functionIcon "><a href="#1_9dojox_atom_io_Connection_getEntry" class="inline-link"> getEntry</a><span class="parameters">(</span>url, callback, errorCallback, scope) <span>Function to retrieve a single entry from an ATOM feed from the given URL.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_atom_io_Connection_getFeed" class="inline-link"> getFeed</a><span class="parameters">(</span>url, callback, errorCallback, scope) <span>Function to obtain a s specific ATOM feed from a given ATOM Feed url.</span>
+        <li class="functionIcon "><a href="#1_9dojox_atom_io_Connection_getFeed" class="inline-link"> getFeed</a><span class="parameters">(</span>url, callback, errorCallback, scope) <span>Function to obtain a s specific ATOM feed from a given ATOM Feed url.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_atom_io_Connection_getService" class="inline-link"> getService</a><span class="parameters">(</span>url, callback, errorCallback, scope) <span>Function to retrieve an introspection document from the given URL.</span>
+        <li class="functionIcon "><a href="#1_9dojox_atom_io_Connection_getService" class="inline-link"> getService</a><span class="parameters">(</span>url, callback, errorCallback, scope) <span>Function to retrieve an introspection document from the given URL.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_atom_io_Connection_updateEntry" class="inline-link"> updateEntry</a><span class="parameters">(</span>entry, callback, errorCallback, retrieveUpdated, xmethod, scope) <span>Function to update a specific ATOM entry by putting the new changes via APP.</span>
+        <li class="functionIcon "><a href="#1_9dojox_atom_io_Connection_updateEntry" class="inline-link"> updateEntry</a><span class="parameters">(</span>entry, callback, errorCallback, retrieveUpdated, xmethod, scope) <span>Function to update a specific ATOM entry by putting the new changes via APP.</span>
         </li>
       </ul>
     </div>
@@ -80,24 +80,24 @@ deleted, and modified.  It also provides access to the introspection data.</p>
     <h2>Properties</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_atom_io_Connection_alertsEnabled"></a><span class="booleanIcon">alertsEnabled</span>
+        <div class="jsdoc-title"><a name="1_9dojox_atom_io_Connection_alertsEnabled"></a><span class="booleanIcon">alertsEnabled</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/atom/io/Connection" class="jsdoc-link">dojox/atom/io/Connection</a>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/atom/io/Connection" class="jsdoc-link">dojox/atom/io/Connection</a>
         </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojox_atom_io_Connection_preventCache"></a><span class="booleanIcon">preventCache</span>
+        <div class="jsdoc-title"><a name="1_9dojox_atom_io_Connection_preventCache"></a><span class="booleanIcon">preventCache</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/atom/io/Connection" class="jsdoc-link">dojox/atom/io/Connection</a>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/atom/io/Connection" class="jsdoc-link">dojox/atom/io/Connection</a>
         </div>
       </div>
     </div>
     <h2>Methods</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_atom_io_Connection__getXmlDoc"></a><span class="functionIcon">_getXmlDoc</span><span class="parameters">(url, nodeName, newNode, namespace, callback, errorCallback, scope)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_atom_io_Connection__getXmlDoc"></a><span class="functionIcon">_getXmlDoc</span><span class="parameters">(url, nodeName, newNode, namespace, callback, errorCallback, scope)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/atom/io/Connection" class="jsdoc-link">dojox/atom/io/Connection</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/atom/io/Connection" class="jsdoc-link">dojox/atom/io/Connection</a>
         </div>
         <div class="jsdoc-full-summary"><p>Internal Function to retrieve an XML document and pass the results to a callback.</p>
 </div>
@@ -163,9 +163,9 @@ The callback should accept one parameter, the DOM of the parsed XML document.</p
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_atom_io_Connection_addEntry"></a><span class="functionIcon">addEntry</span><span class="parameters">(entry, url, callback, errorCallback, retrieveEntry, scope)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_atom_io_Connection_addEntry"></a><span class="functionIcon">addEntry</span><span class="parameters">(entry, url, callback, errorCallback, retrieveEntry, scope)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/atom/io/Connection" class="jsdoc-link">dojox/atom/io/Connection</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/atom/io/Connection" class="jsdoc-link">dojox/atom/io/Connection</a>
         </div>
         <div class="jsdoc-full-summary"><p>Function to add a new ATOM entry by posting the new entry via APP.</p>
 </div>
@@ -231,9 +231,9 @@ The scope to use for all callbacks.</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_atom_io_Connection_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(sync, preventCache)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_atom_io_Connection_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(sync, preventCache)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/atom/io/Connection" class="jsdoc-link">dojox/atom/io/Connection</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/atom/io/Connection" class="jsdoc-link">dojox/atom/io/Connection</a>
         </div>
         <div class="jsdoc-full-summary"><p>initializer</p>
 </div>
@@ -258,9 +258,9 @@ The scope to use for all callbacks.</p>
         </table>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_atom_io_Connection_deleteEntry"></a><span class="functionIcon">deleteEntry</span><span class="parameters">(entry, callback, errorCallback, xmethod, scope)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_atom_io_Connection_deleteEntry"></a><span class="functionIcon">deleteEntry</span><span class="parameters">(entry, callback, errorCallback, xmethod, scope)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/atom/io/Connection" class="jsdoc-link">dojox/atom/io/Connection</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/atom/io/Connection" class="jsdoc-link">dojox/atom/io/Connection</a>
         </div>
         <div class="jsdoc-full-summary"><p>Function to delete a specific ATOM entry via APP.</p>
 </div>
@@ -315,9 +315,9 @@ The callback is called only if the delete is successful.</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_atom_io_Connection_getEntry"></a><span class="functionIcon">getEntry</span><span class="parameters">(url, callback, errorCallback, scope)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_atom_io_Connection_getEntry"></a><span class="functionIcon">getEntry</span><span class="parameters">(url, callback, errorCallback, scope)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/atom/io/Connection" class="jsdoc-link">dojox/atom/io/Connection</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/atom/io/Connection" class="jsdoc-link">dojox/atom/io/Connection</a>
         </div>
         <div class="jsdoc-full-summary"><p>Function to retrieve a single entry from an ATOM feed from the given URL.</p>
 </div>
@@ -365,9 +365,9 @@ The callback should accept two parameters, the dojox.atom.io.model.Entry object 
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_atom_io_Connection_getFeed"></a><span class="functionIcon">getFeed</span><span class="parameters">(url, callback, errorCallback, scope)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_atom_io_Connection_getFeed"></a><span class="functionIcon">getFeed</span><span class="parameters">(url, callback, errorCallback, scope)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/atom/io/Connection" class="jsdoc-link">dojox/atom/io/Connection</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/atom/io/Connection" class="jsdoc-link">dojox/atom/io/Connection</a>
         </div>
         <div class="jsdoc-full-summary"><p>Function to obtain a s specific ATOM feed from a given ATOM Feed url.</p>
 </div>
@@ -416,9 +416,9 @@ The callback should accept two parameters:  The feed object and the original com
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_atom_io_Connection_getService"></a><span class="functionIcon">getService</span><span class="parameters">(url, callback, errorCallback, scope)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_atom_io_Connection_getService"></a><span class="functionIcon">getService</span><span class="parameters">(url, callback, errorCallback, scope)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/atom/io/Connection" class="jsdoc-link">dojox/atom/io/Connection</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/atom/io/Connection" class="jsdoc-link">dojox/atom/io/Connection</a>
         </div>
         <div class="jsdoc-full-summary"><p>Function to retrieve an introspection document from the given URL.</p>
 </div>
@@ -466,9 +466,9 @@ The callback should accept two parameters:  The introspection document object an
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_atom_io_Connection_updateEntry"></a><span class="functionIcon">updateEntry</span><span class="parameters">(entry, callback, errorCallback, retrieveUpdated, xmethod, scope)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_atom_io_Connection_updateEntry"></a><span class="functionIcon">updateEntry</span><span class="parameters">(entry, callback, errorCallback, retrieveUpdated, xmethod, scope)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/atom/io/Connection" class="jsdoc-link">dojox/atom/io/Connection</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/atom/io/Connection" class="jsdoc-link">dojox/atom/io/Connection</a>
         </div>
         <div class="jsdoc-full-summary"><p>Function to update a specific ATOM entry by putting the new changes via APP.</p>
 </div>
@@ -538,4 +538,4 @@ The scope to use for all callbacks.</p>
       </div>
     </div>
   </div>
-</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/atom/io/Connection" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/atom/io/Connection" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

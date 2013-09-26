@@ -3,11 +3,11 @@
   // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
   // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
   // Also, when this page is loaded via XHR this script block should be ignored.
-  location = "/api/?qs=1.8/dojo/_base/kernel.fx" + location.hash;
+  location = "/api/?qs=1.9/dojo/_base/kernel.fx" + location.hash;
   
 </script>
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/_base/kernel.fx.html</div>
-<h1 class="objectIcon36 jsdoc-title">dojo/_base/kernel.fx<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/_base/kernel.fx.html</div>
+<h1 class="objectIcon36 jsdoc-title">dojo/_base/kernel.fx<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>Effects library on top of Base animations</p>
 </div>
 <div class="jsdoc-children">
@@ -15,7 +15,7 @@
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="objectIcon"><a href="#1_8dojo__base_kernel_fx_easing" class="inline-link"> easing </a><span>Collection of easing functions to use beyond the default
+        <li class="objectIcon"><a href="#1_9dojo__base_kernel_fx_easing" class="inline-link"> easing </a><span>Collection of easing functions to use beyond the default
 dojo._defaultEasing function.</span><span title="Must manually require () dojo/fx/easing to access" class="jsdoc-extension"></span>
         </li>
       </ul>
@@ -23,17 +23,17 @@ dojo._defaultEasing function.</span><span title="Must manually require () dojo/f
     <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="functionIcon "><a href="#1_8dojo__base_kernel_fx_chain" class="inline-link"> chain</a><span class="parameters">(</span>animations) <span>Chain a list of dojo.Animations to run in sequence</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_kernel_fx_chain" class="inline-link"> chain</a><span class="parameters">(</span>animations) <span>Chain a list of dojo.Animations to run in sequence</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_kernel_fx_combine" class="inline-link"> combine</a><span class="parameters">(</span>animations) <span>Combine a list of dojo.Animations to run in parallel</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_kernel_fx_combine" class="inline-link"> combine</a><span class="parameters">(</span>animations) <span>Combine a list of dojo.Animations to run in parallel</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_kernel_fx_slideTo" class="inline-link"> slideTo</a><span class="parameters">(</span>args) <span>Slide a node to a new top/left position</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_kernel_fx_slideTo" class="inline-link"> slideTo</a><span class="parameters">(</span>args) <span>Slide a node to a new top/left position</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_kernel_fx_Toggler" class="inline-link"> Toggler</a><span class="parameters">(</span>) <span></span>
+        <li class="functionIcon "><a href="#1_9dojo__base_kernel_fx_Toggler" class="inline-link"> Toggler</a><span class="parameters">(</span>) <span></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_kernel_fx_wipeIn" class="inline-link"> wipeIn</a><span class="parameters">(</span>args) <span>Expand a node to it&#39;s natural height.</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_kernel_fx_wipeIn" class="inline-link"> wipeIn</a><span class="parameters">(</span>args) <span>Expand a node to it&#39;s natural height.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_kernel_fx_wipeOut" class="inline-link"> wipeOut</a><span class="parameters">(</span>args) <span>Shrink a node to nothing and hide it.</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_kernel_fx_wipeOut" class="inline-link"> wipeOut</a><span class="parameters">(</span>args) <span>Shrink a node to nothing and hide it.</span>
         </li>
       </ul>
     </div>
@@ -44,9 +44,9 @@ dojo._defaultEasing function.</span><span title="Must manually require () dojo/f
     <h2>Properties</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field public extension-module">
-        <div class="jsdoc-title"><a name="1_8dojo__base_kernel_fx_easing"></a><span class="objectIcon">easing</span>
+        <div class="jsdoc-title"><a name="1_9dojo__base_kernel_fx_easing"></a><span class="objectIcon">easing</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojo/fx/easing" class="jsdoc-link">dojo/fx/easing</a><span title="Must manually require () dojo/fx/easing to access" class="jsdoc-extension"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojo/fx/easing" class="jsdoc-link">dojo/fx/easing</a><span title="Must manually require () dojo/fx/easing to access" class="jsdoc-extension"></span>
         </div>
         <div class="jsdoc-summary"><p>Collection of easing functions to use beyond the default
 <code>dojo._defaultEasing</code> function.</p>
@@ -56,9 +56,9 @@ dojo._defaultEasing function.</span><span title="Must manually require () dojo/f
     <h2>Methods</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_kernel_fx_chain"></a><span class="functionIcon">chain</span><span class="parameters">(animations)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_kernel_fx_chain"></a><span class="functionIcon">chain</span><span class="parameters">(animations)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/fx" class="jsdoc-link">dojo/fx</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/fx" class="jsdoc-link">dojo/fx</a>
         </div>
         <div class="jsdoc-full-summary"><p>Chain a list of <code>dojo.Animation</code>s to run in sequence
 </p>
@@ -99,9 +99,9 @@ not the individual animations within)
         </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_kernel_fx_combine"></a><span class="functionIcon">combine</span><span class="parameters">(animations)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_kernel_fx_combine"></a><span class="functionIcon">combine</span><span class="parameters">(animations)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/fx" class="jsdoc-link">dojo/fx</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/fx" class="jsdoc-link">dojo/fx</a>
         </div>
         <div class="jsdoc-full-summary"><p>Combine a list of <code>dojo.Animation</code>s to run in parallel
 </p>
@@ -145,18 +145,18 @@ animation, firing standard animation events.
     dojo.fadeIn({ node: n, duration:700 }),
     dojo.fadeOut({ node: otherNode, duration: 300 })
 ]);
-dojo.connect(anim, &quot;onEnd&quot;, function(){
+aspect.after(anim, &quot;onEnd&quot;, function(){
     // overall animation is done.
-});
+}, true);
 anim.play(); // play the animation</code></pre>
 
           </div>
         </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_kernel_fx_slideTo"></a><span class="functionIcon">slideTo</span><span class="parameters">(args)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_kernel_fx_slideTo"></a><span class="functionIcon">slideTo</span><span class="parameters">(args)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/fx" class="jsdoc-link">dojo/fx</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/fx" class="jsdoc-link">dojo/fx</a>
         </div>
         <div class="jsdoc-full-summary"><p>Slide a node to a new top/left position
 </p>
@@ -193,16 +193,16 @@ are <code>top</code> and <code>left</code>, which indicate the new position to s
         </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_kernel_fx_Toggler"></a><span class="functionIcon">Toggler</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_kernel_fx_Toggler"></a><span class="functionIcon">Toggler</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/fx/Toggler" class="jsdoc-link">dojo/fx/Toggler</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/fx/Toggler" class="jsdoc-link">dojo/fx/Toggler</a>
         </div>
         <div class="jsdoc-full-summary"></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_kernel_fx_wipeIn"></a><span class="functionIcon">wipeIn</span><span class="parameters">(args)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_kernel_fx_wipeIn"></a><span class="functionIcon">wipeIn</span><span class="parameters">(args)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/fx" class="jsdoc-link">dojo/fx</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/fx" class="jsdoc-link">dojo/fx</a>
         </div>
         <div class="jsdoc-full-summary"><p>Expand a node to it&#39;s natural height.
 </p>
@@ -241,9 +241,9 @@ Node must have no margin/border/padding.
         </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_kernel_fx_wipeOut"></a><span class="functionIcon">wipeOut</span><span class="parameters">(args)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_kernel_fx_wipeOut"></a><span class="functionIcon">wipeOut</span><span class="parameters">(args)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/fx" class="jsdoc-link">dojo/fx</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/fx" class="jsdoc-link">dojo/fx</a>
         </div>
         <div class="jsdoc-full-summary"><p>Shrink a node to nothing and hide it.
 </p>
@@ -279,4 +279,4 @@ from it&#39;s current height to 1px, and then hide it.
       </div>
     </div>
   </div>
-</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojo/_base/kernel.fx" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojo/_base/kernel.fx" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

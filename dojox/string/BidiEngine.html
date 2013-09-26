@@ -3,11 +3,11 @@
   // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
   // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
   // Also, when this page is loaded via XHR this script block should be ignored.
-  location = "/api/?qs=1.8/dojox/string/BidiEngine" + location.hash;
+  location = "/api/?qs=1.9/dojox/string/BidiEngine" + location.hash;
   
 </script>
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/string/BidiEngine.html</div>
-<h1 class="constructorIcon36 jsdoc-title">dojox/string/BidiEngine<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/string/BidiEngine.html</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/string/BidiEngine<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
 <div class="jsdoc-full-summary"><p>This class provides a bidi transformation engine, i.e.
 functions for reordering and shaping bidi text.</p>
 </div>
@@ -53,18 +53,18 @@ responsible for rendering the text is not leveraging Unicode Bidi Algorithm impl
 <li>No support for code pages (currently only UTF-8 is supported. Ideally we should convert from any code page to UTF-8).</li>
 </ol>
 </div>
-<p>See the <a href="/reference-guide/1.8/dojox/string.html" target="_blank">dojox/string/BidiEngine reference documentation</a> for more information.</p>
+<p>See the <a href="/reference-guide/1.9/dojox/string.html" target="_blank">dojox/string/BidiEngine reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-field-list">
     <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="functionIcon "><a href="#1_8dojox_string_BidiEngine_bidiTransform" class="inline-link"> bidiTransform</a><span class="parameters">(</span>text, formatIn, formatOut) <span>Central public API for Bidi engine.</span>
+        <li class="functionIcon "><a href="#1_9dojox_string_BidiEngine_bidiTransform" class="inline-link"> bidiTransform</a><span class="parameters">(</span>text, formatIn, formatOut) <span>Central public API for Bidi engine.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_string_BidiEngine_checkContextual" class="inline-link"> checkContextual</a><span class="parameters">(</span>text) <span>Determine the base direction of a bidi text according
+        <li class="functionIcon "><a href="#1_9dojox_string_BidiEngine_checkContextual" class="inline-link"> checkContextual</a><span class="parameters">(</span>text) <span>Determine the base direction of a bidi text according
 to its first strong directional character.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_string_BidiEngine_hasBidiChar" class="inline-link"> hasBidiChar</a><span class="parameters">(</span>text) <span>Return true if text contains RTL directed character.</span>
+        <li class="functionIcon "><a href="#1_9dojox_string_BidiEngine_hasBidiChar" class="inline-link"> hasBidiChar</a><span class="parameters">(</span>text) <span>Return true if text contains RTL directed character.</span>
         </li>
       </ul>
     </div>
@@ -75,9 +75,9 @@ to its first strong directional character.</span>
     <h2>Methods</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_string_BidiEngine_bidiTransform"></a><span class="functionIcon">bidiTransform</span><span class="parameters">(text, formatIn, formatOut)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_string_BidiEngine_bidiTransform"></a><span class="functionIcon">bidiTransform</span><span class="parameters">(text, formatIn, formatOut)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/string/BidiEngine" class="jsdoc-link">dojox/string/BidiEngine</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/string/BidiEngine" class="jsdoc-link">dojox/string/BidiEngine</a>
         </div>
         <div class="jsdoc-full-summary"><p>Central public API for Bidi engine. Transforms the text according to formatIn, formatOut parameters.
 If formatIn or formatOut parametrs are not valid throws an exception.</p>
@@ -215,9 +215,9 @@ Throws an exception if the bidi layout strings are not valid.</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_string_BidiEngine_checkContextual"></a><span class="functionIcon">checkContextual</span><span class="parameters">(text)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_string_BidiEngine_checkContextual"></a><span class="functionIcon">checkContextual</span><span class="parameters">(text)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/string/BidiEngine" class="jsdoc-link">dojox/string/BidiEngine</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/string/BidiEngine" class="jsdoc-link">dojox/string/BidiEngine</a>
         </div>
         <div class="jsdoc-full-summary"><p>Determine the base direction of a bidi text according
 to its first strong directional character.</p>
@@ -244,9 +244,9 @@ document dir property.</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_string_BidiEngine_hasBidiChar"></a><span class="functionIcon">hasBidiChar</span><span class="parameters">(text)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_string_BidiEngine_hasBidiChar"></a><span class="functionIcon">hasBidiChar</span><span class="parameters">(text)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/string/BidiEngine" class="jsdoc-link">dojox/string/BidiEngine</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/string/BidiEngine" class="jsdoc-link">dojox/string/BidiEngine</a>
         </div>
         <div class="jsdoc-full-summary"><p>Return true if text contains RTL directed character.</p>
 </div>
@@ -276,4 +276,4 @@ false - otherwise. </p>
       </div>
     </div>
   </div>
-</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/string/BidiEngine" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/string/BidiEngine" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

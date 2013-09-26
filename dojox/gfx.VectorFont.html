@@ -3,12 +3,12 @@
   // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
   // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
   // Also, when this page is loaded via XHR this script block should be ignored.
-  location = "/api/?qs=1.8/dojox/gfx.VectorFont" + location.hash;
+  location = "/api/?qs=1.9/dojox/gfx.VectorFont" + location.hash;
   
 </script>
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/gfx.VectorFont.html</div>
-<h1 class="constructorIcon36 jsdoc-title">dojox/gfx.VectorFont<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
-<div class="jsdoc-full-summary"><p>An implementation of the SVG Font 1.1 spec, using <a class="jsdoc-link" href="/api/1.8/dojox/gfx">dojox/gfx</a>.
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojox/gfx.VectorFont.html</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/gfx.VectorFont<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
+<div class="jsdoc-full-summary"><p>An implementation of the SVG Font 1.1 spec, using <a class="jsdoc-link" href="/api/1.9/dojox/gfx">dojox/gfx</a>.
 
 </p>
 <p>Basic interface:
@@ -22,7 +22,7 @@ surface||group.createVectorText(text)
 <p>The arguments passed to createVectorText are the same as you would
 pass to surface||group.createText; the difference is that this
 is entirely renderer-agnostic, and the return value is a subclass
-of <a class="jsdoc-link" href="/api/1.8/dojox/gfx.Group">dojox/gfx.Group</a>.
+of <a class="jsdoc-link" href="/api/1.9/dojox/gfx.Group">dojox/gfx.Group</a>.
 
 </p>
 <p>Note also that the &quot;defaultText&quot; object is slightly different:
@@ -44,7 +44,7 @@ by the font object itself.
   <h3>Usage:</h3>
   <div class="function-signature"><span class="keyword">var</span> foo = new gfx.VectorFont<span class="parameters">(url);</span></div>
 </div>
-<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/gfx/VectorText">dojox/gfx/VectorText</a></div>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.9/dojox/gfx/VectorText">dojox/gfx/VectorText</a></div>
 <div class="jsdoc-summary"><p>Create this font object based on the SVG Font definition at url.</p>
 </div>
 <table class="jsdoc-parameters">
@@ -66,67 +66,67 @@ by the font object itself.
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="regexpIcon private"><a href="#1_8dojox_gfx_VectorFont__entityRe" class="inline-link"> _entityRe </a><span></span><span title="private" class="jsdoc-private"></span><span title="Must manually require () dojox/gfx/VectorText to access" class="jsdoc-extension"></span>
+        <li class="regexpIcon private"><a href="#1_9dojox_gfx_VectorFont__entityRe" class="inline-link"> _entityRe </a><span></span><span title="private" class="jsdoc-private"></span><span title="Must manually require () dojox/gfx/VectorText to access" class="jsdoc-extension"></span>
         </li>
       </ul>
     </div>
     <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="functionIcon private"><a href="#1_8dojox_gfx_VectorFont__clean" class="inline-link"> _clean</a><span class="parameters">(</span>) <span>Clean off all of the given mixin parameters.</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojox_gfx_VectorFont__clean" class="inline-link"> _clean</a><span class="parameters">(</span>) <span>Clean off all of the given mixin parameters.</span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojox_gfx_VectorFont__decodeEntitySequence" class="inline-link"> _decodeEntitySequence</a><span class="parameters">(</span>str) <span></span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojox_gfx_VectorFont__decodeEntitySequence" class="inline-link"> _decodeEntitySequence</a><span class="parameters">(</span>str) <span></span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojox_gfx_VectorFont__getBestFit" class="inline-link"> _getBestFit</a><span class="parameters">(</span>chars, w, h, ldng) <span>Get the best number of lines to return given w and h.</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojox_gfx_VectorFont__getBestFit" class="inline-link"> _getBestFit</a><span class="parameters">(</span>chars, w, h, ldng) <span>Get the best number of lines to return given w and h.</span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojox_gfx_VectorFont__getBestFlow" class="inline-link"> _getBestFlow</a><span class="parameters">(</span>chars, w, scale) <span>Based on the given scale, do the best line splitting possible.</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojox_gfx_VectorFont__getBestFlow" class="inline-link"> _getBestFlow</a><span class="parameters">(</span>chars, w, scale) <span>Based on the given scale, do the best line splitting possible.</span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojox_gfx_VectorFont__getFitFactor" class="inline-link"> _getFitFactor</a><span class="parameters">(</span>lines, w, h, l) <span>Find the scaling factor for the given phrase set.</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojox_gfx_VectorFont__getFitFactor" class="inline-link"> _getFitFactor</a><span class="parameters">(</span>lines, w, h, l) <span>Find the scaling factor for the given phrase set.</span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojox_gfx_VectorFont__getLongestLine" class="inline-link"> _getLongestLine</a><span class="parameters">(</span>lines) <span></span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojox_gfx_VectorFont__getLongestLine" class="inline-link"> _getLongestLine</a><span class="parameters">(</span>lines) <span></span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojox_gfx_VectorFont__getSizeFactor" class="inline-link"> _getSizeFactor</a><span class="parameters">(</span>size) <span></span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojox_gfx_VectorFont__getSizeFactor" class="inline-link"> _getSizeFactor</a><span class="parameters">(</span>size) <span></span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojox_gfx_VectorFont__getWidth" class="inline-link"> _getWidth</a><span class="parameters">(</span>glyphs) <span></span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojox_gfx_VectorFont__getWidth" class="inline-link"> _getWidth</a><span class="parameters">(</span>glyphs) <span></span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojox_gfx_VectorFont__leading" class="inline-link"> _leading</a><span class="parameters">(</span>unit) <span></span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojox_gfx_VectorFont__leading" class="inline-link"> _leading</a><span class="parameters">(</span>unit) <span></span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojox_gfx_VectorFont__normalize" class="inline-link"> _normalize</a><span class="parameters">(</span>str) <span></span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojox_gfx_VectorFont__normalize" class="inline-link"> _normalize</a><span class="parameters">(</span>str) <span></span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojox_gfx_VectorFont__parse" class="inline-link"> _parse</a><span class="parameters">(</span>svg, url) <span>Take the loaded SVG Font definition file and convert the info
+        <li class="functionIcon private"><a href="#1_9dojox_gfx_VectorFont__parse" class="inline-link"> _parse</a><span class="parameters">(</span>svg, url) <span>Take the loaded SVG Font definition file and convert the info
 into things we can use.</span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojox_gfx_VectorFont__round" class="inline-link"> _round</a><span class="parameters">(</span>n) <span></span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojox_gfx_VectorFont__round" class="inline-link"> _round</a><span class="parameters">(</span>n) <span></span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojox_gfx_VectorFont__split" class="inline-link"> _split</a><span class="parameters">(</span>chars, nLines) <span>split passed chars into nLines by finding the closest whitespace.</span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojox_gfx_VectorFont__split" class="inline-link"> _split</a><span class="parameters">(</span>chars, nLines) <span>split passed chars into nLines by finding the closest whitespace.</span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon private"><a href="#1_8dojox_gfx_VectorFont__trim" class="inline-link"> _trim</a><span class="parameters">(</span>lines) <span></span><span title="private" class="jsdoc-private"> </span>
+        <li class="functionIcon private"><a href="#1_9dojox_gfx_VectorFont__trim" class="inline-link"> _trim</a><span class="parameters">(</span>lines) <span></span><span title="private" class="jsdoc-private"> </span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_gfx_VectorFont_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>url) <span>Create this font object based on the SVG Font definition at url.</span>
+        <li class="functionIcon "><a href="#1_9dojox_gfx_VectorFont_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>url) <span>Create this font object based on the SVG Font definition at url.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_gfx_VectorFont_draw" class="inline-link"> draw</a><span class="parameters">(</span>group, textArgs, fontArgs, fillArgs, strokeArgs) <span>based on the passed parameters, draw the given text using paths
+        <li class="functionIcon "><a href="#1_9dojox_gfx_VectorFont_draw" class="inline-link"> draw</a><span class="parameters">(</span>group, textArgs, fontArgs, fillArgs, strokeArgs) <span>based on the passed parameters, draw the given text using paths
 defined by this font.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_gfx_VectorFont_getBaseline" class="inline-link"> getBaseline</a><span class="parameters">(</span>scale) <span>Find the baseline coord for alignment; adjust for scale if passed.</span>
+        <li class="functionIcon "><a href="#1_9dojox_gfx_VectorFont_getBaseline" class="inline-link"> getBaseline</a><span class="parameters">(</span>scale) <span>Find the baseline coord for alignment; adjust for scale if passed.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_gfx_VectorFont_getCenterline" class="inline-link"> getCenterline</a><span class="parameters">(</span>scale) <span>return the y coordinate that is the center of the viewbox.</span>
+        <li class="functionIcon "><a href="#1_9dojox_gfx_VectorFont_getCenterline" class="inline-link"> getCenterline</a><span class="parameters">(</span>scale) <span>return the y coordinate that is the center of the viewbox.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_gfx_VectorFont_getLineHeight" class="inline-link"> getLineHeight</a><span class="parameters">(</span>scale) <span>return the height of a single line, sans leading, based on scale.</span>
+        <li class="functionIcon "><a href="#1_9dojox_gfx_VectorFont_getLineHeight" class="inline-link"> getLineHeight</a><span class="parameters">(</span>scale) <span>return the height of a single line, sans leading, based on scale.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_gfx_VectorFont_getWidth" class="inline-link"> getWidth</a><span class="parameters">(</span>text, scale) <span>Get the width of the rendered text without actually rendering it.</span>
+        <li class="functionIcon "><a href="#1_9dojox_gfx_VectorFont_getWidth" class="inline-link"> getWidth</a><span class="parameters">(</span>text, scale) <span>Get the width of the rendered text without actually rendering it.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_gfx_VectorFont_initialized" class="inline-link"> initialized</a><span class="parameters">(</span>) <span>Return if we&#39;ve loaded a font def, and the parsing was successful.</span>
+        <li class="functionIcon "><a href="#1_9dojox_gfx_VectorFont_initialized" class="inline-link"> initialized</a><span class="parameters">(</span>) <span>Return if we&#39;ve loaded a font def, and the parsing was successful.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_gfx_VectorFont_load" class="inline-link"> load</a><span class="parameters">(</span>url) <span>Load the passed SVG and send it to the parser for parsing.</span>
+        <li class="functionIcon "><a href="#1_9dojox_gfx_VectorFont_load" class="inline-link"> load</a><span class="parameters">(</span>url) <span>Load the passed SVG and send it to the parser for parsing.</span>
         </li>
       </ul>
     </div>
     <h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="functionIcon "><a href="#1_8dojox_gfx_VectorFont_onLoad" class="inline-link"> onLoad</a><span class="parameters">(</span>font) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        <li class="functionIcon "><a href="#1_9dojox_gfx_VectorFont_onLoad" class="inline-link"> onLoad</a><span class="parameters">(</span>font) <span></span><span title="TODO" class="jsdoc-extension"></span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojox_gfx_VectorFont_onLoadBegin" class="inline-link"> onLoadBegin</a><span class="parameters">(</span>url) <span></span><span title="TODO" class="jsdoc-extension"></span>
+        <li class="functionIcon "><a href="#1_9dojox_gfx_VectorFont_onLoadBegin" class="inline-link"> onLoadBegin</a><span class="parameters">(</span>url) <span></span><span title="TODO" class="jsdoc-extension"></span>
         </li>
       </ul>
     </div>
@@ -137,18 +137,18 @@ defined by this font.</span>
     <h2>Properties</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field private extension-module">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_VectorFont__entityRe"></a><span class="regexpIcon">_entityRe</span><span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_VectorFont__entityRe"></a><span class="regexpIcon">_entityRe</span><span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a><span title="Must manually require () dojox/gfx/VectorText to access" class="jsdoc-extension"></span>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a><span title="Must manually require () dojox/gfx/VectorText to access" class="jsdoc-extension"></span>
         </div>
       </div>
     </div>
     <h2>Methods</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_VectorFont__clean"></a><span class="functionIcon">_clean</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_VectorFont__clean"></a><span class="functionIcon">_clean</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
         </div>
         <div class="jsdoc-full-summary"><p>Clean off all of the given mixin parameters.</p>
 </div>
@@ -157,9 +157,9 @@ defined by this font.</span>
 </div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_VectorFont__decodeEntitySequence"></a><span class="functionIcon">_decodeEntitySequence</span><span class="parameters">(str)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_VectorFont__decodeEntitySequence"></a><span class="functionIcon">_decodeEntitySequence</span><span class="parameters">(str)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -178,9 +178,9 @@ defined by this font.</span>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">string</span></div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_VectorFont__getBestFit"></a><span class="functionIcon">_getBestFit</span><span class="parameters">(chars, w, h, ldng)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_VectorFont__getBestFit"></a><span class="functionIcon">_getBestFit</span><span class="parameters">(chars, w, h, ldng)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
         </div>
         <div class="jsdoc-full-summary"><p>Get the best number of lines to return given w and h.</p>
 </div>
@@ -218,9 +218,9 @@ defined by this font.</span>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">object</span></div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_VectorFont__getBestFlow"></a><span class="functionIcon">_getBestFlow</span><span class="parameters">(chars, w, scale)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_VectorFont__getBestFlow"></a><span class="functionIcon">_getBestFlow</span><span class="parameters">(chars, w, scale)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
         </div>
         <div class="jsdoc-full-summary"><p>Based on the given scale, do the best line splitting possible.</p>
 </div>
@@ -252,9 +252,9 @@ defined by this font.</span>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_VectorFont__getFitFactor"></a><span class="functionIcon">_getFitFactor</span><span class="parameters">(lines, w, h, l)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_VectorFont__getFitFactor"></a><span class="functionIcon">_getFitFactor</span><span class="parameters">(lines, w, h, l)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
         </div>
         <div class="jsdoc-full-summary"><p>Find the scaling factor for the given phrase set.</p>
 </div>
@@ -292,9 +292,9 @@ defined by this font.</span>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_VectorFont__getLongestLine"></a><span class="functionIcon">_getLongestLine</span><span class="parameters">(lines)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_VectorFont__getLongestLine"></a><span class="functionIcon">_getLongestLine</span><span class="parameters">(lines)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -313,9 +313,9 @@ defined by this font.</span>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">object</span></div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_VectorFont__getSizeFactor"></a><span class="functionIcon">_getSizeFactor</span><span class="parameters">(size)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_VectorFont__getSizeFactor"></a><span class="functionIcon">_getSizeFactor</span><span class="parameters">(size)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -334,9 +334,9 @@ defined by this font.</span>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_VectorFont__getWidth"></a><span class="functionIcon">_getWidth</span><span class="parameters">(glyphs)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_VectorFont__getWidth"></a><span class="functionIcon">_getWidth</span><span class="parameters">(glyphs)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -355,9 +355,9 @@ defined by this font.</span>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_VectorFont__leading"></a><span class="functionIcon">_leading</span><span class="parameters">(unit)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_VectorFont__leading"></a><span class="functionIcon">_leading</span><span class="parameters">(unit)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -376,9 +376,9 @@ defined by this font.</span>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">number</span></div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_VectorFont__normalize"></a><span class="functionIcon">_normalize</span><span class="parameters">(str)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_VectorFont__normalize"></a><span class="functionIcon">_normalize</span><span class="parameters">(str)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -397,9 +397,9 @@ defined by this font.</span>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_VectorFont__parse"></a><span class="functionIcon">_parse</span><span class="parameters">(svg, url)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_VectorFont__parse"></a><span class="functionIcon">_parse</span><span class="parameters">(svg, url)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
         </div>
         <div class="jsdoc-full-summary"><p>Take the loaded SVG Font definition file and convert the info
 into things we can use. The SVG Font definition must follow
@@ -426,9 +426,9 @@ the SVG 1.1 Font specification.</p>
         </table>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_VectorFont__round"></a><span class="functionIcon">_round</span><span class="parameters">(n)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_VectorFont__round"></a><span class="functionIcon">_round</span><span class="parameters">(n)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -447,9 +447,9 @@ the SVG 1.1 Font specification.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">number</span></div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_VectorFont__split"></a><span class="functionIcon">_split</span><span class="parameters">(chars, nLines)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_VectorFont__split"></a><span class="functionIcon">_split</span><span class="parameters">(chars, nLines)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
         </div>
         <div class="jsdoc-full-summary"><p>split passed chars into nLines by finding the closest whitespace.</p>
 </div>
@@ -475,9 +475,9 @@ the SVG 1.1 Font specification.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field private">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_VectorFont__trim"></a><span class="functionIcon">_trim</span><span class="parameters">(lines)</span> <span title="private" class="jsdoc-private"> </span>
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_VectorFont__trim"></a><span class="functionIcon">_trim</span><span class="parameters">(lines)</span> <span title="private" class="jsdoc-private"> </span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
         </div>
         <div class="jsdoc-full-summary"></div>
         <table class="jsdoc-parameters">
@@ -496,9 +496,9 @@ the SVG 1.1 Font specification.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_VectorFont_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(url)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_VectorFont_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(url)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
         </div>
         <div class="jsdoc-full-summary"><p>Create this font object based on the SVG Font definition at url.</p>
 </div>
@@ -518,9 +518,9 @@ the SVG 1.1 Font specification.</p>
         </table>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_VectorFont_draw"></a><span class="functionIcon">draw</span><span class="parameters">(group, textArgs, fontArgs, fillArgs, strokeArgs)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_VectorFont_draw"></a><span class="functionIcon">draw</span><span class="parameters">(group, textArgs, fontArgs, fillArgs, strokeArgs)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
         </div>
         <div class="jsdoc-full-summary"><p>based on the passed parameters, draw the given text using paths
 defined by this font.</p>
@@ -576,7 +576,7 @@ operations not normally available with vector graphics:
 <li>Fitting operations (i.e. find a best fit to a given rectangle)</li>
 </ul>
 <p>To enable either, pass a <code>fitting</code> property along with the textArgs object.
-The possible values are contained in the <a class="jsdoc-link" href="/api/1.8/dojox/gfx.vectorFontFitting">dojox/gfx.vectorFontFitting</a> enum
+The possible values are contained in the <a class="jsdoc-link" href="/api/1.9/dojox/gfx.vectorFontFitting">dojox/gfx.vectorFontFitting</a> enum
 (NONE, FLOW, FIT).
 
 </p>
@@ -644,12 +644,12 @@ infractions that may be caused by the use of this code.</p>
             </td>
           </tr>
         </table>
-        <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojox/gfx.Group">dojox/gfx.Group</a> | undefined</span></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.9/dojox/gfx.Group">dojox/gfx.Group</a> | undefined</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_VectorFont_getBaseline"></a><span class="functionIcon">getBaseline</span><span class="parameters">(scale)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_VectorFont_getBaseline"></a><span class="functionIcon">getBaseline</span><span class="parameters">(scale)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
         </div>
         <div class="jsdoc-full-summary"><p>Find the baseline coord for alignment; adjust for scale if passed.</p>
 </div>
@@ -671,9 +671,9 @@ infractions that may be caused by the use of this code.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">number</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_VectorFont_getCenterline"></a><span class="functionIcon">getCenterline</span><span class="parameters">(scale)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_VectorFont_getCenterline"></a><span class="functionIcon">getCenterline</span><span class="parameters">(scale)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
         </div>
         <div class="jsdoc-full-summary"><p>return the y coordinate that is the center of the viewbox.</p>
 </div>
@@ -695,9 +695,9 @@ infractions that may be caused by the use of this code.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">number</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_VectorFont_getLineHeight"></a><span class="functionIcon">getLineHeight</span><span class="parameters">(scale)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_VectorFont_getLineHeight"></a><span class="functionIcon">getLineHeight</span><span class="parameters">(scale)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
         </div>
         <div class="jsdoc-full-summary"><p>return the height of a single line, sans leading, based on scale.</p>
 </div>
@@ -719,9 +719,9 @@ infractions that may be caused by the use of this code.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">number</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_VectorFont_getWidth"></a><span class="functionIcon">getWidth</span><span class="parameters">(text, scale)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_VectorFont_getWidth"></a><span class="functionIcon">getWidth</span><span class="parameters">(text, scale)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
         </div>
         <div class="jsdoc-full-summary"><p>Get the width of the rendered text without actually rendering it.</p>
 </div>
@@ -750,18 +750,18 @@ infractions that may be caused by the use of this code.</p>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">number</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_VectorFont_initialized"></a><span class="functionIcon">initialized</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_VectorFont_initialized"></a><span class="functionIcon">initialized</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
         </div>
         <div class="jsdoc-full-summary"><p>Return if we&#39;ve loaded a font def, and the parsing was successful.</p>
 </div>
         <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_VectorFont_load"></a><span class="functionIcon">load</span><span class="parameters">(url)</span> 
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_VectorFont_load"></a><span class="functionIcon">load</span><span class="parameters">(url)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a>
         </div>
         <div class="jsdoc-full-summary"><p>Load the passed SVG and send it to the parser for parsing.</p>
 </div>
@@ -787,15 +787,15 @@ infractions that may be caused by the use of this code.</p>
     <h2>Events</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_VectorFont_onLoad"></a><span class="functionIcon">onLoad</span><span class="parameters">(font)</span>
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_VectorFont_onLoad"></a><span class="functionIcon">onLoad</span><span class="parameters">(font)</span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.9/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojox_gfx_VectorFont_onLoadBegin"></a><span class="functionIcon">onLoadBegin</span><span class="parameters">(url)</span>
+        <div class="jsdoc-title"><a name="1_9dojox_gfx_VectorFont_onLoadBegin"></a><span class="functionIcon">onLoadBegin</span><span class="parameters">(url)</span>
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.9/dojox/gfx/VectorText" class="jsdoc-link">dojox/gfx/VectorText</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
       </div>
     </div>
   </div>
-</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojox/gfx.VectorFont" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojox/gfx.VectorFont" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>

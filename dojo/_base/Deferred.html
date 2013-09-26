@@ -3,13 +3,13 @@
   // If user loads this page directly, redirect to index page, with parameter to initially show tab for this module.
   // If google loads this page directly it will hopefully ignore this script and just index the documentation below.
   // Also, when this page is loaded via XHR this script block should be ignored.
-  location = "/api/?qs=1.8/dojo/_base/Deferred" + location.hash;
+  location = "/api/?qs=1.9/dojo/_base/Deferred" + location.hash;
   
 </script>
-<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/_base/Deferred.html</div>
-<h1 class="functionIcon36 jsdoc-title">dojo/_base/Deferred<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
-<div class="jsdoc-full-summary"><p>Deprecated.   This module defines the legacy <a class="jsdoc-link" href="/api/1.8/dojo/_base/Deferred">dojo/_base/Deferred</a> API.
-New code should use <a class="jsdoc-link" href="/api/1.8/dojo/Deferred">dojo/Deferred</a> instead.</p>
+<div style="display:none" class="jsdoc-permalink">/api/1.9/dojo/_base/Deferred.html</div>
+<h1 class="functionIcon36 jsdoc-title">dojo/_base/Deferred<span style="font-size:11px;color:#999;"> (version 1.9)</span></h1>
+<div class="jsdoc-full-summary"><p>Deprecated.   This module defines the legacy <a class="jsdoc-link" href="/api/1.9/dojo/_base/Deferred">dojo/_base/Deferred</a> API.
+New code should use <a class="jsdoc-link" href="/api/1.9/dojo/Deferred">dojo/Deferred</a> instead.</p>
 </div>
 <div class="jsdoc-full-summary"><p>The Deferred API is based on the concept of promises that provide a
 generic interface into the eventual completion of an asynchronous action.
@@ -78,7 +78,7 @@ handle that error for cancellable Deferreds.</p>
     </td>
   </tr>
 </table>
-<p>See the <a href="/reference-guide/1.8/dojo/_base/Deferred.html" target="_blank">dojo/_base/Deferred reference documentation</a> for more information.</p>
+<p>See the <a href="/reference-guide/1.9/dojo/_base/Deferred.html" target="_blank">dojo/_base/Deferred reference documentation</a> for more information.</p>
 <div class="jsdoc-children">
   <div class="jsdoc-field-list">
     <div class="jsdoc-examples">
@@ -194,41 +194,49 @@ handle the asynchronous case.</p>
     <h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="numberIcon"><a href="#1_8dojo__base_Deferred_fired" class="inline-link"> fired </a><span></span>
+        <li class="numberIcon"><a href="#1_9dojo__base_Deferred_fired" class="inline-link"> fired </a><span></span>
         </li>
-        <li class="objectIcon"><a href="#1_8dojo__base_Deferred_promise" class="inline-link"> promise </a><span></span>
+        <li class="objectIcon"><a href="#1_9dojo__base_Deferred_promise" class="inline-link"> promise </a><span></span>
         </li>
       </ul>
     </div>
     <h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
     <div class="jsdoc-summary-list">
       <ul class="jsdoc-property-list">
-        <li class="functionIcon "><a href="#1_8dojo__base_Deferred_addBoth" class="inline-link"> addBoth</a><span class="parameters">(</span>callback) <span>Add handler as both successful callback and error callback for this deferred instance.</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_Deferred_addBoth" class="inline-link"> addBoth</a><span class="parameters">(</span>callback) <span>Add handler as both successful callback and error callback for this deferred instance.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_Deferred_addCallback" class="inline-link"> addCallback</a><span class="parameters">(</span>callback) <span>Adds successful callback for this deferred instance.</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_Deferred_addCallback" class="inline-link"> addCallback</a><span class="parameters">(</span>callback) <span>Adds successful callback for this deferred instance.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_Deferred_addCallbacks" class="inline-link"> addCallbacks</a><span class="parameters">(</span>callback, errback) <span>Adds callback and error callback for this deferred instance.</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_Deferred_addCallbacks" class="inline-link"> addCallbacks</a><span class="parameters">(</span>callback, errback) <span>Adds callback and error callback for this deferred instance.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_Deferred_addErrback" class="inline-link"> addErrback</a><span class="parameters">(</span>errback) <span>Adds error callback for this deferred instance.</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_Deferred_addErrback" class="inline-link"> addErrback</a><span class="parameters">(</span>errback) <span>Adds error callback for this deferred instance.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_Deferred_callback" class="inline-link"> callback</a><span class="parameters">(</span>value) <span>Fulfills the Deferred instance successfully with the provide value</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_Deferred_callback" class="inline-link"> callback</a><span class="parameters">(</span>value) <span>Fulfills the Deferred instance successfully with the provide value</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_Deferred_cancel" class="inline-link"> cancel</a><span class="parameters">(</span>) <span>Cancels the asynchronous operation</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_Deferred_cancel" class="inline-link"> cancel</a><span class="parameters">(</span>) <span>Cancels the asynchronous operation</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_Deferred_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>canceller) <span>Deprecated.</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_Deferred_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>canceller) <span>Deprecated.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_Deferred_errback" class="inline-link"> errback</a><span class="parameters">(</span>error) <span>Fulfills the Deferred instance as an error with the provided error</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_Deferred_errback" class="inline-link"> errback</a><span class="parameters">(</span>error) <span>Fulfills the Deferred instance as an error with the provided error</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_Deferred_progress" class="inline-link"> progress</a><span class="parameters">(</span>update) <span>Send progress events to all listeners</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_Deferred_isCanceled" class="inline-link"> isCanceled</a><span class="parameters">(</span>) <span>Checks whether the deferred has been canceled.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_Deferred_reject" class="inline-link"> reject</a><span class="parameters">(</span>error) <span>Fulfills the Deferred instance as an error with the provided error</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_Deferred_isFulfilled" class="inline-link"> isFulfilled</a><span class="parameters">(</span>) <span>Checks whether the deferred has been resolved or rejected.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_Deferred_resolve" class="inline-link"> resolve</a><span class="parameters">(</span>value) <span>Fulfills the Deferred instance successfully with the provide value</span>
+        <li class="functionIcon "><a href="#1_9dojo__base_Deferred_isRejected" class="inline-link"> isRejected</a><span class="parameters">(</span>) <span>Checks whether the deferred has been rejected.</span>
         </li>
-        <li class="functionIcon "><a href="#1_8dojo__base_Deferred_then" class="inline-link"> then</a><span class="parameters">(</span>resolvedCallback, errorCallback, progressCallback) <span>Adds a fulfilledHandler, errorHandler, and progressHandler to be called for
+        <li class="functionIcon "><a href="#1_9dojo__base_Deferred_isResolved" class="inline-link"> isResolved</a><span class="parameters">(</span>) <span>Checks whether the deferred has been resolved.</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo__base_Deferred_progress" class="inline-link"> progress</a><span class="parameters">(</span>update) <span>Send progress events to all listeners</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo__base_Deferred_reject" class="inline-link"> reject</a><span class="parameters">(</span>error) <span>Fulfills the Deferred instance as an error with the provided error</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo__base_Deferred_resolve" class="inline-link"> resolve</a><span class="parameters">(</span>value) <span>Fulfills the Deferred instance successfully with the provide value</span>
+        </li>
+        <li class="functionIcon "><a href="#1_9dojo__base_Deferred_then" class="inline-link"> then</a><span class="parameters">(</span>resolvedCallback, errorCallback, progressCallback) <span>Adds a fulfilledHandler, errorHandler, and progressHandler to be called for
 completion of a promise.</span>
         </li>
-        <li class="functionIcon  inherited"><a href="#1_8dojo__base_Deferred_when" class="inline-link"> when</a><span class="parameters">(</span>valueOrPromise, callback, errback, progback) <span>Transparently applies callbacks to values and/or promises.</span><span title="inherited from dojo/when" class="jsdoc-inherited"></span>
+        <li class="functionIcon  inherited"><a href="#1_9dojo__base_Deferred_when" class="inline-link"> when</a><span class="parameters">(</span>valueOrPromise, callback, errback, progback) <span>Transparently applies callbacks to values and/or promises.</span><span title="inherited from dojo/when" class="jsdoc-inherited"></span>
         </li>
       </ul>
     </div>
@@ -239,24 +247,24 @@ completion of a promise.</span>
     <h2>Properties</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojo__base_Deferred_fired"></a><span class="numberIcon">fired</span>
+        <div class="jsdoc-title"><a name="1_9dojo__base_Deferred_fired"></a><span class="numberIcon">fired</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojo/_base/Deferred" class="jsdoc-link">dojo/_base/Deferred</a>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojo/_base/Deferred" class="jsdoc-link">dojo/_base/Deferred</a>
         </div>
       </div>
       <div class="jsdoc-field public">
-        <div class="jsdoc-title"><a name="1_8dojo__base_Deferred_promise"></a><span class="objectIcon">promise</span>
+        <div class="jsdoc-title"><a name="1_9dojo__base_Deferred_promise"></a><span class="objectIcon">promise</span>
         </div>
-        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojo/_base/Deferred" class="jsdoc-link">dojo/_base/Deferred</a>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.9/dojo/_base/Deferred" class="jsdoc-link">dojo/_base/Deferred</a>
         </div>
       </div>
     </div>
     <h2>Methods</h2>
     <div class="jsdoc-property-list">
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_Deferred_addBoth"></a><span class="functionIcon">addBoth</span><span class="parameters">(callback)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_Deferred_addBoth"></a><span class="functionIcon">addBoth</span><span class="parameters">(callback)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/Deferred" class="jsdoc-link">dojo/_base/Deferred</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/Deferred" class="jsdoc-link">dojo/_base/Deferred</a>
         </div>
         <div class="jsdoc-full-summary"><p>Add handler as both successful callback and error callback for this deferred instance.</p>
 </div>
@@ -278,9 +286,9 @@ completion of a promise.</span>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_Deferred_addCallback"></a><span class="functionIcon">addCallback</span><span class="parameters">(callback)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_Deferred_addCallback"></a><span class="functionIcon">addCallback</span><span class="parameters">(callback)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/Deferred" class="jsdoc-link">dojo/_base/Deferred</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/Deferred" class="jsdoc-link">dojo/_base/Deferred</a>
         </div>
         <div class="jsdoc-full-summary"><p>Adds successful callback for this deferred instance.</p>
 </div>
@@ -302,9 +310,9 @@ completion of a promise.</span>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_Deferred_addCallbacks"></a><span class="functionIcon">addCallbacks</span><span class="parameters">(callback, errback)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_Deferred_addCallbacks"></a><span class="functionIcon">addCallbacks</span><span class="parameters">(callback, errback)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/Deferred" class="jsdoc-link">dojo/_base/Deferred</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/Deferred" class="jsdoc-link">dojo/_base/Deferred</a>
         </div>
         <div class="jsdoc-full-summary"><p>Adds callback and error callback for this deferred instance.</p>
 </div>
@@ -336,9 +344,9 @@ completion of a promise.</span>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_Deferred_addErrback"></a><span class="functionIcon">addErrback</span><span class="parameters">(errback)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_Deferred_addErrback"></a><span class="functionIcon">addErrback</span><span class="parameters">(errback)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/Deferred" class="jsdoc-link">dojo/_base/Deferred</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/Deferred" class="jsdoc-link">dojo/_base/Deferred</a>
         </div>
         <div class="jsdoc-full-summary"><p>Adds error callback for this deferred instance.</p>
 </div>
@@ -360,9 +368,9 @@ completion of a promise.</span>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_Deferred_callback"></a><span class="functionIcon">callback</span><span class="parameters">(value)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_Deferred_callback"></a><span class="functionIcon">callback</span><span class="parameters">(value)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/Deferred" class="jsdoc-link">dojo/_base/Deferred</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/Deferred" class="jsdoc-link">dojo/_base/Deferred</a>
         </div>
         <div class="jsdoc-full-summary"><p>Fulfills the Deferred instance successfully with the provide value</p>
 </div>
@@ -381,17 +389,17 @@ completion of a promise.</span>
         </table>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_Deferred_cancel"></a><span class="functionIcon">cancel</span><span class="parameters">()</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_Deferred_cancel"></a><span class="functionIcon">cancel</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/Deferred" class="jsdoc-link">dojo/_base/Deferred</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/Deferred" class="jsdoc-link">dojo/_base/Deferred</a>
         </div>
         <div class="jsdoc-full-summary"><p>Cancels the asynchronous operation</p>
 </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_Deferred_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(canceller)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_Deferred_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(canceller)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/Deferred" class="jsdoc-link">dojo/_base/Deferred</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/Deferred" class="jsdoc-link">dojo/_base/Deferred</a>
         </div>
         <div class="jsdoc-full-summary"><p>Deprecated.   This module defines the legacy dojo/_base/Deferred API.
 New code should use dojo/Deferred instead.</p>
@@ -575,9 +583,9 @@ handle the asynchronous case.</p>
         </div>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_Deferred_errback"></a><span class="functionIcon">errback</span><span class="parameters">(error)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_Deferred_errback"></a><span class="functionIcon">errback</span><span class="parameters">(error)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/Deferred" class="jsdoc-link">dojo/_base/Deferred</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/Deferred" class="jsdoc-link">dojo/_base/Deferred</a>
         </div>
         <div class="jsdoc-full-summary"><p>Fulfills the Deferred instance as an error with the provided error</p>
 </div>
@@ -596,9 +604,45 @@ handle the asynchronous case.</p>
         </table>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_Deferred_progress"></a><span class="functionIcon">progress</span><span class="parameters">(update)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_Deferred_isCanceled"></a><span class="functionIcon">isCanceled</span><span class="parameters">()</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/Deferred" class="jsdoc-link">dojo/_base/Deferred</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/Deferred" class="jsdoc-link">dojo/_base/Deferred</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Checks whether the deferred has been canceled.</p>
+</div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Boolean</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_9dojo__base_Deferred_isFulfilled"></a><span class="functionIcon">isFulfilled</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/Deferred" class="jsdoc-link">dojo/_base/Deferred</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Checks whether the deferred has been resolved or rejected.</p>
+</div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Boolean</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_9dojo__base_Deferred_isRejected"></a><span class="functionIcon">isRejected</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/Deferred" class="jsdoc-link">dojo/_base/Deferred</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Checks whether the deferred has been rejected.</p>
+</div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Boolean</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_9dojo__base_Deferred_isResolved"></a><span class="functionIcon">isResolved</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/Deferred" class="jsdoc-link">dojo/_base/Deferred</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Checks whether the deferred has been resolved.</p>
+</div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Boolean</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_9dojo__base_Deferred_progress"></a><span class="functionIcon">progress</span><span class="parameters">(update)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/Deferred" class="jsdoc-link">dojo/_base/Deferred</a>
         </div>
         <div class="jsdoc-full-summary"><p>Send progress events to all listeners</p>
 </div>
@@ -617,9 +661,9 @@ handle the asynchronous case.</p>
         </table>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_Deferred_reject"></a><span class="functionIcon">reject</span><span class="parameters">(error)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_Deferred_reject"></a><span class="functionIcon">reject</span><span class="parameters">(error)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/Deferred" class="jsdoc-link">dojo/_base/Deferred</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/Deferred" class="jsdoc-link">dojo/_base/Deferred</a>
         </div>
         <div class="jsdoc-full-summary"><p>Fulfills the Deferred instance as an error with the provided error</p>
 </div>
@@ -638,9 +682,9 @@ handle the asynchronous case.</p>
         </table>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_Deferred_resolve"></a><span class="functionIcon">resolve</span><span class="parameters">(value)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_Deferred_resolve"></a><span class="functionIcon">resolve</span><span class="parameters">(value)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/Deferred" class="jsdoc-link">dojo/_base/Deferred</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/Deferred" class="jsdoc-link">dojo/_base/Deferred</a>
         </div>
         <div class="jsdoc-full-summary"><p>Fulfills the Deferred instance successfully with the provide value</p>
 </div>
@@ -659,9 +703,9 @@ handle the asynchronous case.</p>
         </table>
       </div>
       <div class="jsdoc-field">
-        <div class="jsdoc-title"><a name="1_8dojo__base_Deferred_then"></a><span class="functionIcon">then</span><span class="parameters">(resolvedCallback, errorCallback, progressCallback)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_Deferred_then"></a><span class="functionIcon">then</span><span class="parameters">(resolvedCallback, errorCallback, progressCallback)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/_base/Deferred" class="jsdoc-link">dojo/_base/Deferred</a>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/_base/Deferred" class="jsdoc-link">dojo/_base/Deferred</a>
         </div>
         <div class="jsdoc-full-summary"><p>Adds a fulfilledHandler, errorHandler, and progressHandler to be called for
 completion of a promise. The fulfilledHandler is called when the promise
@@ -726,9 +770,9 @@ execution of the callback. The callbacks will never affect the original promises
         </div>
       </div>
       <div class="jsdoc-field inherited">
-        <div class="jsdoc-title"><a name="1_8dojo__base_Deferred_when"></a><span class="functionIcon">when</span><span class="parameters">(valueOrPromise, callback, errback, progback)</span> 
+        <div class="jsdoc-title"><a name="1_9dojo__base_Deferred_when"></a><span class="functionIcon">when</span><span class="parameters">(valueOrPromise, callback, errback, progback)</span> 
         </div>
-        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/when" class="jsdoc-link">dojo/when</a><span title="inherited" class="jsdoc-inherited"></span>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.9/dojo/when" class="jsdoc-link">dojo/when</a><span title="inherited" class="jsdoc-inherited"></span>
         </div>
         <div class="jsdoc-full-summary"><p>Transparently applies callbacks to values and/or promises.</p>
 </div>
@@ -782,10 +826,10 @@ is received.</p>
             </td>
           </tr>
         </table>
-        <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojo/promise/Promise">dojo/promise/Promise</a> | The property to get. | undefined</span></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.9/dojo/promise/Promise">dojo/promise/Promise</a> | The property to get. | undefined</span></div>
         <div class="jsdoc-return-description"><p>Promise, or if a callback is provided, the result of the callback.</p>
 </div>
       </div>
     </div>
   </div>
-</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.8/dojo/_base/Deferred" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>
+</div><a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&amp;formkey=dFlDcHEyaHMwbEd4MFBObkNrX0E1MFE6MQ&amp;entry_0=/api/1.9/dojo/_base/Deferred" class="feedback">Error in the documentation? Can’t find what you are looking for? Let us know!</a>
